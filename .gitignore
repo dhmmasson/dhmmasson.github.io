@@ -1,2 +1,3 @@
 /.quarto/
 .obsidian/plugins/
+.venv
