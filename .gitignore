@@ -1,3 +1,5 @@
 /.quarto/
 .obsidian/plugins/
 .venv
+_freeze
+.obsidian/workspace.json
