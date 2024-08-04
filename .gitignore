@@ -1,4 +1,5 @@
 /.quarto/
+/_site/
 .obsidian/plugins/
 .venv
 _freeze
