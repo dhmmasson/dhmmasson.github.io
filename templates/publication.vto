@@ -1,0 +1,30 @@
+---
+type: publication
+title: {{title_s[0]}}
+alias: 
+{{for title in title_s]}}
+- {{title}}
+{{end}}
+document: {{docType_s}}
+publication-date: {{producedDateY_i}}
+journal: [[Research in Engineering Design]]
+tags:
+  - publication/{{docType_s}}
+---
+# {{title_s[0]}}
+[[{{journal}}]] ({{publication-date}})
+## Authors
+{{for author in authors}}
+- authors::[[{{author.slug|author.full}}]]
+{{end}}
+## Keywords
+{{for keyword in keywords}}
+- keywords::[[{{keyword.slug|keyword.full}}]]
+{{end}}
+
+## Abstract
+{{abstract}}
+
+
+## Cite
+{{label_bibtex}}
