@@ -2,11 +2,14 @@ project:
   type: website
   output-dir: _site/
 
+bibliography: bibliography/bibliography.bib
+
 website:
   title: "dhmmasson.github.io"
   navbar:
     right:
       - about.qmd
+      - Bibliography.md
       - icon: github
         href: https://github.com/
       - icon: twitter
