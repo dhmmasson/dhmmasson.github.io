@@ -1,3 +1,7 @@
 {
-  "deno.enable": true
+  "deno.enable": true,
+  "deno.suggest.completeFunctionCalls": true,
+  "deno.disablePaths": ["./node_api/", "./vsc_extension/"],
+  "deno.cacheOnSave": true,
+  "deno.lint": true
 }
