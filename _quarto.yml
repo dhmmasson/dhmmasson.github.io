@@ -1,6 +1,11 @@
 project:
   type: website
   output-dir: _site/
+  resources:
+    - bibliography/files/**/*
+  preview:
+    watch-inputs: true
+    
 
 bibliography: bibliography/bibliography.bib
 
