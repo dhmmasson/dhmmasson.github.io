@@ -134,6 +134,7 @@ export interface Item {
   place?: string;
   priorityDate?: string;
   priorityNumbers?: string;
+  proceedingsTitle?: string;
   programmingLanguage?: string;
   publicationDate?: string;
   publicationNumber?: string;
