@@ -673,7 +673,7 @@
       "select": "zotero://select/library/items/63TGZLHN"
     },
     {
-      "version": 1016,
+      "version": 1073,
       "itemType": "journalArticle",
       "title": "PRODEC for human systems integration of increasingly autonomous systems",
       "abstractNote": "The purpose of the PRODEC scenario-based design method is the incremental crossfertilization and refinement of procedural scenarios and declarative configurations. It uses virtual prototypes of the developed systems (mainly life-critical systems) to conduct human-in-the-loop simulations (HITLSs). Based on human systems integration (HSI) principles and criteria, as well as expertise and experience in the domain at stake, this HSI approach grounded in virtual environments requires a clear definition of physical and cognitive tangibility metrics to assess the distance between virtual and tangible (grasp) dimensions of the system being developed when it is put to work. PRODEC considers human and machine systems described in terms of structures and functions incrementally designed using procedural scenarios (i.e., stories) in task and activity networks, which provide life to declarative configurations (i.e., system\u2019s functions and structures). This active modeling and simulation process enables the discovery of emergent structures and functions of the system being developed when it is virtually operated. PRODEC\u2019s use is illustrated in an example. We discuss the use of PRODEC and its results as to how they can be used with digital twins.",
@@ -684,7 +684,6 @@
       "accessDate": "2024-03-11T14:50:22Z",
       "rights": "\u00a9 2024 The Authors. Systems Engineering published by Wiley Periodicals LLC.",
       "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/sys.21751",
-      "pages": "sys.21751",
       "publicationTitle": "Systems Engineering",
       "DOI": "10.1002/sys.21751",
       "journalAbbreviation": "Sys. Eng.",
@@ -789,7 +788,7 @@
       },
       "inPublications": true,
       "dateAdded": "2024-03-12T09:43:11Z",
-      "dateModified": "2024-08-04T22:15:16Z",
+      "dateModified": "2024-08-12T12:50:22Z",
       "uri": "http://zotero.org/users/2761519/items/KZ6QXESW",
       "attachments": [
         {
@@ -2498,15 +2497,18 @@
       "select": "zotero://select/library/items/WZ6HHT8Q"
     },
     {
-      "version": 1055,
+      "version": 1072,
       "itemType": "thesis",
-      "title": "Inspirez! Explorez! Soutien \u00e0 la cr\u00e9ativit\u00e9 en conception d'interfaces homme-machine",
-      "date": "2014",
+      "title": "Inspirez ! Explorez ! Soutien \u00e0 la cr\u00e9ativit\u00e9 en conception d'interfaces homme-machine",
+      "abstractNote": "My PhD thesis contributes to the engineering of Human Computer Interaction (HCI). It deals with the design of User Interfaces (UI). I claim that creative processes should be better considered, and supported by tools especially for novice designers. The challenge is to speed up the exploration of the design space at the early stages of the process. This claim is grounded in both a theoretical state of the art in creativity and creativity support tools, and in practice of the topic with four hands-on experiences of creativity in different areas of design such as architecture, product design and UI design. I build my contribution on the following principles: (1) creativity is not reserved for the elite, but can be tailored and fostered by software tools; (2) the tools must leverage motivation, inspiration, wide exploration, and knowledge in UI and design processes. Through a reflective process, I apply these principles to my thesis. I explore a wide range of creativity support tools through five complementary software contributions: Maestro and Bank for supporting knowledge capitalization; WebGallery, BrianStorming and Magellan for fostering inspiration and exploration of the design space. Maestro addresses the capitalization of design processes whilst BANK gathers knowledge in HCI as a graph of models. WebGallery is a gallery of websites to inspire designers: I report an experiment on human perception of websites styles. BrianStorming is a brainstorming assistant: it provides suggestions in a electronic brainstorming session. Magellan is an interactive environment based on genetic algorithms that automatically generate and transform UIs for a given design problem. This changes the role of the computer: from a simple tool, it becomes a designer's partner in the creative process.",
+      "date": "2014-09-25",
       "language": "fr",
       "shortTitle": "Inspirez! Explorez! Thesis",
       "archive": "HAL",
       "archiveLocation": "https://hal.science/tel-01549303v1",
+      "url": "https://theses.fr/2014GRENM054",
       "rights": "All rights reserved",
+      "place": "Grenoble",
       "thesisType": "PhD Thesis",
       "university": "Universit\u00e9 de Grenoble",
       "creators": [
@@ -2516,15 +2518,61 @@
           "creatorType": "author"
         }
       ],
-      "tags": [],
+      "tags": [
+        {
+          "tag": "004",
+          "type": 1
+        },
+        {
+          "tag": "Algorithmes \u00e9volutionnaires",
+          "type": 1
+        },
+        {
+          "tag": "Brainstorming",
+          "type": 1
+        },
+        {
+          "tag": "Conception d\u2019Interfaces Homme-Machine",
+          "type": 1
+        },
+        {
+          "tag": "Cr\u00e9ativit\u00e9",
+          "type": 1
+        },
+        {
+          "tag": "Creativity",
+          "type": 1
+        },
+        {
+          "tag": "Design galleries",
+          "type": 1
+        },
+        {
+          "tag": "Evolutionary algorithm",
+          "type": 1
+        },
+        {
+          "tag": "Galerie d'exemples",
+          "type": 1
+        },
+        {
+          "tag": "Interfaces utilisateur (informatique)",
+          "type": 1
+        },
+        {
+          "tag": "User Interface Design",
+          "type": 1
+        }
+      ],
       "relations": {
         "dc:replaces": [
+          "http://zotero.org/users/2761519/items/PL4IUG5V",
           "http://zotero.org/users/2761519/items/YB9SK5CM"
         ]
       },
       "inPublications": true,
       "dateAdded": "2024-02-02T21:02:57Z",
-      "dateModified": "2024-08-05T11:58:29Z",
+      "dateModified": "2024-08-12T12:38:49Z",
       "uri": "http://zotero.org/users/2761519/items/MTGKKIDG",
       "attachments": [
         {
