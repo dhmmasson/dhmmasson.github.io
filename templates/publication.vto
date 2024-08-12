@@ -1,30 +1,65 @@
 ---
-type: publication
-title: {{title_s[0]}}
-alias: 
-{{for title in title_s]}}
-- {{title}}
-{{end}}
-document: {{docType_s}}
-publication-date: {{producedDateY_i}}
-journal: [[Research in Engineering Design]]
-tags:
-  - publication/{{docType_s}}
+title: |
+  {{title}}
+nocite: |
+  @{{citationKey}}
+date: "{{date}}"
+year: {{year}}
+categories: [type:{{it.type}}, lang:{{language}}] 
+{{- if it.attachments && it.attachments[0]}}
+image: "/bibliography/({{it.attachments[0].path}})"
+{{/if}}
+authors: |
+  {{ it.authors_s_bold_html |> safe}}
+publication: |
+  {{it.publication}} 
+author: {{authorFirst_s}}
+doi: "{{it.DOI}}"
+hal: "{{it.halURL}}"
+halid: "{{it.halId}}"
 ---
-# {{title_s[0]}}
-[[{{journal}}]] ({{publication-date}})
-## Authors
-{{for author in authors}}
-- authors::[[{{author.slug|author.full}}]]
-{{end}}
-## Keywords
-{{for keyword in keywords}}
-- keywords::[[{{keyword.slug|keyword.full}}]]
-{{end}}
+# {{title}}
+{{it.publication}}
+*{{it.authors_s_bold}}*
+---
 
+{{if it.abstract}}
 ## Abstract
-{{abstract}}
+{{it.abstract}}
+{{/if}}
+
+## File
+
+{{if it.file}}
+  ![Document](/bibliography/{{it.file}})
+{{/if}}
 
 
-## Cite
-{{label_bibtex}}
+## Cite this work
+{{if it.DOI}}- ![DOI: {{DOI}}](https://doi.org/{{DOI}}){{/if}}
+{{if it.URL}}- [URL]({{URL}}) {{/if}}
+{{if it.halURL}}- [HAL: {{it.halId}}]({{it.halURL}}) {{/if}}
+
+::: {#refs}
+:::
+
+{{ echo }}
+```{{bibtex}} 
+@inproceedings{ambrosino2017_IdeaBulbSmart,
+  title = {{{IdeaBulb}}: {{A Smart}} and {{Tangible User Interface}} for {{Monitoring Ideation During Creative Sessions}}},
+  booktitle = {The {{Sixth International Conference}} on {{Smart Cities}}, {{Systems}}, {{Devices}} and {{Technologies}}},
+  author = {Ambrosino, Julien and Daniel, Maxime and Masson, Dimitri and Legardeur, Jérémy},
+  date = {2017-06-25},
+  pages = {70--74},
+  publisher = {Berntzen, L. et al.},
+  location = {Venice, Italy},
+  abstract = {In this paper, we propose a tangible user interface for the monitoring of new ideas generations (ideation phase) during creative sessions. Based on the analysis of different brainstorming, we highlight the dynamic of ideas production by different groups during ideation phase using electronic devices. We claim that this tangible user interface is designed in order to give live feedback concerning these dynamic of ideas production to the participants and the facilitator. Our work is the result of the interaction between two scientific approaches: the analysis of creative sessions and the design of tangible user interface. The result of our experiments show a creative cliff and propose a design concept for monitoring ideation phase.},
+  eventtitle = {{{SMART INTERFACES}} 2017, {{The Symposium}} for {{Empowering}} and {{Smart Interfaces}} in {{Engineering}}},
+  isbn = {978-1-5108-4308-0},
+  issue = {ISBN: 978-1-61208-565-4},
+  langid = {english},
+  keywords = {creativity,idea generation,ideation,tangible interface},
+  file = {/Users/dimitri/Zotero/storage/7UTMUXDY/Ambrosino et al. - 2017 - IdeaBulb A Smart and Tangible User Interface for .pdf}
+}
+```
+{{ /echo }}

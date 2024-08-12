@@ -1,0 +1,40 @@
+export type GeneratedSchemaForRoot = {
+  citationKey: string;
+  title: string;
+  type: string;
+  authorFirst: {
+    firstName: string;
+    lastName: string;
+    creatorType: string;
+    [k: string]: unknown;
+  };
+  authorFirst_s: string;
+  authors_s: string;
+  authors_s_bold: string;
+  authors_s_bold_html: string;
+  authors_names: string;
+  authors: {
+    firstName: string;
+    lastName: string;
+    creatorType: string;
+    [k: string]: unknown;
+  }[];
+  file?: string;
+  DOI?: string;
+  URL?: string;
+  date: string;
+  year: string;
+  language: string;
+  abstract: string;
+  publication: string;
+  conference?: string;
+  place?: string;
+  month?: string;
+  day?: string;
+  halURL?: string;
+  pages?: string;
+  volume?: string;
+  issue?: string;
+  series?: string;
+  [k: string]: unknown;
+}[];

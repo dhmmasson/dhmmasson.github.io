@@ -41,10 +41,111 @@ const validTypes = [
   "journalArticle",
   "presentation",
   "report",
+  "thesis",
+  "book",
 ];
 
-for (const item of bibliography.items) {
-  if (item.itemType && validTypes.includes(item.itemType) && item.citationKey) {
+const creatorExtractor = (item: Item) =>
+  item.creators &&
+  item.creators.length > 0 && {
+    authorFirst: item.creators[0],
+    authorFirst_s:
+      item.creators[0].lastName + ", " + item.creators[0].firstName,
+    authors_s: item.creators
+      .map((creator) => creator.lastName + ", " + creator.firstName)
+      .join("; "),
+    authors_s_bold: item.creators
+      .map((creator) =>
+        creator.lastName && creator.lastName.startsWith("Masson")
+          ? `**${creator.lastName}, ${creator.firstName}**`
+          : `${creator.lastName}, ${creator.firstName}`
+      )
+      .join("; "),
+    authors_s_bold_html: item.creators
+      .map((creator) =>
+        creator.lastName && creator.lastName.startsWith("Masson")
+          ? `<b>${creator.lastName}, ${creator.firstName}</b>`
+          : `${creator.lastName}, ${creator.firstName}`
+      )
+      .join("; "),
+    authors_names: item.creators.map((creator) => creator.name).join(", "),
+    authors: item.creators,
+  };
+const halExtractor = (item: Item) =>
+  item.archive === "HAL" &&
+  item.archiveLocation && {
+    halURL: item.archiveLocation,
+    halId: item.archiveLocation.match(
+      /(?:http:s?\/\/)?(?:hal.science\/)(?<halid>hal-\d+v?\d)/
+    )?.groups?.halid,
+  };
+
+const dateExtractor = (item: Item) =>
+  item.date && {
+    date: item.date,
+    year: item.date.split("-")[0],
+    month: item.date.split("-")[1],
+    day: item.date.split("-")[2],
+  };
+const publicationExtraction = (item: Item) => {
+  if (item.itemType === "journalArticle") {
+    return {
+      publication: `${item.journalAbbreviation}, ${item.volume}(${item.issue}), ${item.pages}`,
+      journal: item.journal,
+      volume: item.volume,
+      issue: item.issue,
+      pages: item.pages,
+      series: item.series,
+    };
+  }
+  if (item.itemType === "conferencePaper") {
+    return {
+      publication: `${item.conferenceName ?? "in " + item.proceedingsTitle}, ${
+        item.date
+      }`,
+      conference: item.conferenceName ?? item.proceedingsTitle,
+      place: item.place,
+    };
+  }
+  if (item.itemType === "thesis") {
+    return {
+      publication: `${item.institution}, ${item.date}`,
+      institution: item.institution,
+    };
+  }
+  return {
+    publication: "",
+  };
+};
+const cleanItems = [];
+for (const item of items) {
+  const cleanItem = {
+    citationKey: item.citationKey,
+    title: item.title,
+    type: item.itemType,
+    ...creatorExtractor(item),
+    file:
+      item.attachments && item.attachments.length > 0
+        ? item.attachments[0].path
+        : null,
+    DOI: item.DOI,
+    URL: item.url,
+    ...halExtractor(item),
+    ...dateExtractor(item),
+    language: item.language ?? "en",
+    abstract: item.abstractNote ?? "No abstract available",
+    ...publicationExtraction(item),
+  };
+  cleanItems.push(cleanItem);
+}
+// save json
+await Deno.writeTextFile(
+  join(config.outputFolder, "cleanItems.json"),
+  JSON.stringify(cleanItems, null, 2)
+);
+
+for (const item of cleanItems) {
+  if (item.type && validTypes.includes(item.type) && item.citationKey) {
     console.log("Processing", item.citationKey);
     try {
       const result = await publicationTemplate(item);
