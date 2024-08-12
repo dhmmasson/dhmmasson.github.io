@@ -1,13 +1,13 @@
 project:
   type: website
   output-dir: _site/
-  resources:
-    - bibliography/files/**/*
   preview:
     watch-inputs: true
-    
 
-bibliography: bibliography/bibliography.bib
+
+bibliography: ./bibliography/bibliography.bib
+citeproc: true
+csl: ./bibliography/apa.csl
 
 website:
   title: "dhmmasson.github.io"
@@ -16,13 +16,22 @@ website:
       - about.qmd
       - Bibliography.md
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/dhmmasson
+      - icon: linkedin
+        href: https://www.linkedin.com/in/dimitri-masson-a595612b/
+      - icon: ai ai ai-researchgate-square
+        href: https://www.researchgate.net/profile/Dimitri-Masson-2
+  open-graph: 
+    locale: en_US
+
+
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: litera
+    css: 
+      - styles.css
+      - https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
+    email-obfuscation: javascript
 
 
 
