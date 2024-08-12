@@ -1,65 +1,61 @@
 ---
 title: |
   {{title}}
-nocite: |
-  @{{citationKey}}
 date: "{{date}}"
 year: {{year}}
 categories: [type:{{it.type}}, lang:{{language}}] 
 {{- if it.attachments && it.attachments[0]}}
 image: "/bibliography/({{it.attachments[0].path}})"
 {{/if}}
-authors: |
-  {{ it.authors_s_bold_html |> safe}}
 publication: |
   {{it.publication}} 
-author: {{authorFirst_s}}
+authors_s: {{it.authors_s_bold_html}}
+author: {{for author of it.authors}}
+  - name: 
+      given: "{{author.firstName}}"
+      family: "{{author.lastName}}"
+  {{- if author.lastName.startsWith("Masson")}} 
+    orcid: 0000-0002-7072-3146    
+    email: d.masson@estia.fr 
+  {{- /if -}}  {{/for}}
 doi: "{{it.DOI}}"
 hal: "{{it.halURL}}"
 halid: "{{it.halId}}"
+citation:
+  id: {{it.citationKey}}
+  citation-key: {{it.citationKey}}
+  type: {{it.citation.type}}
+  {{- if it.citation.containerTitle}}
+  container-title: |
+    "{{it.citation.containerTitle}}"
+  {{- /if -}}
+  {{- if citation.publisher}}
+  publisher: |
+    "{{it.citation.publisher}}"
+  {{- /if -}}
+  {{- if it.citation.volume}}
+  volume: "{{it.citation.volume}}"
+  {{- /if -}}
+  {{- if it.citation.issue}}
+  issue: "{{it.citation.issue}}"
+  {{- /if -}}
+  {{- if it.citation.page}}
+  page: "{{it.citation.page}}"{{/if}}
+  {{- if it.citation.isbn}}
+  isbn: "{{it.citation.isbn}}"{{/if}}
+  {{- if it.citation.issn}}
+  issn: "{{it.citation.issn}}"{{/if}}
+google-scholar: true 
+abstract: >
+  {{it.abstract |> replaceAll("\n", "\n  ") |> safe}}
+pdf: {{it.pdf}}
 ---
-# {{title}}
-{{it.publication}}
-*{{it.authors_s_bold}}*
----
-
-{{if it.abstract}}
-## Abstract
-{{it.abstract}}
-{{/if}}
-
-## File
-
-{{if it.file}}
-  ![Document](/bibliography/{{it.file}})
-{{/if}}
-
-
-## Cite this work
-{{if it.DOI}}- ![DOI: {{DOI}}](https://doi.org/{{DOI}}){{/if}}
-{{if it.URL}}- [URL]({{URL}}) {{/if}}
+## Ressources
+{{if it.DOI}}- [DOI: {{DOI}}](https://doi.org/{{DOI}}){{/if}}
+{{if it.URL}}- [URL: {{URL}}]({{URL}}) {{/if}}
 {{if it.halURL}}- [HAL: {{it.halId}}]({{it.halURL}}) {{/if}}
 
-::: {#refs}
-:::
+{{if it.file}}
+  {{echo -}}{{< pdf {{/echo}}{{it.pdf}}{{echo}} width=100% height=800 >}} {{/echo}}
+{{/if}}
 
-{{ echo }}
-```{{bibtex}} 
-@inproceedings{ambrosino2017_IdeaBulbSmart,
-  title = {{{IdeaBulb}}: {{A Smart}} and {{Tangible User Interface}} for {{Monitoring Ideation During Creative Sessions}}},
-  booktitle = {The {{Sixth International Conference}} on {{Smart Cities}}, {{Systems}}, {{Devices}} and {{Technologies}}},
-  author = {Ambrosino, Julien and Daniel, Maxime and Masson, Dimitri and Legardeur, Jérémy},
-  date = {2017-06-25},
-  pages = {70--74},
-  publisher = {Berntzen, L. et al.},
-  location = {Venice, Italy},
-  abstract = {In this paper, we propose a tangible user interface for the monitoring of new ideas generations (ideation phase) during creative sessions. Based on the analysis of different brainstorming, we highlight the dynamic of ideas production by different groups during ideation phase using electronic devices. We claim that this tangible user interface is designed in order to give live feedback concerning these dynamic of ideas production to the participants and the facilitator. Our work is the result of the interaction between two scientific approaches: the analysis of creative sessions and the design of tangible user interface. The result of our experiments show a creative cliff and propose a design concept for monitoring ideation phase.},
-  eventtitle = {{{SMART INTERFACES}} 2017, {{The Symposium}} for {{Empowering}} and {{Smart Interfaces}} in {{Engineering}}},
-  isbn = {978-1-5108-4308-0},
-  issue = {ISBN: 978-1-61208-565-4},
-  langid = {english},
-  keywords = {creativity,idea generation,ideation,tangible interface},
-  file = {/Users/dimitri/Zotero/storage/7UTMUXDY/Ambrosino et al. - 2017 - IdeaBulb A Smart and Tangible User Interface for .pdf}
-}
-```
-{{ /echo }}

@@ -1,1 +1,13 @@
 /* css styles */
+.bi-ai::before {
+    font-family: 'Academicons' !important;
+    font-weight: 400 !important;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    vertical-align: 0;
+}

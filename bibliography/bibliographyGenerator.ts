@@ -87,6 +87,82 @@ const dateExtractor = (item: Item) =>
     month: item.date.split("-")[1],
     day: item.date.split("-")[2],
   };
+
+const cslTypeMap = new Map([
+  ["journalArticle", "article-journal"],
+  ["conferencePaper", "paper-conference"],
+  ["presentation", "speech"],
+  ["report", "report"],
+  ["thesis", "thesis"],
+  ["software", "software"],
+  ["book", "book"],
+]);
+
+const cslTypeConvertor = (item: Item) => {
+  if (cslTypeMap.has(item.itemType)) {
+    return cslTypeMap.get(item.itemType);
+  }
+  return "article";
+};
+
+const containerTitleExtractor = (item: Item) => {
+  if (item.itemType === "journalArticle") {
+    return {
+      containerTitle: item.journal,
+    };
+  }
+  if (item.itemType === "conferencePaper") {
+    return {
+      containerTitle: item.proceedingsTitle,
+    };
+  }
+  if (item.itemType === "thesis") {
+    return {
+      containerTitle: "",
+    };
+  }
+  if (item.itemType === "book") {
+    return {
+      containerTitle: item.title,
+    };
+  }
+  return {
+    containerTitle: "",
+  };
+};
+const publisherExtractor = (item: Item) => {
+  if (item.publisher) {
+    return {
+      publisher: item.publisher,
+    };
+  }
+  if (item.itemType === "thesis") {
+    return {
+      publisher: item.university,
+    };
+  }
+  if (item.itemType === "conferencePaper") {
+    return {
+      publisher: item.conferenceName,
+    };
+  }
+};
+
+const citationExtractor = (item: Item) => ({
+  citation: {
+    type: cslTypeConvertor(item),
+    doi: item.DOI,
+    language: item.language ?? "en",
+    isbn: item.ISBN,
+    issn: item.ISSN,
+    issue: item.issue,
+    volume: item.volume,
+    page: item.pages,
+    ...containerTitleExtractor(item),
+    ...publisherExtractor(item),
+  },
+});
+
 const publicationExtraction = (item: Item) => {
   if (item.itemType === "journalArticle") {
     return {
@@ -109,7 +185,7 @@ const publicationExtraction = (item: Item) => {
   }
   if (item.itemType === "thesis") {
     return {
-      publication: `${item.institution}, ${item.date}`,
+      publication: `${item.university}, ${item.date}`,
       institution: item.institution,
     };
   }
@@ -128,6 +204,11 @@ for (const item of items) {
       item.attachments && item.attachments.length > 0
         ? item.attachments[0].path
         : null,
+    pdf:
+      item.attachments && item.attachments.length > 0
+        ? `${item.citationKey}.pdf`
+        : null,
+
     DOI: item.DOI,
     URL: item.url,
     ...halExtractor(item),
@@ -135,6 +216,7 @@ for (const item of items) {
     language: item.language ?? "en",
     abstract: item.abstractNote ?? "No abstract available",
     ...publicationExtraction(item),
+    ...citationExtractor(item),
   };
   cleanItems.push(cleanItem);
 }
@@ -154,6 +236,12 @@ for (const item of cleanItems) {
         join(config.outputFolder, `${item.citationKey}.md`),
         result.content
       );
+      // Copy item.file to the output folder
+      if (item.file) {
+        const file = join("bibliography", item.file);
+        const dest = join(config.outputFolder, item.citationKey + ".pdf");
+        await Deno.copyFile(file, dest);
+      }
     } catch (error) {
       console.error("Error processing", item.citationKey, error);
     }
