@@ -1,0 +1,47 @@
+/* SCSS HEX */
+$linen: #fef5ebff;
+$cherry-blossom-pink: #fbb3bdff;
+$bright-pink-crayola: #f76e8eff;
+$chinese-violet: #774f7dff;
+$midnight-green: #004055ff;
+
+
+$viridian: #579488 ;
+$vert-de-gris: #69B8B9 ;
+$ochre: #D5770B ;
+$dark-salmon: #FBB3BD ;
+$rufous: #AE1409 ;
+$gunmetal: #032C3A ;
+$burntumber: #932C25 ;
+/* SCSS HEX */
+$linen: #fef5ebff;
+$french-gray: #a7a6b4ff;
+$cool-gray: #7b7e99ff;
+$ultra-violet: #4f567dff;
+$indigo-dye: #284b69ff;
+$midnight-green: #004055ff;
+$rich-black: #071f2cff;
+
+$color1: #fff6eb;
+$color2: #fbb3bd;
+$color3: #f76e8e;
+$color4: #774F7D;
+$color5: #004055;
+
+
+/*-- scss:defaults --*/
+$primary: 	$color5 ;
+$secondary: $ochre ; //$color3 ;
+$success : $viridian ; 
+$info : $vert-de-gris; 
+$info: $bright-pink-crayola  ; 
+$warning : $ochre; 
+$danger : $rufous; 
+
+
+$body-bg	: #FFF6EB ;
+$body-color	: $primary ;
+$link-color	: $secondary;
+$link-hover-color: $color3;
+$input-bg	: #FFF6EB ;
+$popover-bg : #FBB3BD ;

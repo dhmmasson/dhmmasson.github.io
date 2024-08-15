@@ -9,11 +9,15 @@ bibliography: ./bibliography/bibliography.bib
 citeproc: true
 csl: ./bibliography/apa.csl
 
+
 website:
-  title: "dhmmasson.github.io"
+  title: "Dimitri Masson"
+  favicon: assets/favicon_128_128.ico
   navbar:
+    logo: assets/favicon_128_128.webp
     right:
-      - about.qmd
+      - text: "About Me"
+        href: about.qmd
       - Bibliography.md
       - icon: github
         href: https://github.com/dhmmasson
@@ -23,15 +27,18 @@ website:
         href: https://www.researchgate.net/profile/Dimitri-Masson-2
   open-graph: 
     locale: en_US
-
-
 format:
   html:
-    theme: litera
+    theme: 
+      light: 
+        - litera
+        - assets/dhmmasson_light.scss
+      dark:
+        - litera
+        - assets/dhmmasson_dark.scss
     css: 
       - styles.css
       - https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
+      - https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css
     email-obfuscation: javascript
-
-
-
+    
