@@ -1,0 +1,9 @@
+- name: 
+    given: "{{author.firstName}}"
+    family: "{{author.lastName}}"
+    {{- if author.orcid}}
+    orcid: "{{author.orcid}}" {{/if}}
+    {{- if author.email}}
+    email: "{{author.email}}" {{/if}}
+    {{- if author.idhal}}
+    idhal: "{{author.idhal}}"{{/if}}

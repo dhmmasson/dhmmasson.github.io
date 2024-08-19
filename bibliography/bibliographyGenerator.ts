@@ -1,6 +1,7 @@
 import vento from "https://deno.land/x/vento@v0.9.1/mod.ts";
 import { join } from "https://deno.land/std/path/mod.ts";
-import { Item } from "./bibliography.d.ts";
+import { Item } from "./zotero.d.ts";
+import { PersonDatabase } from "./creator.ts";
 async function getJson(filePath: string) {
   return JSON.parse(await Deno.readTextFile(filePath));
 }
@@ -45,32 +46,47 @@ const validTypes = [
   "book",
 ];
 
-const creatorExtractor = (item: Item) =>
-  item.creators &&
-  item.creators.length > 0 && {
-    authorFirst: item.creators[0],
-    authorFirst_s:
-      item.creators[0].lastName + ", " + item.creators[0].firstName,
-    authors_s: item.creators
+const personDb = new PersonDatabase("bibliography/people.json");
+await personDb.loadDatabase();
+enum formatType {
+  HTML,
+  Markdown,
+}
+
+type Person = {
+  firstName?: string;
+  lastName?: string;
+};
+const highlightor =
+  (format: formatType, lastName: string) => (creator: Person) => {
+    if (creator.lastName && creator.lastName.startsWith(lastName)) {
+      return format === formatType.HTML
+        ? `<b>${creator.lastName}, ${creator.firstName}</b>`
+        : `**${creator.lastName}, ${creator.firstName}**`;
+    }
+    return `${creator.lastName}, ${creator.firstName}`;
+  };
+
+const creatorExtractor = (item: Item) => {
+  if (!item.creators || item.creators.length === 0) return {};
+  const updatedCreators = item.creators.map((creator) => {
+    const person = personDb.getPerson(creator);
+    return person ? person : creator;
+  });
+  return {
+    authors: updatedCreators,
+    authors_s: updatedCreators
       .map((creator) => creator.lastName + ", " + creator.firstName)
       .join("; "),
-    authors_s_bold: item.creators
-      .map((creator) =>
-        creator.lastName && creator.lastName.startsWith("Masson")
-          ? `**${creator.lastName}, ${creator.firstName}**`
-          : `${creator.lastName}, ${creator.firstName}`
-      )
+    authors_s_bold: updatedCreators
+      .map(highlightor(formatType.Markdown, "Masson"))
       .join("; "),
-    authors_s_bold_html: item.creators
-      .map((creator) =>
-        creator.lastName && creator.lastName.startsWith("Masson")
-          ? `<b>${creator.lastName}, ${creator.firstName}</b>`
-          : `${creator.lastName}, ${creator.firstName}`
-      )
+    authors_s_bold_html: updatedCreators
+      .map(highlightor(formatType.HTML, "Masson"))
       .join("; "),
-    authors_names: item.creators.map((creator) => creator.name).join(", "),
-    authors: item.creators,
   };
+};
+
 const halExtractor = (item: Item) =>
   item.archive === "HAL" &&
   item.archiveLocation && {
@@ -231,15 +247,18 @@ for (const item of cleanItems) {
     console.log("Processing", item.citationKey);
     try {
       const result = await publicationTemplate(item);
+      // Create a folder for the item
+      const destination = join(config.outputFolder, item.citationKey);
+      await Deno.mkdir(destination, {
+        recursive: true,
+      });
+
       // Save file in the output folder
-      await Deno.writeTextFile(
-        join(config.outputFolder, `${item.citationKey}.md`),
-        result.content
-      );
+      await Deno.writeTextFile(join(destination, `index.md`), result.content);
       // Copy item.file to the output folder
       if (item.file) {
-        const file = join("bibliography", item.file);
-        const dest = join(config.outputFolder, item.citationKey + ".pdf");
+        const file = item.file;
+        const dest = join(destination, item.citationKey + ".pdf");
         await Deno.copyFile(file, dest);
       }
     } catch (error) {
@@ -247,3 +266,6 @@ for (const item of cleanItems) {
     }
   }
 }
+
+// Save the person database
+await personDb.saveDatabase();

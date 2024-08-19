@@ -3,21 +3,12 @@ title: |
   {{title}}
 date: "{{date}}"
 year: {{year}}
-categories: [type:{{it.type}}, lang:{{language}}] 
-{{- if it.attachments && it.attachments[0]}}
-image: "/bibliography/({{it.attachments[0].path}})"
-{{/if}}
+categories: []
 publication: |
   {{it.publication}} 
 authors_s: {{it.authors_s_bold_html}}
 author: {{for author of it.authors}}
-  - name: 
-      given: "{{author.firstName}}"
-      family: "{{author.lastName}}"
-  {{- if author.lastName.startsWith("Masson")}} 
-    orcid: 0000-0002-7072-3146    
-    email: d.masson@estia.fr 
-  {{- /if -}}  {{/for}}
+  {{include "./author.vto" {author:author} }} {{/for}}
 doi: "{{it.DOI}}"
 hal: "{{it.halURL}}"
 halid: "{{it.halId}}"
@@ -49,13 +40,17 @@ google-scholar: true
 abstract: >
   {{it.abstract |> replaceAll("\n", "\n  ") |> safe}}
 pdf: {{it.pdf}}
+links:
+  - icon: bi bi-file-earmark-pdf
+    name: PDF
+    url: {{it.pdf}}
+  - icon: ai ai-hal
+    name: HAL
+    url: {{it.halURL}}
 ---
-## Ressources
-{{if it.DOI}}- [DOI: {{DOI}}](https://doi.org/{{DOI}}){{/if}}
-{{if it.URL}}- [URL: {{URL}}]({{URL}}) {{/if}}
-{{if it.halURL}}- [HAL: {{it.halId}}]({{it.halURL}}) {{/if}}
-
+::: {.callout-note collapse="true"}
+## See the paper
 {{if it.file}}
   {{echo -}}{{< pdf {{/echo}}{{it.pdf}}{{echo}} width=100% height=800 >}} {{/echo}}
 {{/if}}
-
+:::
