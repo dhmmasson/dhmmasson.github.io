@@ -2,6 +2,7 @@ import vento from "https://deno.land/x/vento@v0.9.1/mod.ts";
 import { join } from "https://deno.land/std/path/mod.ts";
 import { Item } from "./zotero.d.ts";
 import { PersonDatabase } from "./creator.ts";
+import { format } from "https://deno.land/std@0.224.0/datetime/format.ts";
 async function getJson(filePath: string) {
   return JSON.parse(await Deno.readTextFile(filePath));
 }
@@ -96,13 +97,15 @@ const halExtractor = (item: Item) =>
     )?.groups?.halid,
   };
 
+const toDate = (date: string) => new Date(date);
+const explodeDate = (d: Date) => ({
+  date: format(d, "yyyy-MM-dd"),
+  year: format(d, "yyyy"),
+  month: format(d, "MM"),
+  day: format(d, "dd"),
+});
 const dateExtractor = (item: Item) =>
-  item.date && {
-    date: item.date,
-    year: item.date.split("-")[0],
-    month: item.date.split("-")[1],
-    day: item.date.split("-")[2],
-  };
+  item.date && explodeDate(toDate(item.date));
 
 const cslTypeMap = new Map([
   ["journalArticle", "article-journal"],
