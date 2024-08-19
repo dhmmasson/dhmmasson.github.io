@@ -1,6 +1,9 @@
 ---
 title: |
   {{title}}
+alias:
+  - "{{title |> replaceAll("\"", "\\\"")}}"
+  - {{citationKey}}
 date: "{{date}}"
 year: {{year}}
 categories: []
