@@ -1,64 +1,66 @@
 ```{=html}
-<style>
-  :root {
-    --halcolor1: #20208c;
-    --halcolor2: #ff4600;
-  }
-  .hal {
-    /* background: linear-gradient(to right, var(--halcolor1), var(--halcolor2)); */
-    --bs-btn-bg: var(--halcolor1);
-    border-image-source: linear-gradient(
-      to right,
-      var(--halcolor1),
-      var(--halcolor2)
-    );
+<div class="pub-list list">
+  <% for( const [year, itemsPerYear] of Object.entries( items.sort( (a,b) =>
+  a.year - b.year ).reduce( (acc, e) => {acc[e.year] =
+  (acc[e.year]??[]).concat(e); return acc} , {} )).sort( (a,b)=>(b[0]-a[0])) ) {
+  %>
+  <h2><%= year %></h2>
+  <% for (const item of itemsPerYear) { %>
+  <div class="quarto-post" <%=metadataAttrs(item) %>
+    >
+    <div class="body">
+      <h3 class="no-anchor listing-title lead">
+        <a href="<%- item.path %>" class="no-external"> <%= item.title %> </a>
+      </h3>
+      <div class="listing-author"><%= item.authors_s %></div>
+      <div class="listing-publication fst-italic"><%= item.publication %></div>
+    </div>
+    <div class="metadata">
+      <div class="listing-date"><%= item.date %></div>
+      <div>
+        <a href="<%- item.path %>" class="btn btn-sm btn-primary">
+          <i class="bi bi-journal-richtext"></i>
+          Details
+        </a>
+        <% if (item.doi) { %>
+        <a
+          href="<%- item.doi %>"
+          class="btn btn-sm btn-dark"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="ai ai-doi"></i>
+          DOI
+        </a>
+        <% } %> <% if (item.hal) { %>
+        <a
+          href="<%- item.hal %>"
+          class="btn btn-sm btn-dark hal"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="ai ai-hal"></i>
+          <%- item.halid %>
+        </a>
+        <% } %> <% if (item.pdf) { %>
+        <a
+          href="<%- item.pdf %>"
+          class="btn btn-sm btn-info"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-file-earmark-pdf"></i> file
+        </a>
+        <% } %>
+        <div class="listing-categories">
+          <% for (const category of item.categories ) { %>
+          <span class="listing-category"><%= category %></span>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    border-image-slice: 1;
-    border-bottom: 5px solid;
-    padding-bottom: calc(var(--bs-btn-padding-y) - 5px);
-    border-right-color: var(--halcolor1);
-    color: white;
-  }
-</style>
-<ul class="pub-list list">
-  <% for (const item of items) { %>
-  <li <%="metadataAttrs(item)" %>
-    > <span class="listing-title lead"><%= item.title %></span><br />
-    <span class="listing-author"><%= item.authors %></span><br />
-    <span class="listing-publication fst-italic"><%= item.publication %></span>
-    <span class="listing-date">(<%= item.date %>)</span><br />
-    <a href="<%- item.path %>" class="btn btn-sm btn-primary"> Details </a>
-    <% if (item.doi) { %>
-    <a
-      href="<%- item.doi %>"
-      class="btn btn-sm btn-secondary"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      DOI
-    </a>
-    <% } %> <% if (item.hal) { %>
-    <a
-      href="<%- item.hal %>"
-      class="btn btn-sm btn-secondary hal"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      HAL:<%- item.halid %>
-    </a>
-    <% } %> <% if (item.file) { %>
-    <a
-      href="<%- item.file %>"
-      class="btn btn-sm btn-light"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <i class="bi bi-file-earmark-text"></i> file
-    </a>
-    <% } %>
-    <span class="listing-categories"><%- item.categories %></span>
-  </li>
-  <% } %>
-</ul>
-
+  <% } %> <% } %>
+</div>
 ```
