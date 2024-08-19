@@ -1,14 +1,14 @@
 ---
 listing: 
   - id: articles
-    contents: "publications/*.md"
+    contents: "publications/**/index.md"
     template: ./templates/article.ejs
-    categories: true
+    categories: false
     sort:
       - "year desc"
       - "title"
-    sort-ui: [title,author,publication,year,categories]
-    filter-ui: [title,author,publication,year,categories]
+    # sort-ui: [title,author,publication,year,categories]
+    # filter-ui: [title,author,publication,year,categories]
     page-size: 50
     field-display-names: 
       publication: "Publication"
