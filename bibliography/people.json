@@ -1,0 +1,216 @@
+{
+  "keys": {
+    "AAE": [
+      "Audrey Abi Akle"
+    ],
+    "ACY": [
+      "Alexis Clay"
+    ],
+    "ADE": [
+      "Alexandre Demeure"
+    ],
+    "ADR": [
+      "Alexandre Disdier"
+    ],
+    "AGO": [
+      "Anthony Ghiotto"
+    ],
+    "ALA": [
+      "Alvaro Llaria"
+    ],
+    "AMO": [
+      "A Hein Makoto"
+    ],
+    "AMT": [
+      "Antoine Millet"
+    ],
+    "AUR": [
+      "Adrian Unger"
+    ],
+    "AWS": [
+      "Adam D. Williams"
+    ],
+    "BDQ": [
+      "Bixente Demarcq"
+    ],
+    "CBR": [
+      "Cédrick Beler",
+      "Cédrick Béler"
+    ],
+    "CGZ": [
+      "Catherine Goetz"
+    ],
+    "CLI": [
+      "Carlo Leandri"
+    ],
+    "CML": [
+      "C Morel",
+      "Chloé Morel"
+    ],
+    "CMO": [
+      "Christophe Merlo"
+    ],
+    "CRS": [
+      "Chloé Rolos"
+    ],
+    "DJI": [
+      "David Antonio Gómez Jáuregui"
+    ],
+    "DLX": [
+      "Didier Lasseux"
+    ],
+    "DMN": [
+      "D Masson",
+      "D. Masson",
+      "Dimitri H Masson",
+      "Dimitri H. Masson",
+      "Dimitri Masson"
+    ],
+    "EDN": [
+      "Élise Durnerin"
+    ],
+    "EVE": [
+      "E Villeneuve",
+      "E. Villeneuve",
+      "Eric Villeneuve",
+      "Éric Villeneuve"
+    ],
+    "GBN": [
+      "Gilles Bisson"
+    ],
+    "GBY": [
+      "G. Boy",
+      "GA Boy",
+      "Guy Andre Boy",
+      "Guy André Boy",
+      "Guy Boy",
+      "Guy-André Boy"
+    ],
+    "GCY": [
+      "Gaelle Calvary",
+      "Gaëlle Calvary"
+    ],
+    "GFE": [
+      "Guillaume Ferré"
+    ],
+    "GLL": [
+      "Gildas Lalizel"
+    ],
+    "GTN": [
+      "Guillaume Terrasson"
+    ],
+    "GTT": [
+      "Guillaume Tastet",
+      "Guilluame Terpant"
+    ],
+    "IMT": [
+      "International Society for Professional Innovation Management"
+    ],
+    "JAO": [
+      "Julien Ambrosino"
+    ],
+    "JDY": [
+      "J Dezemery"
+    ],
+    "JFM": [
+      "Jérémie Faham"
+    ],
+    "JLR": [
+      "Jeremy Legardeur",
+      "Jérémy Legardeur"
+    ],
+    "KPI": [
+      "Kusol Pimapunsri"
+    ],
+    "LAO": [
+      "Leandro V. Aveiro"
+    ],
+    "LSO": [
+      "Laura Laguna Salvado",
+      "Laura Laguna Salvadó"
+    ],
+    "LSΟ": [
+      "L. Laguna Salvadό"
+    ],
+    "LUS": [
+      "L. Urfels",
+      "Laetitia Urfels"
+    ],
+    "MBE": [
+      "Marc Bellenoue"
+    ],
+    "MDL": [
+      "Maxime Daniel"
+    ],
+    "MGI": [
+      "Mickaël Gardoni"
+    ],
+    "MJC": [
+      "Marija Jankovic"
+    ],
+    "NBR": [
+      "Nicolas Bur"
+    ],
+    "NCE": [
+      "Nadine Couture"
+    ],
+    "OCA": [
+      "Octavian Curea"
+    ],
+    "PCS": [
+      "Philippe Cais"
+    ],
+    "POL": [
+      "Pantxika Ospital"
+    ],
+    "PTE": [
+      "Pauline Théophane"
+    ],
+    "RMH": [
+      "Rachel A. McGrath"
+    ],
+    "RSG": [
+      "R Lu Cong Sang"
+    ],
+    "SFY": [
+      "Sylvain Fleury"
+    ],
+    "SHE": [
+      "Samory Houzangbe"
+    ],
+    "SPA": [
+      "Sergio Peña-Arrázola"
+    ],
+    "SPO": [
+      "S. Camara Dit Pinto",
+      "Stélian Camara Dit Pinto"
+    ],
+    "SRR": [
+      "Simon Richir"
+    ],
+    "TBE": [
+      "Thomas Brethomé"
+    ],
+    "TBN": [
+      "T. Baron"
+    ],
+    "YLU": [
+      "Yann Laurillau"
+    ],
+    "YNT": [
+      "Yves Nadot"
+    ],
+    "ZAH": [
+      "Zeina Abu-Aisheh"
+    ]
+  },
+  "persons": {
+    "DMN": {
+      "firstName": "Dimitri",
+      "lastName": "Masson",
+      "email": "d.masson@estia.fr",
+      "orcid": "0000-0002-7072-3146",
+      "idhal": "dimitri-masson"
+    }
+  }
+}

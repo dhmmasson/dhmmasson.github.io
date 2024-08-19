@@ -1,0 +1,2480 @@
+[
+  {
+    "citationKey": "demeure2011_GraphsModels",
+    "title": "Graphs of models for exploring design spaces in the engineering of Human Computer Interaction",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Alexandre",
+        "lastName": "Demeure",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Gaelle",
+        "lastName": "Calvary",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Demeure, Alexandre; Masson, Dimitri; Calvary, Gaelle",
+    "authors_s_bold": "Demeure, Alexandre; **Masson, Dimitri**; Calvary, Gaelle",
+    "authors_s_bold_html": "Demeure, Alexandre; <b>Masson, Dimitri</b>; Calvary, Gaelle",
+    "file": "/Users/dimitri/Zotero/storage/9B3T3K6B/Demeure et al. - 2011 - Graphs of models for exploring design spaces in th.pdf",
+    "pdf": "demeure2011_GraphsModels.pdf",
+    "URL": "https://dl.acm.org/doi/10.1145/1943403.1943504",
+    "halURL": "https://hal.science/hal-00760416v1",
+    "halId": "hal-00760416v1",
+    "date": "2011-02-13",
+    "year": "2011",
+    "month": "02",
+    "day": "13",
+    "language": "en",
+    "abstract": "Model Driven Engineering (MDE) has focused on the latest stages of the design process so far and as a result has missed the opportunity to foster creativity in the early phases. Our research aims at stretching MDE all over the design process including the creative phases so that to go beyond the well-known \"fast-food UIs‟ limit of MDE. We propose to consider sketches and prototypes as models. This paper claims for storing these models in a graph so that to both inspire designers and support adaptation at runtime.",
+    "publication": "2nd international workshop on semantic models for adaptive interactive systems, 2011-02-13",
+    "conference": "2nd international workshop on semantic models for adaptive interactive systems",
+    "citation": {
+      "type": "paper-conference",
+      "language": "en",
+      "page": "5p",
+      "containerTitle": "IUI 2011-International Conference on Intelligent User Interfaces",
+      "publisher": "2nd international workshop on semantic models for adaptive interactive systems"
+    }
+  },
+  {
+    "citationKey": "masson2014_InspirezExplorez",
+    "title": "Inspirez ! Explorez ! Soutien à la créativité en conception d'interfaces homme-machine",
+    "type": "thesis",
+    "authors": [
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      }
+    ],
+    "authors_s": "Masson, Dimitri",
+    "authors_s_bold": "**Masson, Dimitri**",
+    "authors_s_bold_html": "<b>Masson, Dimitri</b>",
+    "file": "/Users/dimitri/Zotero/storage/57NLW8EA/Masson - 2014 - Inspirez! Explorez! Soutien à la créativité en con.pdf",
+    "pdf": "masson2014_InspirezExplorez.pdf",
+    "URL": "https://theses.fr/2014GRENM054",
+    "halURL": "https://hal.science/tel-01549303v1",
+    "date": "2014-09-25",
+    "year": "2014",
+    "month": "09",
+    "day": "25",
+    "language": "fr",
+    "abstract": "My PhD thesis contributes to the engineering of Human Computer Interaction (HCI). It deals with the design of User Interfaces (UI). I claim that creative processes should be better considered, and supported by tools especially for novice designers. The challenge is to speed up the exploration of the design space at the early stages of the process. This claim is grounded in both a theoretical state of the art in creativity and creativity support tools, and in practice of the topic with four hands-on experiences of creativity in different areas of design such as architecture, product design and UI design. I build my contribution on the following principles: (1) creativity is not reserved for the elite, but can be tailored and fostered by software tools; (2) the tools must leverage motivation, inspiration, wide exploration, and knowledge in UI and design processes. Through a reflective process, I apply these principles to my thesis. I explore a wide range of creativity support tools through five complementary software contributions: Maestro and Bank for supporting knowledge capitalization; WebGallery, BrianStorming and Magellan for fostering inspiration and exploration of the design space. Maestro addresses the capitalization of design processes whilst BANK gathers knowledge in HCI as a graph of models. WebGallery is a gallery of websites to inspire designers: I report an experiment on human perception of websites styles. BrianStorming is a brainstorming assistant: it provides suggestions in a electronic brainstorming session. Magellan is an interactive environment based on genetic algorithms that automatically generate and transform UIs for a given design problem. This changes the role of the computer: from a simple tool, it becomes a designer's partner in the creative process.",
+    "publication": "Université de Grenoble, 2014-09-25",
+    "citation": {
+      "type": "thesis",
+      "language": "fr",
+      "containerTitle": "",
+      "publisher": "Université de Grenoble"
+    }
+  },
+  {
+    "citationKey": "ambrosino2017_IdeaBulbSmart",
+    "title": "IdeaBulb: A Smart and Tangible User Interface for Monitoring Ideation During Creative Sessions",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Julien",
+        "lastName": "Ambrosino",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Maxime",
+        "lastName": "Daniel",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Ambrosino, Julien; Daniel, Maxime; Masson, Dimitri; Legardeur, Jérémy",
+    "authors_s_bold": "Ambrosino, Julien; Daniel, Maxime; **Masson, Dimitri**; Legardeur, Jérémy",
+    "authors_s_bold_html": "Ambrosino, Julien; Daniel, Maxime; <b>Masson, Dimitri</b>; Legardeur, Jérémy",
+    "file": "/Users/dimitri/Zotero/storage/7UTMUXDY/Ambrosino et al. - 2017 - IdeaBulb A Smart and Tangible User Interface for .pdf",
+    "pdf": "ambrosino2017_IdeaBulbSmart.pdf",
+    "halURL": "https://hal.science/hal-01534697v2",
+    "halId": "hal-01534697v2",
+    "date": "2017-06-25",
+    "year": "2017",
+    "month": "06",
+    "day": "25",
+    "language": "en",
+    "abstract": "In this paper, we propose a tangible user interface for the monitoring of new ideas generations (ideation phase) during creative sessions. Based on the analysis of different brainstorming, we highlight the dynamic of ideas production by different groups during ideation phase using electronic devices. We claim that this tangible user interface is designed in order to give live feedback concerning these dynamic of ideas production to the participants and the facilitator. Our work is the result of the interaction between two scientific approaches: the analysis of creative sessions and the design of tangible user interface. The result of our experiments show a creative cliff and propose a design concept for monitoring ideation phase.",
+    "publication": "SMART INTERFACES 2017, The Symposium for Empowering and Smart Interfaces in Engineering, 2017-06-25",
+    "conference": "SMART INTERFACES 2017, The Symposium for Empowering and Smart Interfaces in Engineering",
+    "place": "Venice, Italy",
+    "citation": {
+      "type": "paper-conference",
+      "language": "en",
+      "isbn": "978-1-5108-4308-0",
+      "page": "70–74",
+      "containerTitle": "The Sixth International Conference on Smart Cities, Systems, Devices and Technologies",
+      "publisher": "Berntzen, L. et al."
+    }
+  },
+  {
+    "citationKey": "ambrosino2017_FosteringCollaborative",
+    "title": "Fostering collaborative project emergence through divergence of opinion",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Julien",
+        "lastName": "Ambrosino",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Audrey",
+        "lastName": "Abi Akle",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Ambrosino, Julien; Masson, Dimitri; Abi Akle, Audrey; Legardeur, Jérémy",
+    "authors_s_bold": "Ambrosino, Julien; **Masson, Dimitri**; Abi Akle, Audrey; Legardeur, Jérémy",
+    "authors_s_bold_html": "Ambrosino, Julien; <b>Masson, Dimitri</b>; Abi Akle, Audrey; Legardeur, Jérémy",
+    "file": "/Users/dimitri/Zotero/storage/BTQ7HXKZ/Ambrosino et al. - 2017 - Fostering collaborative project emergence through .pdf",
+    "pdf": "ambrosino2017_FosteringCollaborative.pdf",
+    "URL": "https://www.designsociety.org/publication/39867/Fostering+collaborative+project+emergence+through+divergence+of+opinion",
+    "halURL": "https://hal.science/hal-01577761v1",
+    "halId": "hal-01577761v1",
+    "date": "2017-08-25",
+    "year": "2017",
+    "month": "08",
+    "day": "25",
+    "language": "en",
+    "abstract": "In the context of the emergence of collaborative innovation projects between competitiveness clusters, the animation of creative sessions permits to identify new opportunities. The number of ideas generated is a lot more important than the number of collaborative innovation projects implemented subsequently. To improve this ratio, we verify that group discussions could be facilitated by improving the ideation and evaluation phases of ideas during innovation process. Especially, in this article, we test many hypotheses in order to show that divergence of opinions can foster collaborative project emergence.",
+    "publication": "international conference on engineering design (ICED 17), 2017-08-25",
+    "conference": "international conference on engineering design (ICED 17)",
+    "place": "Vancouver, Canada",
+    "citation": {
+      "type": "paper-conference",
+      "language": "en",
+      "isbn": "978-1-904670-96-4",
+      "volume": "8",
+      "page": "489–498",
+      "containerTitle": "DS 87-8 proceedings of the 21st international conference on engineering design (ICED 17) vol 8: Human behaviour in design, vancouver, canada, 21-25.08. 2017",
+      "publisher": "international conference on engineering design (ICED 17)"
+    }
+  },
+  {
+    "citationKey": "masson2016_DialoJ",
+    "title": "DialoJ",
+    "type": "computerProgram",
+    "authors": [
+      {
+        "firstName": "Jérémie",
+        "lastName": "Faham",
+        "creatorType": "contributor"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "contributor"
+      },
+      {
+        "firstName": "Maxime",
+        "lastName": "Daniel",
+        "creatorType": "contributor"
+      }
+    ],
+    "authors_s": "Faham, Jérémie; Masson, Dimitri; Legardeur, Jérémy; Daniel, Maxime",
+    "authors_s_bold": "Faham, Jérémie; **Masson, Dimitri**; Legardeur, Jérémy; Daniel, Maxime",
+    "authors_s_bold_html": "Faham, Jérémie; <b>Masson, Dimitri</b>; Legardeur, Jérémy; Daniel, Maxime",
+    "file": null,
+    "pdf": null,
+    "URL": "https://github.com/dhmmasson/dialoJ",
+    "halURL": "https://hal.science/hal-01969832v1",
+    "halId": "hal-01969832v1",
+    "date": "2016-01-01",
+    "year": "2016",
+    "month": "01",
+    "day": "01",
+    "language": "en",
+    "abstract": "No abstract available",
+    "publication": "",
+    "citation": {
+      "type": "article",
+      "language": "en",
+      "containerTitle": ""
+    }
+  },
+  {
+    "citationKey": "masson2016_ErgoIA",
+    "title": "Ergo'IA '16: Proceedings of the 15th Ergo'IA \"Ergonomie Et Informatique Avancée\" Conference",
+    "type": "book",
+    "authors": [
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "editor"
+      }
+    ],
+    "authors_s": "Masson, Dimitri; Legardeur, Jérémy",
+    "authors_s_bold": "**Masson, Dimitri**; Legardeur, Jérémy",
+    "authors_s_bold_html": "<b>Masson, Dimitri</b>; Legardeur, Jérémy",
+    "file": null,
+    "pdf": null,
+    "URL": "https://hal.science/hal-02398001v1",
+    "halURL": "https://hal.science/hal-02398001v1",
+    "halId": "hal-02398001v1",
+    "date": "2016-07-06",
+    "year": "2016",
+    "month": "07",
+    "day": "06",
+    "language": "fr",
+    "abstract": "No abstract available",
+    "publication": "",
+    "citation": {
+      "type": "book",
+      "language": "fr",
+      "isbn": "978-1-4503-4785-3",
+      "containerTitle": "Ergo'IA '16: Proceedings of the 15th Ergo'IA \"Ergonomie Et Informatique Avancée\" Conference",
+      "publisher": "ACM"
+    }
+  },
+  {
+    "citationKey": "masson2018_ErgoIA",
+    "title": "Ergo'IA '18: Proceedings of the 16th Ergo'IA “Ergonomie Et Informatique Avancée” Conference",
+    "type": "book",
+    "authors": [
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Alexis",
+        "lastName": "Clay",
+        "creatorType": "editor"
+      }
+    ],
+    "authors_s": "Masson, Dimitri; Clay, Alexis",
+    "authors_s_bold": "**Masson, Dimitri**; Clay, Alexis",
+    "authors_s_bold_html": "<b>Masson, Dimitri</b>; Clay, Alexis",
+    "file": null,
+    "pdf": null,
+    "URL": "https://hal.science/hal-02446096v1",
+    "halURL": "https://hal.science/hal-02446096v1",
+    "halId": "hal-02446096v1",
+    "date": "2018-10-03",
+    "year": "2018",
+    "month": "10",
+    "day": "03",
+    "language": "fr",
+    "abstract": "No abstract available",
+    "publication": "",
+    "citation": {
+      "type": "book",
+      "language": "fr",
+      "isbn": "978-1-4503-6488-1",
+      "containerTitle": "Ergo'IA '18: Proceedings of the 16th Ergo'IA “Ergonomie Et Informatique Avancée” Conference",
+      "publisher": "ACM"
+    }
+  },
+  {
+    "citationKey": "boy2020_PRODECCombining",
+    "title": "PRODEC: combining procedural and declarative knowledge for human-centered design",
+    "type": "manuscript",
+    "authors": [
+      {
+        "firstName": "GA",
+        "lastName": "Boy",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "J",
+        "lastName": "Dezemery",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "R",
+        "lastName": "Lu Cong Sang",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "A",
+        "lastName": "Hein Makoto",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "C",
+        "lastName": "Morel",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "E",
+        "lastName": "Villeneuve",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Boy, GA; Dezemery, J; Lu Cong Sang, R; Hein Makoto, A; Masson, Dimitri; Morel, C; Villeneuve, E",
+    "authors_s_bold": "Boy, GA; Dezemery, J; Lu Cong Sang, R; Hein Makoto, A; **Masson, Dimitri**; Morel, C; Villeneuve, E",
+    "authors_s_bold_html": "Boy, GA; Dezemery, J; Lu Cong Sang, R; Hein Makoto, A; <b>Masson, Dimitri</b>; Morel, C; Villeneuve, E",
+    "file": null,
+    "pdf": null,
+    "date": "2020-01-01",
+    "year": "2020",
+    "month": "01",
+    "day": "01",
+    "language": "en",
+    "abstract": "No abstract available",
+    "publication": "",
+    "citation": {
+      "type": "article",
+      "language": "en",
+      "containerTitle": ""
+    }
+  },
+  {
+    "citationKey": "boy2024_PRODECHuman",
+    "title": "PRODEC for human systems integration of increasingly autonomous systems",
+    "type": "journalArticle",
+    "authors": [
+      {
+        "firstName": "Guy André",
+        "lastName": "Boy",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Élise",
+        "lastName": "Durnerin",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Chloé",
+        "lastName": "Morel",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Boy, Guy André; Masson, Dimitri; Durnerin, Élise; Morel, Chloé",
+    "authors_s_bold": "Boy, Guy André; **Masson, Dimitri**; Durnerin, Élise; Morel, Chloé",
+    "authors_s_bold_html": "Boy, Guy André; <b>Masson, Dimitri</b>; Durnerin, Élise; Morel, Chloé",
+    "file": "/Users/dimitri/Zotero/storage/WDWBLXAC/Boy et al. - 2024 - PRODEC for human systems integration of increasing.pdf",
+    "pdf": "boy2024_PRODECHuman.pdf",
+    "DOI": "10.1002/sys.21751",
+    "URL": "https://incose.onlinelibrary.wiley.com/doi/10.1002/sys.21751",
+    "date": "2024-03-04",
+    "year": "2024",
+    "month": "03",
+    "day": "04",
+    "language": "en",
+    "abstract": "The purpose of the PRODEC scenario-based design method is the incremental crossfertilization and refinement of procedural scenarios and declarative configurations. It uses virtual prototypes of the developed systems (mainly life-critical systems) to conduct human-in-the-loop simulations (HITLSs). Based on human systems integration (HSI) principles and criteria, as well as expertise and experience in the domain at stake, this HSI approach grounded in virtual environments requires a clear definition of physical and cognitive tangibility metrics to assess the distance between virtual and tangible (grasp) dimensions of the system being developed when it is put to work. PRODEC considers human and machine systems described in terms of structures and functions incrementally designed using procedural scenarios (i.e., stories) in task and activity networks, which provide life to declarative configurations (i.e., system’s functions and structures). This active modeling and simulation process enables the discovery of emergent structures and functions of the system being developed when it is virtually operated. PRODEC’s use is illustrated in an example. We discuss the use of PRODEC and its results as to how they can be used with digital twins.",
+    "publication": "Sys. Eng., undefined(undefined), undefined",
+    "citation": {
+      "type": "article-journal",
+      "doi": "10.1002/sys.21751",
+      "language": "en",
+      "issn": "1098-1241, 1520-6858"
+    }
+  },
+  {
+    "citationKey": "camaraditpinto2021_DigitalTwin",
+    "title": "Digital twin design requirements in downgraded situations management",
+    "type": "journalArticle",
+    "authors": [
+      {
+        "firstName": "S.",
+        "lastName": "Camara Dit Pinto",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "E.",
+        "lastName": "Villeneuve",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "G.",
+        "lastName": "Boy",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "T.",
+        "lastName": "Baron",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "L.",
+        "lastName": "Urfels",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Camara Dit Pinto, S.; Villeneuve, E.; Masson, Dimitri; Boy, G.; Baron, T.; Urfels, L.",
+    "authors_s_bold": "Camara Dit Pinto, S.; Villeneuve, E.; **Masson, Dimitri**; Boy, G.; Baron, T.; Urfels, L.",
+    "authors_s_bold_html": "Camara Dit Pinto, S.; Villeneuve, E.; <b>Masson, Dimitri</b>; Boy, G.; Baron, T.; Urfels, L.",
+    "file": "/Users/dimitri/Zotero/storage/77992A32/Camara Dit Pinto et al. - 2021 - Digital twin design requirements in downgraded sit.pdf",
+    "pdf": "camaraditpinto2021_DigitalTwin.pdf",
+    "DOI": "10.1016/j.ifacol.2021.08.102",
+    "URL": "https://linkinghub.elsevier.com/retrieve/pii/S240589632100851X",
+    "halURL": "https://hal.science/hal-03262607v1",
+    "halId": "hal-03262607v1",
+    "date": "2021-01-01",
+    "year": "2021",
+    "month": "01",
+    "day": "01",
+    "language": "en",
+    "abstract": "The oil-and-gas industry is known to be part of the most safety-critical domains. Safety culture has prompted such companies to implement new systems to support decision-making. In this paper, we explore the use of digital twins to support situation awareness as a crucial part of real-time decisionmaking processes. Therefore, this paper presents requirements for the development of an eight components digital twin. Human-centered approach contributes to add useful information based on user needs and user experience to the usual theoretical process. This user-centered information helped shape both digital twin components and the situation awareness model.",
+    "publication": "IFAC-PapersOnLine, 54(1), 869-873",
+    "volume": "54",
+    "issue": "1",
+    "pages": "869-873",
+    "series": "17th IFAC Symposium on Information Control Problems in Manufacturing INCOM 2021",
+    "citation": {
+      "type": "article-journal",
+      "doi": "10.1016/j.ifacol.2021.08.102",
+      "language": "en",
+      "issn": "2405-8963",
+      "issue": "1",
+      "volume": "54",
+      "page": "869-873"
+    }
+  },
+  {
+    "citationKey": "disdier2023_HumanSystems",
+    "title": "Toward a Human Systems Integration approach to the design and operation of a remote and virtual air traffic control center",
+    "type": "journalArticle",
+    "authors": [
+      {
+        "firstName": "Alexandre",
+        "lastName": "Disdier",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Thomas",
+        "lastName": "Brethomé",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Marija",
+        "lastName": "Jankovic",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Guy-André",
+        "lastName": "Boy",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Disdier, Alexandre; Masson, Dimitri; Brethomé, Thomas; Jankovic, Marija; Boy, Guy-André",
+    "authors_s_bold": "Disdier, Alexandre; **Masson, Dimitri**; Brethomé, Thomas; Jankovic, Marija; Boy, Guy-André",
+    "authors_s_bold_html": "Disdier, Alexandre; <b>Masson, Dimitri</b>; Brethomé, Thomas; Jankovic, Marija; Boy, Guy-André",
+    "file": "/Users/dimitri/Zotero/storage/BVNR8UVP/Disdier et al. - 2023 - TOWARD A HUMAN SYSTEMS INTEGRATION APPROACH TO THE.pdf",
+    "pdf": "disdier2023_HumanSystems.pdf",
+    "DOI": "10.1017/pds.2023.357",
+    "URL": "https://www.cambridge.org/core/product/identifier/S2732527X23003577/type/journal_article",
+    "halURL": "https://hal.science/hal-04064881v1",
+    "halId": "hal-04064881v1",
+    "date": "2023-07-01",
+    "year": "2023",
+    "month": "07",
+    "day": "01",
+    "language": "en",
+    "abstract": "Remote and virtual centers have been studied for the past twenty years as an alternative to the traditional air traffic control tower environment. Designing such complex sociotechnical systems requires a systems engineering approach that appropriately integrates the human element as well as the technological and organizational components. In this paper, we identify the challenges of implementing this human-systems integration in the design of complex systems. We present the feedback we obtained from a series of semi-structured interviews with people involved in the development of military air traffic solutions. The participants' responses helped us establish methodological guidelines for designing and building a disruptive remote and virtual air traffic control center. We discuss how virtualized humanin-the-loop simulations in particular should help designers analyze user activity and be more flexible in system acquisition.",
+    "publication": "Proc. Des. Soc., 3(undefined), 3561-3570",
+    "volume": "3",
+    "pages": "3561-3570",
+    "citation": {
+      "type": "article-journal",
+      "doi": "10.1017/pds.2023.357",
+      "language": "en",
+      "issn": "2732-527X",
+      "volume": "3",
+      "page": "3561-3570"
+    }
+  },
+  {
+    "citationKey": "camaraditpinto2024_RealityAnchor",
+    "title": "Reality anchor methodology: how to design a digital twin to support situation awareness",
+    "type": "journalArticle",
+    "authors": [
+      {
+        "firstName": "Stélian",
+        "lastName": "Camara Dit Pinto",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Éric",
+        "lastName": "Villeneuve",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Guy André",
+        "lastName": "Boy",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Laetitia",
+        "lastName": "Urfels",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Camara Dit Pinto, Stélian; Villeneuve, Éric; Masson, Dimitri; Boy, Guy André; Urfels, Laetitia",
+    "authors_s_bold": "Camara Dit Pinto, Stélian; Villeneuve, Éric; **Masson, Dimitri**; Boy, Guy André; Urfels, Laetitia",
+    "authors_s_bold_html": "Camara Dit Pinto, Stélian; Villeneuve, Éric; <b>Masson, Dimitri</b>; Boy, Guy André; Urfels, Laetitia",
+    "file": "/Users/dimitri/Zotero/storage/KQ4FWWIY/Camara Dit Pinto et al. - 2024 - Reality anchor methodology how to design a digita.pdf",
+    "pdf": "camaraditpinto2024_RealityAnchor.pdf",
+    "DOI": "10.1080/09544828.2024.2336838",
+    "URL": "https://www.tandfonline.com/doi/full/10.1080/09544828.2024.2336838",
+    "date": "2024-04-10",
+    "year": "2024",
+    "month": "04",
+    "day": "10",
+    "language": "en",
+    "abstract": "This work focuses on the opportunity to use the Digital Twin of a complex system, as a Decision Support System. In studying the phenomenon of human Decision Making, the concept of Situation Awareness appears to be of primary importance when dealing with these complex systems. Given the complexity of the system to be represented in the DT, its own complexity, and the need to integrate the user’s abilities to allow the acquisition of SA, the concept of reality anchor is proposed to identify the elements of the studied situation necessary for users to perceive, understand and project the situation they face. A methodology, called the Reality Anchor Methodology, has been defined to ensure the elicitation and implementation of these elements in a DT. This methodology is composed of three steps that aim (1) to elicit the reality anchors through a study of the operators’ tasks and activities, (2) to design a prototype to carry out human-in-the-loop tests and (3) to validate the definition of Reality Anchors by analysing the SA, experience feedback and the activities performed during the tests. This method was applied to a case study in the oil-and-gas industry and showed the importance of the defined reality anchors.",
+    "publication": "Journal of Engineering Design, 35(6), 775–799",
+    "volume": "35",
+    "issue": "6",
+    "pages": "775–799",
+    "citation": {
+      "type": "article-journal",
+      "doi": "10.1080/09544828.2024.2336838",
+      "language": "en",
+      "issn": "0954-4828",
+      "issue": "6",
+      "volume": "35",
+      "page": "775–799"
+    }
+  },
+  {
+    "citationKey": "masson2021_TraceabilityInformation",
+    "title": "Traceability information to communicate to consumer in total transparency",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Cédrick",
+        "lastName": "Beler",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Pantxika",
+        "lastName": "Ospital",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Masson, Dimitri; Beler, Cédrick; Legardeur, Jérémy; Ospital, Pantxika",
+    "authors_s_bold": "**Masson, Dimitri**; Beler, Cédrick; Legardeur, Jérémy; Ospital, Pantxika",
+    "authors_s_bold_html": "<b>Masson, Dimitri</b>; Beler, Cédrick; Legardeur, Jérémy; Ospital, Pantxika",
+    "file": "/Users/dimitri/Zotero/storage/F35JIAXI/Masson et al. - 2021 - Traceability information to communicate to consume.pdf",
+    "pdf": "masson2021_TraceabilityInformation.pdf",
+    "URL": "https://hal.science/hal-03462333",
+    "halURL": "https://hal.science/hal-03462333v1",
+    "halId": "hal-03462333v1",
+    "date": "2021-01-01",
+    "year": "2021",
+    "month": "01",
+    "day": "01",
+    "language": "en",
+    "abstract": "The textile industry is facing ecological and economic crises. Since the rise of fast fashion, the textile industry is one of the major and ever-increasing contributors to pollution\nand waste. Fashion brands are now producing twice the amount of clothing today compared with before the year 2000 (Ellen MacArthur Foundation, 2017). In the meantime,\nmore consumers become aware of both social and ecological risks in the textile industry\nand do not want to encourage such practices. In 2018, 44clothing and for 40people (18-25\nyears old) (Ditty, n.d.). This phenomenon reveals a growing consumer awareness and a\ngrowing distrust of the industry’s companies. A survey conducted in April 2020 across\n2035 British and German consumers reveals that 64spend less on fashion during the crisis,\nand half of them expect that trend to continue after the crisis passes. As well, consumers\nare open to purchasing more durable fashion items, as well as repairing and keeping them\nlonger. This survey reveals a shift in purchasing behavior, customers want to make informed purchases (Granskog et al., n.d.). The globalized and fragmented textile supply\nchain requires different laws and regulations (Fletcher and Grose, 2012) to improve its\ntransparency. The paper is structured as follow: The first part presents the current situation regarding the transparency of information communicated by brands in store and\nonline, and in the second part, we will describe what information could be shared with\ninformed consumers, after an experiment with a product from a French luxury brand.\nThe first part is the result of a study both in store and online about legal requirements\nand recommendations about traceability information related to products and environmental displays. We compare these requirements with actual data gathered in store and in\nonline-shop. From our initial observations: The consumer survey by Fashion Revolution\nin 2018 and 2020 suggests that fashion labels should be transparent with the disclosure\nof information to consumers: Manufacturer’s address, the origin of fabric, and raw material(Fashion Revolution, 2018) (Fashion Revolution, 2020). In the second part of the\narticle, we focus on the importance of traceability for gathering the information necessary\nfor a full transparency. We leverage how information technology could be used to gather,\ncollect, sort, and select information to render to the consumer.",
+    "publication": "Global Fashion Conference 2021, 2021",
+    "conference": "Global Fashion Conference 2021",
+    "place": "Warsaw, Poland",
+    "citation": {
+      "type": "paper-conference",
+      "language": "en",
+      "page": "1–7",
+      "publisher": "Global Fashion Conference 2021"
+    }
+  },
+  {
+    "citationKey": "disdier2024_DefiningCharacterizing",
+    "title": "Defining and characterizing the operational context for human systems integration",
+    "type": "journalArticle",
+    "authors": [
+      {
+        "firstName": "Alexandre",
+        "lastName": "Disdier",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Marija",
+        "lastName": "Jankovic",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Guy-André",
+        "lastName": "Boy",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Disdier, Alexandre; Masson, Dimitri; Jankovic, Marija; Boy, Guy-André",
+    "authors_s_bold": "Disdier, Alexandre; **Masson, Dimitri**; Jankovic, Marija; Boy, Guy-André",
+    "authors_s_bold_html": "Disdier, Alexandre; <b>Masson, Dimitri</b>; Jankovic, Marija; Boy, Guy-André",
+    "file": "/Users/dimitri/Zotero/storage/YQSY6W2B/Disdier et al. - 2024 - Defining and characterizing the operational contex.pdf",
+    "pdf": "disdier2024_DefiningCharacterizing.pdf",
+    "DOI": "10.1002/sys.21775",
+    "URL": "https://onlinelibrary.wiley.com/doi/abs/10.1002/sys.21775",
+    "date": "2024-01-01",
+    "year": "2024",
+    "month": "01",
+    "day": "01",
+    "language": "en",
+    "abstract": "Many efforts from multiple academic and industrial disciplines have studied the notion of context. The systems engineering and human systems integration fields, however, lack a generalized definition and characterization of context, in particular the operational context of complex sociotechnical systems. This paper reviews context definitions and builds a generalized definition of the operational context of complex sociotechnical systems. The objective is then to identify and extract context properties which are often implicit in the literature and do not necessarily appear in the definitions. However, eliciting them is helpful for understanding what context is made of, how it relates to complex sociotechnical systems comprising human and non-human agents, and how an early understanding of the operational context can prove valuable to designing efficient and robust systems. Our analysis is followed by an example of how our definition and derived properties apply to the case study of the design of a remote and virtual air traffic control center.",
+    "publication": "Sys. Eng., n/a(n/a), undefined",
+    "volume": "n/a",
+    "issue": "n/a",
+    "citation": {
+      "type": "article-journal",
+      "doi": "10.1002/sys.21775",
+      "language": "en",
+      "issn": "1520-6858",
+      "issue": "n/a",
+      "volume": "n/a"
+    }
+  },
+  {
+    "citationKey": "demarcq2022_CircularProduct",
+    "title": "Towards a Circular Product (Re)Design Methodology: Proposition of the Unlinear Method to Foster Circularity",
+    "type": "journalArticle",
+    "authors": [
+      {
+        "firstName": "Bixente",
+        "lastName": "Demarcq",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Antoine",
+        "lastName": "Millet",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Demarcq, Bixente; Masson, Dimitri; Legardeur, Jérémy; Millet, Antoine",
+    "authors_s_bold": "Demarcq, Bixente; **Masson, Dimitri**; Legardeur, Jérémy; Millet, Antoine",
+    "authors_s_bold_html": "Demarcq, Bixente; <b>Masson, Dimitri</b>; Legardeur, Jérémy; Millet, Antoine",
+    "file": "/Users/dimitri/Zotero/storage/QJN3DFTA/Demarcq et al. - 2022 - Towards a Circular Product (Re)Design Methodology.pdf",
+    "pdf": "demarcq2022_CircularProduct.pdf",
+    "DOI": "10.31803/tg-20220410142313",
+    "URL": "https://hrcak.srce.hr/en/276156",
+    "halURL": "https://hal.science/hal-03669358v1",
+    "halId": "hal-03669358v1",
+    "date": "2022-05-08",
+    "year": "2022",
+    "month": "05",
+    "day": "08",
+    "language": "en",
+    "abstract": "Works on garment and shoe dismantlement and recycling have highlighted the complexity of this kind product and the difficulty to find a recycling channel for each material they are made of. The way they are designed perturbate the recycling process a...",
+    "publication": "Tehnički glasnik, 16(2), 246-251",
+    "volume": "16",
+    "issue": "2",
+    "pages": "246-251",
+    "citation": {
+      "type": "article-journal",
+      "doi": "10.31803/tg-20220410142313",
+      "language": "en",
+      "issn": "1846-6168, 1848-5588",
+      "issue": "2",
+      "volume": "16",
+      "page": "246-251"
+    }
+  },
+  {
+    "citationKey": "houzangbe2022_VirtualReality",
+    "title": "Is virtual reality the solution? A comparison between 3D and 2D creative sketching tools in the early design process",
+    "type": "journalArticle",
+    "authors": [
+      {
+        "firstName": "Samory",
+        "lastName": "Houzangbe",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Sylvain",
+        "lastName": "Fleury",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "David Antonio",
+        "lastName": "Gómez Jáuregui",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Jeremy",
+        "lastName": "Legardeur",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Simon",
+        "lastName": "Richir",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Nadine",
+        "lastName": "Couture",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Houzangbe, Samory; Masson, Dimitri; Fleury, Sylvain; Gómez Jáuregui, David Antonio; Legardeur, Jeremy; Richir, Simon; Couture, Nadine",
+    "authors_s_bold": "Houzangbe, Samory; **Masson, Dimitri**; Fleury, Sylvain; Gómez Jáuregui, David Antonio; Legardeur, Jeremy; Richir, Simon; Couture, Nadine",
+    "authors_s_bold_html": "Houzangbe, Samory; <b>Masson, Dimitri</b>; Fleury, Sylvain; Gómez Jáuregui, David Antonio; Legardeur, Jeremy; Richir, Simon; Couture, Nadine",
+    "file": "/Users/dimitri/Zotero/storage/DJP2SX4B/Houzangbe et al. - 2022 - Is virtual reality the solution A comparison betw.pdf",
+    "pdf": "houzangbe2022_VirtualReality.pdf",
+    "DOI": "10.3389/frvir.2022.958223",
+    "URL": "https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2022.958223/full",
+    "halURL": "https://hal.science/hal-03836214v1",
+    "halId": "hal-03836214v1",
+    "date": "2022-10-31",
+    "year": "2022",
+    "month": "10",
+    "day": "31",
+    "language": "en",
+    "abstract": "<p>Creativity is key in the early phases of innovation processes. With the rapid evolution of technologies, designers now have access to various tools to support this activity. Virtual reality (VR) takes over multiple domains, especially during conception. However, is VR really facilitating creativity in the initial ideation phases? We compare two sketching modalities through dedicated creativity support tools (CSTs): one in VR and one on a 2D interactive whiteboard. We propose a two-part creativity task (divergent and convergent thinking) for two groups of 30 participants each. We record user experience, creative experience, and creative performance. Our results show that VR is more stimulating, attractive, and engaging. We also observe a better level of creativity for the participants using the VR CST. Our results indicate that VR is an effective and relevant tool to boost creativity and that this effect might carry over to following creative tasks.</p>",
+    "publication": "Front. Virtual Real., 3(undefined), undefined",
+    "volume": "3",
+    "citation": {
+      "type": "article-journal",
+      "doi": "10.3389/frvir.2022.958223",
+      "language": "en",
+      "issn": "2673-4192",
+      "volume": "3"
+    }
+  },
+  {
+    "citationKey": "ospital2023_ProductTransparency",
+    "title": "Toward product transparency: communicating traceability information to consumers",
+    "type": "journalArticle",
+    "authors": [
+      {
+        "firstName": "Pantxika",
+        "lastName": "Ospital",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Cédrick",
+        "lastName": "Beler",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Ospital, Pantxika; Masson, Dimitri; Beler, Cédrick; Legardeur, Jérémy",
+    "authors_s_bold": "Ospital, Pantxika; **Masson, Dimitri**; Beler, Cédrick; Legardeur, Jérémy",
+    "authors_s_bold_html": "Ospital, Pantxika; <b>Masson, Dimitri</b>; Beler, Cédrick; Legardeur, Jérémy",
+    "file": "/Users/dimitri/Zotero/storage/H5RI62LA/Ospital et al. - 2023 - Toward product transparency communicating traceab.pdf",
+    "pdf": "ospital2023_ProductTransparency.pdf",
+    "DOI": "10.1080/17543266.2022.2142677",
+    "URL": "https://doi.org/10.1080/17543266.2022.2142677",
+    "halURL": "https://hal.science/hal-03879884v1",
+    "halId": "hal-03879884v1",
+    "date": "2023-05-04",
+    "year": "2023",
+    "month": "05",
+    "day": "04",
+    "language": "en",
+    "abstract": "In the textile industry, corporate transparency does not provide information about products that would allow customers to make informed purchases. Based on a literature review, the concept of product transparency is defined as the disclosure of information concerning a specific product about traceability and sustainability conditions for the supplier, as well as the entire lifecycle and the buying firm's purchasing practices. A field study in the current fashion landscape evaluated the situation of actual practices concerning transparency and compared information available online and in-store regarding both product transparency and corporate transparency. The information available at the time of purchase is limited and even more so on the internet. An experiment with a brand to create a customer information model for a specific product focuses on the importance of traceability for gathering the information necessary. The authors discuss the necessity of centralising information in a Digital Product Passport for greater transparency.",
+    "publication": "Int J Fash Des Technol Educ, 16(2), 186-197",
+    "volume": "16",
+    "issue": "2",
+    "pages": "186-197",
+    "citation": {
+      "type": "article-journal",
+      "doi": "10.1080/17543266.2022.2142677",
+      "language": "en",
+      "issn": "1754-3266",
+      "issue": "2",
+      "volume": "16",
+      "page": "186-197"
+    }
+  },
+  {
+    "citationKey": "salvado2019_DecisionMaking",
+    "title": "Decision Making in Near Zero Energy Building Refurbishment: A Technology Alternatives Ranking Tool",
+    "type": "journalArticle",
+    "authors": [
+      {
+        "firstName": "L. Laguna",
+        "lastName": "Salvadό",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "E.",
+        "lastName": "Villeneuve",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      }
+    ],
+    "authors_s": "Salvadό, L. Laguna; Villeneuve, E.; Masson, Dimitri",
+    "authors_s_bold": "Salvadό, L. Laguna; Villeneuve, E.; **Masson, Dimitri**",
+    "authors_s_bold_html": "Salvadό, L. Laguna; Villeneuve, E.; <b>Masson, Dimitri</b>",
+    "file": "/Users/dimitri/Zotero/storage/4G97LZUP/Salvadό et al. - 2019 - Decision Making in Near Zero Energy Building Refur.pdf",
+    "pdf": "salvado2019_DecisionMaking.pdf",
+    "DOI": "10.1016/j.ifacol.2019.11.196",
+    "URL": "https://www.sciencedirect.com/science/article/pii/S2405896319311462",
+    "halURL": "https://hal.science/hal-02362849v2",
+    "halId": "hal-02362849v2",
+    "date": "2019-01-01",
+    "year": "2019",
+    "month": "01",
+    "day": "01",
+    "language": "en",
+    "abstract": "Decision making in the context of Near Zero Energy Building refurbishment is subjected to heterogeneous stakeholders, tools and objectives. This paper presents a methodology to facilitate stakeholders collaboration in the refurbishment processes and identifies decision support approaches to help on the main decision milestones. This methodology is supported by a prototype (user interface and algorithm) of a decision support system (DSS) that allows ranking different refurbishment technologies. The proposed DSS uses a multi criteria decision method that combines weighting and fuzzy dominances approach. The approach is illustrated with a real data set to rank insulation materials.",
+    "publication": "IFAC-PapersOnLine, 52(13), 313-318",
+    "volume": "52",
+    "issue": "13",
+    "pages": "313-318",
+    "citation": {
+      "type": "article-journal",
+      "doi": "10.1016/j.ifacol.2019.11.196",
+      "language": "en",
+      "issn": "2405-8963",
+      "issue": "13",
+      "volume": "52",
+      "page": "313-318"
+    }
+  },
+  {
+    "citationKey": "lagunasalvado2022_DecisionSupport",
+    "title": "Decision Support System for technology selection based on multi-criteria ranking: Application to NZEB refurbishment",
+    "type": "journalArticle",
+    "authors": [
+      {
+        "firstName": "Laura",
+        "lastName": "Laguna Salvadó",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Eric",
+        "lastName": "Villeneuve",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Audrey",
+        "lastName": "Abi Akle",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Nicolas",
+        "lastName": "Bur",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Laguna Salvadó, Laura; Villeneuve, Eric; Masson, Dimitri; Abi Akle, Audrey; Bur, Nicolas",
+    "authors_s_bold": "Laguna Salvadó, Laura; Villeneuve, Eric; **Masson, Dimitri**; Abi Akle, Audrey; Bur, Nicolas",
+    "authors_s_bold_html": "Laguna Salvadó, Laura; Villeneuve, Eric; <b>Masson, Dimitri</b>; Abi Akle, Audrey; Bur, Nicolas",
+    "file": "/Users/dimitri/Zotero/storage/JTP47CK7/Laguna Salvadó et al. - 2022 - Decision Support System for technology selection b.pdf",
+    "pdf": "lagunasalvado2022_DecisionSupport.pdf",
+    "DOI": "10.1016/j.buildenv.2022.108786",
+    "URL": "https://www.sciencedirect.com/science/article/pii/S0360132322000348",
+    "halURL": "https://hal.science/hal-03552184v1",
+    "halId": "hal-03552184v1",
+    "date": "2022-03-15",
+    "year": "2022",
+    "month": "03",
+    "day": "15",
+    "language": "en",
+    "abstract": "Refurbishing existing building into Near Zero Energy Building (NZEB) is a key objective for the European Union. In order to achieve high rate of conversion, new refurbishment process must allow Decision Makers (DMs) (architects or designers) to sort through an ever increasing list of new technologies while taking into account uncertain preferences from multiple stakeholders. A Decision Support System (DSS) based on Multi-Criteria Decision-Making (MCDM) approaches is proposed. The DSS enables the DMs to browse the solutions space by selecting the relevant criteria, order them by preferences and specify the granularity in the assessment of the technologies regarding each criteria. This DSS is based on a ranking algorithm that operates on multiple types of quantitative (continuous, discrete, or binary) and qualitative (nominative or ordinal) variables from technological and human sources. An online user interface allows the real-time exploration of the solution space. A sensitivity analysis of the algorithm is conducted to expose the influence of the ranking algorithm parameters and to demonstrate the robustness of this algorithm. The proposed DSS is eventually implemented and validated through a use case concerning the choice of insulating materials considering heterogeneous criteria that model sustainable constraints.",
+    "publication": "Building and Environment, 212(undefined), 108786",
+    "volume": "212",
+    "pages": "108786",
+    "citation": {
+      "type": "article-journal",
+      "doi": "10.1016/j.buildenv.2022.108786",
+      "language": "en",
+      "issn": "0360-1323",
+      "volume": "212",
+      "page": "108786"
+    }
+  },
+  {
+    "citationKey": "villeneuve2019_DecisionSupport",
+    "title": "Decision support in precision sheep farming",
+    "type": "journalArticle",
+    "authors": [
+      {
+        "firstName": "Éric",
+        "lastName": "Villeneuve",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Audrey Abi",
+        "lastName": "Akle",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Christophe",
+        "lastName": "Merlo",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Guillaume",
+        "lastName": "Terrasson",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Alvaro",
+        "lastName": "Llaria",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Villeneuve, Éric; Akle, Audrey Abi; Merlo, Christophe; Masson, Dimitri; Terrasson, Guillaume; Llaria, Alvaro",
+    "authors_s_bold": "Villeneuve, Éric; Akle, Audrey Abi; Merlo, Christophe; **Masson, Dimitri**; Terrasson, Guillaume; Llaria, Alvaro",
+    "authors_s_bold_html": "Villeneuve, Éric; Akle, Audrey Abi; Merlo, Christophe; <b>Masson, Dimitri</b>; Terrasson, Guillaume; Llaria, Alvaro",
+    "file": "/Users/dimitri/Zotero/storage/5REX2AJ4/S2405896319300503.html",
+    "pdf": "villeneuve2019_DecisionSupport.pdf",
+    "DOI": "10.1016/j.ifacol.2019.01.048",
+    "URL": "https://www.sciencedirect.com/science/article/pii/S2405896319300503",
+    "halURL": "https://hal.science/hal-01973339v1",
+    "halId": "hal-01973339v1",
+    "date": "2019-01-01",
+    "year": "2019",
+    "month": "01",
+    "day": "01",
+    "language": "en",
+    "abstract": "While the 7 million-head French sheep industry is contracting, the average herd size is rising, providing challenging issues to maintain and improve its productivity. Precision Livestock Farming has allowed the sheeps and herds to be equipped with sensors and has a result the amount of data to be processed by farmers has surged. We argue that in order for the farmers to take appropriate actions there is a need for the development of a decision support system that take into account not only real-time data but also expert knowledge. In this work, we first highlight the specific challenges presented by the field of precision sheep farming to the development of a Cyber-Physical and Human System. We then introduce a methodology to implement a decision support in this context.",
+    "publication": "IFAC-PapersOnLine, 51(34), 236-241",
+    "volume": "51",
+    "issue": "34",
+    "pages": "236-241",
+    "citation": {
+      "type": "article-journal",
+      "doi": "10.1016/j.ifacol.2019.01.048",
+      "language": "en",
+      "issn": "2405-8963",
+      "issue": "34",
+      "volume": "51",
+      "page": "236-241"
+    }
+  },
+  {
+    "citationKey": "williams2024_TinkererMindset",
+    "title": "A Tinkerer's Mindset: Lessons from the Technical Leadership Institute's Cohort 8 on Safe-to-Fail Probing as a Tool for Informing Judgement",
+    "type": "journalArticle",
+    "authors": [
+      {
+        "firstName": "Adam D.",
+        "lastName": "Williams",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Leandro V.",
+        "lastName": "Aveiro",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Rachel A.",
+        "lastName": "McGrath",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Carlo",
+        "lastName": "Leandri",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Guilluame",
+        "lastName": "Terpant",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Adrian",
+        "lastName": "Unger",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Williams, Adam D.; Aveiro, Leandro V.; McGrath, Rachel A.; Leandri, Carlo; Terpant, Guilluame; Masson, Dimitri; Unger, Adrian",
+    "authors_s_bold": "Williams, Adam D.; Aveiro, Leandro V.; McGrath, Rachel A.; Leandri, Carlo; Terpant, Guilluame; **Masson, Dimitri**; Unger, Adrian",
+    "authors_s_bold_html": "Williams, Adam D.; Aveiro, Leandro V.; McGrath, Rachel A.; Leandri, Carlo; Terpant, Guilluame; <b>Masson, Dimitri</b>; Unger, Adrian",
+    "file": "/Users/dimitri/Zotero/storage/G8DLNNGE/inst.html",
+    "pdf": "williams2024_TinkererMindset.pdf",
+    "DOI": "10.1002/inst.12494",
+    "URL": "https://onlinelibrary.wiley.com/doi/abs/10.1002/inst.12494",
+    "date": "2024-01-01",
+    "year": "2024",
+    "month": "01",
+    "day": "01",
+    "language": "en",
+    "abstract": "Tinkering — or making small changes to experiment toward an improvement in performance — is seemingly a natural characteristic of many systems engineers. As such, systems engineers are uniquely qualified to develop complex solutions necessary to overcome lack of clarity, achieve order, and avoid failure. Further, there is a much broader conversation surrounding the possibility of “failure” being beneficial in systems engineering projects. In response to the needing to inform judgment in situations shrouded in uncertainty, members of INCOSE's Technical Leadership Institute (TLI) cohort 8 examined the role of safe-to-fail probes play in informing judgement for systems engineers. Within the constraints of the TLI's major project, virtual workshops and qualitative interviews were two data collection mechanisms established to empirically investigate the role(s) of safe-to-fail probing in systems engineering. Overall, the data sets offered conclusions describing the potential role(s) of safe-to-fail probes for systems engineers working in uncertain environments. Resulting from this (limited) empirical exploration are additional insights and implications for how systems engineers may invoke safe-to-fail probes to improve decision-making in uncertain and challenging situations. Such a tinkerer's mindset can help systems engineers transition from the constraints of “intolerable failure” to the opportunities related to probing-sensing-responding to “responsible failures.”",
+    "publication": "INSIGHT, 27(3), 59-66",
+    "volume": "27",
+    "issue": "3",
+    "pages": "59-66",
+    "citation": {
+      "type": "article-journal",
+      "doi": "10.1002/inst.12494",
+      "language": "en",
+      "issn": "2156-4868",
+      "issue": "3",
+      "volume": "27",
+      "page": "59-66"
+    }
+  },
+  {
+    "citationKey": "ambrosino2016_EncourageExchanges",
+    "title": "Encourage exchanges during a creative session by the ideas qualitative evaluation using a digital tool",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Julien",
+        "lastName": "Ambrosino",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Guillaume",
+        "lastName": "Tastet",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Ambrosino, Julien; Masson, Dimitri; Legardeur, Jérémy; Tastet, Guillaume",
+    "authors_s_bold": "Ambrosino, Julien; **Masson, Dimitri**; Legardeur, Jérémy; Tastet, Guillaume",
+    "authors_s_bold_html": "Ambrosino, Julien; <b>Masson, Dimitri</b>; Legardeur, Jérémy; Tastet, Guillaume",
+    "file": "/Users/dimitri/Zotero/storage/GJDR2KYS/Ambrosino et al. - 2016 - Encourage exchanges during a creative session by t.pdf",
+    "pdf": "ambrosino2016_EncourageExchanges.pdf",
+    "DOI": "10.1145/3050385.3050414",
+    "URL": "https://dl.acm.org/doi/10.1145/3050385.3050414",
+    "halURL": "https://hal.science/hal-01346087v1",
+    "halId": "hal-01346087v1",
+    "date": "2016-07-06",
+    "year": "2016",
+    "month": "07",
+    "day": "06",
+    "language": "fr",
+    "abstract": "In the context of the emergence of collaborative innovation projects, the animation of creative sessions permits to identify new opportunities. The number of ideas generated is a lot more important than the number of collaborative projects implemented. To improve this ratio, we assume that group discussions could be facilitated by the cleavage of opinions about the quality of the ideas discussed during the meeting. We support our approach with a digital tool to promote information feedback throughout the session.",
+    "publication": "in Proceedings of the 15th Ergo'IA \"Ergonomie Et Informatique Avancée\" Conference, July 6, 2016",
+    "conference": "Proceedings of the 15th Ergo'IA \"Ergonomie Et Informatique Avancée\" Conference",
+    "place": "Bidart, France",
+    "citation": {
+      "type": "paper-conference",
+      "doi": "10.1145/3050385.3050414",
+      "language": "fr",
+      "isbn": "978-1-4503-4785-3",
+      "page": "1–6",
+      "containerTitle": "Proceedings of the 15th Ergo'IA \"Ergonomie Et Informatique Avancée\" Conference",
+      "publisher": "Association for Computing Machinery"
+    }
+  },
+  {
+    "citationKey": "ambrosino2017_STARMethodologie",
+    "title": "STAR: une méthodologie d'animation pour faciliter l'émergence de projets en interclustering Application au projet européen NEPTUNE sur la croissance bleue",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Julien",
+        "lastName": "Ambrosino",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Ambrosino, Julien; Masson, Dimitri; Legardeur, Jérémy",
+    "authors_s_bold": "Ambrosino, Julien; **Masson, Dimitri**; Legardeur, Jérémy",
+    "authors_s_bold_html": "Ambrosino, Julien; <b>Masson, Dimitri</b>; Legardeur, Jérémy",
+    "file": "/Users/dimitri/Zotero/storage/FFBB685T/Ambrosino et al. - 2017 - STAR une méthodologie d'animation pour faciliter .pdf",
+    "pdf": "ambrosino2017_STARMethodologie.pdf",
+    "URL": "https://hal.science/hal-01513588",
+    "halURL": "https://hal.science/hal-01513588",
+    "halId": "hal-01513588",
+    "date": "2017-04-01",
+    "year": "2017",
+    "month": "04",
+    "day": "01",
+    "language": "fr",
+    "abstract": "In the specific context of co-operation between members of clusters or competitiveness clusters, the emergence of collaborative innovation projects is a major challenge for clusters and their members (composed of companies, universities, laboratories, etc.). Given the heterogeneity in terms of the knowledge and profiles of the ecosystems that evolve within the clusters, the interclustering strategy, which consists in supporting the emergence of projects between different clusters, requires the use and adaptation new tools. The aspects of the methodology presented here focus in particular on the facilitation of creativity sessions and more particularly on the \"live\" evaluation of the ideas generated by the participants.",
+    "publication": "AIP Primeca: Concevoir et produire dans les industries du futur, 2017-04",
+    "conference": "AIP Primeca: Concevoir et produire dans les industries du futur",
+    "place": "La Plagne, France",
+    "citation": {
+      "type": "paper-conference",
+      "language": "fr",
+      "publisher": "AIP Primeca: Concevoir et produire dans les industries du futur"
+    }
+  },
+  {
+    "citationKey": "houzangbe2023_ExplorationPhysiological",
+    "title": "Exploration of Physiological Arousal in Divergent and Convergent Thinking using 2D screen and VR Sketching Tools.",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Samory",
+        "lastName": "Houzangbe",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Sylvain",
+        "lastName": "Fleury",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "David Antonio Gómez",
+        "lastName": "Jáuregui",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Nadine",
+        "lastName": "Couture",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Simon",
+        "lastName": "Richir",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Houzangbe, Samory; Fleury, Sylvain; Masson, Dimitri; Jáuregui, David Antonio Gómez; Legardeur, Jérémy; Couture, Nadine; Richir, Simon",
+    "authors_s_bold": "Houzangbe, Samory; Fleury, Sylvain; **Masson, Dimitri**; Jáuregui, David Antonio Gómez; Legardeur, Jérémy; Couture, Nadine; Richir, Simon",
+    "authors_s_bold_html": "Houzangbe, Samory; Fleury, Sylvain; <b>Masson, Dimitri</b>; Jáuregui, David Antonio Gómez; Legardeur, Jérémy; Couture, Nadine; Richir, Simon",
+    "file": "/Users/dimitri/Zotero/storage/UBSJATIW/Houzangbe et al. - 2023 - Exploration of Physiological Arousal in Divergent .pdf",
+    "pdf": "houzangbe2023_ExplorationPhysiological.pdf",
+    "DOI": "10.1109/ACII59096.2023.10388141",
+    "URL": "https://www.computer.org/csdl/proceedings-article/acii/2023/10388141/1TJmkFV0hCo",
+    "halURL": "https://hal.science/hal-04416687v1",
+    "halId": "hal-04416687v1",
+    "date": "2023-09-01",
+    "year": "2023",
+    "month": "09",
+    "day": "01",
+    "language": "en",
+    "abstract": "Creativity Support Tools (CSTs), like sketching tools, enable designers in their creative activities. As designers may have different needs during different thinking phases, accessing physiological responses in real-time would enable CSTs to better adapt to these different phases. Several studies have focused on either different phases on the same tool or the same phase on different tools. We investigate ways to discriminate divergent and convergent thinking phases using physiological response. We replicated the same experiment with thirty participants each on two different CSTs: in immersive virtual reality and on an interactive whiteboard (2D). We analyzed Heart Rate Variability (HRV) and Galvanic Skin Response (GSR) during a divergent thinking task followed by a convergent thinking task. Our results revealed significant changes in arousal, measured through HRV and GSR, which seem specific to each creative thinking phase. We discuss how each phase can be linked with specific reactions independently of the CST. We suggest that it may be possible to detect a favorable creative state depending on the task being performed.",
+    "publication": "2023 11th International Conference on Affective Computing and Intelligent Interaction (ACII), 2023/09/01",
+    "conference": "2023 11th International Conference on Affective Computing and Intelligent Interaction (ACII)",
+    "place": "Cambridge, United States",
+    "citation": {
+      "type": "paper-conference",
+      "doi": "10.1109/ACII59096.2023.10388141",
+      "language": "en",
+      "isbn": "9798350327434",
+      "page": "1-8",
+      "containerTitle": "2023 11th International Conference on Affective Computing and Intelligent Interaction (ACII)",
+      "publisher": "IEEE Computer Society"
+    }
+  },
+  {
+    "citationKey": "lasseux2022_NAASCubeProgram",
+    "title": "NAASCube program, an innovative aerospace program for students,driven by the Nouvelle Aquitaine Academic Space Center",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Didier",
+        "lastName": "Lasseux",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Philippe",
+        "lastName": "Cais",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Guillaume",
+        "lastName": "Ferré",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Anthony",
+        "lastName": "Ghiotto",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Gildas",
+        "lastName": "Lalizel",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Octavian",
+        "lastName": "Curea",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Catherine",
+        "lastName": "Goetz",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Yves",
+        "lastName": "Nadot",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Marc",
+        "lastName": "Bellenoue",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Lasseux, Didier; Cais, Philippe; Ferré, Guillaume; Ghiotto, Anthony; Lalizel, Gildas; Curea, Octavian; Goetz, Catherine; Masson, Dimitri; Nadot, Yves; Bellenoue, Marc",
+    "authors_s_bold": "Lasseux, Didier; Cais, Philippe; Ferré, Guillaume; Ghiotto, Anthony; Lalizel, Gildas; Curea, Octavian; Goetz, Catherine; **Masson, Dimitri**; Nadot, Yves; Bellenoue, Marc",
+    "authors_s_bold_html": "Lasseux, Didier; Cais, Philippe; Ferré, Guillaume; Ghiotto, Anthony; Lalizel, Gildas; Curea, Octavian; Goetz, Catherine; <b>Masson, Dimitri</b>; Nadot, Yves; Bellenoue, Marc",
+    "file": "/Users/dimitri/Zotero/storage/BIL68AUC/Lasseux et al. - 2022 - NAASCube program, an innovative aerospace program .pdf",
+    "pdf": "lasseux2022_NAASCubeProgram.pdf",
+    "URL": "https://esamultimedia.esa.int/docs/edu/SSEA22_Proceedings.pdf",
+    "halURL": "https://hal.science/hal-04300180v1",
+    "halId": "hal-04300180v1",
+    "date": "2022-04-01",
+    "year": "2022",
+    "month": "04",
+    "day": "01",
+    "language": "fr",
+    "abstract": "No abstract available",
+    "publication": "4th Symposium on Space Educational Activities, 2022-04",
+    "conference": "4th Symposium on Space Educational Activities",
+    "place": "Barcelone (Espagne), Spain",
+    "citation": {
+      "type": "paper-conference",
+      "language": "fr",
+      "isbn": "978-84-19184-40-5",
+      "page": "838-839",
+      "containerTitle": "Proceedings of the 4th Symposium on Space Educational Activities",
+      "publisher": "4th Symposium on Space Educational Activities"
+    }
+  },
+  {
+    "citationKey": "legardeur2020_ParadoxDiversity",
+    "title": "The paradox of diversity's influence on the creative teams Lessons learned from the analysis of 14 editions of\" The 24h of innovation\" hackathon",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Mickaël",
+        "lastName": "Gardoni",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Kusol",
+        "lastName": "Pimapunsri",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "International Society for Professional Innovation",
+        "lastName": "Management",
+        "creatorType": "editor"
+      }
+    ],
+    "authors_s": "Legardeur, Jérémy; Masson, Dimitri; Gardoni, Mickaël; Pimapunsri, Kusol; Management, International Society for Professional Innovation",
+    "authors_s_bold": "Legardeur, Jérémy; **Masson, Dimitri**; Gardoni, Mickaël; Pimapunsri, Kusol; Management, International Society for Professional Innovation",
+    "authors_s_bold_html": "Legardeur, Jérémy; <b>Masson, Dimitri</b>; Gardoni, Mickaël; Pimapunsri, Kusol; Management, International Society for Professional Innovation",
+    "file": "/Users/dimitri/Zotero/storage/AEVKARND/Legardeur et al. - 2020 - The paradox of diversity's influence on the creati.pdf",
+    "pdf": "legardeur2020_ParadoxDiversity.pdf",
+    "URL": "https://hal.science/hal-02881482",
+    "halURL": "https://hal.science/hal-02881482",
+    "halId": "hal-02881482",
+    "date": "2020-03-01",
+    "year": "2020",
+    "month": "03",
+    "day": "01",
+    "language": "en",
+    "abstract": "The main objective of this paper is to understand the mindset and characteristics of a team in order to foster creative and innovative thinking. Especially, we want to analyse the influence of the diversity of scholar's affiliation within student's team on their performance during early design phase. For that purpose, we focus on one innovative event to foster creativity and design thinking of students during 24 hours design phase. This event is 'The 24h of innovation®\" challenge which is an event created by the institute of technology ESTIA in Biarritz since 2007 (http://24h.estia.fr). During the period 2007-2019, we have organized 14 French editions and we collected the data of profile's participants in order to characterise the team's diversity. The paper demonstrates the paradox of the diversity that can increase sometimes positively the average team performance, but also the non-diversity can be a positive factor for the team excellence",
+    "publication": "in ISPIM Connects Bangkok, 2020-03",
+    "conference": "ISPIM Connects Bangkok",
+    "place": "Bangkok, Thailand",
+    "citation": {
+      "type": "paper-conference",
+      "language": "en",
+      "isbn": "978-952-335-566-8",
+      "containerTitle": "ISPIM Connects Bangkok"
+    }
+  },
+  {
+    "citationKey": "masson2014_WebDesign",
+    "title": "Web design galleries: please give me similar styles!: a claim for ground truth datasets",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Alexandre",
+        "lastName": "Demeure",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Zeina",
+        "lastName": "Abu-Aisheh",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Gaëlle",
+        "lastName": "Calvary",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Gilles",
+        "lastName": "Bisson",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Masson, Dimitri; Demeure, Alexandre; Abu-Aisheh, Zeina; Calvary, Gaëlle; Bisson, Gilles",
+    "authors_s_bold": "**Masson, Dimitri**; Demeure, Alexandre; Abu-Aisheh, Zeina; Calvary, Gaëlle; Bisson, Gilles",
+    "authors_s_bold_html": "<b>Masson, Dimitri</b>; Demeure, Alexandre; Abu-Aisheh, Zeina; Calvary, Gaëlle; Bisson, Gilles",
+    "file": "/Users/dimitri/Zotero/storage/EH6DA5EG/Masson et al. - 2014 - Web design galleries please give me similar style.pdf",
+    "pdf": "masson2014_WebDesign.pdf",
+    "DOI": "10.1145/2639189.2641200",
+    "URL": "https://dl.acm.org/doi/10.1145/2639189.2641200",
+    "halURL": "https://hal.science/hal-04667515",
+    "halId": "hal-04667515",
+    "date": "2014-10-26",
+    "year": "2014",
+    "month": "10",
+    "day": "26",
+    "language": "en",
+    "abstract": "Web design galleries are extremely popular for searching inspiration in web design, but there is a lack of rich search functions. Recent works in the field have focused on style similarity browsing, where one hops from design to design based on their style similarity. In this paper, we claim for a study of the multiple dimensions of this notion of style, and of its perception by humans. We advocate for ground truth datasets based on a first experiment.",
+    "publication": "NordiCHI '14: The 8th Nordic Conference on Human-Computer Interaction, 2014-10-26",
+    "conference": "NordiCHI '14: The 8th Nordic Conference on Human-Computer Interaction",
+    "place": "Helsinki Finland",
+    "citation": {
+      "type": "paper-conference",
+      "doi": "10.1145/2639189.2641200",
+      "language": "en",
+      "isbn": "978-1-4503-2542-4",
+      "page": "357-360",
+      "containerTitle": "Proceedings of the 8th Nordic Conference on Human-Computer Interaction: Fun, Fast, Foundational",
+      "publisher": "ACM"
+    }
+  },
+  {
+    "citationKey": "masson2010_MagellanEvolutionary",
+    "title": "Magellan, an evolutionary system to foster user interface design creativity",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Alexandre",
+        "lastName": "Demeure",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Gaelle",
+        "lastName": "Calvary",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Masson, Dimitri; Demeure, Alexandre; Calvary, Gaelle",
+    "authors_s_bold": "**Masson, Dimitri**; Demeure, Alexandre; Calvary, Gaelle",
+    "authors_s_bold_html": "<b>Masson, Dimitri</b>; Demeure, Alexandre; Calvary, Gaelle",
+    "file": "/Users/dimitri/Zotero/storage/646SE99S/Masson et al. - 2010 - Magellan, an evolutionary system to foster user in.pdf",
+    "pdf": "masson2010_MagellanEvolutionary.pdf",
+    "DOI": "10.1145/1822018.1822032",
+    "URL": "https://doi.org/10.1145/1822018.1822032",
+    "halURL": "https://hal.science/inria-00498580v1",
+    "date": "2010-06-19",
+    "year": "2010",
+    "month": "06",
+    "day": "19",
+    "language": "en",
+    "abstract": "Fostering creativity in User Interface (UI) design is challenging for innovation. This paper explores the combination of model-based approaches and interactive genetic algorithms to foster the exploration of the design space. A user task model is given in input. Magellan produces sketches of UIs that aim at inspiring the designer. Later on, appropriate tools may be used to tune the right design into the design right. Magellan is a proof of concept that deserves further exploration. Currently it is implemented using COMETs but it is not dependent of this technology.",
+    "publication": "in Proceedings of the 2nd ACM SIGCHI symposium on Engineering interactive computing systems, June 19, 2010",
+    "conference": "Proceedings of the 2nd ACM SIGCHI symposium on Engineering interactive computing systems",
+    "place": "New York, NY, USA",
+    "citation": {
+      "type": "paper-conference",
+      "doi": "10.1145/1822018.1822032",
+      "language": "en",
+      "isbn": "978-1-4503-0083-4",
+      "page": "87–92",
+      "containerTitle": "Proceedings of the 2nd ACM SIGCHI symposium on Engineering interactive computing systems",
+      "publisher": "Association for Computing Machinery"
+    }
+  },
+  {
+    "citationKey": "masson2011_ExamplesGalleries",
+    "title": "Examples Galleries Generated by Interactive Genetic Algorithms",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Alexandre",
+        "lastName": "Demeure",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Gaëlle",
+        "lastName": "Calvary",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Masson, Dimitri; Demeure, Alexandre; Calvary, Gaëlle",
+    "authors_s_bold": "**Masson, Dimitri**; Demeure, Alexandre; Calvary, Gaëlle",
+    "authors_s_bold_html": "<b>Masson, Dimitri</b>; Demeure, Alexandre; Calvary, Gaëlle",
+    "file": "/Users/dimitri/Zotero/storage/J3RE4UT6/Masson et al. - 2011 - Examples Galleries Generated by Interactive Geneti.pdf",
+    "pdf": "masson2011_ExamplesGalleries.pdf",
+    "DOI": "10.1145/2079216.2079225",
+    "URL": "https://doi.org/10.1145/2079216.2079225",
+    "halURL": "https://hal.science/hal-00758339v1",
+    "halId": "hal-00758339v1",
+    "date": "2011-10-19",
+    "year": "2011",
+    "month": "10",
+    "day": "19",
+    "language": "en",
+    "abstract": "Examples browsing is a common designer practice in user interface design. Several design galleries can be found on Internet. However, those galleries are hand crafted and thus limited and cumbersome to build. In this paper, we claim for tools for supporting both the production and exploration of examples. We describe a running prototype based on Interactive Genetic Algorithms (IGA), and relate an early evaluation.",
+    "publication": "DESIRE'11 - Conference on Creativity and Innovation in Design, October 19, 2011",
+    "conference": "DESIRE'11 - Conference on Creativity and Innovation in Design",
+    "place": "New York, NY, USA",
+    "citation": {
+      "type": "paper-conference",
+      "doi": "10.1145/2079216.2079225",
+      "language": "en",
+      "isbn": "978-1-4503-0754-3",
+      "page": "61–71",
+      "containerTitle": "Procedings of the Second Conference on Creativity and Innovation in Design",
+      "publisher": "Association for Computing Machinery"
+    }
+  },
+  {
+    "citationKey": "millet2019_DefinitionEspace",
+    "title": "Définition d'un espace sémantique Sport-Santé",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Antoine",
+        "lastName": "Millet",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Audrey",
+        "lastName": "Abi Akle",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Millet, Antoine; Abi Akle, Audrey; Masson, Dimitri; Legardeur, Jérémy",
+    "authors_s_bold": "Millet, Antoine; Abi Akle, Audrey; **Masson, Dimitri**; Legardeur, Jérémy",
+    "authors_s_bold_html": "Millet, Antoine; Abi Akle, Audrey; <b>Masson, Dimitri</b>; Legardeur, Jérémy",
+    "file": "/Users/dimitri/Zotero/storage/X752Y7IQ/Millet et al. - 2019 - Définition d'un espace sémantique Sport-Santé.pdf",
+    "pdf": "millet2019_DefinitionEspace.pdf",
+    "URL": "https://hal.science/hal-02151626",
+    "halURL": "https://hal.science/hal-02151626",
+    "halId": "hal-02151626",
+    "date": "2019-04-01",
+    "year": "2019",
+    "month": "04",
+    "day": "01",
+    "language": "fr",
+    "abstract": "Le succès du produit dépend de sa capacité à répondre aux attentes des utilisateurs. La Conception Centrée Utilisateur contribue à atteindre ce succès en se concentrant sur les besoins des utilisateurs durant le processus de conception. Ces besoins étant tant fonctionnels qu'hédoniques, la conception de produits nécessite de concevoir ces propriétés hédoniques du produit qui affectent la perception des utilisateurs. Pour des produits de sport, les utilisateurs désirent améliorer leurs performances tout en préservant leur santé. Les produits sportifs sont alors considérés non seulement comme des produits « sport », mais également comme des produits « santé ». Intégrer ces attentes « santé » et « sport » dans le processus de conception apparait nécessaire. Afin d'intégrer la perception des utilisateurs dans le processus de conception, l'Affective Engineering a été développé. L'application de cette approche aux produits de sport lors du processus de conception peut alors permettre de définir les caractéristiques perceptuelles du sport et de la santé. Cependant, traduire ces caractéristiques en spécifications implique de les traduire en termes sémantiques. Bien que nous observons des descripteurs sémantiques adaptés pour des produits « sport » et pour des produits « santé », ils apparaissent contradictoires. Comment alors définir un espace sémantique représentatif et respectueux des deux domaines, sport et santé, malgré leur opposition. Nous tentons de répondre à cette question au travers de cet article.",
+    "publication": "in S.Mart, 2019-04",
+    "conference": "S.Mart",
+    "place": "Les Karellis, France",
+    "citation": {
+      "type": "paper-conference",
+      "language": "fr",
+      "containerTitle": "S.Mart"
+    }
+  },
+  {
+    "citationKey": "millet2019_DefinitionSportHealth",
+    "title": "Definition of a “Sport-Health” Semantic Space",
+    "type": "journalArticle",
+    "authors": [
+      {
+        "firstName": "Antoine",
+        "lastName": "Millet",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Audrey Abi",
+        "lastName": "Akle",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Millet, Antoine; Akle, Audrey Abi; Masson, Dimitri; Legardeur, Jérémy",
+    "authors_s_bold": "Millet, Antoine; Akle, Audrey Abi; **Masson, Dimitri**; Legardeur, Jérémy",
+    "authors_s_bold_html": "Millet, Antoine; Akle, Audrey Abi; <b>Masson, Dimitri</b>; Legardeur, Jérémy",
+    "file": "/Users/dimitri/Zotero/storage/NF2TAY35/Millet et al. - 2019 - Definition of a “Sport-Health” Semantic Space.pdf",
+    "pdf": "millet2019_DefinitionSportHealth.pdf",
+    "DOI": "10.1017/dsi.2019.391",
+    "URL": "https://www.cambridge.org/core/journals/proceedings-of-the-international-conference-on-engineering-design/article/definition-of-a-sporthealth-semantic-space/2ECC4383FE7A47AE1374CACC235A0E99",
+    "halURL": "https://hal.science/hal-02432825v1",
+    "halId": "hal-02432825v1",
+    "date": "2019-07-01",
+    "year": "2019",
+    "month": "07",
+    "day": "01",
+    "language": "en",
+    "abstract": "Product success depends on its capacity to meet users’ expectations. Human Centred Design approach helps to reach this success by focussing on users’ needs in the design process. These needs are as well functional as hedonic. Designing products requires then to design hedonic properties affecting users’ perception. For sport products, people wants to improve their performances while maintaining their health. Sport products are then considered not only “sporty” but also “healthy”. Thus, integrating both health and sport expectations into the design process are necessary.Last decades, Affective Engineering was developed to integrate perception into the design process. Applying this approach for sport products may allow defining and mixing sport and health perceptual characteristics all along the design process. However, defining these characterisitics into requirements implies to translate them into semantic terms. If we observe semantic descriptors for sport products and for health products, they seem opposite. In this paper, we aim defining a semantic space representative and respectful of both domains, sport and health, while they oppose.",
+    "publication": "Proc. Des. Soc., 1(1), 3841-3850",
+    "volume": "1",
+    "issue": "1",
+    "pages": "3841-3850",
+    "citation": {
+      "type": "article-journal",
+      "doi": "10.1017/dsi.2019.391",
+      "language": "en",
+      "issn": "2220-4342",
+      "issue": "1",
+      "volume": "1",
+      "page": "3841-3850"
+    }
+  },
+  {
+    "citationKey": "ospital2022_DigitalProduct",
+    "title": "A digital product passport to support product transparency and circularity",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Pantxika",
+        "lastName": "Ospital",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Cédrick",
+        "lastName": "Beler",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Ospital, Pantxika; Masson, Dimitri; Beler, Cédrick; Legardeur, Jérémy",
+    "authors_s_bold": "Ospital, Pantxika; **Masson, Dimitri**; Beler, Cédrick; Legardeur, Jérémy",
+    "authors_s_bold_html": "Ospital, Pantxika; <b>Masson, Dimitri</b>; Beler, Cédrick; Legardeur, Jérémy",
+    "file": "/Users/dimitri/Zotero/storage/NU7QDWB3/Ospital et al. - 2022 - A digital product passport to support product tran.pdf",
+    "pdf": "ospital2022_DigitalProduct.pdf",
+    "DOI": "10.57649/GFC.978-989-54263",
+    "URL": "https://hal.science/hal-04082837",
+    "halURL": "https://hal.science/hal-04082837",
+    "halId": "hal-04082837",
+    "date": "2022-11-01",
+    "year": "2022",
+    "month": "11",
+    "day": "01",
+    "language": "en",
+    "abstract": "In the textile industry, corporate transparency, as the disclosure of firm information, does not provide information about products that would allow the customer to make informed purchases. Product transparency as defined by the disclosure of information concerning a specific product is necessary to support distrusting consumer. Among the key actions, setting up a digital product passport (DPP) for textile products is an opportunity to inform consumers. The aim of this paper is to explore the current situation of the industry and the new regulations to develop a DPP data model. We studied the evolution of current fashion landscape, evaluated the situation of actual practices concerning transparency and compared information available online and in-store regarding both product transparency and corporate transparency. We then propose a model of DPP.",
+    "publication": "Global Fashion Conference 2022, 2022-11",
+    "conference": "Global Fashion Conference 2022",
+    "place": "Berlin, Germany",
+    "citation": {
+      "type": "paper-conference",
+      "doi": "10.57649/GFC.978-989-54263",
+      "language": "en",
+      "isbn": "978-989-54-2633-1",
+      "page": "11",
+      "publisher": "Global Fashion Conference 2022"
+    }
+  },
+  {
+    "citationKey": "ospital2022_TotalTraceability",
+    "title": "Toward total traceability and full transparency communication in textile industry supply chain",
+    "type": "journalArticle",
+    "authors": [
+      {
+        "firstName": "Pantxika",
+        "lastName": "Ospital",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Cédrick",
+        "lastName": "Beler",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Ospital, Pantxika; Masson, Dimitri; Beler, Cédrick; Legardeur, Jérémy",
+    "authors_s_bold": "Ospital, Pantxika; **Masson, Dimitri**; Beler, Cédrick; Legardeur, Jérémy",
+    "authors_s_bold_html": "Ospital, Pantxika; <b>Masson, Dimitri</b>; Beler, Cédrick; Legardeur, Jérémy",
+    "file": "/Users/dimitri/Zotero/storage/BJ8URA8Z/Ospital et al. - 2022 - Toward total traceability and full transparency co.pdf",
+    "pdf": "ospital2022_TotalTraceability.pdf",
+    "DOI": "10.1002/iis2.12866",
+    "URL": "https://onlinelibrary.wiley.com/doi/abs/10.1002/iis2.12866",
+    "halURL": "https://hal.science/hal-03462235v1",
+    "halId": "hal-03462235v1",
+    "date": "2022-02-01",
+    "year": "2022",
+    "month": "02",
+    "day": "01",
+    "language": "en",
+    "abstract": "The Textile & Clothing industry is facing systemic and global challenges due both to ecological and economic crises. Today, increasing full traceability of supply chain is one of the key points to optimize production but it should also serve to inform consumers to foster sustainable purchasing decision. We argue that the total traceability of the garment supply chain must be constructed to enable a full transparency for the consumer. In this paper, we will start analysing brands’ transparency communication and describe the particular complexities of the textile supply chain.",
+    "publication": "HSI2021, 32(S1), 1-7",
+    "volume": "32",
+    "issue": "S1",
+    "pages": "1-7",
+    "citation": {
+      "type": "article-journal",
+      "doi": "10.1002/iis2.12866",
+      "language": "en",
+      "issn": "2334-5837",
+      "issue": "S1",
+      "volume": "32",
+      "page": "1-7"
+    }
+  },
+  {
+    "citationKey": "ospital2022_PasseportProduit",
+    "title": "Passeport produit numérique pour permettre traçabilité et transparence dans la supply chain textile et tout au long du cycle de vie d'un produit",
+    "type": "presentation",
+    "authors": [
+      {
+        "firstName": "Pantxika",
+        "lastName": "Ospital",
+        "creatorType": "presenter"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "presenter"
+      },
+      {
+        "firstName": "Cédrick",
+        "lastName": "Béler",
+        "creatorType": "presenter"
+      }
+    ],
+    "authors_s": "Ospital, Pantxika; Masson, Dimitri; Legardeur, Jérémy; Béler, Cédrick",
+    "authors_s_bold": "Ospital, Pantxika; **Masson, Dimitri**; Legardeur, Jérémy; Béler, Cédrick",
+    "authors_s_bold_html": "Ospital, Pantxika; <b>Masson, Dimitri</b>; Legardeur, Jérémy; Béler, Cédrick",
+    "file": "/Users/dimitri/Zotero/storage/9R8249RX/Ospital et al. - 2022 - Passeport produit numérique pour permettre traçabi.pdf",
+    "pdf": "ospital2022_PasseportProduit.pdf",
+    "URL": "https://hal.science/hal-03720549",
+    "date": "2022-05-01",
+    "year": "2022",
+    "month": "05",
+    "day": "01",
+    "language": "fr",
+    "abstract": "L'industrie du textile et de l'habillement est confrontée comme de nombreux autres secteurs à plusieurs défis : une crise écologique doublée d’une crise économique ainsi qu’à la prise en compte des conditions sociales des opérateurs qui œuvrent sur toute la chaine de la production des produits textiles. L’industrie textile évolue ces dernières années avec une globalisation et une accélération de la production, ce qui conduit à des événements dramatiques qui font évoluer le comportement des consommateurs par une prise de conscience. Les informations de traçabilité collectées au long de la chaine d’approvisionnement doivent permettre aux consommateurs de faire des achats éclairés, en toute transparence. Nous travaillons actuellement à l’élaboration d’un modèle de données pour collecter et restituer les engagements RSE des marques au travers de Passeport Numérique Produit. Les enjeux de la traçabilité et de la transparence sont multiples et ne concernent pas uniquement l’information consommateur, nous avons identifié également d’autres domaines dans les entreprises qui peuvent en bénéficier : optimisation logistique, développement durable, aspect réglementaire.\nCompléter ces informations de traçabilité après achat vont permettre de nouveaux usages. L’utilisation de Passeport Numérique Produit en intégrant des données collectées après achat par les usagers des produits va permettre d’optimiser de nouveaux modèles économiques circulaires en allongeant la durée de vie des produits par un meilleur entretien et des réparations, en facilitant la revente et la location et en permettant un recyclage automatisé.",
+    "publication": "",
+    "citation": {
+      "type": "speech",
+      "language": "fr",
+      "containerTitle": ""
+    }
+  },
+  {
+    "citationKey": "pena-arrazola2015_InteractiveGalleries",
+    "title": "I++: interactive galleries for promoting interactive curiosities in web designs",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Sergio",
+        "lastName": "Peña-Arrázola",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Alexandre",
+        "lastName": "Demeure",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Gaëlle",
+        "lastName": "Calvary",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Yann",
+        "lastName": "Laurillau",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Peña-Arrázola, Sergio; Masson, Dimitri; Demeure, Alexandre; Calvary, Gaëlle; Laurillau, Yann",
+    "authors_s_bold": "Peña-Arrázola, Sergio; **Masson, Dimitri**; Demeure, Alexandre; Calvary, Gaëlle; Laurillau, Yann",
+    "authors_s_bold_html": "Peña-Arrázola, Sergio; <b>Masson, Dimitri</b>; Demeure, Alexandre; Calvary, Gaëlle; Laurillau, Yann",
+    "file": "/Users/dimitri/Zotero/storage/PZHB349D/Peña-Arrázola et al. - 2015 - I++ interactive galleries for promoting interacti.pdf",
+    "pdf": "pena-arrazola2015_InteractiveGalleries.pdf",
+    "DOI": "10.1145/2783446.2783614",
+    "URL": "https://doi.org/10.1145/2783446.2783614",
+    "halURL": "https://hal.science/hal-01492576v1",
+    "halId": "hal-01492576v1",
+    "date": "2015-07-13",
+    "year": "2015",
+    "month": "07",
+    "day": "13",
+    "language": "en",
+    "abstract": "Web design galleries are important sources of inspiration in early phases of web design. However they showcase graphical elements without any promotion of interactive features. This paper presents I++, a web design gallery, centered on interaction: it pinpoints the key innovative interactive features of web sites through three levels of presentation of interactivity.",
+    "publication": "in Proceedings of the 2015 British HCI Conference, July 13, 2015",
+    "conference": "Proceedings of the 2015 British HCI Conference",
+    "place": "New York, NY, USA",
+    "citation": {
+      "type": "paper-conference",
+      "doi": "10.1145/2783446.2783614",
+      "language": "en",
+      "isbn": "978-1-4503-3643-7",
+      "page": "287–288",
+      "containerTitle": "Proceedings of the 2015 British HCI Conference",
+      "publisher": "Association for Computing Machinery"
+    }
+  },
+  {
+    "citationKey": "pinto2021_RequirementsPrototyping",
+    "title": "From requirements to prototyping: Application of human-system integration methodology to digital twin design",
+    "type": "journalArticle",
+    "authors": [
+      {
+        "firstName": "Stélian Camara Dit",
+        "lastName": "Pinto",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Eric",
+        "lastName": "Villeneuve",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Guy",
+        "lastName": "Boy",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Laetitia",
+        "lastName": "Urfels",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Pinto, Stélian Camara Dit; Masson, Dimitri; Villeneuve, Eric; Boy, Guy; Urfels, Laetitia",
+    "authors_s_bold": "Pinto, Stélian Camara Dit; **Masson, Dimitri**; Villeneuve, Eric; Boy, Guy; Urfels, Laetitia",
+    "authors_s_bold_html": "Pinto, Stélian Camara Dit; <b>Masson, Dimitri</b>; Villeneuve, Eric; Boy, Guy; Urfels, Laetitia",
+    "file": "/Users/dimitri/Zotero/storage/ZNVRE899/Pinto et al. - 2021 - From requirements to prototyping Application of h.pdf",
+    "pdf": "pinto2021_RequirementsPrototyping.pdf",
+    "DOI": "10.1017/pds.2021.423",
+    "URL": "https://www.cambridge.org/core/journals/proceedings-of-the-design-society/article/from-requirements-to-prototyping-application-of-humansystem-integration-methodology-to-digital-twin-design/8D8885AD4F02B5B97877C557CF2D8D79",
+    "halURL": "https://hal.science/hal-03356551v1",
+    "halId": "hal-03356551v1",
+    "date": "2021-08-01",
+    "year": "2021",
+    "month": "08",
+    "day": "01",
+    "language": "en",
+    "abstract": "Industrial digital transformation is bringing a need for new tools and concepts. However, designing such complex tools and concept requires methods to be correctly implemented. These methods are studied as part of system engineering to satisfy various identified goals, and more specifically human-system integration, which is the topic of this paper. This article introduces the method used to define key elements of human perception of reality called reality anchors to design scenarios to be tested in a digital twin prototype. This method goes from regulation study to user cognitive function analysis on the specific case of digital twin designing in oil-and-gas industry. This method highlighted the differences between theoretical process and the followed process as well as tools and competencies used to identify reality anchors. This knowledge will then be used to implement a new process to be implemented with a digital twin and scenarios to test the prototype using realistic simulation.",
+    "publication": "Proc. Des. Soc., 1(undefined), 1617-1626",
+    "volume": "1",
+    "pages": "1617-1626",
+    "citation": {
+      "type": "article-journal",
+      "doi": "10.1017/pds.2021.423",
+      "language": "en",
+      "issn": "2732-527X",
+      "volume": "1",
+      "page": "1617-1626"
+    }
+  },
+  {
+    "citationKey": "camaraditpinto2023_MethodologieConception",
+    "title": "Méthodologie de conception de jumeau numérique pour supporter la conscience de la situation",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Stélian",
+        "lastName": "Camara Dit Pinto",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Eric",
+        "lastName": "Villeneuve",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Guy Andre",
+        "lastName": "Boy",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Laetitia",
+        "lastName": "Urfels",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Camara Dit Pinto, Stélian; Villeneuve, Eric; Masson, Dimitri; Boy, Guy Andre; Urfels, Laetitia",
+    "authors_s_bold": "Camara Dit Pinto, Stélian; Villeneuve, Eric; **Masson, Dimitri**; Boy, Guy Andre; Urfels, Laetitia",
+    "authors_s_bold_html": "Camara Dit Pinto, Stélian; Villeneuve, Eric; <b>Masson, Dimitri</b>; Boy, Guy Andre; Urfels, Laetitia",
+    "file": "/Users/dimitri/Zotero/storage/W7GC4WU4/Camara Dit Pinto et al. - 2023 - Méthodologie de conception de jumeau numérique pou.pdf",
+    "pdf": "camaraditpinto2023_MethodologieConception.pdf",
+    "DOI": "10.60662/6sm3-5f44",
+    "URL": "https://hal.science/hal-04206938",
+    "halURL": "https://hal.science/hal-04206938v1",
+    "halId": "hal-04206938v1",
+    "date": "2023-06-01",
+    "year": "2023",
+    "month": "06",
+    "day": "01",
+    "language": "fr",
+    "abstract": "The work presented in this article focuses on the opportunity to use the digital twin of the complex system, a concept popularized in recent years, as a Decision Support System. In studying the phenomenon of human decision making, the concept of situation awareness appears to be of primary importance when dealing with these complex systems. Given the complexity of the system to be represented in the digital twin, the concept of reality anchor is proposed to identify the elements of the studied situation necessary for the user to perceive, understand and project the situation he is facing. A methodology, called the Reality Anchor Methodology, has been defined to ensure the elicitation and the implementation of these elements in a digital twin. This methodology is composed of three steps that aim (1) to elicit the reality anchors through a study of the operators’ tasks and activities, (2) to design a prototype for the realization of human-in-the-loop tests and (3) to validate the definition of the reality anchors. This method was applied to a case study in the energy domain and allowed to validate the importance of the defined reality anchors for the decision-making process.",
+    "publication": "in CIGI Qualita MOSIM 2023. Propulser la performance, 2023-06",
+    "conference": "CIGI Qualita MOSIM 2023. Propulser la performance",
+    "place": "Trois-Rivières, Canada",
+    "citation": {
+      "type": "paper-conference",
+      "doi": "10.60662/6sm3-5f44",
+      "language": "fr",
+      "containerTitle": "CIGI Qualita MOSIM 2023. Propulser la performance",
+      "publisher": "CIGI QUALITA MOSIM 2023"
+    }
+  },
+  {
+    "citationKey": "rolos2019_OperationsRoom",
+    "title": "Operations room design for the control of a fleet of robots",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Chloé",
+        "lastName": "Rolos",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Guy",
+        "lastName": "Boy",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      }
+    ],
+    "authors_s": "Rolos, Chloé; Boy, Guy; Masson, Dimitri",
+    "authors_s_bold": "Rolos, Chloé; Boy, Guy; **Masson, Dimitri**",
+    "authors_s_bold_html": "Rolos, Chloé; Boy, Guy; <b>Masson, Dimitri</b>",
+    "file": "/Users/dimitri/Zotero/storage/ZX3ABLMT/Rolos et al. - 2019 - Operations room design for the control of a fleet .pdf",
+    "pdf": "rolos2019_OperationsRoom.pdf",
+    "URL": "https://hal.science/hal-02340856",
+    "halURL": "https://hal.science/hal-02340856v1",
+    "halId": "hal-02340856v1",
+    "date": "2019-01-01",
+    "year": "2019",
+    "month": "01",
+    "day": "01",
+    "language": "en",
+    "abstract": "In this research work we focuses on the elicitation of concepts for the design of an oil and gas complex system involving a fleet of robots. We are using expertise and an experience-based approach to formalize existing control rooms and extending them to include robots. We are building a structural and functional ontology to identify and allocate current and emergent functions. The approach leads to the development of a software simulator that includes structures and functions of an oil and gas platform and its operations room. Keywords Oil and gas, control room, ontology, human centered design, fleet of robots.",
+    "publication": "INCOSE International Conference on Human Systems Integration, 2019",
+    "conference": "INCOSE International Conference on Human Systems Integration",
+    "place": "Biarritiz, France",
+    "citation": {
+      "type": "paper-conference",
+      "language": "en",
+      "publisher": "INCOSE International Conference on Human Systems Integration"
+    }
+  },
+  {
+    "citationKey": "lagunasalvado2019_OutilClassement",
+    "title": "Outil de classement de technologies pour l'aide à la décision en rénovation de bâtiments",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Laura",
+        "lastName": "Laguna Salvado",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Eric",
+        "lastName": "Villeneuve",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      }
+    ],
+    "authors_s": "Laguna Salvado, Laura; Villeneuve, Eric; Masson, Dimitri",
+    "authors_s_bold": "Laguna Salvado, Laura; Villeneuve, Eric; **Masson, Dimitri**",
+    "authors_s_bold_html": "Laguna Salvado, Laura; Villeneuve, Eric; <b>Masson, Dimitri</b>",
+    "file": "/Users/dimitri/Zotero/storage/Y3HY7656/Laguna Salvado et al. - 2019 - Outil de classement de technologies pour l'aide à .pdf",
+    "pdf": "lagunasalvado2019_OutilClassement.pdf",
+    "URL": "https://hal.science/hal-02268562",
+    "halURL": "https://hal.science/hal-02268562",
+    "halId": "hal-02268562",
+    "date": "2019-06-01",
+    "year": "2019",
+    "month": "06",
+    "day": "01",
+    "language": "fr",
+    "abstract": "Decision making in the context of Near Zero Energy Building refurbishment is subjected to heterogeneous stakeholders, tools and objectives. This paper presents a methodology to facilitate stakeholders' collaboration in the refurbishment processes and identifies decision support approaches to help on the main decision milestones. This methodology is supported by a prototype (user interface and algorithm) of a decision support system (DSS) that allows ranking different refurbishment technologies. The proposed DSS uses a multi criteria decision method that combines weighting and fuzzy dominances approach. The approach is illustrated with a real data set to rank thermal insulation materials.",
+    "publication": "in CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA, 2019-06",
+    "conference": "CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA",
+    "place": "Montréal, Québec, Canada",
+    "citation": {
+      "type": "paper-conference",
+      "language": "fr",
+      "containerTitle": "CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA"
+    }
+  },
+  {
+    "citationKey": "villeneuve2019_DecisionDans",
+    "title": "Décision dans les systèmes cyber-physiques et humains : application à l'élevage de précision",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Eric",
+        "lastName": "Villeneuve",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Christophe",
+        "lastName": "Merlo",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Guillaume",
+        "lastName": "Terrasson",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Audrey",
+        "lastName": "Abi Akle",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Alvaro",
+        "lastName": "Llaria",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Villeneuve, Eric; Merlo, Christophe; Terrasson, Guillaume; Abi Akle, Audrey; Masson, Dimitri; Llaria, Alvaro",
+    "authors_s_bold": "Villeneuve, Eric; Merlo, Christophe; Terrasson, Guillaume; Abi Akle, Audrey; **Masson, Dimitri**; Llaria, Alvaro",
+    "authors_s_bold_html": "Villeneuve, Eric; Merlo, Christophe; Terrasson, Guillaume; Abi Akle, Audrey; <b>Masson, Dimitri</b>; Llaria, Alvaro",
+    "file": "/Users/dimitri/Zotero/storage/3DXDCZ7D/Villeneuve et al. - 2019 - Décision dans les systèmes cyber-physiques et huma.pdf",
+    "pdf": "villeneuve2019_DecisionDans.pdf",
+    "URL": "https://hal.science/hal-02268577",
+    "halURL": "https://hal.science/hal-02268577v1",
+    "halId": "hal-02268577v1",
+    "date": "2019-06-01",
+    "year": "2019",
+    "month": "06",
+    "day": "01",
+    "language": "fr",
+    "abstract": "Precision livestock farming aims to improve the farm productivity and relies on a set of technological equipment producing data that must be collected, stored and analyzed and concern each animal and its environment. This new way of managing a farm is a prime area of application for research work on Cyber-Physical and Human Systems. The issue explored in this article is based on the observation that breeders face a considerable increase in the amount of data they must deal with. It is then necessary to develop a decision support system considering the \"real time\" data but also the expert knowledge to allow the farmers to act at best. In this work, we first highlight the specific challenges presented by the field of precision sheep farming to the development of a decision support system. We then introduce a methodology to implement decision support in this context.",
+    "publication": "in CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA, 2019-06",
+    "conference": "CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA",
+    "place": "Montréal, Québec, Canada",
+    "citation": {
+      "type": "paper-conference",
+      "language": "fr",
+      "containerTitle": "CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA"
+    }
+  },
+  {
+    "citationKey": "disdier2022_StudyDesign",
+    "title": "Study and design of a remote and virtual air traffic control center using a Human Systems Integration approach",
+    "type": "presentation",
+    "authors": [
+      {
+        "firstName": "Alexandre",
+        "lastName": "Disdier",
+        "creatorType": "presenter"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Thomas",
+        "lastName": "Brethomé",
+        "creatorType": "contributor"
+      },
+      {
+        "firstName": "Marija",
+        "lastName": "Jankovic",
+        "creatorType": "contributor"
+      },
+      {
+        "firstName": "Guy Andre",
+        "lastName": "Boy",
+        "creatorType": "contributor"
+      }
+    ],
+    "authors_s": "Disdier, Alexandre; Masson, Dimitri; Brethomé, Thomas; Jankovic, Marija; Boy, Guy Andre",
+    "authors_s_bold": "Disdier, Alexandre; **Masson, Dimitri**; Brethomé, Thomas; Jankovic, Marija; Boy, Guy Andre",
+    "authors_s_bold_html": "Disdier, Alexandre; <b>Masson, Dimitri</b>; Brethomé, Thomas; Jankovic, Marija; Boy, Guy Andre",
+    "file": "/Users/dimitri/Zotero/storage/GYR5JALZ/Disdier - 2022 - Study and design of a remote and virtual air traff.pdf",
+    "pdf": "disdier2022_StudyDesign.pdf",
+    "URL": "https://hal.science/hal-03971460",
+    "date": "2022-12-01",
+    "year": "2022",
+    "month": "12",
+    "day": "01",
+    "language": "en",
+    "abstract": "Remote and Virtual Towers have been studied as an alternative paradigm for air traffic control operations. This poster introduces research guidelines we obtained from a series of interviews carried out with designers and experts of military air traffic control systems. These are guidelines for a more human-centered approach to systems engineering while designing complex sociotechnical systems such as remote and virtual towers.",
+    "publication": "",
+    "citation": {
+      "type": "speech",
+      "language": "en",
+      "containerTitle": ""
+    }
+  },
+  {
+    "citationKey": "ospital2023_DevelopingData",
+    "title": "Toward Developing a Data Model for a Digital Product Passport To Enhance Circularity in Fashion",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Pantxika",
+        "lastName": "Ospital",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Cédrick",
+        "lastName": "Beler",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Ospital, Pantxika; Masson, Dimitri; Beler, Cédrick; Legardeur, Jérémy",
+    "authors_s_bold": "Ospital, Pantxika; **Masson, Dimitri**; Beler, Cédrick; Legardeur, Jérémy",
+    "authors_s_bold_html": "Ospital, Pantxika; <b>Masson, Dimitri</b>; Beler, Cédrick; Legardeur, Jérémy",
+    "file": "/Users/dimitri/Zotero/storage/K2HLS8DZ/Ospital et al. - 2023 - Toward Developing a Data Model for a Digital Produ.pdf",
+    "pdf": "ospital2023_DevelopingData.pdf",
+    "URL": "https://hal.science/hal-04082862",
+    "halURL": "https://hal.science/hal-04082862v1",
+    "halId": "hal-04082862v1",
+    "date": "2023-03-01",
+    "year": "2023",
+    "month": "03",
+    "day": "01",
+    "language": "en",
+    "abstract": "In the context of a transition to sustainable fashion, a Digital Product Passport could support the circular economy and inform consumers about the sustainability conditions of the products they intend to purchase. This paper presents our methodology to develop a data model of a DPP for the textile industry through a Grounded Theory approach. It results from the convergence of domains of expertise including the evolving legal context in Europe and France, the initiatives of brands to improve consumer information, the growing interest of academics in supply chain traceability and the evolution of stakeholders needs as they become actors of the value chain. The draft model we are presenting is gathering 16 areas of information that can be used by the stakeholders of the entire value chain.",
+    "publication": "Sustainable innovation 2023, 2023-03",
+    "conference": "Sustainable innovation 2023",
+    "place": "Epsom, United Kingdom",
+    "citation": {
+      "type": "paper-conference",
+      "language": "en",
+      "page": "8 p.",
+      "containerTitle": "Sustainable innovation 2023",
+      "publisher": "University for the creative arts"
+    }
+  },
+  {
+    "citationKey": "ambrosino2016_Ideavaluation",
+    "title": "ideavaluation",
+    "type": "computerProgram",
+    "authors": [
+      {
+        "firstName": "Julien",
+        "lastName": "Ambrosino",
+        "creatorType": "programmer"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Jeremy",
+        "lastName": "Legardeur",
+        "creatorType": "programmer"
+      }
+    ],
+    "authors_s": "Ambrosino, Julien; Masson, Dimitri; Legardeur, Jeremy",
+    "authors_s_bold": "Ambrosino, Julien; **Masson, Dimitri**; Legardeur, Jeremy",
+    "authors_s_bold_html": "Ambrosino, Julien; <b>Masson, Dimitri</b>; Legardeur, Jeremy",
+    "file": null,
+    "pdf": null,
+    "halURL": "https://hal.science/hal-01969818v1",
+    "halId": "hal-01969818v1",
+    "date": "2016-01-01",
+    "year": "2016",
+    "month": "01",
+    "day": "01",
+    "language": "en",
+    "abstract": "No abstract available",
+    "publication": "",
+    "citation": {
+      "type": "article",
+      "language": "en",
+      "containerTitle": ""
+    }
+  },
+  {
+    "citationKey": "ambrosino2016_MethodologyProject",
+    "title": "D. 1.1 Methodology of project emergence in interclustering and intersectoral context (1)",
+    "type": "report",
+    "authors": [
+      {
+        "firstName": "Julien",
+        "lastName": "Ambrosino",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Jérémy",
+        "lastName": "Legardeur",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Pauline",
+        "lastName": "Théophane",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Ambrosino, Julien; Legardeur, Jérémy; Masson, Dimitri; Théophane, Pauline",
+    "authors_s_bold": "Ambrosino, Julien; Legardeur, Jérémy; **Masson, Dimitri**; Théophane, Pauline",
+    "authors_s_bold_html": "Ambrosino, Julien; Legardeur, Jérémy; <b>Masson, Dimitri</b>; Théophane, Pauline",
+    "file": "/Users/dimitri/Zotero/storage/Y3I8MK26/Ambrosino et al. - 2016 - D. 1.1 Methodology of project emergence in intercl.pdf",
+    "pdf": "ambrosino2016_MethodologyProject.pdf",
+    "URL": "https://hal.science/hal-01440894",
+    "halURL": "https://hal.science/hal-01440894v1",
+    "halId": "hal-01440894v1",
+    "date": "2016-09-01",
+    "year": "2016",
+    "month": "09",
+    "day": "01",
+    "language": "en",
+    "abstract": "The animation of creative sessions permits to identify new opportunities for collaborative innovation projects. To support this process, a dedicated methodology called STAR (Structured and sTructuring Animation methodology for emeRgence) facilitates project emergence in interclustering and cross-sectoral context during innovation clubs.\nThis deliverable gives animation guidelines to cluster facilitators of the NEPTUNE project in order to explain how the STAR methodology shall be used during the NEPTUNE innovation clubs sessions.\nEach step of the animation process is described following the same format:\n1. prerequisites to check that the facilitator has enough information before starting a step,\n2. description of the step, which details the aims and how to use the animation tools dedicated to this step,\n3. expected outputs from the use of the STAR methodology.\nFor each step, recommendations are specified to limit issues during animation and avoid misunderstandings.\nThe STAR methodology intends to offer the best conditions to bring out innovation projects without claiming to be a systematic methodology to be exhaustively followed. Thus, the steps, advices and notes composing this document are to be taken as recommendations and should be adapted to each situation.\nTo support clusters managers in animating the NEPTUNE innovation clubs sessions, this deliverable will be completed with a face-to-face Training session for clusters managers (D1.3).",
+    "publication": "",
+    "citation": {
+      "type": "report",
+      "language": "en",
+      "containerTitle": ""
+    }
+  },
+  {
+    "citationKey": "masson2011_InspirerExplorer",
+    "title": "Inspirer, explorer: Magellan, un environnement interactif evolutionnaire pour la génération d'exemples",
+    "type": "conferencePaper",
+    "authors": [
+      {
+        "firstName": "Dimitri",
+        "lastName": "Masson",
+        "email": "d.masson@estia.fr",
+        "orcid": "0000-0002-7072-3146",
+        "idhal": "dimitri-masson"
+      },
+      {
+        "firstName": "Alexandre",
+        "lastName": "Demeure",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Gaëlle",
+        "lastName": "Calvary",
+        "creatorType": "author"
+      }
+    ],
+    "authors_s": "Masson, Dimitri; Demeure, Alexandre; Calvary, Gaëlle",
+    "authors_s_bold": "**Masson, Dimitri**; Demeure, Alexandre; Calvary, Gaëlle",
+    "authors_s_bold_html": "<b>Masson, Dimitri</b>; Demeure, Alexandre; Calvary, Gaëlle",
+    "file": "/Users/dimitri/Zotero/storage/VK3ZY7RK/hal-00760160v1.html",
+    "pdf": "masson2011_InspirerExplorer.pdf",
+    "DOI": "10.1145/2044354.2044382",
+    "URL": "https://dl.acm.org/doi/10.1145/2044354.2044382",
+    "halURL": "https://hal.science/hal-00760160v1",
+    "halId": "hal-00760160v1",
+    "date": "2011-10-24",
+    "year": "2011",
+    "month": "10",
+    "day": "24",
+    "language": "fr",
+    "abstract": "Creativity is key in User Interfaces (UI) design. Numerous methods and tools exist for supporting creativity. However few have focused on the presentation of examples so far. We propose Magellan an interactive evolutionary environment to semi-automatically generate examples galleries suited to the problem under study. We report a qualitative evaluation of Magellan for designing an Instant Messenger UI.",
+    "publication": "IHM'11: 23th French speaking Conference on Human-Computer Interaction, 2011-10-24",
+    "conference": "IHM'11: 23th French speaking Conference on Human-Computer Interaction",
+    "place": "Nice - Sophia Antipolis, France",
+    "citation": {
+      "type": "paper-conference",
+      "doi": "10.1145/2044354.2044382",
+      "language": "fr",
+      "isbn": "978-1-4503-0822-9",
+      "page": "1-7",
+      "containerTitle": "Proceedings of the 23rd Conference on l'Interaction Homme-Machine",
+      "publisher": "ACM"
+    }
+  }
+]
