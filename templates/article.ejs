@@ -6,7 +6,7 @@
   %>
   <h2><%= year %></h2>
   <% for (const item of itemsPerYear) { %>
-  <div class="quarto-post" <%=metadataAttrs(item) %>
+  <div class="quarto-post" <%="metadataAttrs(item)" %>
     >
     <div class="body">
       <h3 class="no-anchor listing-title lead">
@@ -57,6 +57,13 @@
           <span class="listing-category"><%= category %></span>
           <% } %>
         </div>
+        <% if (item.description && !item.haiku ) { %>
+        <div class="listing-description"><%= item.description %></div>
+        <% } %> <% if (item.haiku) { %>
+        <div class="listing-haiku">
+          <span>h<span class="bold">AI</span>ku</span>: <%= item.haiku %>
+        </div>
+        <% } %>
       </div>
     </div>
   </div>

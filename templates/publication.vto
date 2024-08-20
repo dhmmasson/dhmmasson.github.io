@@ -6,6 +6,9 @@ alias:
   - "@{{citationKey}}"
 date: "{{date}}"
 year: {{year}}
+description: |
+  hAIku: {{it.haiku |> replaceAll('\n', '\n  ')}}
+haiku: {{it.haiku |> replaceAll('\n', '<br>')}}
 categories: []
 publication: |
   {{it.publication}} 

@@ -44,7 +44,8 @@
       "page": "5p",
       "containerTitle": "IUI 2011-International Conference on Intelligent User Interfaces",
       "publisher": "2nd international workshop on semantic models for adaptive interactive systems"
-    }
+    },
+    "haiku": "Design's tangled paths,\nGraphs of models, clear the way,\nHCI's aftermath.\n"
   },
   {
     "citationKey": "masson2014_InspirezExplorez",
@@ -79,7 +80,8 @@
       "language": "fr",
       "containerTitle": "",
       "publisher": "Université de Grenoble"
-    }
+    },
+    "haiku": "Design's hidden well,\nCreativity, set it free,\nHCI's magic spell.\n"
   },
   {
     "citationKey": "ambrosino2017_IdeaBulbSmart",
@@ -132,7 +134,8 @@
       "page": "70–74",
       "containerTitle": "The Sixth International Conference on Smart Cities, Systems, Devices and Technologies",
       "publisher": "Berntzen, L. et al."
-    }
+    },
+    "haiku": "IdeaBulb's soft glow,\nTracks thoughts in creative flow,\nInsights start to grow.\n"
   },
   {
     "citationKey": "ambrosino2017_FosteringCollaborative",
@@ -187,56 +190,8 @@
       "page": "489–498",
       "containerTitle": "DS 87-8 proceedings of the 21st international conference on engineering design (ICED 17) vol 8: Human behaviour in design, vancouver, canada, 21-25.08. 2017",
       "publisher": "international conference on engineering design (ICED 17)"
-    }
-  },
-  {
-    "citationKey": "masson2016_DialoJ",
-    "title": "DialoJ",
-    "type": "computerProgram",
-    "authors": [
-      {
-        "firstName": "Jérémie",
-        "lastName": "Faham",
-        "creatorType": "contributor"
-      },
-      {
-        "firstName": "Dimitri",
-        "lastName": "Masson",
-        "email": "d.masson@estia.fr",
-        "orcid": "0000-0002-7072-3146",
-        "idhal": "dimitri-masson"
-      },
-      {
-        "firstName": "Jérémy",
-        "lastName": "Legardeur",
-        "creatorType": "contributor"
-      },
-      {
-        "firstName": "Maxime",
-        "lastName": "Daniel",
-        "creatorType": "contributor"
-      }
-    ],
-    "authors_s": "Faham, Jérémie; Masson, Dimitri; Legardeur, Jérémy; Daniel, Maxime",
-    "authors_s_bold": "Faham, Jérémie; **Masson, Dimitri**; Legardeur, Jérémy; Daniel, Maxime",
-    "authors_s_bold_html": "Faham, Jérémie; <b>Masson, Dimitri</b>; Legardeur, Jérémy; Daniel, Maxime",
-    "file": null,
-    "pdf": null,
-    "URL": "https://github.com/dhmmasson/dialoJ",
-    "halURL": "https://hal.science/hal-01969832v1",
-    "halId": "hal-01969832v1",
-    "date": "2016-01-01",
-    "year": "2016",
-    "month": "01",
-    "day": "01",
-    "language": "en",
-    "abstract": "No abstract available",
-    "publication": "",
-    "citation": {
-      "type": "article",
-      "language": "en",
-      "containerTitle": ""
-    }
+    },
+    "haiku": "Opinions clash bright,\nSparks of innovation fly,\nCollaboration's light.\n"
   },
   {
     "citationKey": "masson2016_ErgoIA",
@@ -277,7 +232,8 @@
       "isbn": "978-1-4503-4785-3",
       "containerTitle": "Ergo'IA '16: Proceedings of the 15th Ergo'IA \"Ergonomie Et Informatique Avancée\" Conference",
       "publisher": "ACM"
-    }
+    },
+    "haiku": "Ergonomics' art,\nWith AI's powerful hand,\nA new world will start.\n"
   },
   {
     "citationKey": "masson2018_ErgoIA",
@@ -318,68 +274,8 @@
       "isbn": "978-1-4503-6488-1",
       "containerTitle": "Ergo'IA '18: Proceedings of the 16th Ergo'IA “Ergonomie Et Informatique Avancée” Conference",
       "publisher": "ACM"
-    }
-  },
-  {
-    "citationKey": "boy2020_PRODECCombining",
-    "title": "PRODEC: combining procedural and declarative knowledge for human-centered design",
-    "type": "manuscript",
-    "authors": [
-      {
-        "firstName": "GA",
-        "lastName": "Boy",
-        "creatorType": "author"
-      },
-      {
-        "firstName": "J",
-        "lastName": "Dezemery",
-        "creatorType": "author"
-      },
-      {
-        "firstName": "R",
-        "lastName": "Lu Cong Sang",
-        "creatorType": "author"
-      },
-      {
-        "firstName": "A",
-        "lastName": "Hein Makoto",
-        "creatorType": "author"
-      },
-      {
-        "firstName": "Dimitri",
-        "lastName": "Masson",
-        "email": "d.masson@estia.fr",
-        "orcid": "0000-0002-7072-3146",
-        "idhal": "dimitri-masson"
-      },
-      {
-        "firstName": "C",
-        "lastName": "Morel",
-        "creatorType": "author"
-      },
-      {
-        "firstName": "E",
-        "lastName": "Villeneuve",
-        "creatorType": "author"
-      }
-    ],
-    "authors_s": "Boy, GA; Dezemery, J; Lu Cong Sang, R; Hein Makoto, A; Masson, Dimitri; Morel, C; Villeneuve, E",
-    "authors_s_bold": "Boy, GA; Dezemery, J; Lu Cong Sang, R; Hein Makoto, A; **Masson, Dimitri**; Morel, C; Villeneuve, E",
-    "authors_s_bold_html": "Boy, GA; Dezemery, J; Lu Cong Sang, R; Hein Makoto, A; <b>Masson, Dimitri</b>; Morel, C; Villeneuve, E",
-    "file": null,
-    "pdf": null,
-    "date": "2020-01-01",
-    "year": "2020",
-    "month": "01",
-    "day": "01",
-    "language": "en",
-    "abstract": "No abstract available",
-    "publication": "",
-    "citation": {
-      "type": "article",
-      "language": "en",
-      "containerTitle": ""
-    }
+    },
+    "haiku": "Humans and machines,\nWorking in perfect accord,\nErgo'IA intervenes.\n"
   },
   {
     "citationKey": "boy2024_PRODECHuman",
@@ -430,7 +326,8 @@
       "language": "en",
       "issn": "1098-1241, 1520-6858",
       "containerTitle": "Systems Engineering"
-    }
+    },
+    "haiku": "Man and machine dance,\nPRODEC guides their integration,\nSystems in advance.\n"
   },
   {
     "citationKey": "camaraditpinto2021_DigitalTwin",
@@ -500,7 +397,8 @@
       "volume": "54",
       "page": "869-873",
       "containerTitle": "IFAC-PapersOnLine"
-    }
+    },
+    "haiku": "Digital twin's eye,\nSees through chaos, clear and bright,\nSafety's guiding light.\n"
   },
   {
     "citationKey": "disdier2023_HumanSystems",
@@ -562,7 +460,8 @@
       "volume": "3",
       "page": "3561-3570",
       "containerTitle": "Proceedings of the Design Society"
-    }
+    },
+    "haiku": "Remote control takes hold,\nHuman touch in virtual skies,\nAir traffic, bold and old.\n"
   },
   {
     "citationKey": "camaraditpinto2024_RealityAnchor",
@@ -624,7 +523,8 @@
       "volume": "35",
       "page": "775–799",
       "containerTitle": "Journal of Engineering Design"
-    }
+    },
+    "haiku": "Digital twin's gaze,\nAnchored in the real world's flow,\nDecision-making ablaze.\n"
   },
   {
     "citationKey": "masson2021_TraceabilityInformation",
@@ -676,7 +576,8 @@
       "language": "en",
       "page": "1–7",
       "publisher": "Global Fashion Conference 2021"
-    }
+    },
+    "haiku": "Fashion's hidden cost,\nTransparency, a beacon bright,\nSustainable trust embossed.\n"
   },
   {
     "citationKey": "disdier2024_DefiningCharacterizing",
@@ -727,7 +628,8 @@
       "language": "en",
       "issn": "1520-6858",
       "containerTitle": "Systems Engineering"
-    }
+    },
+    "haiku": "Contexts converge,\nIn systems, human, machine,\nIts essence, crystal clear.\n"
   },
   {
     "citationKey": "demarcq2022_CircularProduct",
@@ -786,7 +688,8 @@
       "volume": "16",
       "page": "246-251",
       "containerTitle": "Tehnički glasnik"
-    }
+    },
+    "haiku": "Circle unbroken,\nProduct design, life renewed,\nWaste's cycle unspoken.\n"
   },
   {
     "citationKey": "houzangbe2022_VirtualReality",
@@ -856,7 +759,8 @@
       "issn": "2673-4192",
       "volume": "3",
       "containerTitle": "Frontiers in Virtual Reality"
-    }
+    },
+    "haiku": "Virtual canvas calls,\n3D sketching takes its stand,\nDesign's future enthralls.\n"
   },
   {
     "citationKey": "ospital2023_ProductTransparency",
@@ -915,7 +819,8 @@
       "volume": "16",
       "page": "186-197",
       "containerTitle": "International Journal of Fashion Design, Technology and Education"
-    }
+    },
+    "haiku": "Fashion's unveiled soul,\nTransparency, a guiding star,\nSustainable choices extol.\n"
   },
   {
     "citationKey": "salvado2019_DecisionMaking",
@@ -969,7 +874,8 @@
       "volume": "52",
       "page": "313-318",
       "containerTitle": "IFAC-PapersOnLine"
-    }
+    },
+    "haiku": "Buildings, old and worn,\nNZEB, a brighter path,\nDecision's seed is born.\n"
   },
   {
     "citationKey": "lagunasalvado2022_DecisionSupport",
@@ -1031,7 +937,8 @@
       "volume": "212",
       "page": "108786",
       "containerTitle": "Building and Environment"
-    }
+    },
+    "haiku": "Choices, clear and bright,\nDecision support system's aid,\nNZEB, shining light.\n"
   },
   {
     "citationKey": "villeneuve2019_DecisionSupport",
@@ -1100,7 +1007,8 @@
       "volume": "51",
       "page": "236-241",
       "containerTitle": "IFAC-PapersOnLine"
-    }
+    },
+    "haiku": "Sheep graze, data flows,\nPrecision guides the shepherd's hand,\nTechnology bestows.\n"
   },
   {
     "citationKey": "williams2024_TinkererMindset",
@@ -1172,7 +1080,8 @@
       "volume": "27",
       "page": "59-66",
       "containerTitle": "INSIGHT"
-    }
+    },
+    "haiku": "Uncertain roads tread,\nSafe-to-fail whispers lessons,\nJudgment redefined.\n"
   },
   {
     "citationKey": "ambrosino2016_EncourageExchanges",
@@ -1228,7 +1137,8 @@
       "page": "1–6",
       "containerTitle": "Proceedings of the 15th Ergo'IA \"Ergonomie Et Informatique Avancée\" Conference",
       "publisher": "Association for Computing Machinery"
-    }
+    },
+    "haiku": "Innovation takes flight,\nWith digital tools, we soar,\nNew ideas bloom bright.\n"
   },
   {
     "citationKey": "ambrosino2017_STARMethodologie",
@@ -1274,7 +1184,8 @@
       "type": "paper-conference",
       "language": "fr",
       "publisher": "AIP Primeca: Concevoir et produire dans les industries du futur"
-    }
+    },
+    "haiku": "Clusters join their might,\nSTAR guides collaboration,\nInnovation's bright light.\n"
   },
   {
     "citationKey": "houzangbe2023_ExplorationPhysiological",
@@ -1345,7 +1256,8 @@
       "page": "1-8",
       "containerTitle": "2023 11th International Conference on Affective Computing and Intelligent Interaction (ACII)",
       "publisher": "IEEE Computer Society"
-    }
+    },
+    "haiku": "Body's silent song,\nCreativity's rhythm flows,\nDesign, where we belong.\n"
   },
   {
     "citationKey": "lasseux2022_NAASCubeProgram",
@@ -1429,7 +1341,8 @@
       "page": "838-839",
       "containerTitle": "Proceedings of the 4th Symposium on Space Educational Activities",
       "publisher": "4th Symposium on Space Educational Activities"
-    }
+    },
+    "haiku": "Students reach for stars,\nNAASCube, a guiding light,\nAerospace's bars.\n"
   },
   {
     "citationKey": "legardeur2020_ParadoxDiversity",
@@ -1486,7 +1399,8 @@
       "language": "en",
       "isbn": "978-952-335-566-8",
       "containerTitle": "ISPIM Connects Bangkok"
-    }
+    },
+    "haiku": "Diversity's strange dance,\nA paradox, it can lift,\nOr hinder, chance's glance.\n"
   },
   {
     "citationKey": "masson2014_WebDesign",
@@ -1547,7 +1461,8 @@
       "page": "357-360",
       "containerTitle": "Proceedings of the 8th Nordic Conference on Human-Computer Interaction: Fun, Fast, Foundational",
       "publisher": "ACM"
-    }
+    },
+    "haiku": "Web design's embrace,\nSeeking styles, a common thread,\nGround truth's saving grace.\n"
   },
   {
     "citationKey": "masson2010_MagellanEvolutionary",
@@ -1597,7 +1512,8 @@
       "page": "87–92",
       "containerTitle": "Proceedings of the 2nd ACM SIGCHI symposium on Engineering interactive computing systems",
       "publisher": "Association for Computing Machinery"
-    }
+    },
+    "haiku": "Magellan's UI quest,\nEvolutionary design,\nCreativity's behest.\n"
   },
   {
     "citationKey": "masson2011_ExamplesGalleries",
@@ -1648,7 +1564,8 @@
       "page": "61–71",
       "containerTitle": "Procedings of the Second Conference on Creativity and Innovation in Design",
       "publisher": "Association for Computing Machinery"
-    }
+    },
+    "haiku": "Design's vast display,\nExamples, inspiration's source,\nInteractive sway.\n"
   },
   {
     "citationKey": "millet2019_DefinitionEspace",
@@ -1699,7 +1616,8 @@
       "type": "paper-conference",
       "language": "fr",
       "containerTitle": "S.Mart"
-    }
+    },
+    "haiku": "Sport and health unite,\nSemantic space, a bridge built,\nDesign's guiding light.\n"
   },
   {
     "citationKey": "millet2019_DefinitionSportHealth",
@@ -1758,7 +1676,8 @@
       "volume": "1",
       "page": "3841-3850",
       "containerTitle": "Proceedings of the Design Society: International Conference on Engineering Design"
-    }
+    },
+    "haiku": "Body in motion,\nSport and health, a synergy,\nDesign's new devotion.\n"
   },
   {
     "citationKey": "ospital2022_DigitalProduct",
@@ -1813,7 +1732,8 @@
       "isbn": "978-989-54-2633-1",
       "page": "11",
       "publisher": "Global Fashion Conference 2022"
-    }
+    },
+    "haiku": "Fashion's open book,\nDigital passport in hand,\nSustainable look.\n"
   },
   {
     "citationKey": "ospital2022_TotalTraceability",
@@ -1872,7 +1792,8 @@
       "volume": "32",
       "page": "1-7",
       "containerTitle": "INCOSE International Symposium, INCOSE Human Systems Integration Conference"
-    }
+    },
+    "haiku": "From thread to garment's end,\nTraceability's clear thread,\nSustainable fashion's friend.\n"
   },
   {
     "citationKey": "ospital2022_PasseportProduit",
@@ -1919,7 +1840,8 @@
       "type": "speech",
       "language": "fr",
       "containerTitle": ""
-    }
+    },
+    "haiku": "Textile's journey traced,\nDigital passport in tow,\nSustainable future embraced.\n"
   },
   {
     "citationKey": "pena-arrazola2015_InteractiveGalleries",
@@ -1980,7 +1902,8 @@
       "page": "287–288",
       "containerTitle": "Proceedings of the 2015 British HCI Conference",
       "publisher": "Association for Computing Machinery"
-    }
+    },
+    "haiku": "Web design's delight,\nInteractive wonders bloom,\nI++ sheds its light.\n"
   },
   {
     "citationKey": "pinto2021_RequirementsPrototyping",
@@ -2042,7 +1965,8 @@
       "volume": "1",
       "page": "1617-1626",
       "containerTitle": "Proceedings of the Design Society"
-    }
+    },
+    "haiku": "Digital twins arise,\nHuman needs, the guiding force,\nPrototyping never lies.\n"
   },
   {
     "citationKey": "camaraditpinto2023_MethodologieConception",
@@ -2101,7 +2025,8 @@
       "language": "fr",
       "containerTitle": "CIGI Qualita MOSIM 2023. Propulser la performance",
       "publisher": "CIGI QUALITA MOSIM 2023"
-    }
+    },
+    "haiku": "Digital twin's birth,\nAnchored in reality's core,\nDecision's true worth.\n"
   },
   {
     "citationKey": "rolos2019_OperationsRoom",
@@ -2147,7 +2072,8 @@
       "type": "paper-conference",
       "language": "en",
       "publisher": "INCOSE International Conference on Human Systems Integration"
-    }
+    },
+    "haiku": "Robots in their dance,\nControl room's watchful embrace,\nHuman-machine trance.\n"
   },
   {
     "citationKey": "lagunasalvado2019_OutilClassement",
@@ -2193,7 +2119,8 @@
       "type": "paper-conference",
       "language": "fr",
       "containerTitle": "CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA"
-    }
+    },
+    "haiku": "Buildings reborn green,\nTechnology's guiding hand,\nSustainable scene.\n"
   },
   {
     "citationKey": "villeneuve2019_DecisionDans",
@@ -2254,7 +2181,8 @@
       "type": "paper-conference",
       "language": "fr",
       "containerTitle": "CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA"
-    }
+    },
+    "haiku": "Cyber world collides,\nWith human touch, in the field,\nPrecision farming presides.\n"
   },
   {
     "citationKey": "disdier2022_StudyDesign",
@@ -2306,7 +2234,8 @@
       "type": "speech",
       "language": "en",
       "containerTitle": ""
-    }
+    },
+    "haiku": "Virtual towers rise,\nAir traffic, a new domain,\nHuman touch applies.\n"
   },
   {
     "citationKey": "ospital2023_DevelopingData",
@@ -2359,50 +2288,8 @@
       "page": "8 p.",
       "containerTitle": "Sustainable innovation 2023",
       "publisher": "University for the creative arts"
-    }
-  },
-  {
-    "citationKey": "ambrosino2016_Ideavaluation",
-    "title": "ideavaluation",
-    "type": "computerProgram",
-    "authors": [
-      {
-        "firstName": "Julien",
-        "lastName": "Ambrosino",
-        "creatorType": "programmer"
-      },
-      {
-        "firstName": "Dimitri",
-        "lastName": "Masson",
-        "email": "d.masson@estia.fr",
-        "orcid": "0000-0002-7072-3146",
-        "idhal": "dimitri-masson"
-      },
-      {
-        "firstName": "Jeremy",
-        "lastName": "Legardeur",
-        "creatorType": "programmer"
-      }
-    ],
-    "authors_s": "Ambrosino, Julien; Masson, Dimitri; Legardeur, Jeremy",
-    "authors_s_bold": "Ambrosino, Julien; **Masson, Dimitri**; Legardeur, Jeremy",
-    "authors_s_bold_html": "Ambrosino, Julien; <b>Masson, Dimitri</b>; Legardeur, Jeremy",
-    "file": null,
-    "pdf": null,
-    "halURL": "https://hal.science/hal-01969818v1",
-    "halId": "hal-01969818v1",
-    "date": "2016-01-01",
-    "year": "2016",
-    "month": "01",
-    "day": "01",
-    "language": "en",
-    "abstract": "No abstract available",
-    "publication": "",
-    "citation": {
-      "type": "article",
-      "language": "en",
-      "containerTitle": ""
-    }
+    },
+    "haiku": "Fashion's digital twin,\nA passport for circularity,\nSustainable choices within.\n"
   },
   {
     "citationKey": "ambrosino2016_MethodologyProject",
@@ -2451,7 +2338,8 @@
       "type": "report",
       "language": "en",
       "containerTitle": ""
-    }
+    },
+    "haiku": "Clusters intertwine,\nSTAR guides innovation's path,\nNew projects will shine.\n"
   },
   {
     "citationKey": "masson2011_InspirerExplorer",
@@ -2502,6 +2390,7 @@
       "page": "1-7",
       "containerTitle": "Proceedings of the 23rd Conference on l'Interaction Homme-Machine",
       "publisher": "ACM"
-    }
+    },
+    "haiku": "Magellan's guiding light,\nThrough UI's creative sea,\nInspiration takes flight.\n"
   }
 ]

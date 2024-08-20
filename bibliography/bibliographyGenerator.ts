@@ -3,6 +3,7 @@ import { join } from "https://deno.land/std/path/mod.ts";
 import { Item } from "./zotero.d.ts";
 import { PersonDatabase } from "./creator.ts";
 import { format } from "https://deno.land/std@0.224.0/datetime/format.ts";
+import { parse } from "npm:yaml";
 async function getJson(filePath: string) {
   return JSON.parse(await Deno.readTextFile(filePath));
 }
@@ -13,6 +14,7 @@ const config = {
   outputFolder: "./publications", // Output folder for the generated files
   templateFolder: "./templates", // Folder containing the templates
   bibliographyDb: "./bibliography/bibliography.json", // Path to the bibliography database
+  bibliography: "./bibliography", // Path to the bibliography folder
 };
 
 const bibliography = await getJson(config.bibliographyDb);
@@ -218,32 +220,42 @@ const publicationExtraction = (item: Item) => {
     publication: "",
   };
 };
+
+const haikuFilePath = join(config.bibliography, "haiku.yml");
+const haikuContent = await Deno.readTextFile(haikuFilePath);
+const haikuData = parse(haikuContent) as Record<string, { haiku: string }>;
+
 const cleanItems = [];
 for (const item of items) {
-  const cleanItem = {
-    citationKey: item.citationKey,
-    title: item.title,
-    type: item.itemType,
-    ...creatorExtractor(item),
-    file:
-      item.attachments && item.attachments.length > 0
-        ? item.attachments[0].path
-        : null,
-    pdf:
-      item.attachments && item.attachments.length > 0
-        ? `${item.citationKey}.pdf`
-        : null,
+  try {
+    const cleanItem = {
+      citationKey: item.citationKey,
+      title: item.title,
+      type: item.itemType,
+      ...creatorExtractor(item),
+      file:
+        item.attachments && item.attachments.length > 0
+          ? item.attachments[0].path
+          : null,
+      pdf:
+        item.attachments && item.attachments.length > 0
+          ? `${item.citationKey}.pdf`
+          : null,
 
-    DOI: item.DOI,
-    URL: item.url,
-    ...halExtractor(item),
-    ...dateExtractor(item),
-    language: item.language ?? "en",
-    abstract: item.abstractNote ?? "No abstract available",
-    ...publicationExtraction(item),
-    ...citationExtractor(item),
-  };
-  cleanItems.push(cleanItem);
+      DOI: item.DOI,
+      URL: item.url,
+      ...halExtractor(item),
+      ...dateExtractor(item),
+      language: item.language ?? "en",
+      abstract: item.abstractNote ?? "No abstract available",
+      ...publicationExtraction(item),
+      ...citationExtractor(item),
+      haiku: item.citationKey && haikuData[item.citationKey].haiku,
+    };
+    cleanItems.push(cleanItem);
+  } catch (error) {
+    console.error("Error processing", item.citationKey, error);
+  }
 }
 // save json
 await Deno.writeTextFile(
