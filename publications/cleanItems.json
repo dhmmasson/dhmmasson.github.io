@@ -73,6 +73,7 @@
     "language": "fr",
     "abstract": "My PhD thesis contributes to the engineering of Human Computer Interaction (HCI). It deals with the design of User Interfaces (UI). I claim that creative processes should be better considered, and supported by tools especially for novice designers. The challenge is to speed up the exploration of the design space at the early stages of the process. This claim is grounded in both a theoretical state of the art in creativity and creativity support tools, and in practice of the topic with four hands-on experiences of creativity in different areas of design such as architecture, product design and UI design. I build my contribution on the following principles: (1) creativity is not reserved for the elite, but can be tailored and fostered by software tools; (2) the tools must leverage motivation, inspiration, wide exploration, and knowledge in UI and design processes. Through a reflective process, I apply these principles to my thesis. I explore a wide range of creativity support tools through five complementary software contributions: Maestro and Bank for supporting knowledge capitalization; WebGallery, BrianStorming and Magellan for fostering inspiration and exploration of the design space. Maestro addresses the capitalization of design processes whilst BANK gathers knowledge in HCI as a graph of models. WebGallery is a gallery of websites to inspire designers: I report an experiment on human perception of websites styles. BrianStorming is a brainstorming assistant: it provides suggestions in a electronic brainstorming session. Magellan is an interactive environment based on genetic algorithms that automatically generate and transform UIs for a given design problem. This changes the role of the computer: from a simple tool, it becomes a designer's partner in the creative process.",
     "publication": "Université de Grenoble, 2014-09-25",
+    "institution": "Université de Grenoble",
     "citation": {
       "type": "thesis",
       "language": "fr",
@@ -421,12 +422,14 @@
     "day": "04",
     "language": "en",
     "abstract": "The purpose of the PRODEC scenario-based design method is the incremental crossfertilization and refinement of procedural scenarios and declarative configurations. It uses virtual prototypes of the developed systems (mainly life-critical systems) to conduct human-in-the-loop simulations (HITLSs). Based on human systems integration (HSI) principles and criteria, as well as expertise and experience in the domain at stake, this HSI approach grounded in virtual environments requires a clear definition of physical and cognitive tangibility metrics to assess the distance between virtual and tangible (grasp) dimensions of the system being developed when it is put to work. PRODEC considers human and machine systems described in terms of structures and functions incrementally designed using procedural scenarios (i.e., stories) in task and activity networks, which provide life to declarative configurations (i.e., system’s functions and structures). This active modeling and simulation process enables the discovery of emergent structures and functions of the system being developed when it is virtually operated. PRODEC’s use is illustrated in an example. We discuss the use of PRODEC and its results as to how they can be used with digital twins.",
-    "publication": "Sys. Eng., undefined(undefined), undefined",
+    "publication": "Sys. Eng.",
+    "journal": "Sys. Eng.",
     "citation": {
       "type": "article-journal",
       "doi": "10.1002/sys.21751",
       "language": "en",
-      "issn": "1098-1241, 1520-6858"
+      "issn": "1098-1241, 1520-6858",
+      "containerTitle": "Systems Engineering"
     }
   },
   {
@@ -482,7 +485,8 @@
     "day": "01",
     "language": "en",
     "abstract": "The oil-and-gas industry is known to be part of the most safety-critical domains. Safety culture has prompted such companies to implement new systems to support decision-making. In this paper, we explore the use of digital twins to support situation awareness as a crucial part of real-time decisionmaking processes. Therefore, this paper presents requirements for the development of an eight components digital twin. Human-centered approach contributes to add useful information based on user needs and user experience to the usual theoretical process. This user-centered information helped shape both digital twin components and the situation awareness model.",
-    "publication": "IFAC-PapersOnLine, 54(1), 869-873",
+    "publication": "IFAC-PapersOnLine, 54(1)",
+    "journal": "IFAC-PapersOnLine",
     "volume": "54",
     "issue": "1",
     "pages": "869-873",
@@ -494,7 +498,8 @@
       "issn": "2405-8963",
       "issue": "1",
       "volume": "54",
-      "page": "869-873"
+      "page": "869-873",
+      "containerTitle": "IFAC-PapersOnLine"
     }
   },
   {
@@ -545,7 +550,8 @@
     "day": "01",
     "language": "en",
     "abstract": "Remote and virtual centers have been studied for the past twenty years as an alternative to the traditional air traffic control tower environment. Designing such complex sociotechnical systems requires a systems engineering approach that appropriately integrates the human element as well as the technological and organizational components. In this paper, we identify the challenges of implementing this human-systems integration in the design of complex systems. We present the feedback we obtained from a series of semi-structured interviews with people involved in the development of military air traffic solutions. The participants' responses helped us establish methodological guidelines for designing and building a disruptive remote and virtual air traffic control center. We discuss how virtualized humanin-the-loop simulations in particular should help designers analyze user activity and be more flexible in system acquisition.",
-    "publication": "Proc. Des. Soc., 3(undefined), 3561-3570",
+    "publication": "Proc. Des. Soc., 3",
+    "journal": "Proc. Des. Soc.",
     "volume": "3",
     "pages": "3561-3570",
     "citation": {
@@ -554,7 +560,8 @@
       "language": "en",
       "issn": "2732-527X",
       "volume": "3",
-      "page": "3561-3570"
+      "page": "3561-3570",
+      "containerTitle": "Proceedings of the Design Society"
     }
   },
   {
@@ -603,7 +610,8 @@
     "day": "10",
     "language": "en",
     "abstract": "This work focuses on the opportunity to use the Digital Twin of a complex system, as a Decision Support System. In studying the phenomenon of human Decision Making, the concept of Situation Awareness appears to be of primary importance when dealing with these complex systems. Given the complexity of the system to be represented in the DT, its own complexity, and the need to integrate the user’s abilities to allow the acquisition of SA, the concept of reality anchor is proposed to identify the elements of the studied situation necessary for users to perceive, understand and project the situation they face. A methodology, called the Reality Anchor Methodology, has been defined to ensure the elicitation and implementation of these elements in a DT. This methodology is composed of three steps that aim (1) to elicit the reality anchors through a study of the operators’ tasks and activities, (2) to design a prototype to carry out human-in-the-loop tests and (3) to validate the definition of Reality Anchors by analysing the SA, experience feedback and the activities performed during the tests. This method was applied to a case study in the oil-and-gas industry and showed the importance of the defined reality anchors.",
-    "publication": "Journal of Engineering Design, 35(6), 775–799",
+    "publication": "J. Eng. Des., 35(6)",
+    "journal": "J. Eng. Des.",
     "volume": "35",
     "issue": "6",
     "pages": "775–799",
@@ -614,7 +622,8 @@
       "issn": "0954-4828",
       "issue": "6",
       "volume": "35",
-      "page": "775–799"
+      "page": "775–799",
+      "containerTitle": "Journal of Engineering Design"
     }
   },
   {
@@ -710,16 +719,14 @@
     "day": "01",
     "language": "en",
     "abstract": "Many efforts from multiple academic and industrial disciplines have studied the notion of context. The systems engineering and human systems integration fields, however, lack a generalized definition and characterization of context, in particular the operational context of complex sociotechnical systems. This paper reviews context definitions and builds a generalized definition of the operational context of complex sociotechnical systems. The objective is then to identify and extract context properties which are often implicit in the literature and do not necessarily appear in the definitions. However, eliciting them is helpful for understanding what context is made of, how it relates to complex sociotechnical systems comprising human and non-human agents, and how an early understanding of the operational context can prove valuable to designing efficient and robust systems. Our analysis is followed by an example of how our definition and derived properties apply to the case study of the design of a remote and virtual air traffic control center.",
-    "publication": "Sys. Eng., n/a(n/a), undefined",
-    "volume": "n/a",
-    "issue": "n/a",
+    "publication": "Sys. Eng.",
+    "journal": "Sys. Eng.",
     "citation": {
       "type": "article-journal",
       "doi": "10.1002/sys.21775",
       "language": "en",
       "issn": "1520-6858",
-      "issue": "n/a",
-      "volume": "n/a"
+      "containerTitle": "Systems Engineering"
     }
   },
   {
@@ -765,7 +772,8 @@
     "day": "08",
     "language": "en",
     "abstract": "Works on garment and shoe dismantlement and recycling have highlighted the complexity of this kind product and the difficulty to find a recycling channel for each material they are made of. The way they are designed perturbate the recycling process a...",
-    "publication": "Tehnički glasnik, 16(2), 246-251",
+    "publication": "Tehnički glasnik, 16(2)",
+    "journal": "Tehnički glasnik",
     "volume": "16",
     "issue": "2",
     "pages": "246-251",
@@ -776,7 +784,8 @@
       "issn": "1846-6168, 1848-5588",
       "issue": "2",
       "volume": "16",
-      "page": "246-251"
+      "page": "246-251",
+      "containerTitle": "Tehnički glasnik"
     }
   },
   {
@@ -837,14 +846,16 @@
     "day": "31",
     "language": "en",
     "abstract": "<p>Creativity is key in the early phases of innovation processes. With the rapid evolution of technologies, designers now have access to various tools to support this activity. Virtual reality (VR) takes over multiple domains, especially during conception. However, is VR really facilitating creativity in the initial ideation phases? We compare two sketching modalities through dedicated creativity support tools (CSTs): one in VR and one on a 2D interactive whiteboard. We propose a two-part creativity task (divergent and convergent thinking) for two groups of 30 participants each. We record user experience, creative experience, and creative performance. Our results show that VR is more stimulating, attractive, and engaging. We also observe a better level of creativity for the participants using the VR CST. Our results indicate that VR is an effective and relevant tool to boost creativity and that this effect might carry over to following creative tasks.</p>",
-    "publication": "Front. Virtual Real., 3(undefined), undefined",
+    "publication": "Front. Virtual Real., 3",
+    "journal": "Front. Virtual Real.",
     "volume": "3",
     "citation": {
       "type": "article-journal",
       "doi": "10.3389/frvir.2022.958223",
       "language": "en",
       "issn": "2673-4192",
-      "volume": "3"
+      "volume": "3",
+      "containerTitle": "Frontiers in Virtual Reality"
     }
   },
   {
@@ -890,7 +901,8 @@
     "day": "04",
     "language": "en",
     "abstract": "In the textile industry, corporate transparency does not provide information about products that would allow customers to make informed purchases. Based on a literature review, the concept of product transparency is defined as the disclosure of information concerning a specific product about traceability and sustainability conditions for the supplier, as well as the entire lifecycle and the buying firm's purchasing practices. A field study in the current fashion landscape evaluated the situation of actual practices concerning transparency and compared information available online and in-store regarding both product transparency and corporate transparency. The information available at the time of purchase is limited and even more so on the internet. An experiment with a brand to create a customer information model for a specific product focuses on the importance of traceability for gathering the information necessary. The authors discuss the necessity of centralising information in a Digital Product Passport for greater transparency.",
-    "publication": "Int J Fash Des Technol Educ, 16(2), 186-197",
+    "publication": "Int J Fash Des Technol Educ, 16(2)",
+    "journal": "Int J Fash Des Technol Educ",
     "volume": "16",
     "issue": "2",
     "pages": "186-197",
@@ -901,7 +913,8 @@
       "issn": "1754-3266",
       "issue": "2",
       "volume": "16",
-      "page": "186-197"
+      "page": "186-197",
+      "containerTitle": "International Journal of Fashion Design, Technology and Education"
     }
   },
   {
@@ -942,7 +955,8 @@
     "day": "01",
     "language": "en",
     "abstract": "Decision making in the context of Near Zero Energy Building refurbishment is subjected to heterogeneous stakeholders, tools and objectives. This paper presents a methodology to facilitate stakeholders collaboration in the refurbishment processes and identifies decision support approaches to help on the main decision milestones. This methodology is supported by a prototype (user interface and algorithm) of a decision support system (DSS) that allows ranking different refurbishment technologies. The proposed DSS uses a multi criteria decision method that combines weighting and fuzzy dominances approach. The approach is illustrated with a real data set to rank insulation materials.",
-    "publication": "IFAC-PapersOnLine, 52(13), 313-318",
+    "publication": "IFAC-PapersOnLine, 52(13)",
+    "journal": "IFAC-PapersOnLine",
     "volume": "52",
     "issue": "13",
     "pages": "313-318",
@@ -953,7 +967,8 @@
       "issn": "2405-8963",
       "issue": "13",
       "volume": "52",
-      "page": "313-318"
+      "page": "313-318",
+      "containerTitle": "IFAC-PapersOnLine"
     }
   },
   {
@@ -1004,7 +1019,8 @@
     "day": "15",
     "language": "en",
     "abstract": "Refurbishing existing building into Near Zero Energy Building (NZEB) is a key objective for the European Union. In order to achieve high rate of conversion, new refurbishment process must allow Decision Makers (DMs) (architects or designers) to sort through an ever increasing list of new technologies while taking into account uncertain preferences from multiple stakeholders. A Decision Support System (DSS) based on Multi-Criteria Decision-Making (MCDM) approaches is proposed. The DSS enables the DMs to browse the solutions space by selecting the relevant criteria, order them by preferences and specify the granularity in the assessment of the technologies regarding each criteria. This DSS is based on a ranking algorithm that operates on multiple types of quantitative (continuous, discrete, or binary) and qualitative (nominative or ordinal) variables from technological and human sources. An online user interface allows the real-time exploration of the solution space. A sensitivity analysis of the algorithm is conducted to expose the influence of the ranking algorithm parameters and to demonstrate the robustness of this algorithm. The proposed DSS is eventually implemented and validated through a use case concerning the choice of insulating materials considering heterogeneous criteria that model sustainable constraints.",
-    "publication": "Building and Environment, 212(undefined), 108786",
+    "publication": "Building and Environment, 212",
+    "journal": "Building and Environment",
     "volume": "212",
     "pages": "108786",
     "citation": {
@@ -1013,7 +1029,8 @@
       "language": "en",
       "issn": "0360-1323",
       "volume": "212",
-      "page": "108786"
+      "page": "108786",
+      "containerTitle": "Building and Environment"
     }
   },
   {
@@ -1069,7 +1086,8 @@
     "day": "01",
     "language": "en",
     "abstract": "While the 7 million-head French sheep industry is contracting, the average herd size is rising, providing challenging issues to maintain and improve its productivity. Precision Livestock Farming has allowed the sheeps and herds to be equipped with sensors and has a result the amount of data to be processed by farmers has surged. We argue that in order for the farmers to take appropriate actions there is a need for the development of a decision support system that take into account not only real-time data but also expert knowledge. In this work, we first highlight the specific challenges presented by the field of precision sheep farming to the development of a Cyber-Physical and Human System. We then introduce a methodology to implement a decision support in this context.",
-    "publication": "IFAC-PapersOnLine, 51(34), 236-241",
+    "publication": "IFAC-PapersOnLine, 51(34)",
+    "journal": "IFAC-PapersOnLine",
     "volume": "51",
     "issue": "34",
     "pages": "236-241",
@@ -1080,7 +1098,8 @@
       "issn": "2405-8963",
       "issue": "34",
       "volume": "51",
-      "page": "236-241"
+      "page": "236-241",
+      "containerTitle": "IFAC-PapersOnLine"
     }
   },
   {
@@ -1139,7 +1158,8 @@
     "day": "01",
     "language": "en",
     "abstract": "Tinkering — or making small changes to experiment toward an improvement in performance — is seemingly a natural characteristic of many systems engineers. As such, systems engineers are uniquely qualified to develop complex solutions necessary to overcome lack of clarity, achieve order, and avoid failure. Further, there is a much broader conversation surrounding the possibility of “failure” being beneficial in systems engineering projects. In response to the needing to inform judgment in situations shrouded in uncertainty, members of INCOSE's Technical Leadership Institute (TLI) cohort 8 examined the role of safe-to-fail probes play in informing judgement for systems engineers. Within the constraints of the TLI's major project, virtual workshops and qualitative interviews were two data collection mechanisms established to empirically investigate the role(s) of safe-to-fail probing in systems engineering. Overall, the data sets offered conclusions describing the potential role(s) of safe-to-fail probes for systems engineers working in uncertain environments. Resulting from this (limited) empirical exploration are additional insights and implications for how systems engineers may invoke safe-to-fail probes to improve decision-making in uncertain and challenging situations. Such a tinkerer's mindset can help systems engineers transition from the constraints of “intolerable failure” to the opportunities related to probing-sensing-responding to “responsible failures.”",
-    "publication": "INSIGHT, 27(3), 59-66",
+    "publication": "INSIGHT, 27(3)",
+    "journal": "INSIGHT",
     "volume": "27",
     "issue": "3",
     "pages": "59-66",
@@ -1150,7 +1170,8 @@
       "issn": "2156-4868",
       "issue": "3",
       "volume": "27",
-      "page": "59-66"
+      "page": "59-66",
+      "containerTitle": "INSIGHT"
     }
   },
   {
@@ -1723,7 +1744,8 @@
     "day": "01",
     "language": "en",
     "abstract": "Product success depends on its capacity to meet users’ expectations. Human Centred Design approach helps to reach this success by focussing on users’ needs in the design process. These needs are as well functional as hedonic. Designing products requires then to design hedonic properties affecting users’ perception. For sport products, people wants to improve their performances while maintaining their health. Sport products are then considered not only “sporty” but also “healthy”. Thus, integrating both health and sport expectations into the design process are necessary.Last decades, Affective Engineering was developed to integrate perception into the design process. Applying this approach for sport products may allow defining and mixing sport and health perceptual characteristics all along the design process. However, defining these characterisitics into requirements implies to translate them into semantic terms. If we observe semantic descriptors for sport products and for health products, they seem opposite. In this paper, we aim defining a semantic space representative and respectful of both domains, sport and health, while they oppose.",
-    "publication": "Proc. Des. Soc., 1(1), 3841-3850",
+    "publication": "Proc. Des. Soc., 1(1)",
+    "journal": "Proc. Des. Soc.",
     "volume": "1",
     "issue": "1",
     "pages": "3841-3850",
@@ -1734,7 +1756,8 @@
       "issn": "2220-4342",
       "issue": "1",
       "volume": "1",
-      "page": "3841-3850"
+      "page": "3841-3850",
+      "containerTitle": "Proceedings of the Design Society: International Conference on Engineering Design"
     }
   },
   {
@@ -1835,7 +1858,8 @@
     "day": "01",
     "language": "en",
     "abstract": "The Textile & Clothing industry is facing systemic and global challenges due both to ecological and economic crises. Today, increasing full traceability of supply chain is one of the key points to optimize production but it should also serve to inform consumers to foster sustainable purchasing decision. We argue that the total traceability of the garment supply chain must be constructed to enable a full transparency for the consumer. In this paper, we will start analysing brands’ transparency communication and describe the particular complexities of the textile supply chain.",
-    "publication": "HSI2021, 32(S1), 1-7",
+    "publication": "HSI2021, 32(S1)",
+    "journal": "HSI2021",
     "volume": "32",
     "issue": "S1",
     "pages": "1-7",
@@ -1846,7 +1870,8 @@
       "issn": "2334-5837",
       "issue": "S1",
       "volume": "32",
-      "page": "1-7"
+      "page": "1-7",
+      "containerTitle": "INCOSE International Symposium, INCOSE Human Systems Integration Conference"
     }
   },
   {
@@ -2005,7 +2030,8 @@
     "day": "01",
     "language": "en",
     "abstract": "Industrial digital transformation is bringing a need for new tools and concepts. However, designing such complex tools and concept requires methods to be correctly implemented. These methods are studied as part of system engineering to satisfy various identified goals, and more specifically human-system integration, which is the topic of this paper. This article introduces the method used to define key elements of human perception of reality called reality anchors to design scenarios to be tested in a digital twin prototype. This method goes from regulation study to user cognitive function analysis on the specific case of digital twin designing in oil-and-gas industry. This method highlighted the differences between theoretical process and the followed process as well as tools and competencies used to identify reality anchors. This knowledge will then be used to implement a new process to be implemented with a digital twin and scenarios to test the prototype using realistic simulation.",
-    "publication": "Proc. Des. Soc., 1(undefined), 1617-1626",
+    "publication": "Proc. Des. Soc., 1",
+    "journal": "Proc. Des. Soc.",
     "volume": "1",
     "pages": "1617-1626",
     "citation": {
@@ -2014,7 +2040,8 @@
       "language": "en",
       "issn": "2732-527X",
       "volume": "1",
-      "page": "1617-1626"
+      "page": "1617-1626",
+      "containerTitle": "Proceedings of the Design Society"
     }
   },
   {
