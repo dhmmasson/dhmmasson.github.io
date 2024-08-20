@@ -118,7 +118,7 @@ const cslTypeMap = new Map([
 ]);
 
 const cslTypeConvertor = (item: Item) => {
-  if (cslTypeMap.has(item.itemType)) {
+  if (item.itemType && cslTypeMap.has(item.itemType)) {
     return cslTypeMap.get(item.itemType);
   }
   return "article";
@@ -127,7 +127,7 @@ const cslTypeConvertor = (item: Item) => {
 const containerTitleExtractor = (item: Item) => {
   if (item.itemType === "journalArticle") {
     return {
-      containerTitle: item.journal,
+      containerTitle: item.publicationTitle ?? item.journalAbbreviation,
     };
   }
   if (item.itemType === "conferencePaper") {
@@ -185,8 +185,14 @@ const citationExtractor = (item: Item) => ({
 const publicationExtraction = (item: Item) => {
   if (item.itemType === "journalArticle") {
     return {
-      publication: `${item.journalAbbreviation}, ${item.volume}(${item.issue}), ${item.pages}`,
-      journal: item.journal,
+      publication: `${item.journalAbbreviation}, ${item.volume ?? "n/a"}(${
+        item.issue ?? "n/a"
+      })`
+        .replaceAll("n/a", "")
+        .replace("()", "")
+        .trim()
+        .replace(/,$/, ""),
+      journal: item.journalAbbreviation,
       volume: item.volume,
       issue: item.issue,
       pages: item.pages,
@@ -205,7 +211,7 @@ const publicationExtraction = (item: Item) => {
   if (item.itemType === "thesis") {
     return {
       publication: `${item.university}, ${item.date}`,
-      institution: item.institution,
+      institution: item.university,
     };
   }
   return {
@@ -247,7 +253,7 @@ await Deno.writeTextFile(
 
 for (const item of cleanItems) {
   if (item.type && validTypes.includes(item.type) && item.citationKey) {
-    console.log("Processing", item.citationKey);
+    // console.log("Processing", item.citationKey);
     try {
       const result = await publicationTemplate(item);
       // Create a folder for the item
@@ -255,7 +261,6 @@ for (const item of cleanItems) {
       await Deno.mkdir(destination, {
         recursive: true,
       });
-
       // Save file in the output folder
       await Deno.writeTextFile(join(destination, `index.md`), result.content);
       // Copy item.file to the output folder

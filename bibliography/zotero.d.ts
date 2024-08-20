@@ -163,6 +163,7 @@ export interface Item {
   tags?: Tag[];
   title?: string;
   type?: string;
+  university?: string;
   uri?: string;
   url?: string;
   versionNumber?: string;
