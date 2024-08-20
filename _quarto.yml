@@ -41,4 +41,5 @@ format:
       - https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
       - https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css
     email-obfuscation: javascript
-    
+    include-after-body: assets/scripts/obsidian-citation.html
+

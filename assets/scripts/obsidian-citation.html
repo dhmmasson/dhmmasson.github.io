@@ -1,0 +1,23 @@
+<script>
+  /**
+   * Quarto Hover effect of citations expect the data-cites attribute to be on the parent element of the link with the role doc-biblioref
+   * when writing [@citation](url/to/full/citation) in markdown, Obsidian will render it as a link with the data-cites attribute on a span element inside the link
+   * This script moves the data-cites attribute to the parent element of the link
+   * @author @dhmmasson
+   * @version 1.0
+   * @license MIT
+   */
+  window.document.addEventListener("DOMContentLoaded", () => {
+    // Find the links that contains an element with the data-cites attribute
+    const bibliorefs = window.document.querySelectorAll("a [data-cites]");
+    bibliorefs.forEach((biblioref) => {
+      const reference = biblioref.getAttribute("data-cites");
+      const a = biblioref.closest("a");
+      // Add the role to the link
+      a.setAttribute("role", "doc-biblioref");
+      // Move the data-cites up to the parent element as it is were quarto expects it
+      a.parentElement.setAttribute("data-cites", reference);
+    });
+    console.log("first");
+  });
+</script>
