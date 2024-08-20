@@ -1,5 +1,8 @@
 [
   "qmd-as-md-obsidian",
   "quickadd",
-  "obsidian-shellcommands"
+  "obsidian-shellcommands",
+  "obsidian-citation-plugin",
+  "obsidian-custom-file-extensions-plugin",
+  "obsidian-html-plugin"
 ]

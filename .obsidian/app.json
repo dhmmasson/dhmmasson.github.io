@@ -3,6 +3,8 @@
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "./",
   "alwaysUpdateLinks": true,
-  "tabSize": 4,
-  "readableLineLength": false
+  "tabSize": 2,
+  "readableLineLength": false,
+  "newLinkFormat": "relative",
+  "useTab": false
 }
