@@ -3,7 +3,7 @@ title: |
   {{title}}
 alias:
   - "{{title |> replaceAll("\"", "\\\"")}}"
-  - {{citationKey}}
+  - "@{{citationKey}}"
 date: "{{date}}"
 year: {{year}}
 categories: []
@@ -20,12 +20,12 @@ citation:
   citation-key: {{it.citationKey}}
   type: {{it.citation.type}}
   {{- if it.citation.containerTitle}}
-  container-title: |
-    "{{it.citation.containerTitle}}"
+  container-title: >
+    {{it.citation.containerTitle}}
   {{- /if -}}
   {{- if citation.publisher}}
   publisher: |
-    "{{it.citation.publisher}}"
+    {{it.citation.publisher}}
   {{- /if -}}
   {{- if it.citation.volume}}
   volume: "{{it.citation.volume}}"
@@ -39,9 +39,6 @@ citation:
   isbn: "{{it.citation.isbn}}"{{/if}}
   {{- if it.citation.issn}}
   issn: "{{it.citation.issn}}"{{/if}}
-google-scholar: true 
-abstract: >
-  {{it.abstract |> replaceAll("\n", "\n  ") |> safe}}
 pdf: {{it.pdf}}
 links:
   - icon: bi bi-file-earmark-pdf
@@ -51,9 +48,16 @@ links:
     name: HAL
     url: {{it.halURL}}
 ---
+
+
 ::: {.callout-note collapse="true"}
+
 ## See the paper
-{{if it.file}}
-  {{echo -}}{{< pdf {{/echo}}{{it.pdf}}{{echo}} width=100% height=800 >}} {{/echo}}
-{{/if}}
+
+{{if it.file}}{{echo -}}{{< pdf {{/echo}}{{it.pdf}}{{echo}} width=100% height=800 >}} {{/echo}}{{/if}}
 :::
+
+
+## Abstract
+
+{{it.abstract}}
