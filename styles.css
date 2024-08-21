@@ -11,3 +11,71 @@
   line-height: 1;
   vertical-align: 0;
 }
+
+:root {
+  --halcolor1: #20208c;
+  --halcolor2: #ff4600;
+}
+.hal {
+  /* background: linear-gradient(to right, var(--halcolor1), var(--halcolor2)); */
+  --bs-btn-bg: var(--halcolor1);
+  --bs-btn-hover-bg: var(--halcolor2);
+  --bs-btn-hover-border-color: var(--halcolor2);
+  /* --bs-btn-hover-color: var(--halcolor1); */
+  /* border: none;
+    border-image-source: linear-gradient(
+      to right,
+      var(--halcolor1),
+      var(--halcolor2)
+    );
+
+    border-image-slice: 1;
+    border-bottom: 5px solid;
+    padding-bottom: calc(var(--bs-btn-padding-y) - 5px);
+    border-right-color: var(--halcolor1); */
+}
+.hal:hover {
+  transition: all 0.05s;
+}
+.hal i {
+  color: var(--halcolor2);
+}
+.hal:hover i {
+  color: white;
+}
+
+.listing-author {
+  font-size: 0.8em;
+}
+div.quarto-post a.btn-dark,
+div.quarto-post a.btn-info,
+div.quarto-post a.btn-primary {
+  color: var(--bs-btn-color) !important;
+}
+
+.listing-haiku {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+div.quarto-post div.metadata {
+  flex-basis: 20% !important;
+}
+
+.quarto-title-banner {
+  background-size: cover;
+  background-position: center;
+  /* color: white; */
+  /* box-shadow: inset 0 0 0 1000px #004055cc; */
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 64, 85, 1) 0%,
+      rgba(0, 64, 86, 0.9) 50%,
+      rgba(0, 64, 85, 0.75) 55%
+    ),
+    url(_cover_images/Book.webp);
+}
