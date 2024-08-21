@@ -6,7 +6,7 @@
   %>
   <h2><%= year %></h2>
   <% for (const item of itemsPerYear) { %>
-  <div class="quarto-post" <%="metadataAttrs(item)" %>
+  <div class="quarto-post" <%=metadataAttrs(item) %>
     >
     <div class="body">
       <h3 class="no-anchor listing-title lead">
@@ -51,13 +51,13 @@
         >
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
-        <% } %>
+        <% } %> <% if (item.categories && item.categories.length > 0) { %>
         <div class="listing-categories">
           <% for (const category of item.categories ) { %>
           <span class="listing-category"><%= category %></span>
           <% } %>
         </div>
-        <% if (item.description && !item.haiku ) { %>
+        <% } %> <% if (item.description && !item.haiku ) { %>
         <div class="listing-description"><%= item.description %></div>
         <% } %> <% if (item.haiku) { %>
         <div class="listing-haiku">

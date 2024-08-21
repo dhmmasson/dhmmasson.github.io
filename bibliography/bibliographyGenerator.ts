@@ -239,7 +239,7 @@ for (const item of items) {
           : null,
       pdf:
         item.attachments && item.attachments.length > 0
-          ? `${item.citationKey}.pdf`
+          ? `_files/${item.citationKey}.pdf`
           : null,
 
       DOI: item.DOI,
@@ -263,22 +263,27 @@ await Deno.writeTextFile(
   JSON.stringify(cleanItems, null, 2)
 );
 
+const file_destination = join(config.outputFolder, "_files");
+await Deno.mkdir(file_destination, {
+  recursive: true,
+});
+
 for (const item of cleanItems) {
   if (item.type && validTypes.includes(item.type) && item.citationKey) {
     // console.log("Processing", item.citationKey);
     try {
       const result = await publicationTemplate(item);
       // Create a folder for the item
-      const destination = join(config.outputFolder, item.citationKey);
-      await Deno.mkdir(destination, {
-        recursive: true,
-      });
+
       // Save file in the output folder
-      await Deno.writeTextFile(join(destination, `index.md`), result.content);
+      await Deno.writeTextFile(
+        join(config.outputFolder, `${item.citationKey}.md`),
+        result.content
+      );
       // Copy item.file to the output folder
       if (item.file) {
         const file = item.file;
-        const dest = join(destination, item.citationKey + ".pdf");
+        const dest = join(file_destination, item.citationKey + ".pdf");
         await Deno.copyFile(file, dest);
       }
     } catch (error) {
