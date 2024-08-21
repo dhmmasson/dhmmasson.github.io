@@ -9,22 +9,30 @@ bibliography: ./bibliography/bibliography.bib
 citeproc: true
 csl: ./bibliography/apa.csl
 
-
 website:
   title: "Dimitri Masson"
   favicon: assets/favicon_128_128.ico
   navbar:
     logo: assets/favicon_128_128.webp
+    toggle-position: right
     right:
-      - text: "About Me"
+      - text: "About"
         href: about.qmd
-      - Bibliography.md
+      - text: Bibliography.md        
       - icon: github
         href: https://github.com/dhmmasson
       - icon: linkedin
         href: https://www.linkedin.com/in/dimitri-masson-a595612b/
       - icon: ai ai ai-researchgate-square
         href: https://www.researchgate.net/profile/Dimitri-Masson-2
+  page-footer:
+    left: 
+      - text: "© 2024 Dimitri Masson"
+    right:
+      - text: "Built with Quarto, "
+      - text: "Source code available on GitHub"
+      - icon: github
+        href: https://github.com/dhmmasson/dhmmasson.github.io
   open-graph: 
     locale: en_US
 format:
@@ -33,9 +41,9 @@ format:
       light: 
         - litera
         - assets/dhmmasson_light.scss
-      dark:
-        - litera
-        - assets/dhmmasson_dark.scss
+      # dark:
+      #   - litera
+      #   - assets/dhmmasson_dark.scss
     css: 
       - styles.css
       - https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css

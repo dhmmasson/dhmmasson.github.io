@@ -1,14 +1,54 @@
 ---
-title: "dhmmasson.github.io"
+title: Dimitri Masson
+about:
+  id: hero-heading
+  template: trestles
+  image-width: 8em
+  image-shape: rounded
+  links:
+    - icon: ai ai ai-researchgate-square
+      text: Research Gate
+      href: https://www.researchgate.net/profile/Dimitri-Masson-2
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/dimitri-masson-a595612b/
+    - icon: github
+      text: Github
+      href: https://github.com/dhmmasson
+image: assets/favicon_128_128.webp
 listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
+  - id: blog
+    contents: posts
+    sort: date desc
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+  - id: publication
+    contents: publications/*.md
+    type: grid
+    categories: false
+    sort:
+      - date desc
+      - title
+    page-size: 3
 page-layout: full
-title-block-banner: true
 ---
 
+:::{#hero-heading}
+
+# Welcome !
+
+Hey, I am Dimitri Masson. 
+I am an Assistant Professor in Human System Integration. I explore Design for assisting Humans in Complex Systems. 
+
+[More about me →](about.qmd)
+:::
+
+## Blog 
+:::{#blog}
+:::
+## Latest publications
+:::{#publication}
+:::
 

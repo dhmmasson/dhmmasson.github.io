@@ -1,6 +1,6 @@
 ---
 title: "Dimitri Masson"
-subtitle: "I am 50% human, 50% coffee {{< fa mug-hot >}} "
+subtitle: "Assistant Professor in Human System Integration"
 image: assets/Masson.webp
 about:
   template: trestles
@@ -21,15 +21,31 @@ page-layout: full
 ---
 # About Me
 
-I am Dimitri Masson, 
+I am Dimitri Masson, I am a assistant professor at [Estia](https://www.estia.fr/). 
+As a researcher I work in the field of Human System Integration at the intersection of System Engineering and Human Factors. 
+My research focus on designing system to assist human cognitive activities (creativity, decision making). 
+
+
+I have work on Digital Twins, Control Rooms, Digital Passport Product for textile products, Creative support Tools.  
+
+
+I teach Computer Science, System Engineering, Scenario Based Design 
+
 I am a dad, I have two daughters
+
 
 ## Education
  
-- {{< fa user-graduate >}} **Phd in Human Computer Interaction**, 2014
+- {{< fa certificate >}} **[INCOSE Technical Leadership Institute](https://www.incose.org/learn/tli)** (cohort 8),  2024
+- {{< fa user-graduate >}} **Phd in Computer Science - Human Computer Interaction**, 2014 - University Grenoble Alpes
   [Inspirez ! Explorez ! Soutien à la créativité en conception d'interfaces homme-machine](publications/masson2014_InspirezExplorez/index.md)
-- {{< fa user-graduate >}} **Ms in Computer Science
+- {{< fa user-graduate >}} **M.Sc in Computer Science and Apllied Mathematics**, 2010 - Grenoble INP Ensimag  
+- {{< fa user-graduate >}} **B.Sc in Engineering Science**, 2008 - Grenoble INP 
 
+## System Engineering 
+
+- I am the webmaster of the [INCOSE Human System Integration Working Group](https://www.incose.org/communities/working-groups-initiatives/human-systems-integration) 
+- I am a member of the INCOSE Technical Leadership Institute (cohort 8)
 
 ## Quote
 I am 50% human, 50% coffee {{< fa mug-hot >}}
