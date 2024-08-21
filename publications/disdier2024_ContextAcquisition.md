@@ -1,38 +1,39 @@
 ---
-title: |
-  A Context Acquisition Methodology for the Design of Complex Sociotechnical Systems
-alias:
-  - "A Context Acquisition Methodology for the Design of Complex Sociotechnical Systems"
+title: A Context Acquisition Methodology for the Design of Complex Sociotechnical Systems
+aliases:
+  - A Context Acquisition Methodology for the Design of Complex Sociotechnical Systems
   - "@disdier2024_ContextAcquisition"
-date: "2024-08-26"
+date: 2024-08-26
 year: 2024
 description: |
   hAIku: Emergent paths rise,
   Context shapes unseen design,
   Guide with foresight's light.
-  
 haiku: Emergent paths rise,<br>Context shapes unseen design,<br>Guide with foresight's light.<br>
-categories: [Human-System Integration,Design,Methodology,Context]
+categories:
+  - Human-System Integration
+  - Design
+  - Methodology
+  - Context
 image: _cover_images/HSI.webp
-publication: |
-   
+publication: ""
 authors_s: Disdier, Alexandre; <b>Masson, Dimitri</b>; Jankovic, Marija; BOY, GUY ANDRE
-author: 
-  - name: 
-      given: "Alexandre"
-      family: "Disdier" 
-  - name: 
-      given: "Dimitri"
-      family: "Masson"
-    orcid: "0000-0002-7072-3146" 
-    email: "d.masson@estia.fr" 
-    idhal: "dimitri-masson" 
-  - name: 
-      given: "Marija"
-      family: "Jankovic" 
-  - name: 
-      given: "GUY ANDRE"
-      family: "BOY" 
+author:
+  - name:
+      given: Alexandre
+      family: Disdier
+  - name:
+      given: Dimitri
+      family: Masson
+    orcid: 0000-0002-7072-3146
+    email: d.masson@estia.fr
+    idhal: dimitri-masson
+  - name:
+      given: Marija
+      family: Jankovic
+  - name:
+      given: GUY ANDRE
+      family: BOY
 doi: ""
 hal: ""
 halid: ""
@@ -47,7 +48,7 @@ links:
     url: _files/disdier2024_ContextAcquisition.pdf
   - icon: ai ai-hal
     name: HAL
-    url: 
+    url:
 ---
 
 
