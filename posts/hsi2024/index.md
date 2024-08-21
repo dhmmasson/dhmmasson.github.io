@@ -2,7 +2,7 @@
 title: HSI 2024
 date: 2024-08-26
 description: HSI2024, the Third INCOSE International Conference on Human Systems Integration (HSI), together with the International Ergonomics Association (IEA), will be held hybrid in Jeju, Korea, from 27 to 29 August, 2024, jointly with the 22nd Triennial World Congress of the IEA, and in cooperation with the Association for Computing Machinery (ACM) Special Interest Group on Computer-Human Interaction (SIGCHI).
-image: ./hsi2024_logo.png
+image: ./hsi2024_cover.webp
 ---
 
 The INCOSE HSI 2024 conference will take place in the beautiful city of Jeju, Korea, from August 27 to 29, 2024. Previous INCOSE Human Systems Integration (HSI) conferences have been held in Biarritz (where I work) —I’m particularly excited about this year’s event. Not only does it offers me the opportunity to visit Korea for the first time but also this year’s conference is unique, being hosted along the 22nd Triennial World Congress of the IEA, bringing together a remarkable convergence of experts from around the globe. [INCOSE HSI2024 is organized in collaboration with the International Ergonomics Association (IEA) and the Association for Computing Machinery (ACM) Special Interest Group on Computer-Human Interaction (SIGCHI)]{.aside}
