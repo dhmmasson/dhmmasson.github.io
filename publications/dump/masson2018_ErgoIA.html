@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.53">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dimitri Masson">
+<meta name="author" content="Alexis Clay">
+<meta name="dcterms.date" content="2018-10-03">
+
+<title>Ergo’IA ’18: Proceedings of the 16th Ergo’IA “Ergonomie Et Informatique Avancée” Conference – Dimitri Masson</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon_128_128.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+<meta property="og:title" content="Ergo’IA ’18: Proceedings of the 16th Ergo’IA “Ergonomie Et Informatique Avancée” Conference – Dimitri Masson">
+<meta property="og:description" content="No abstract available">
+<meta property="og:image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+<meta property="og:site_name" content="Dimitri Masson">
+<meta property="og:locale" content="en_US">
+<meta name="citation_title" content="Ergo&amp;amp;#039;IA '18: Proceedings of the 16th Ergo'IA “Ergonomie Et Informatique Avancée” Conference
+">
+<meta name="citation_abstract" content="No abstract available
+">
+<meta name="citation_author" content="Dimitri Masson">
+<meta name="citation_author" content="Alexis Clay">
+<meta name="citation_publication_date" content="2018-10-03">
+<meta name="citation_cover_date" content="2018-10-03">
+<meta name="citation_year" content="2018">
+<meta name="citation_online_date" content="2018-10-03">
+<meta name="citation_isbn" content="978-1-4503-6488-1">
+<meta name="citation_language" content="en">
+<meta name="citation_book_title" content="Ergo&amp;amp;#039;IA '18: Proceedings of the 16th Ergo'IA “Ergonomie Et Informatique Avancée” Conference
+">
+<meta name="citation_reference" content="citation_title=Graphs of models for exploring design spaces in the engineering of Human Computer Interaction;,citation_abstract=Model Driven Engineering (MDE) has focused on the latest stages of the design process so far and as a result has missed the opportunity to foster creativity in the early phases. Our research aims at stretching MDE all over the design process including the creative phases so that to go beyond the well-known &amp;amp;amp;quot;fast-food UIs‟ limit of MDE. We propose to consider sketches and prototypes as models. This paper claims for storing these models in a graph so that to both inspire designers and support adaptation at runtime.;,citation_author=Alexandre Demeure;,citation_author=Dimitri Masson;,citation_author=Gaelle Calvary;,citation_publication_date=2011-02-13;,citation_cover_date=2011-02-13;,citation_year=2011;,citation_fulltext_html_url=https://dl.acm.org/doi/10.1145/1943403.1943504;,citation_language=en-US;,citation_conference_title=IUI 2011-International Conference on Intelligent User Interfaces;">
+<meta name="citation_reference" content="citation_title=Inspirez ! Explorez ! Soutien à la créativité en conception d’interfaces homme-machine;,citation_abstract=My PhD thesis contributes to the engineering of Human Computer Interaction (HCI). It deals with the design of User Interfaces (UI). I claim that creative processes should be better considered, and supported by tools especially for novice designers. The challenge is to speed up the exploration of the design space at the early stages of the process. This claim is grounded in both a theoretical state of the art in creativity and creativity support tools, and in practice of the topic with four hands-on experiences of creativity in different areas of design such as architecture, product design and UI design. I build my contribution on the following principles: (1) creativity is not reserved for the elite, but can be tailored and fostered by software tools; (2) the tools must leverage motivation, inspiration, wide exploration, and knowledge in UI and design processes. Through a reflective process, I apply these principles to my thesis. I explore a wide range of creativity support tools through five complementary software contributions: Maestro and Bank for supporting knowledge capitalization; WebGallery, BrianStorming and Magellan for fostering inspiration and exploration of the design space. Maestro addresses the capitalization of design processes whilst BANK gathers knowledge in HCI as a graph of models. WebGallery is a gallery of websites to inspire designers: I report an experiment on human perception of websites styles. BrianStorming is a brainstorming assistant: it provides suggestions in a electronic brainstorming session. Magellan is an interactive environment based on genetic algorithms that automatically generate and transform UIs for a given design problem. This changes the role of the computer: from a simple tool, it becomes a designer’s partner in the creative process.;,citation_author=Dimitri Masson;,citation_publication_date=2014-09-25;,citation_cover_date=2014-09-25;,citation_year=2014;,citation_fulltext_html_url=https://theses.fr/2014GRENM054;,citation_language=fr-FR;,citation_dissertation_institution=Université de Grenoble;">
+<meta name="citation_reference" content="citation_title=IdeaBulb: A Smart and Tangible User Interface for Monitoring Ideation During Creative Sessions;,citation_abstract=In this paper, we propose a tangible user interface for the monitoring of new ideas generations (ideation phase) during creative sessions. Based on the analysis of different brainstorming, we highlight the dynamic of ideas production by different groups during ideation phase using electronic devices. We claim that this tangible user interface is designed in order to give live feedback concerning these dynamic of ideas production to the participants and the facilitator. Our work is the result of the interaction between two scientific approaches: the analysis of creative sessions and the design of tangible user interface. The result of our experiments show a creative cliff and propose a design concept for monitoring ideation phase.;,citation_author=Julien Ambrosino;,citation_author=Maxime Daniel;,citation_author=Dimitri Masson;,citation_author=Jérémy Legardeur;,citation_publication_date=2017-06-25;,citation_cover_date=2017-06-25;,citation_year=2017;,citation_isbn=978-1-5108-4308-0;,citation_language=en-US;,citation_conference_title=The Sixth International Conference on Smart Cities, Systems, Devices and Technologies;,citation_conference=Berntzen, L. et al.;">
+<meta name="citation_reference" content="citation_title=Fostering collaborative project emergence through divergence of opinion;,citation_abstract=In the context of the emergence of collaborative innovation projects between competitiveness clusters, the animation of creative sessions permits to identify new opportunities. The number of ideas generated is a lot more important than the number of collaborative innovation projects implemented subsequently. To improve this ratio, we verify that group discussions could be facilitated by improving the ideation and evaluation phases of ideas during innovation process. Especially, in this article, we test many hypotheses in order to show that divergence of opinions can foster collaborative project emergence.;,citation_author=Julien Ambrosino;,citation_author=Dimitri Masson;,citation_author=Audrey Abi Akle;,citation_author=Jérémy Legardeur;,citation_publication_date=2017-08-25;,citation_cover_date=2017-08-25;,citation_year=2017;,citation_fulltext_html_url=https://www.designsociety.org/publication/39867/Fostering+collaborative+project+emergence+through+divergence+of+opinion;,citation_isbn=978-1-904670-96-4;,citation_volume=8;,citation_language=en-US;,citation_conference_title=DS 87-8 proceedings of the 21st international conference on engineering design (ICED 17) vol 8: Human behaviour in design, vancouver, canada, 21-25.08. 2017;,citation_series_title=ICED;">
+<meta name="citation_reference" content="citation_title=DialoJ;,citation_author=Dimitri Masson;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_fulltext_html_url=https://github.com/dhmmasson/dialoJ;,citation_publisher=ESTIA;">
+<meta name="citation_reference" content="citation_title=Ergo’IA ’16: Proceedings of the 15th Ergo’IA &amp;amp;amp;quot;Ergonomie Et Informatique Avancée&amp;quot; Conference;,citation_editor=Dimitri Masson;,citation_editor=Jérémy Legardeur;,citation_publication_date=2016-07-06;,citation_cover_date=2016-07-06;,citation_year=2016;,citation_fulltext_html_url=https://hal.science/hal-02398001v1;,citation_doi=10.1145/3050385;,citation_isbn=978-1-4503-4785-3;,citation_language=fr-FR;">
+<meta name="citation_reference" content="citation_title=Ergo’IA ’18: Proceedings of the 16th Ergo’IA “Ergonomie Et Informatique Avancée” Conference;,citation_editor=Dimitri H Masson;,citation_editor=Alexis Clay;,citation_publication_date=2018-10-03;,citation_cover_date=2018-10-03;,citation_year=2018;,citation_fulltext_html_url=https://hal.science/hal-02446096v1;,citation_isbn=978-1-4503-6488-1;,citation_language=fr-FR;">
+<meta name="citation_reference" content="citation_title=PRODEC: Combining procedural and declarative knowledge for human-centered design;,citation_author=GA Boy;,citation_author=J Dezemery;,citation_author=R Lu Cong Sang;,citation_author=A Hein Makoto;,citation_author=D Masson;,citation_author=C Morel;,citation_author=E Villeneuve;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_language=en-US;,citation_publisher=White paper;">
+<meta name="citation_reference" content="citation_title=PRODEC for human systems integration of increasingly autonomous systems;,citation_abstract=The purpose of the PRODEC scenario-based design method is the incremental crossfertilization and refinement of procedural scenarios and declarative configurations. It uses virtual prototypes of the developed systems (mainly life-critical systems) to conduct human-in-the-loop simulations (HITLSs). Based on human systems integration (HSI) principles and criteria, as well as expertise and experience in the domain at stake, this HSI approach grounded in virtual environments requires a clear definition of physical and cognitive tangibility metrics to assess the distance between virtual and tangible (grasp) dimensions of the system being developed when it is put to work. PRODEC considers human and machine systems described in terms of structures and functions incrementally designed using procedural scenarios (i.e., stories) in task and activity networks, which provide life to declarative configurations (i.e., system’s functions and structures). This active modeling and simulation process enables the discovery of emergent structures and functions of the system being developed when it is virtually operated. PRODEC’s use is illustrated in an example. We discuss the use of PRODEC and its results as to how they can be used with digital twins.;,citation_author=Guy André Boy;,citation_author=Dimitri Masson;,citation_author=Élise Durnerin;,citation_author=Chloé Morel;,citation_publication_date=2024-03-04;,citation_cover_date=2024-03-04;,citation_year=2024;,citation_fulltext_html_url=https://incose.onlinelibrary.wiley.com/doi/10.1002/sys.21751;,citation_doi=10.1002/sys.21751;,citation_issn=1098-1241, 1520-6858;,citation_language=en-US;,citation_journal_title=Systems Engineering;,citation_journal_abbrev=Sys. Eng.;">
+<meta name="citation_reference" content="citation_title=Digital twin design requirements in downgraded situations management;,citation_abstract=The oil-and-gas industry is known to be part of the most safety-critical domains. Safety culture has prompted such companies to implement new systems to support decision-making. In this paper, we explore the use of digital twins to support situation awareness as a crucial part of real-time decisionmaking processes. Therefore, this paper presents requirements for the development of an eight components digital twin. Human-centered approach contributes to add useful information based on user needs and user experience to the usual theoretical process. This user-centered information helped shape both digital twin components and the situation awareness model.;,citation_author=S. Camara Dit Pinto;,citation_author=E. Villeneuve;,citation_author=D. Masson;,citation_author=G. Boy;,citation_author=T. Baron;,citation_author=L. Urfels;,citation_publication_date=2021-01-01;,citation_cover_date=2021-01-01;,citation_year=2021;,citation_fulltext_html_url=https://linkinghub.elsevier.com/retrieve/pii/S240589632100851X;,citation_issue=1;,citation_doi=10.1016/j.ifacol.2021.08.102;,citation_issn=2405-8963;,citation_volume=54;,citation_language=en-US;,citation_journal_title=IFAC-PapersOnLine;,citation_journal_abbrev=IFAC-PapersOnLine;,citation_series_title=17th IFAC Symposium on Information Control Problems in Manufacturing INCOM 2021;">
+<meta name="citation_reference" content="citation_title=Toward a Human Systems Integration approach to the design and operation of a remote and virtual air traffic control center;,citation_abstract=Remote and virtual centers have been studied for the past twenty years as an alternative to the traditional air traffic control tower environment. Designing such complex sociotechnical systems requires a systems engineering approach that appropriately integrates the human element as well as the technological and organizational components. In this paper, we identify the challenges of implementing this human-systems integration in the design of complex systems. We present the feedback we obtained from a series of semi-structured interviews with people involved in the development of military air traffic solutions. The participants’ responses helped us establish methodological guidelines for designing and building a disruptive remote and virtual air traffic control center. We discuss how virtualized humanin-the-loop simulations in particular should help designers analyze user activity and be more flexible in system acquisition.;,citation_author=Alexandre Disdier;,citation_author=Dimitri Masson;,citation_author=Thomas Brethomé;,citation_author=Marija Jankovic;,citation_author=Guy-André Boy;,citation_publication_date=2023-07;,citation_cover_date=2023-07;,citation_year=2023;,citation_fulltext_html_url=https://www.cambridge.org/core/product/identifier/S2732527X23003577/type/journal_article;,citation_doi=10.1017/pds.2023.357;,citation_issn=2732-527X;,citation_volume=3;,citation_language=en-US;,citation_journal_title=Proceedings of the Design Society;,citation_journal_abbrev=Proc. Des. Soc.;,citation_publisher=Cambridge University Press;">
+<meta name="citation_reference" content="citation_title=Reality anchor methodology: How to design a digital twin to support situation awareness;,citation_abstract=This work focuses on the opportunity to use the Digital Twin of a complex system, as a Decision Support System. In studying the phenomenon of human Decision Making, the concept of Situation Awareness appears to be of primary importance when dealing with these complex systems. Given the complexity of the system to be represented in the DT, its own complexity, and the need to integrate the user’s abilities to allow the acquisition of SA, the concept of reality anchor is proposed to identify the elements of the studied situation necessary for users to perceive, understand and project the situation they face. A methodology, called the Reality Anchor Methodology, has been defined to ensure the elicitation and implementation of these elements in a DT. This methodology is composed of three steps that aim (1) to elicit the reality anchors through a study of the operators’ tasks and activities, (2) to design a prototype to carry out human-in-the-loop tests and (3) to validate the definition of Reality Anchors by analysing the SA, experience feedback and the activities performed during the tests. This method was applied to a case study in the oil-and-gas industry and showed the importance of the defined reality anchors.;,citation_author=Stélian Camara Dit Pinto;,citation_author=Éric Villeneuve;,citation_author=Dimitri Masson;,citation_author=Guy André Boy;,citation_author=Laetitia Urfels;,citation_publication_date=2024-04-10;,citation_cover_date=2024-04-10;,citation_year=2024;,citation_fulltext_html_url=https://www.tandfonline.com/doi/full/10.1080/09544828.2024.2336838;,citation_issue=6;,citation_doi=10.1080/09544828.2024.2336838;,citation_issn=0954-4828;,citation_volume=35;,citation_language=en-US;,citation_journal_title=Journal of Engineering Design;,citation_journal_abbrev=J. Eng. Des.;,citation_publisher=Taylor &amp;amp;amp; Francis;">
+<meta name="citation_reference" content="citation_title=Traceability information to communicate to consumer in total transparency;,citation_abstract=The textile industry is facing ecological and economic crises. Since the rise of fast fashion, the textile industry is one of the major and ever-increasing contributors to pollution and waste. Fashion brands are now producing twice the amount of clothing today compared with before the year 2000 (Ellen MacArthur Foundation, 2017). In the meantime, more consumers become aware of both social and ecological risks in the textile industry and do not want to encourage such practices. In 2018, 44clothing and for 40people (18-25 years old) (Ditty, n.d.). This phenomenon reveals a growing consumer awareness and a growing distrust of the industry’s companies. A survey conducted in April 2020 across 2035 British and German consumers reveals that 64spend less on fashion during the crisis, and half of them expect that trend to continue after the crisis passes. As well, consumers are open to purchasing more durable fashion items, as well as repairing and keeping them longer. This survey reveals a shift in purchasing behavior, customers want to make informed purchases (Granskog et al., n.d.). The globalized and fragmented textile supply chain requires different laws and regulations (Fletcher and Grose, 2012) to improve its transparency. The paper is structured as follow: The first part presents the current situation regarding the transparency of information communicated by brands in store and online, and in the second part, we will describe what information could be shared with informed consumers, after an experiment with a product from a French luxury brand. The first part is the result of a study both in store and online about legal requirements and recommendations about traceability information related to products and environmental displays. We compare these requirements with actual data gathered in store and in online-shop. From our initial observations: The consumer survey by Fashion Revolution in 2018 and 2020 suggests that fashion labels should be transparent with the disclosure of information to consumers: Manufacturer’s address, the origin of fabric, and raw material(Fashion Revolution, 2018) (Fashion Revolution, 2020). In the second part of the article, we focus on the importance of traceability for gathering the information necessary for a full transparency. We leverage how information technology could be used to gather, collect, sort, and select information to render to the consumer.;,citation_author=Dimitri H Masson;,citation_author=Cédrick Beler;,citation_author=Jérémy Legardeur;,citation_author=Pantxika Ospital;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_fulltext_html_url=https://hal.science/hal-03462333;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=Defining and characterizing the operational context for human systems integration;,citation_abstract=Many efforts from multiple academic and industrial disciplines have studied the notion of context. The systems engineering and human systems integration fields, however, lack a generalized definition and characterization of context, in particular the operational context of complex sociotechnical systems. This paper reviews context definitions and builds a generalized definition of the operational context of complex sociotechnical systems. The objective is then to identify and extract context properties which are often implicit in the literature and do not necessarily appear in the definitions. However, eliciting them is helpful for understanding what context is made of, how it relates to complex sociotechnical systems comprising human and non-human agents, and how an early understanding of the operational context can prove valuable to designing efficient and robust systems. Our analysis is followed by an example of how our definition and derived properties apply to the case study of the design of a remote and virtual air traffic control center.;,citation_author=Alexandre Disdier;,citation_author=Dimitri Masson;,citation_author=Marija Jankovic;,citation_author=Guy-André Boy;,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;,citation_fulltext_html_url=https://onlinelibrary.wiley.com/doi/abs/10.1002/sys.21775;,citation_doi=10.1002/sys.21775;,citation_issn=1520-6858;,citation_language=en-US;,citation_journal_title=Systems Engineering;,citation_journal_abbrev=Sys. Eng.;">
+<meta name="citation_reference" content="citation_title=Towards a Circular Product (Re)Design Methodology: Proposition of the Unlinear Method to Foster Circularity;,citation_abstract=Works on garment and shoe dismantlement and recycling have highlighted the complexity of this kind product and the difficulty to find a recycling channel for each material they are made of. The way they are designed perturbate the recycling process a...;,citation_author=Bixente Demarcq;,citation_author=Dimitri Masson;,citation_author=Jérémy Legardeur;,citation_author=Antoine Millet;,citation_publication_date=2022-05-08;,citation_cover_date=2022-05-08;,citation_year=2022;,citation_fulltext_html_url=https://hrcak.srce.hr/en/276156;,citation_issue=2;,citation_doi=10.31803/tg-20220410142313;,citation_issn=1846-6168, 1848-5588;,citation_volume=16;,citation_language=en-US;,citation_journal_title=Tehnički glasnik;,citation_journal_abbrev=Tehnički glasnik;,citation_publisher=Sveučilište Sjever;">
+<meta name="citation_reference" content="citation_title=Is virtual reality the solution? A comparison between 3D and 2D creative sketching tools in the early design process;,citation_abstract=$&amp;amp;amp;lt;$p$&amp;gt;$Creativity is key in the early phases of innovation processes. With the rapid evolution of technologies, designers now have access to various tools to support this activity. Virtual reality (VR) takes over multiple domains, especially during conception. However, is VR really facilitating creativity in the initial ideation phases? We compare two sketching modalities through dedicated creativity support tools (CSTs): one in VR and one on a 2D interactive whiteboard. We propose a two-part creativity task (divergent and convergent thinking) for two groups of 30 participants each. We record user experience, creative experience, and creative performance. Our results show that VR is more stimulating, attractive, and engaging. We also observe a better level of creativity for the participants using the VR CST. Our results indicate that VR is an effective and relevant tool to boost creativity and that this effect might carry over to following creative tasks.$&amp;lt;$/p$&amp;gt;$;,citation_author=Samory Houzangbe;,citation_author=Dimitri Masson;,citation_author=Sylvain Fleury;,citation_author=David Antonio Gómez Jáuregui;,citation_author=Jeremy Legardeur;,citation_author=Simon Richir;,citation_author=Nadine Couture;,citation_publication_date=2022-10-31;,citation_cover_date=2022-10-31;,citation_year=2022;,citation_fulltext_html_url=https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2022.958223/full;,citation_doi=10.3389/frvir.2022.958223;,citation_issn=2673-4192;,citation_volume=3;,citation_language=en-US;,citation_journal_title=Frontiers in Virtual Reality;,citation_journal_abbrev=Front. Virtual Real.;,citation_publisher=Frontiers;">
+<meta name="citation_reference" content="citation_title=Toward product transparency: Communicating traceability information to consumers;,citation_abstract=In the textile industry, corporate transparency does not provide information about products that would allow customers to make informed purchases. Based on a literature review, the concept of product transparency is defined as the disclosure of information concerning a specific product about traceability and sustainability conditions for the supplier, as well as the entire lifecycle and the buying firm’s purchasing practices. A field study in the current fashion landscape evaluated the situation of actual practices concerning transparency and compared information available online and in-store regarding both product transparency and corporate transparency. The information available at the time of purchase is limited and even more so on the internet. An experiment with a brand to create a customer information model for a specific product focuses on the importance of traceability for gathering the information necessary. The authors discuss the necessity of centralising information in a Digital Product Passport for greater transparency.;,citation_author=Pantxika Ospital;,citation_author=Dimitri Masson;,citation_author=Cédrick Beler;,citation_author=Jérémy Legardeur;,citation_publication_date=2023-05-04;,citation_cover_date=2023-05-04;,citation_year=2023;,citation_fulltext_html_url=https://doi.org/10.1080/17543266.2022.2142677;,citation_issue=2;,citation_doi=10.1080/17543266.2022.2142677;,citation_issn=1754-3266;,citation_volume=16;,citation_language=en-US;,citation_journal_title=International Journal of Fashion Design, Technology and Education;,citation_journal_abbrev=Int J Fash Des Technol Educ;,citation_publisher=Taylor &amp;amp;amp; Francis;">
+<meta name="citation_reference" content="citation_title=Decision Making in Near Zero Energy Building Refurbishment: A Technology Alternatives Ranking Tool;,citation_abstract=Decision making in the context of Near Zero Energy Building refurbishment is subjected to heterogeneous stakeholders, tools and objectives. This paper presents a methodology to facilitate stakeholders collaboration in the refurbishment processes and identifies decision support approaches to help on the main decision milestones. This methodology is supported by a prototype (user interface and algorithm) of a decision support system (DSS) that allows ranking different refurbishment technologies. The proposed DSS uses a multi criteria decision method that combines weighting and fuzzy dominances approach. The approach is illustrated with a real data set to rank insulation materials.;,citation_author=L. Laguna Salvadό;,citation_author=E. Villeneuve;,citation_author=D. Masson;,citation_publication_date=2019-01-01;,citation_cover_date=2019-01-01;,citation_year=2019;,citation_fulltext_html_url=https://www.sciencedirect.com/science/article/pii/S2405896319311462;,citation_issue=13;,citation_doi=10.1016/j.ifacol.2019.11.196;,citation_issn=2405-8963;,citation_volume=52;,citation_language=en-US;,citation_journal_title=IFAC-PapersOnLine;,citation_journal_abbrev=IFAC-PapersOnLine;">
+<meta name="citation_reference" content="citation_title=Decision Support System for technology selection based on multi-criteria ranking: Application to NZEB refurbishment;,citation_abstract=Refurbishing existing building into Near Zero Energy Building (NZEB) is a key objective for the European Union. In order to achieve high rate of conversion, new refurbishment process must allow Decision Makers (DMs) (architects or designers) to sort through an ever increasing list of new technologies while taking into account uncertain preferences from multiple stakeholders. A Decision Support System (DSS) based on Multi-Criteria Decision-Making (MCDM) approaches is proposed. The DSS enables the DMs to browse the solutions space by selecting the relevant criteria, order them by preferences and specify the granularity in the assessment of the technologies regarding each criteria. This DSS is based on a ranking algorithm that operates on multiple types of quantitative (continuous, discrete, or binary) and qualitative (nominative or ordinal) variables from technological and human sources. An online user interface allows the real-time exploration of the solution space. A sensitivity analysis of the algorithm is conducted to expose the influence of the ranking algorithm parameters and to demonstrate the robustness of this algorithm. The proposed DSS is eventually implemented and validated through a use case concerning the choice of insulating materials considering heterogeneous criteria that model sustainable constraints.;,citation_author=Laura Laguna Salvadó;,citation_author=Eric Villeneuve;,citation_author=Dimitri Masson;,citation_author=Audrey Abi Akle;,citation_author=Nicolas Bur;,citation_publication_date=2022-03-15;,citation_cover_date=2022-03-15;,citation_year=2022;,citation_fulltext_html_url=https://www.sciencedirect.com/science/article/pii/S0360132322000348;,citation_doi=10.1016/j.buildenv.2022.108786;,citation_issn=0360-1323;,citation_volume=212;,citation_language=en-US;,citation_journal_title=Building and Environment;,citation_journal_abbrev=Building and Environment;,citation_publisher=Elsevier;">
+<meta name="citation_reference" content="citation_title=Decision support in precision sheep farming;,citation_abstract=While the 7 million-head French sheep industry is contracting, the average herd size is rising, providing challenging issues to maintain and improve its productivity. Precision Livestock Farming has allowed the sheeps and herds to be equipped with sensors and has a result the amount of data to be processed by farmers has surged. We argue that in order for the farmers to take appropriate actions there is a need for the development of a decision support system that take into account not only real-time data but also expert knowledge. In this work, we first highlight the specific challenges presented by the field of precision sheep farming to the development of a Cyber-Physical and Human System. We then introduce a methodology to implement a decision support in this context.;,citation_author=Éric Villeneuve;,citation_author=Audrey Abi Akle;,citation_author=Christophe Merlo;,citation_author=Dimitri Masson;,citation_author=Guillaume Terrasson;,citation_author=Alvaro Llaria;,citation_publication_date=2019-01-01;,citation_cover_date=2019-01-01;,citation_year=2019;,citation_fulltext_html_url=https://www.sciencedirect.com/science/article/pii/S2405896319300503;,citation_issue=34;,citation_doi=10.1016/j.ifacol.2019.01.048;,citation_issn=2405-8963;,citation_volume=51;,citation_language=en-US;,citation_journal_title=IFAC-PapersOnLine;,citation_journal_abbrev=IFAC-PapersOnLine;">
+<meta name="citation_reference" content="citation_title=A Tinkerer’s Mindset: Lessons from the Technical Leadership Institute’s Cohort 8 on Safe-to-Fail Probing as a Tool for Informing Judgement;,citation_abstract=Tinkering — or making small changes to experiment toward an improvement in performance — is seemingly a natural characteristic of many systems engineers. As such, systems engineers are uniquely qualified to develop complex solutions necessary to overcome lack of clarity, achieve order, and avoid failure. Further, there is a much broader conversation surrounding the possibility of “failure” being beneficial in systems engineering projects. In response to the needing to inform judgment in situations shrouded in uncertainty, members of INCOSE’s Technical Leadership Institute (TLI) cohort 8 examined the role of safe-to-fail probes play in informing judgement for systems engineers. Within the constraints of the TLI’s major project, virtual workshops and qualitative interviews were two data collection mechanisms established to empirically investigate the role(s) of safe-to-fail probing in systems engineering. Overall, the data sets offered conclusions describing the potential role(s) of safe-to-fail probes for systems engineers working in uncertain environments. Resulting from this (limited) empirical exploration are additional insights and implications for how systems engineers may invoke safe-to-fail probes to improve decision-making in uncertain and challenging situations. Such a tinkerer’s mindset can help systems engineers transition from the constraints of “intolerable failure” to the opportunities related to probing-sensing-responding to “responsible failures.”;,citation_author=Adam D. Williams;,citation_author=Leandro V. Aveiro;,citation_author=Rachel A. McGrath;,citation_author=Carlo Leandri;,citation_author=Guilluame Terpant;,citation_author=Dimitri Masson;,citation_author=Adrian Unger;,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;,citation_fulltext_html_url=https://onlinelibrary.wiley.com/doi/abs/10.1002/inst.12494;,citation_issue=3;,citation_doi=10.1002/inst.12494;,citation_issn=2156-4868;,citation_volume=27;,citation_language=en-US;,citation_journal_title=INSIGHT;,citation_journal_abbrev=INSIGHT;">
+<meta name="citation_reference" content="citation_title=Encourage exchanges during a creative session by the ideas qualitative evaluation using a digital tool;,citation_abstract=In the context of the emergence of collaborative innovation projects, the animation of creative sessions permits to identify new opportunities. The number of ideas generated is a lot more important than the number of collaborative projects implemented. To improve this ratio, we assume that group discussions could be facilitated by the cleavage of opinions about the quality of the ideas discussed during the meeting. We support our approach with a digital tool to promote information feedback throughout the session.;,citation_author=Julien Ambrosino;,citation_author=Dimitri H. Masson;,citation_author=Jérémy Legardeur;,citation_author=Guillaume Tastet;,citation_publication_date=2016-07-06;,citation_cover_date=2016-07-06;,citation_year=2016;,citation_fulltext_html_url=https://dl.acm.org/doi/10.1145/3050385.3050414;,citation_doi=10.1145/3050385.3050414;,citation_isbn=978-1-4503-4785-3;,citation_language=fr-FR;,citation_conference_title=Proceedings of the 15th Ergo’IA &amp;amp;amp;quot;Ergonomie Et Informatique Avancée&amp;quot; Conference;,citation_conference=Association for Computing Machinery;,citation_series_title=Ergo’IA ’16;">
+<meta name="citation_reference" content="citation_title=STAR: une méthodologie d’animation pour faciliter l’émergence de projets en interclustering Application au projet européen NEPTUNE sur la croissance bleue;,citation_abstract=In the specific context of co-operation between members of clusters or competitiveness clusters, the emergence of collaborative innovation projects is a major challenge for clusters and their members (composed of companies, universities, laboratories, etc.). Given the heterogeneity in terms of the knowledge and profiles of the ecosystems that evolve within the clusters, the interclustering strategy, which consists in supporting the emergence of projects between different clusters, requires the use and adaptation new tools. The aspects of the methodology presented here focus in particular on the facilitation of creativity sessions and more particularly on the &amp;amp;amp;quot;live&amp;quot; evaluation of the ideas generated by the participants.;,citation_author=Julien Ambrosino;,citation_author=Dimitri Masson;,citation_author=Jérémy Legardeur;,citation_publication_date=2017-04;,citation_cover_date=2017-04;,citation_year=2017;,citation_fulltext_html_url=https://hal.science/hal-01513588;,citation_language=fr-FR;">
+<meta name="citation_reference" content="citation_title=Exploration of Physiological Arousal in Divergent and Convergent Thinking using 2D screen and VR Sketching Tools.;,citation_abstract=Creativity Support Tools (CSTs), like sketching tools, enable designers in their creative activities. As designers may have different needs during different thinking phases, accessing physiological responses in real-time would enable CSTs to better adapt to these different phases. Several studies have focused on either different phases on the same tool or the same phase on different tools. We investigate ways to discriminate divergent and convergent thinking phases using physiological response. We replicated the same experiment with thirty participants each on two different CSTs: in immersive virtual reality and on an interactive whiteboard (2D). We analyzed Heart Rate Variability (HRV) and Galvanic Skin Response (GSR) during a divergent thinking task followed by a convergent thinking task. Our results revealed significant changes in arousal, measured through HRV and GSR, which seem specific to each creative thinking phase. We discuss how each phase can be linked with specific reactions independently of the CST. We suggest that it may be possible to detect a favorable creative state depending on the task being performed.;,citation_author=Samory Houzangbe;,citation_author=Sylvain Fleury;,citation_author=Dimitri Masson;,citation_author=David Antonio Gómez Jáuregui;,citation_author=Jérémy Legardeur;,citation_author=Nadine Couture;,citation_author=Simon Richir;,citation_publication_date=2023-09-01;,citation_cover_date=2023-09-01;,citation_year=2023;,citation_fulltext_html_url=https://www.computer.org/csdl/proceedings-article/acii/2023/10388141/1TJmkFV0hCo;,citation_doi=10.1109/ACII59096.2023.10388141;,citation_isbn=9798350327434;,citation_language=en-US;,citation_conference_title=2023 11th International Conference on Affective Computing and Intelligent Interaction (ACII);,citation_conference=IEEE Computer Society;">
+<meta name="citation_reference" content="citation_title=NAASCube program, an innovative aerospace program for students,driven by the Nouvelle Aquitaine Academic Space Center;,citation_author=Didier Lasseux;,citation_author=Philippe Cais;,citation_author=Guillaume Ferré;,citation_author=Anthony Ghiotto;,citation_author=Gildas Lalizel;,citation_author=Octavian Curea;,citation_author=Catherine Goetz;,citation_author=Dimitri Masson;,citation_author=Yves Nadot;,citation_author=Marc Bellenoue;,citation_publication_date=2022-04;,citation_cover_date=2022-04;,citation_year=2022;,citation_fulltext_html_url=https://esamultimedia.esa.int/docs/edu/SSEA22_Proceedings.pdf;,citation_isbn=978-84-19184-40-5;,citation_language=fr-FR;,citation_conference_title=Proceedings of the 4th Symposium on Space Educational Activities;">
+<meta name="citation_reference" content="citation_title=The paradox of diversity’s influence on the creative teams Lessons learned from the analysis of 14 editions of&amp;amp;amp;quot; The 24h of innovation&amp;quot; hackathon;,citation_abstract=The main objective of this paper is to understand the mindset and characteristics of a team in order to foster creative and innovative thinking. Especially, we want to analyse the influence of the diversity of scholar’s affiliation within student’s team on their performance during early design phase. For that purpose, we focus on one innovative event to foster creativity and design thinking of students during 24 hours design phase. This event is ’The 24h of innovation®&amp;amp;quot; challenge which is an event created by the institute of technology ESTIA in Biarritz since 2007 (http://24h.estia.fr). During the period 2007-2019, we have organized 14 French editions and we collected the data of profile’s participants in order to characterise the team’s diversity. The paper demonstrates the paradox of the diversity that can increase sometimes positively the average team performance, but also the non-diversity can be a positive factor for the team excellence;,citation_author=Jérémy Legardeur;,citation_author=Dimitri H. Masson;,citation_author=Mickaël Gardoni;,citation_author=Kusol Pimapunsri;,citation_editor=International Society for Professional Innovation Management;,citation_publication_date=2020-03;,citation_cover_date=2020-03;,citation_year=2020;,citation_fulltext_html_url=https://hal.science/hal-02881482;,citation_isbn=978-952-335-566-8;,citation_language=en-US;,citation_conference_title=ISPIM Connects Bangkok;">
+<meta name="citation_reference" content="citation_title=Web design galleries: Please give me similar styles!: A claim for ground truth datasets;,citation_abstract=Web design galleries are extremely popular for searching inspiration in web design, but there is a lack of rich search functions. Recent works in the field have focused on style similarity browsing, where one hops from design to design based on their style similarity. In this paper, we claim for a study of the multiple dimensions of this notion of style, and of its perception by humans. We advocate for ground truth datasets based on a first experiment.;,citation_author=Dimitri Masson;,citation_author=Alexandre Demeure;,citation_author=Zeina Abu-Aisheh;,citation_author=Gaëlle Calvary;,citation_author=Gilles Bisson;,citation_publication_date=2014-10-26;,citation_cover_date=2014-10-26;,citation_year=2014;,citation_fulltext_html_url=https://dl.acm.org/doi/10.1145/2639189.2641200;,citation_doi=10.1145/2639189.2641200;,citation_isbn=978-1-4503-2542-4;,citation_language=en-US;,citation_conference_title=Proceedings of the 8th Nordic Conference on Human-Computer Interaction: Fun, Fast, Foundational;,citation_conference=ACM;">
+<meta name="citation_reference" content="citation_title=Magellan, an evolutionary system to foster user interface design creativity;,citation_abstract=Fostering creativity in User Interface (UI) design is challenging for innovation. This paper explores the combination of model-based approaches and interactive genetic algorithms to foster the exploration of the design space. A user task model is given in input. Magellan produces sketches of UIs that aim at inspiring the designer. Later on, appropriate tools may be used to tune the right design into the design right. Magellan is a proof of concept that deserves further exploration. Currently it is implemented using COMETs but it is not dependent of this technology.;,citation_author=Dimitri Masson;,citation_author=Alexandre Demeure;,citation_author=Gaelle Calvary;,citation_publication_date=2010-06-19;,citation_cover_date=2010-06-19;,citation_year=2010;,citation_fulltext_html_url=https://doi.org/10.1145/1822018.1822032;,citation_doi=10.1145/1822018.1822032;,citation_isbn=978-1-4503-0083-4;,citation_language=en-US;,citation_conference_title=Proceedings of the 2nd ACM SIGCHI symposium on Engineering interactive computing systems;,citation_conference=Association for Computing Machinery;,citation_series_title=EICS ’10;">
+<meta name="citation_reference" content="citation_title=Examples Galleries Generated by Interactive Genetic Algorithms;,citation_abstract=Examples browsing is a common designer practice in user interface design. Several design galleries can be found on Internet. However, those galleries are hand crafted and thus limited and cumbersome to build. In this paper, we claim for tools for supporting both the production and exploration of examples. We describe a running prototype based on Interactive Genetic Algorithms (IGA), and relate an early evaluation.;,citation_author=Dimitri Masson;,citation_author=Alexandre Demeure;,citation_author=Gaëlle Calvary;,citation_publication_date=2011-10-19;,citation_cover_date=2011-10-19;,citation_year=2011;,citation_fulltext_html_url=https://doi.org/10.1145/2079216.2079225;,citation_doi=10.1145/2079216.2079225;,citation_isbn=978-1-4503-0754-3;,citation_language=en-US;,citation_conference_title=Procedings of the Second Conference on Creativity and Innovation in Design;,citation_conference=Association for Computing Machinery;,citation_series_title=DESIRE ’11;">
+<meta name="citation_reference" content="citation_title=Définition d’un espace sémantique Sport-Santé;,citation_abstract=Le succès du produit dépend de sa capacité à répondre aux attentes des utilisateurs. La Conception Centrée Utilisateur contribue à atteindre ce succès en se concentrant sur les besoins des utilisateurs durant le processus de conception. Ces besoins étant tant fonctionnels qu’hédoniques, la conception de produits nécessite de concevoir ces propriétés hédoniques du produit qui affectent la perception des utilisateurs. Pour des produits de sport, les utilisateurs désirent améliorer leurs performances tout en préservant leur santé. Les produits sportifs sont alors considérés non seulement comme des produits « sport », mais également comme des produits « santé ». Intégrer ces attentes « santé » et « sport » dans le processus de conception apparait nécessaire. Afin d’intégrer la perception des utilisateurs dans le processus de conception, l’Affective Engineering a été développé. L’application de cette approche aux produits de sport lors du processus de conception peut alors permettre de définir les caractéristiques perceptuelles du sport et de la santé. Cependant, traduire ces caractéristiques en spécifications implique de les traduire en termes sémantiques. Bien que nous observons des descripteurs sémantiques adaptés pour des produits « sport » et pour des produits « santé », ils apparaissent contradictoires. Comment alors définir un espace sémantique représentatif et respectueux des deux domaines, sport et santé, malgré leur opposition. Nous tentons de répondre à cette question au travers de cet article.;,citation_author=Antoine Millet;,citation_author=Audrey Abi Akle;,citation_author=Dimitri Masson;,citation_author=Jérémy Legardeur;,citation_publication_date=2019-04;,citation_cover_date=2019-04;,citation_year=2019;,citation_fulltext_html_url=https://hal.science/hal-02151626;,citation_language=fr-FR;,citation_conference_title=S.Mart;">
+<meta name="citation_reference" content="citation_title=Definition of a “Sport-Health” Semantic Space;,citation_abstract=Product success depends on its capacity to meet users’ expectations. Human Centred Design approach helps to reach this success by focussing on users’ needs in the design process. These needs are as well functional as hedonic. Designing products requires then to design hedonic properties affecting users’ perception. For sport products, people wants to improve their performances while maintaining their health. Sport products are then considered not only “sporty” but also “healthy”. Thus, integrating both health and sport expectations into the design process are necessary.Last decades, Affective Engineering was developed to integrate perception into the design process. Applying this approach for sport products may allow defining and mixing sport and health perceptual characteristics all along the design process. However, defining these characterisitics into requirements implies to translate them into semantic terms. If we observe semantic descriptors for sport products and for health products, they seem opposite. In this paper, we aim defining a semantic space representative and respectful of both domains, sport and health, while they oppose.;,citation_author=Antoine Millet;,citation_author=Audrey Abi Akle;,citation_author=Dimitri Masson;,citation_author=Jérémy Legardeur;,citation_publication_date=2019-07;,citation_cover_date=2019-07;,citation_year=2019;,citation_fulltext_html_url=https://www.cambridge.org/core/journals/proceedings-of-the-international-conference-on-engineering-design/article/definition-of-a-sporthealth-semantic-space/2ECC4383FE7A47AE1374CACC235A0E99;,citation_issue=1;,citation_doi=10.1017/dsi.2019.391;,citation_issn=2220-4342;,citation_volume=1;,citation_language=en-US;,citation_journal_title=Proceedings of the Design Society: International Conference on Engineering Design;,citation_journal_abbrev=Proc. Des. Soc.;">
+<meta name="citation_reference" content="citation_title=A digital product passport to support product transparency and circularity;,citation_abstract=In the textile industry, corporate transparency, as the disclosure of firm information, does not provide information about products that would allow the customer to make informed purchases. Product transparency as defined by the disclosure of information concerning a specific product is necessary to support distrusting consumer. Among the key actions, setting up a digital product passport (DPP) for textile products is an opportunity to inform consumers. The aim of this paper is to explore the current situation of the industry and the new regulations to develop a DPP data model. We studied the evolution of current fashion landscape, evaluated the situation of actual practices concerning transparency and compared information available online and in-store regarding both product transparency and corporate transparency. We then propose a model of DPP.;,citation_author=Pantxika Ospital;,citation_author=Dimitri H. Masson;,citation_author=Cédrick Beler;,citation_author=Jérémy Legardeur;,citation_publication_date=2022-11;,citation_cover_date=2022-11;,citation_year=2022;,citation_fulltext_html_url=https://hal.science/hal-04082837;,citation_doi=10.57649/GFC.978-989-54263;,citation_isbn=978-989-54-2633-1;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=Toward total traceability and full transparency communication in textile industry supply chain;,citation_abstract=The Textile &amp;amp;amp; Clothing industry is facing systemic and global challenges due both to ecological and economic crises. Today, increasing full traceability of supply chain is one of the key points to optimize production but it should also serve to inform consumers to foster sustainable purchasing decision. We argue that the total traceability of the garment supply chain must be constructed to enable a full transparency for the consumer. In this paper, we will start analysing brands’ transparency communication and describe the particular complexities of the textile supply chain.;,citation_author=Pantxika Ospital;,citation_author=Dimitri H Masson;,citation_author=Cédrick Beler;,citation_author=Jérémy Legardeur;,citation_publication_date=2022-02;,citation_cover_date=2022-02;,citation_year=2022;,citation_fulltext_html_url=https://onlinelibrary.wiley.com/doi/abs/10.1002/iis2.12866;,citation_issue=S1;,citation_doi=10.1002/iis2.12866;,citation_issn=2334-5837;,citation_volume=32;,citation_language=en-US;,citation_journal_title=INCOSE International Symposium, INCOSE Human Systems Integration Conference;,citation_journal_abbrev=HSI2021;">
+<meta name="citation_reference" content="citation_title=Passeport produit numérique pour permettre traçabilité et transparence dans la supply chain textile et tout au long du cycle de vie d’un produit;,citation_abstract=L’industrie du textile et de l’habillement est confrontée comme de nombreux autres secteurs à plusieurs défis : une crise écologique doublée d’une crise économique ainsi qu’à la prise en compte des conditions sociales des opérateurs qui œuvrent sur toute la chaine de la production des produits textiles. L’industrie textile évolue ces dernières années avec une globalisation et une accélération de la production, ce qui conduit à des événements dramatiques qui font évoluer le comportement des consommateurs par une prise de conscience. Les informations de traçabilité collectées au long de la chaine d’approvisionnement doivent permettre aux consommateurs de faire des achats éclairés, en toute transparence. Nous travaillons actuellement à l’élaboration d’un modèle de données pour collecter et restituer les engagements RSE des marques au travers de Passeport Numérique Produit. Les enjeux de la traçabilité et de la transparence sont multiples et ne concernent pas uniquement l’information consommateur, nous avons identifié également d’autres domaines dans les entreprises qui peuvent en bénéficier : optimisation logistique, développement durable, aspect réglementaire. Compléter ces informations de traçabilité après achat vont permettre de nouveaux usages. L’utilisation de Passeport Numérique Produit en intégrant des données collectées après achat par les usagers des produits va permettre d’optimiser de nouveaux modèles économiques circulaires en allongeant la durée de vie des produits par un meilleur entretien et des réparations, en facilitant la revente et la location et en permettant un recyclage automatisé.;,citation_author=Pantxika Ospital;,citation_author=Dimitri Masson;,citation_author=Jérémy Legardeur;,citation_author=Cédrick Béler;,citation_publication_date=2022-05;,citation_cover_date=2022-05;,citation_year=2022;,citation_fulltext_html_url=https://hal.science/hal-03720549;,citation_language=fr-FR;">
+<meta name="citation_reference" content="citation_title=I++: Interactive galleries for promoting interactive curiosities in web designs;,citation_abstract=Web design galleries are important sources of inspiration in early phases of web design. However they showcase graphical elements without any promotion of interactive features. This paper presents I++, a web design gallery, centered on interaction: it pinpoints the key innovative interactive features of web sites through three levels of presentation of interactivity.;,citation_author=Sergio Peña-Arrázola;,citation_author=Dimitri H. Masson;,citation_author=Alexandre Demeure;,citation_author=Gaëlle Calvary;,citation_author=Yann Laurillau;,citation_publication_date=2015-07-13;,citation_cover_date=2015-07-13;,citation_year=2015;,citation_fulltext_html_url=https://doi.org/10.1145/2783446.2783614;,citation_doi=10.1145/2783446.2783614;,citation_isbn=978-1-4503-3643-7;,citation_language=en-US;,citation_conference_title=Proceedings of the 2015 British HCI Conference;,citation_conference=Association for Computing Machinery;,citation_series_title=British HCI ’15;">
+<meta name="citation_reference" content="citation_title=From requirements to prototyping: Application of human-system integration methodology to digital twin design;,citation_abstract=Industrial digital transformation is bringing a need for new tools and concepts. However, designing such complex tools and concept requires methods to be correctly implemented. These methods are studied as part of system engineering to satisfy various identified goals, and more specifically human-system integration, which is the topic of this paper. This article introduces the method used to define key elements of human perception of reality called reality anchors to design scenarios to be tested in a digital twin prototype. This method goes from regulation study to user cognitive function analysis on the specific case of digital twin designing in oil-and-gas industry. This method highlighted the differences between theoretical process and the followed process as well as tools and competencies used to identify reality anchors. This knowledge will then be used to implement a new process to be implemented with a digital twin and scenarios to test the prototype using realistic simulation.;,citation_author=Stélian Camara Dit Pinto;,citation_author=Dimitri Masson;,citation_author=Eric Villeneuve;,citation_author=Guy Boy;,citation_author=Laetitia Urfels;,citation_publication_date=2021-08;,citation_cover_date=2021-08;,citation_year=2021;,citation_fulltext_html_url=https://www.cambridge.org/core/journals/proceedings-of-the-design-society/article/from-requirements-to-prototyping-application-of-humansystem-integration-methodology-to-digital-twin-design/8D8885AD4F02B5B97877C557CF2D8D79;,citation_doi=10.1017/pds.2021.423;,citation_issn=2732-527X;,citation_volume=1;,citation_language=en-US;,citation_journal_title=Proceedings of the Design Society;,citation_journal_abbrev=Proc. Des. Soc.;">
+<meta name="citation_reference" content="citation_title=Méthodologie de conception de jumeau numérique pour supporter la conscience de la situation;,citation_abstract=The work presented in this article focuses on the opportunity to use the digital twin of the complex system, a concept popularized in recent years, as a Decision Support System. In studying the phenomenon of human decision making, the concept of situation awareness appears to be of primary importance when dealing with these complex systems. Given the complexity of the system to be represented in the digital twin, the concept of reality anchor is proposed to identify the elements of the studied situation necessary for the user to perceive, understand and project the situation he is facing. A methodology, called the Reality Anchor Methodology, has been defined to ensure the elicitation and the implementation of these elements in a digital twin. This methodology is composed of three steps that aim (1) to elicit the reality anchors through a study of the operators’ tasks and activities, (2) to design a prototype for the realization of human-in-the-loop tests and (3) to validate the definition of the reality anchors. This method was applied to a case study in the energy domain and allowed to validate the importance of the defined reality anchors for the decision-making process.;,citation_author=Stélian Camara Dit Pinto;,citation_author=Eric Villeneuve;,citation_author=Dimitri Masson;,citation_author=Guy Andre Boy;,citation_author=Laetitia Urfels;,citation_publication_date=2023-06;,citation_cover_date=2023-06;,citation_year=2023;,citation_fulltext_html_url=https://hal.science/hal-04206938;,citation_doi=10.60662/6sm3-5f44;,citation_language=fr-FR;,citation_conference_title=CIGI Qualita MOSIM 2023. Propulser la performance;,citation_conference=CIGI QUALITA MOSIM 2023;">
+<meta name="citation_reference" content="citation_title=Operations room design for the control of a fleet of robots;,citation_abstract=In this research work we focuses on the elicitation of concepts for the design of an oil and gas complex system involving a fleet of robots. We are using expertise and an experience-based approach to formalize existing control rooms and extending them to include robots. We are building a structural and functional ontology to identify and allocate current and emergent functions. The approach leads to the development of a software simulator that includes structures and functions of an oil and gas platform and its operations room. Keywords Oil and gas, control room, ontology, human centered design, fleet of robots.;,citation_author=Chloé Rolos;,citation_author=Guy Boy;,citation_author=Dimitri Masson;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_fulltext_html_url=https://hal.science/hal-02340856;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=Outil de classement de technologies pour l’aide à la décision en rénovation de bâtiments;,citation_abstract=Decision making in the context of Near Zero Energy Building refurbishment is subjected to heterogeneous stakeholders, tools and objectives. This paper presents a methodology to facilitate stakeholders’ collaboration in the refurbishment processes and identifies decision support approaches to help on the main decision milestones. This methodology is supported by a prototype (user interface and algorithm) of a decision support system (DSS) that allows ranking different refurbishment technologies. The proposed DSS uses a multi criteria decision method that combines weighting and fuzzy dominances approach. The approach is illustrated with a real data set to rank thermal insulation materials.;,citation_author=Laura Laguna Salvado;,citation_author=Eric Villeneuve;,citation_author=Dimitri H. Masson;,citation_publication_date=2019-06;,citation_cover_date=2019-06;,citation_year=2019;,citation_fulltext_html_url=https://hal.science/hal-02268562;,citation_language=fr-FR;,citation_conference_title=CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA;,citation_series_title=Proceedings of the 13th International Conference CIGI QUALITA;">
+<meta name="citation_reference" content="citation_title=Décision dans les systèmes cyber-physiques et humains : application à l’élevage de précision;,citation_abstract=Precision livestock farming aims to improve the farm productivity and relies on a set of technological equipment producing data that must be collected, stored and analyzed and concern each animal and its environment. This new way of managing a farm is a prime area of application for research work on Cyber-Physical and Human Systems. The issue explored in this article is based on the observation that breeders face a considerable increase in the amount of data they must deal with. It is then necessary to develop a decision support system considering the &amp;amp;amp;quot;real time&amp;quot; data but also the expert knowledge to allow the farmers to act at best. In this work, we first highlight the specific challenges presented by the field of precision sheep farming to the development of a decision support system. We then introduce a methodology to implement decision support in this context.;,citation_author=Eric Villeneuve;,citation_author=Christophe Merlo;,citation_author=Guillaume Terrasson;,citation_author=Audrey Abi Akle;,citation_author=Dimitri H. Masson;,citation_author=Alvaro Llaria;,citation_publication_date=2019-06;,citation_cover_date=2019-06;,citation_year=2019;,citation_fulltext_html_url=https://hal.science/hal-02268577;,citation_language=fr-FR;,citation_conference_title=CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA;,citation_series_title=Proceedings of the 13th International Conference CIGI QUALITA;">
+<meta name="citation_reference" content="citation_title=Study and design of a remote and virtual air traffic control center using a Human Systems Integration approach;,citation_abstract=Remote and Virtual Towers have been studied as an alternative paradigm for air traffic control operations. This poster introduces research guidelines we obtained from a series of interviews carried out with designers and experts of military air traffic control systems. These are guidelines for a more human-centered approach to systems engineering while designing complex sociotechnical systems such as remote and virtual towers.;,citation_author=Alexandre Disdier;,citation_publication_date=2022-12;,citation_cover_date=2022-12;,citation_year=2022;,citation_fulltext_html_url=https://hal.science/hal-03971460;,citation_language=en-US;,citation_publisher=AFIS;">
+<meta name="citation_reference" content="citation_title=Toward Developing a Data Model for a Digital Product Passport To Enhance Circularity in Fashion;,citation_abstract=In the context of a transition to sustainable fashion, a Digital Product Passport could support the circular economy and inform consumers about the sustainability conditions of the products they intend to purchase. This paper presents our methodology to develop a data model of a DPP for the textile industry through a Grounded Theory approach. It results from the convergence of domains of expertise including the evolving legal context in Europe and France, the initiatives of brands to improve consumer information, the growing interest of academics in supply chain traceability and the evolution of stakeholders needs as they become actors of the value chain. The draft model we are presenting is gathering 16 areas of information that can be used by the stakeholders of the entire value chain.;,citation_author=Pantxika Ospital;,citation_author=Dimitri H. Masson;,citation_author=Cédrick Beler;,citation_author=Jérémy Legardeur;,citation_publication_date=2023-03;,citation_cover_date=2023-03;,citation_year=2023;,citation_fulltext_html_url=https://hal.science/hal-04082862;,citation_language=en-US;,citation_conference_title=Sustainable innovation 2023;,citation_conference=University for the creative arts;">
+<meta name="citation_reference" content="citation_title=Ideavaluation;,citation_author=Julien Ambrosino;,citation_author=Dimitri Masson;,citation_author=Jeremy Legardeur;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;">
+<meta name="citation_reference" content="citation_title=D. 1.1 Methodology of project emergence in interclustering and intersectoral context (1);,citation_abstract=The animation of creative sessions permits to identify new opportunities for collaborative innovation projects. To support this process, a dedicated methodology called STAR (Structured and sTructuring Animation methodology for emeRgence) facilitates project emergence in interclustering and cross-sectoral context during innovation clubs. This deliverable gives animation guidelines to cluster facilitators of the NEPTUNE project in order to explain how the STAR methodology shall be used during the NEPTUNE innovation clubs sessions. Each step of the animation process is described following the same format: 1. prerequisites to check that the facilitator has enough information before starting a step, 2. description of the step, which details the aims and how to use the animation tools dedicated to this step, 3. expected outputs from the use of the STAR methodology. For each step, recommendations are specified to limit issues during animation and avoid misunderstandings. The STAR methodology intends to offer the best conditions to bring out innovation projects without claiming to be a systematic methodology to be exhaustively followed. Thus, the steps, advices and notes composing this document are to be taken as recommendations and should be adapted to each situation. To support clusters managers in animating the NEPTUNE innovation clubs sessions, this deliverable will be completed with a face-to-face Training session for clusters managers (D1.3).;,citation_author=Julien Ambrosino;,citation_author=Jérémy Legardeur;,citation_author=Dimitri H. Masson;,citation_author=Pauline Théophane;,citation_publication_date=2016-09;,citation_cover_date=2016-09;,citation_year=2016;,citation_fulltext_html_url=https://hal.science/hal-01440894;,citation_language=en-US;,citation_technical_report_institution=ESTIA;">
+<meta name="citation_reference" content="citation_title=Inspirer, explorer: Magellan, un environnement interactif evolutionnaire pour la génération d’exemples;,citation_abstract=Creativity is key in User Interfaces (UI) design. Numerous methods and tools exist for supporting creativity. However few have focused on the presentation of examples so far. We propose Magellan an interactive evolutionary environment to semi-automatically generate examples galleries suited to the problem under study. We report a qualitative evaluation of Magellan for designing an Instant Messenger UI.;,citation_author=Dimitri Masson;,citation_author=Alexandre Demeure;,citation_author=Gaëlle Calvary;,citation_publication_date=2011-10-24;,citation_cover_date=2011-10-24;,citation_year=2011;,citation_fulltext_html_url=https://dl.acm.org/doi/10.1145/2044354.2044382;,citation_doi=10.1145/2044354.2044382;,citation_isbn=978-1-4503-0822-9;,citation_language=fr-FR;,citation_conference_title=Proceedings of the 23rd Conference on l’Interaction Homme-Machine;,citation_conference=ACM;,citation_series_title=IHM ’11;">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/favicon_128_128.webp" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Dimitri Masson</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About Me</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../Bibliography.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dhmmasson"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/dimitri-masson-a595612b/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.researchgate.net/profile/Dimitri-Masson-2"> <i class="bi bi-ai ai ai-researchgate-square" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title"><p>Ergo’IA ’18: Proceedings of the 16th Ergo’IA “Ergonomie Et Informatique Avancée” Conference</p></h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+      <div>
+      <div class="quarto-title-meta-heading">Authors</div>
+      <div class="quarto-title-meta-contents">
+              <p>Dimitri Masson <a href="mailto:d.masson@estia.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-7072-3146" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+              <p>Alexis Clay </p>
+            </div>
+    </div>
+       <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 3, 2018</p>
+      </div>
+    </div>
+         <div>
+      <div class="quarto-title-meta-heading">HAL</div>
+      <div class="quarto-title-meta-contents">
+        <p class="doi">
+          <a href="https://hal.science/hal-02446096v1">hal-02446096v1</a>
+        </p>
+      </div>
+    </div>
+    </div>
+
+  <div>
+    <div class="abstract">
+      <div class="block-title">Abstract</div>
+      <p>No abstract available</p>
+    </div>
+  </div>
+    <div class="mt-4 d-flex flex-row flex-wrap gap-1 justify-content-left justify-content-sm-start" role="group" aria-label="Links">
+      <a href="" class="btn btn-secondary text-capitalize"><i class="bi bi-file-earmark-pdf me-1"></i> PDF</a>
+      <a href="https://hal.science/hal-02446096v1" class="btn btn-secondary text-capitalize"><i class="ai ai-hal me-1"></i> HAL</a>
+    </div>
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+See the paper
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</div>
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@book{masson2018_ErgoIA,
+  author = {Masson, Dimitri and Clay, Alexis},
+  publisher = {ACM},
+  title = {Ergo’IA ’18: {Proceedings} of the 16th {Ergo’IA} “{Ergonomie}
+    {Et} {Informatique} {Avancée}” {Conference}},
+  date = {2018-10-03},
+  isbn = {978-1-4503-6488-1},
+  langid = {en},
+  abstract = {No abstract available}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-masson2018_ErgoIA" class="csl-entry quarto-appendix-citeas" role="listitem">
+Masson, D., &amp; Clay, A. (2018). Ergo’IA ’18: Proceedings of the 16th
+Ergo’IA <span>“Ergonomie Et Informatique Avancée”</span> Conference . In
+<em>Ergo’IA ’18: Proceedings of the 16th Ergo’IA <span>“Ergonomie Et
+Informatique Avancée”</span> Conference </em>. ACM .
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
