@@ -223,7 +223,10 @@ const publicationExtraction = (item: Item) => {
 
 const haikuFilePath = join(config.bibliography, "haiku.yml");
 const haikuContent = await Deno.readTextFile(haikuFilePath);
-const haikuData = parse(haikuContent) as Record<string, { haiku: string }>;
+const haikuData = parse(haikuContent) as Record<
+  string,
+  { haiku: string; categories: string[]; image: string }
+>;
 
 const cleanItems = [];
 for (const item of items) {
@@ -251,6 +254,10 @@ for (const item of items) {
       ...publicationExtraction(item),
       ...citationExtractor(item),
       haiku: item.citationKey && haikuData[item.citationKey].haiku,
+      image:
+        item.citationKey &&
+        `_cover_images/${haikuData[item.citationKey].image}`,
+      categories: item.citationKey && haikuData[item.citationKey].categories,
     };
     cleanItems.push(cleanItem);
   } catch (error) {
@@ -259,7 +266,7 @@ for (const item of items) {
 }
 // save json
 await Deno.writeTextFile(
-  join(config.outputFolder, "cleanItems.json"),
+  join(config.bibliography, "cleanItems.json"),
   JSON.stringify(cleanItems, null, 2)
 );
 

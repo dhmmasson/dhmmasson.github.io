@@ -9,7 +9,8 @@ year: {{year}}
 description: |
   hAIku: {{it.haiku |> replaceAll('\n', '\n  ')}}
 haiku: {{it.haiku |> replaceAll('\n', '<br>')}}
-categories: []
+categories: [{{it.categories}}]
+image: {{it.image}}
 publication: |
   {{it.publication}} 
 authors_s: {{it.authors_s_bold_html}}

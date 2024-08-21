@@ -3,208 +3,299 @@ ambrosino2016_EncourageExchanges:
     Innovation takes flight,
     With digital tools, we soar,
     New ideas bloom bright.
+  categories: [innovation, digital tools]
+  image: creativity.webp
 ambrosino2016_MethodologyProject:
   haiku: |
     Clusters intertwine,
     STAR guides innovation's path,
     New projects will shine.
+  categories: [innovation, Methodology]
+  image: creativity2.webp
 ambrosino2017_FosteringCollaborative:
   haiku: |
     Opinions clash bright,
     Sparks of innovation fly,
     Collaboration's light.
+  categories: [innovation, collaboration]
+  image: creativity3.webp
 ambrosino2017_IdeaBulbSmart:
   haiku: |
     IdeaBulb's soft glow,
     Tracks thoughts in creative flow,
     Insights start to grow.
+  categories: [innovation, Human-Computer, tanglible user interface]
+  image: ideaBulb1.webp
 ambrosino2017_STARMethodologie:
   haiku: |
     Clusters join their might,
     STAR guides collaboration,
     Innovation's bright light.
+  categories: [innovation, collaboration, Methodology]
+  image: creativity.webp
 boy2024_PRODECHuman:
   haiku: |
     Man and machine dance,
     PRODEC guides their integration,
     Systems in advance.
+  categories: [Human-System Integration]
+  image: HSI.webp
 camaraditpinto2021_DigitalTwin:
   haiku: |
     Digital twin's eye,
     Sees through chaos, clear and bright,
     Safety's guiding light.
+  categories: [Human-System Integration, Digital Twin]
+  image: DigitalTwin.webp
 camaraditpinto2023_MethodologieConception:
   haiku: |
     Digital twin's birth,
     Anchored in reality's core,
     Decision's true worth.
+  categories: [Human-System Integration, Digital Twin, Design, Methodology]
+  image: DigitalTwin2.webp
 camaraditpinto2024_RealityAnchor:
   haiku: |
     Digital twin's gaze,
     Anchored in the real world's flow,
     Decision-making ablaze.
+  categories: [Human-System Integration, Digital Twin, Decision-making, Methodology]
+  image: DigitalTwin.webp
 demarcq2022_CircularProduct:
   haiku: |
     Circle unbroken,
     Product design, life renewed,
     Waste's cycle unspoken.
+  categories: [Circularity, Design, Methodology]
+  image: Textile.webp
 demeure2011_GraphsModels:
   haiku: |
     Design's tangled paths,
     Graphs of models, clear the way,
     HCI's aftermath.
+  categories: [Design, Human-Computer Interaction]
+  image: UserCenteredDesign.webp
 disdier2022_StudyDesign:
   haiku: |
     Virtual towers rise,
     Air traffic, a new domain,
     Human touch applies.
+  categories: [Human-System Integration, Design, Case Study]
+  image: HSI.webp
 disdier2023_HumanSystems:
   haiku: |
     Remote control takes hold,
     Human touch in virtual skies,
     Air traffic, bold and old.
+  categories: [Human-System Integration, Design, Case Study]
+  image: HSI2.webp
 disdier2024_DefiningCharacterizing:
   haiku: |
     Contexts converge,
     In systems, human, machine,
     Its essence, crystal clear.
+  categories: [Human-System Integration, Design, Methodology, Context]
+  image: HSI.webp
 houzangbe2022_VirtualReality:
   haiku: |
     Virtual canvas calls,
     3D sketching takes its stand,
     Design's future enthralls.
+  categories: [Design, Human-Computer Interaction, Virtual Reality, Creativity]
+  image: creativity4.webp
 houzangbe2023_ExplorationPhysiological:
   haiku: |
     Body's silent song,
     Creativity's rhythm flows,
     Design, where we belong.
+  categories: [Design, Human-Computer Interaction, Physiology, Creativity]
+  image: creativity3.webp
 lagunasalvado2019_OutilClassement:
   haiku: |
     Buildings reborn green,
     Technology's guiding hand,
     Sustainable scene.
+  categories: [Decision-making, digital tools, sustainability]
+  image: building.webp
 lagunasalvado2022_DecisionSupport:
   haiku: |
     Choices, clear and bright,
     Decision support system's aid,
     NZEB, shining light.
+  categories: [Decision-making, digital tools, sustainability]
+  image: building2.webp
 lasseux2022_NAASCubeProgram:
   haiku: |
     Students reach for stars,
     NAASCube, a guiding light,
     Aerospace's bars.
+  categories: [Education, Aerospace]
+  image: Naascube4.webp
 legardeur2020_ParadoxDiversity:
   haiku: |
     Diversity's strange dance,
     A paradox, it can lift,
     Or hinder, chance's glance.
+  categories: [Creativity, Case Study]
+  image: creativity2.webp
 masson2010_MagellanEvolutionary:
   haiku: |
     Magellan's UI quest,
     Evolutionary design,
     Creativity's behest.
+  categories: [Creativity, Exploration, Design, Human-Computer Interaction]
+  image: creativity.webp
 masson2011_ExamplesGalleries:
   haiku: |
     Design's vast display,
     Examples, inspiration's source,
     Interactive sway.
+  categories: [Creativity, Inspiration, Design, Human-Computer Interaction]
+  image: creativity2.webp
 masson2011_InspirerExplorer:
   haiku: |
     Magellan's guiding light,
     Through UI's creative sea,
     Inspiration takes flight.
+  categories: [Creativity, Inspiration, Exploration, Design, Human-Computer Interaction]
+  image: creativity3.webp
 masson2014_InspirezExplorez:
   haiku: |
     Design's hidden well,
     Creativity, set it free,
     HCI's magic spell.
+  categories: [Creativity, Inspiration, Exploration, Design, Human-Computer Interaction]
+  image: creativity4.webp
 masson2014_WebDesign:
   haiku: |
     Web design's embrace,
     Seeking styles, a common thread,
     Ground truth's saving grace.
+  categories: [Design, Human-Computer Interaction, Web Design, Ground Truth, Creativity]
+  image: creativity.webp
 masson2016_ErgoIA:
   haiku: |
     Ergonomics' art,
     With AI's powerful hand,
     A new world will start.
+  categories: [Human-Computer Interaction, Ergonomics, Artificial Intelligence]
+  image: Book.webp
 masson2018_ErgoIA:
   haiku: |
     Humans and machines,
     Working in perfect accord,
     Ergo'IA intervenes.
+  categories: [Human-Computer Interaction, Ergonomics, Artificial Intelligence]
+  image: Book.webp
 masson2021_TraceabilityInformation:
   haiku: |
     Fashion's hidden cost,
     Transparency, a beacon bright,
     Sustainable trust embossed.
+  categories: [Circularity, Fashion, Traceability]
+  image: Textile.webp
 millet2019_DefinitionEspace:
   haiku: |
     Sport and health unite,
     Semantic space, a bridge built,
     Design's guiding light.
+  categories: [Sport, Health, Design, Digital Tools]
+  image: SportHealth.webp
 millet2019_DefinitionSportHealth:
   haiku: |
     Body in motion,
     Sport and health, a synergy,
     Design's new devotion.
+  categories: [Sport, Health, Design, Digital Tools]
+  image: SportHealth.webp
 ospital2022_DigitalProduct:
   haiku: |
     Fashion's open book,
     Digital passport in hand,
     Sustainable look.
+  categories: [Circularity, Fashion, Traceability, Digital Tools]
+  image: Textile2.webp
 ospital2022_PasseportProduit:
   haiku: |
     Textile's journey traced,
     Digital passport in tow,
     Sustainable future embraced.
+  categories: [Circularity, Fashion, Traceability, Digital Tools]
+  image: DigitalPassport.webp
 ospital2022_TotalTraceability:
   haiku: |
     From thread to garment's end,
     Traceability's clear thread,
     Sustainable fashion's friend.
+  categories: [Circularity, Fashion, Traceability, Digital Tools]
+  image: DigitalPassport2.webp
 ospital2023_DevelopingData:
   haiku: |
     Fashion's digital twin,
     A passport for circularity,
     Sustainable choices within.
+  categories: [Circularity, Fashion, Traceability, Digital Tools]
+  image: DigitalPassport3.webp
 ospital2023_ProductTransparency:
   haiku: |
     Fashion's unveiled soul,
     Transparency, a guiding star,
     Sustainable choices extol.
+  categories: [Circularity, Fashion, Traceability, Transparency, Digital Tools]
+  image: Textile.webp
 pena-arrazola2015_InteractiveGalleries:
   haiku: |
     Web design's delight,
     Interactive wonders bloom,
     I++ sheds its light.
+  categories: [Design, Human-Computer Interaction, Exploration, Web Design]
+  image: creativity2.webp
 pinto2021_RequirementsPrototyping:
   haiku: |
     Digital twins arise,
     Human needs, the guiding force,
     Prototyping never lies.
+  categories: [Human-System Integration, Design, Prototyping]
+  image: DigitalTwin.webp
 rolos2019_OperationsRoom:
   haiku: |
     Robots in their dance,
     Control room's watchful embrace,
     Human-machine trance.
+  categories: [Human-System Integration, Design, Operations Room]
+  image: HSI.webp
 salvado2019_DecisionMaking:
   haiku: |
     Buildings, old and worn,
     NZEB, a brighter path,
     Decision's seed is born.
+  categories: [Decision-making, sustainability, digital tools]
+  image: building.webp
 villeneuve2019_DecisionDans:
   haiku: |
     Cyber world collides,
     With human touch, in the field,
     Precision farming presides.
+  categories: [Decision-making, digital tools, precision farming]
+  image: PrecisionFarming1.webp
 villeneuve2019_DecisionSupport:
   haiku: |
     Sheep graze, data flows,
     Precision guides the shepherd's hand,
     Technology bestows.
+  categories: [Decision-making, digital tools, precision farming]
+  image: PrecisionFarming2.webp
 williams2024_TinkererMindset:
   haiku: |
     Uncertain roads tread,
     Safe-to-fail whispers lessons,
     Judgment redefined.
+  categories: [System Engineering, Exploration, Case Study]
+  image: SafeToFail.webp
+disdier2024_ContextAcquisition:
+  haiku: |
+    Emergent paths rise,
+    Context shapes unseen design,
+    Guide with foresight's light.
+  categories: [Human-System Integration, Design, Methodology, Context]
+  image: HSI.webp
