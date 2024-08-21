@@ -102,7 +102,7 @@
   },
   "version": {
     "zotero": "6.0.37",
-    "bbt": "6.7.221"
+    "bbt": "6.7.222"
   },
   "collections": {},
   "items": [
@@ -1248,11 +1248,11 @@
       ],
       "tags": [
         {
-          "tag": "complex sociotechnical systems",
+          "tag": "human systems integration",
           "type": 1
         },
         {
-          "tag": "human systems integration",
+          "tag": "complex sociotechnical systems",
           "type": 1
         },
         {
@@ -1589,7 +1589,7 @@
     },
     {
       "key": "K6YVD4AN",
-      "version": 1017,
+      "version": 1080,
       "itemType": "journalArticle",
       "title": "Decision Making in Near Zero Energy Building Refurbishment: A Technology Alternatives Ranking Tool",
       "abstractNote": "Decision making in the context of Near Zero Energy Building refurbishment is subjected to heterogeneous stakeholders, tools and objectives. This paper presents a methodology to facilitate stakeholders collaboration in the refurbishment processes and identifies decision support approaches to help on the main decision milestones. This methodology is supported by a prototype (user interface and algorithm) of a decision support system (DSS) that allows ranking different refurbishment technologies. The proposed DSS uses a multi criteria decision method that combines weighting and fuzzy dominances approach. The approach is illustrated with a real data set to rank insulation materials.",
@@ -1803,14 +1803,22 @@
       "notes": [
         {
           "key": "N2JUQWZW",
-          "version": 1079,
+          "version": 1080,
           "itemType": "note",
           "parentItem": "S7XB6ZU7",
-          "note": "",
-          "tags": [],
-          "relations": {},
+          "note": "<div data-schema-version=\"8\"><p><span style=\"color: rgb(153, 153, 153)\"><span style=\"background-color: rgb(255, 255, 255)\">funding: Horizon 2020 Framework Programme (768623)</span></span></p>\n</div>",
+          "tags": [
+            {
+              "tag": "funding"
+            }
+          ],
+          "relations": {
+            "dc:relation": [
+              "http://zotero.org/users/2761519/items/K6YVD4AN"
+            ]
+          },
           "dateAdded": "2024-08-15T13:34:07Z",
-          "dateModified": "2024-08-15T13:34:07Z",
+          "dateModified": "2024-08-15T13:34:43Z",
           "uri": "http://zotero.org/users/2761519/items/N2JUQWZW"
         }
       ],
@@ -4326,6 +4334,64 @@
       "itemKey": "WZ6HHT8Q",
       "libraryID": 1,
       "select": "zotero://select/library/items/WZ6HHT8Q"
+    },
+    {
+      "key": "A6SAANDE",
+      "version": 1100,
+      "itemType": "presentation",
+      "title": "A Context Acquisition Methodology for the Design of Complex Sociotechnical Systems",
+      "abstractNote": "Complex sociotechnical systems are likely to display emergent properties that are difficult to anticipate at design time. One of the causes for emergence is the system's sensitivity to its own operational context. Since context heavily drives the behavior of such systems, a proper HSI endeavor should define the relevant contextual elements during the early stages of the lifecycle, even before the system has been integrated and project resources have been committed. This paper presents an early-stage context elicitation methodology along with a companion software tool in development combining the HSI literature, the context literature and scenario-based design principles. The use of our tool is illustrated through the case study of the design of a remote air traffic control center.",
+      "date": "2024-08-26",
+      "language": "en",
+      "place": "Jeju-Do, Korea",
+      "presentationType": "Research Paper",
+      "meetingName": "HSI2024",
+      "creators": [
+        {
+          "firstName": "Alexandre",
+          "lastName": "Disdier",
+          "creatorType": "presenter"
+        },
+        {
+          "firstName": "Dimitri",
+          "lastName": "Masson",
+          "creatorType": "presenter"
+        },
+        {
+          "firstName": "Marija",
+          "lastName": "Jankovic",
+          "creatorType": "presenter"
+        },
+        {
+          "firstName": "GUY ANDRE",
+          "lastName": "BOY",
+          "creatorType": "presenter"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-08-21T16:18:40Z",
+      "dateModified": "2024-08-21T20:16:55Z",
+      "uri": "http://zotero.org/users/2761519/items/A6SAANDE",
+      "itemID": 1034,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Alexandre et al. - 2024 - A Context Acquisition Methodology for the Design o.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-08-21T16:20:43Z",
+          "dateModified": "2024-08-21T16:20:43Z",
+          "uri": "http://zotero.org/users/2761519/items/BTJTSJWJ",
+          "path": "/Users/dimitri/Zotero/storage/BTJTSJWJ/Alexandre et al. - 2024 - A Context Acquisition Methodology for the Design o.pdf",
+          "select": "zotero://select/library/items/BTJTSJWJ"
+        }
+      ],
+      "notes": [],
+      "citationKey": "disdier2024_ContextAcquisition",
+      "itemKey": "A6SAANDE",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/A6SAANDE"
     }
   ]
 }
