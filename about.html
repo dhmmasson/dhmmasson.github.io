@@ -174,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-anchor-id="education">Education</h2>
 <ul>
 <li><i class="fa-solid fa-certificate" aria-label="certificate"></i> <strong><a href="https://www.incose.org/learn/tli">INCOSE Technical Leadership Institute</a></strong> (cohort 8), 2024</li>
-<li><i class="fa-solid fa-user-graduate" aria-label="user-graduate"></i> <strong>Phd in Computer Science - Human Computer Interaction</strong>, 2014 - University Grenoble Alpes <a href="publications/masson2014_InspirezExplorez/index.md">Inspirez ! Explorez ! Soutien à la créativité en conception d’interfaces homme-machine</a></li>
+<li><i class="fa-solid fa-user-graduate" aria-label="user-graduate"></i> <strong>Phd in Computer Science - Human Computer Interaction</strong>, 2014 - University Grenoble Alpes <a href="./publications/masson2014_InspirezExplorez.html">Inspirez ! Explorez ! Soutien à la créativité en conception d’interfaces homme-machine</a></li>
 <li><i class="fa-solid fa-user-graduate" aria-label="user-graduate"></i> <strong>M.Sc in Computer Science and Apllied Mathematics</strong>, 2010 - Grenoble INP Ensimag<br>
 </li>
 <li><i class="fa-solid fa-user-graduate" aria-label="user-graduate"></i> <strong>B.Sc in Engineering Science</strong>, 2008 - Grenoble INP</li>
@@ -305,7 +305,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/dhmmasson\.github\.io\/");
+      var filterRegex = new RegExp("https:\/\/dhmmasson\.github\.io");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
