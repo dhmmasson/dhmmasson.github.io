@@ -1,3 +1,6 @@
-div[data-path^='_']{
-	display: none;
+div[data-path^="_"] {
+  display: none;
+}
+div[data-path="_quarto.yml"] {
+  display: flex;
 }
