@@ -3,6 +3,8 @@ project:
   output-dir: _site/
   preview:
     watch-inputs: true
+  resources: 
+    - rezbuild-emperor-tamarin/static/index.html
 
 
 bibliography: ./bibliography/bibliography.bib
@@ -12,6 +14,7 @@ csl: ./bibliography/apa.csl
 website:
   title: "Dimitri Masson"
   favicon: assets/favicon_128_128.ico
+  site-url: "https://dhmmasson.github.io"
   navbar:
     logo: assets/favicon_128_128.webp
     toggle-position: right
