@@ -654,7 +654,7 @@
     },
     {
       "key": "KZ6QXESW",
-      "version": 1084,
+      "version": 1104,
       "itemType": "journalArticle",
       "title": "PRODEC for human systems integration of increasingly autonomous systems",
       "abstractNote": "The purpose of the PRODEC scenario-based design method is the incremental crossfertilization and refinement of procedural scenarios and declarative configurations. It uses virtual prototypes of the developed systems (mainly life-critical systems) to conduct human-in-the-loop simulations (HITLSs). Based on human systems integration (HSI) principles and criteria, as well as expertise and experience in the domain at stake, this HSI approach grounded in virtual environments requires a clear definition of physical and cognitive tangibility metrics to assess the distance between virtual and tangible (grasp) dimensions of the system being developed when it is put to work. PRODEC considers human and machine systems described in terms of structures and functions incrementally designed using procedural scenarios (i.e., stories) in task and activity networks, which provide life to declarative configurations (i.e., system\u2019s functions and structures). This active modeling and simulation process enables the discovery of emergent structures and functions of the system being developed when it is virtually operated. PRODEC\u2019s use is illustrated in an example. We discuss the use of PRODEC and its results as to how they can be used with digital twins.",
@@ -665,8 +665,11 @@
       "accessDate": "2024-03-11T14:50:22Z",
       "rights": "\u00a9 2024 The Authors. Systems Engineering published by Wiley Periodicals LLC.",
       "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/sys.21751",
+      "volume": "27",
+      "pages": "805-826",
       "publicationTitle": "Systems Engineering",
       "DOI": "10.1002/sys.21751",
+      "issue": "5",
       "journalAbbreviation": "Sys. Eng.",
       "ISSN": "1098-1241, 1520-6858",
       "creators": [
@@ -769,7 +772,7 @@
       },
       "inPublications": true,
       "dateAdded": "2024-03-12T09:43:11Z",
-      "dateModified": "2024-08-19T11:52:18Z",
+      "dateModified": "2024-09-04T08:50:50Z",
       "uri": "http://zotero.org/users/2761519/items/KZ6QXESW",
       "itemID": 356,
       "attachments": [
@@ -4337,7 +4340,7 @@
     },
     {
       "key": "A6SAANDE",
-      "version": 1100,
+      "version": 1102,
       "itemType": "presentation",
       "title": "A Context Acquisition Methodology for the Design of Complex Sociotechnical Systems",
       "abstractNote": "Complex sociotechnical systems are likely to display emergent properties that are difficult to anticipate at design time. One of the causes for emergence is the system's sensitivity to its own operational context. Since context heavily drives the behavior of such systems, a proper HSI endeavor should define the relevant contextual elements during the early stages of the lifecycle, even before the system has been integrated and project resources have been committed. This paper presents an early-stage context elicitation methodology along with a companion software tool in development combining the HSI literature, the context literature and scenario-based design principles. The use of our tool is illustrated through the case study of the design of a remote air traffic control center.",
@@ -4392,6 +4395,50 @@
       "itemKey": "A6SAANDE",
       "libraryID": 1,
       "select": "zotero://select/library/items/A6SAANDE"
+    },
+    {
+      "key": "NBVHBV2C",
+      "version": 1111,
+      "itemType": "computerProgram",
+      "title": "Tamarin",
+      "abstractNote": "Tamarin is an Interative Multi-criteria Decision Support System",
+      "date": "2024-09",
+      "libraryCatalog": "GitHub",
+      "url": "https://github.com/dhmmasson/tamarin",
+      "accessDate": "2024-09-05T14:47:08Z",
+      "rights": "MIT",
+      "extra": "original-date: 2020-02-11T12:22:21Z",
+      "versionNumber": "v1.9",
+      "programmingLanguage": "JavaScript",
+      "creators": [
+        {
+          "firstName": "Dimitri",
+          "lastName": "Masson",
+          "creatorType": "programmer"
+        },
+        {
+          "firstName": "Laura",
+          "lastName": "Laguna Salvad\u00f3",
+          "creatorType": "programmer"
+        },
+        {
+          "firstName": "Eric",
+          "lastName": "Villeneuve",
+          "creatorType": "programmer"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-09-05T14:47:08Z",
+      "dateModified": "2024-09-05T14:47:08Z",
+      "uri": "http://zotero.org/users/2761519/items/NBVHBV2C",
+      "itemID": 1036,
+      "attachments": [],
+      "notes": [],
+      "citationKey": "masson2024_Tamarin",
+      "itemKey": "NBVHBV2C",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/NBVHBV2C"
     }
   ]
 }
