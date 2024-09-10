@@ -1,0 +1,17 @@
+# options specified here will apply to all posts in this folder
+
+# freeze computational output
+# (see https://quarto.org/docs/projects/code-execution.html#freeze)
+
+# Enable banner style title blocks
+title-block-banner: true
+google-scholar: true 
+
+filters:
+  - abstract-section
+
+format: 
+  html: 
+    code-overflow: wrap
+    template-partials: 
+      - ../templates/title-metadata.html
