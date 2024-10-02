@@ -1,151 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dhmmasson.github.io/about.html</loc>
-    <lastmod>2024-08-22T08:45:51.815Z</lastmod>
+    <loc>https://dhmmasson.github.io/open source.html</loc>
+    <lastmod>2024-09-26T13:10:20.461Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/index.html</loc>
-    <lastmod>2024-08-22T08:07:43.483Z</lastmod>
+    <loc>https://dhmmasson.github.io/Readme.html</loc>
+    <lastmod>2024-08-04T21:24:13.534Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/houzangbe2022_VirtualReality.html</loc>
-    <lastmod>2024-08-22T08:07:43.747Z</lastmod>
+    <loc>https://dhmmasson.github.io/TODO.html</loc>
+    <lastmod>2024-09-10T08:51:36.793Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/ambrosino2017_IdeaBulbSmart.html</loc>
+    <loc>https://dhmmasson.github.io/projects/LudumDare/LudumDare48.html</loc>
+    <lastmod>2024-10-02T15:47:22.552Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/projects/LudumDare/LudumDare32.html</loc>
+    <lastmod>2024-10-02T15:47:22.545Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/projects/multiCriteria/pyramid.html</loc>
+    <lastmod>2024-10-02T15:47:22.643Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/ambrosino2017_FosteringCollaborative.html</loc>
     <lastmod>2024-08-22T08:07:43.744Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/masson2014_InspirezExplorez.html</loc>
-    <lastmod>2024-08-22T08:07:43.748Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/disdier2023_HumanSystems.html</loc>
+    <loc>https://dhmmasson.github.io/publications/disdier2024_DefiningCharacterizing.html</loc>
     <lastmod>2024-08-22T08:07:43.746Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/pena-arrazola2015_InteractiveGalleries.html</loc>
+    <loc>https://dhmmasson.github.io/publications/salvado2019_DecisionMaking.html</loc>
     <lastmod>2024-08-22T08:07:43.750Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/rolos2019_OperationsRoom.html</loc>
-    <lastmod>2024-08-22T08:07:43.750Z</lastmod>
+    <loc>https://dhmmasson.github.io/publications/ambrosino2016_EncourageExchanges.html</loc>
+    <lastmod>2024-09-10T08:55:42.534Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/masson2018_ErgoIA.html</loc>
-    <lastmod>2024-08-22T08:07:43.749Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/williams2024_TinkererMindset.html</loc>
-    <lastmod>2024-08-22T08:07:43.751Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/camaraditpinto2023_MethodologieConception.html</loc>
+    <loc>https://dhmmasson.github.io/publications/ambrosino2017_STARMethodologie.html</loc>
     <lastmod>2024-08-22T08:07:43.745Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/ospital2022_PasseportProduit.html</loc>
-    <lastmod>2024-08-22T08:07:43.749Z</lastmod>
+    <loc>https://dhmmasson.github.io/publications/ambrosino2016_MethodologyProject.html</loc>
+    <lastmod>2024-08-22T08:07:43.744Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/demeure2011_GraphsModels.html</loc>
-    <lastmod>2024-08-22T08:07:43.746Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/boy2024_PRODECHuman.html</loc>
-    <lastmod>2024-08-22T08:07:43.745Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/lasseux2022_NAASCubeProgram.html</loc>
-    <lastmod>2024-08-22T08:07:43.747Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/camaraditpinto2024_RealityAnchor.html</loc>
-    <lastmod>2024-08-22T08:07:43.745Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/millet2019_DefinitionSportHealth.html</loc>
-    <lastmod>2024-08-22T08:07:43.749Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/disdier2024_ContextAcquisition.html</loc>
-    <lastmod>2024-09-10T08:55:54.012Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/pinto2021_RequirementsPrototyping.html</loc>
-    <lastmod>2024-08-22T08:07:43.750Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/villeneuve2019_DecisionSupport.html</loc>
-    <lastmod>2024-08-22T08:07:43.751Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/millet2019_DefinitionEspace.html</loc>
-    <lastmod>2024-08-22T08:07:43.749Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/masson2014_WebDesign.html</loc>
+    <loc>https://dhmmasson.github.io/publications/masson2010_MagellanEvolutionary.html</loc>
     <lastmod>2024-08-22T08:07:43.748Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/villeneuve2019_DecisionDans.html</loc>
-    <lastmod>2024-08-22T08:07:43.750Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/ospital2022_DigitalProduct.html</loc>
-    <lastmod>2024-08-22T08:07:43.749Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/Bibliography.html</loc>
-    <lastmod>2024-08-22T08:07:43.396Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/posts/hsi2024/index.html</loc>
-    <lastmod>2024-08-22T08:07:43.485Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/camaraditpinto2021_DigitalTwin.html</loc>
-    <lastmod>2024-08-22T08:07:43.745Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/lagunasalvado2022_DecisionSupport.html</loc>
-    <lastmod>2024-08-22T08:07:43.747Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/ospital2023_DevelopingData.html</loc>
-    <lastmod>2024-08-22T08:07:43.750Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/disdier2022_StudyDesign.html</loc>
-    <lastmod>2024-08-22T08:07:43.746Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/demarcq2022_CircularProduct.html</loc>
-    <lastmod>2024-08-22T08:07:43.746Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/houzangbe2023_ExplorationPhysiological.html</loc>
-    <lastmod>2024-08-22T08:07:43.747Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/masson2016_ErgoIA.html</loc>
-    <lastmod>2024-08-22T08:07:43.749Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/masson2011_InspirerExplorer.html</loc>
+    <loc>https://dhmmasson.github.io/publications/legardeur2020_ParadoxDiversity.html</loc>
     <lastmod>2024-08-22T08:07:43.748Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/masson2011_ExamplesGalleries.html</loc>
-    <lastmod>2024-08-22T08:07:43.748Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/lagunasalvado2019_OutilClassement.html</loc>
-    <lastmod>2024-08-22T08:07:43.747Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/masson2021_TraceabilityInformation.html</loc>
+    <loc>https://dhmmasson.github.io/publications/ospital2022_TotalTraceability.html</loc>
     <lastmod>2024-08-22T08:07:43.749Z</lastmod>
   </url>
   <url>
@@ -153,47 +65,167 @@
     <lastmod>2024-08-22T08:07:43.750Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/ospital2022_TotalTraceability.html</loc>
+    <loc>https://dhmmasson.github.io/publications/masson2021_TraceabilityInformation.html</loc>
     <lastmod>2024-08-22T08:07:43.749Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/legardeur2020_ParadoxDiversity.html</loc>
+    <loc>https://dhmmasson.github.io/publications/lagunasalvado2019_OutilClassement.html</loc>
+    <lastmod>2024-08-22T08:07:43.747Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/masson2011_ExamplesGalleries.html</loc>
     <lastmod>2024-08-22T08:07:43.748Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/masson2010_MagellanEvolutionary.html</loc>
+    <loc>https://dhmmasson.github.io/publications/masson2011_InspirerExplorer.html</loc>
     <lastmod>2024-08-22T08:07:43.748Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/ambrosino2016_MethodologyProject.html</loc>
-    <lastmod>2024-08-22T08:07:43.744Z</lastmod>
+    <loc>https://dhmmasson.github.io/publications/masson2016_ErgoIA.html</loc>
+    <lastmod>2024-08-22T08:07:43.749Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/ambrosino2017_STARMethodologie.html</loc>
-    <lastmod>2024-08-22T08:07:43.745Z</lastmod>
+    <loc>https://dhmmasson.github.io/publications/houzangbe2023_ExplorationPhysiological.html</loc>
+    <lastmod>2024-08-22T08:07:43.747Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/ambrosino2016_EncourageExchanges.html</loc>
-    <lastmod>2024-09-10T08:55:42.534Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/salvado2019_DecisionMaking.html</loc>
-    <lastmod>2024-08-22T08:07:43.750Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhmmasson.github.io/publications/disdier2024_DefiningCharacterizing.html</loc>
+    <loc>https://dhmmasson.github.io/publications/demarcq2022_CircularProduct.html</loc>
     <lastmod>2024-08-22T08:07:43.746Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/publications/ambrosino2017_FosteringCollaborative.html</loc>
+    <loc>https://dhmmasson.github.io/publications/disdier2022_StudyDesign.html</loc>
+    <lastmod>2024-08-22T08:07:43.746Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/ospital2023_DevelopingData.html</loc>
+    <lastmod>2024-08-22T08:07:43.750Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/lagunasalvado2022_DecisionSupport.html</loc>
+    <lastmod>2024-08-22T08:07:43.747Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/camaraditpinto2021_DigitalTwin.html</loc>
+    <lastmod>2024-08-22T08:07:43.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/posts/hsi2024/index.html</loc>
+    <lastmod>2024-08-22T08:07:43.485Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/Bibliography.html</loc>
+    <lastmod>2024-08-22T08:07:43.396Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/posts/Tamarin.html</loc>
+    <lastmod>2024-10-02T15:47:22.540Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/ospital2022_DigitalProduct.html</loc>
+    <lastmod>2024-08-22T08:07:43.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/villeneuve2019_DecisionDans.html</loc>
+    <lastmod>2024-08-22T08:07:43.750Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/masson2014_WebDesign.html</loc>
+    <lastmod>2024-08-22T08:07:43.748Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/millet2019_DefinitionEspace.html</loc>
+    <lastmod>2024-08-22T08:07:43.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/villeneuve2019_DecisionSupport.html</loc>
+    <lastmod>2024-08-22T08:07:43.751Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/pinto2021_RequirementsPrototyping.html</loc>
+    <lastmod>2024-08-22T08:07:43.750Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/disdier2024_ContextAcquisition.html</loc>
+    <lastmod>2024-09-10T08:55:54.012Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/millet2019_DefinitionSportHealth.html</loc>
+    <lastmod>2024-08-22T08:07:43.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/camaraditpinto2024_RealityAnchor.html</loc>
+    <lastmod>2024-08-22T08:07:43.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/lasseux2022_NAASCubeProgram.html</loc>
+    <lastmod>2024-08-22T08:07:43.747Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/boy2024_PRODECHuman.html</loc>
+    <lastmod>2024-08-22T08:07:43.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/demeure2011_GraphsModels.html</loc>
+    <lastmod>2024-08-22T08:07:43.746Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/ospital2022_PasseportProduit.html</loc>
+    <lastmod>2024-08-22T08:07:43.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/camaraditpinto2023_MethodologieConception.html</loc>
+    <lastmod>2024-08-22T08:07:43.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/williams2024_TinkererMindset.html</loc>
+    <lastmod>2024-08-22T08:07:43.751Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/masson2018_ErgoIA.html</loc>
+    <lastmod>2024-08-22T08:07:43.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/rolos2019_OperationsRoom.html</loc>
+    <lastmod>2024-08-22T08:07:43.750Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/pena-arrazola2015_InteractiveGalleries.html</loc>
+    <lastmod>2024-08-22T08:07:43.750Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/disdier2023_HumanSystems.html</loc>
+    <lastmod>2024-08-22T08:07:43.746Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/masson2014_InspirezExplorez.html</loc>
+    <lastmod>2024-08-22T08:07:43.748Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/publications/ambrosino2017_IdeaBulbSmart.html</loc>
     <lastmod>2024-08-22T08:07:43.744Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/ToDO.html</loc>
-    <lastmod>2024-09-10T08:51:36.793Z</lastmod>
+    <loc>https://dhmmasson.github.io/publications/houzangbe2022_VirtualReality.html</loc>
+    <lastmod>2024-08-22T08:07:43.747Z</lastmod>
   </url>
   <url>
-    <loc>https://dhmmasson.github.io/Readme.html</loc>
-    <lastmod>2024-08-04T21:24:13.534Z</lastmod>
+    <loc>https://dhmmasson.github.io/projects/LudumDare/ludumDare51.html</loc>
+    <lastmod>2024-10-02T15:47:22.631Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/projects/LudumDare/ludumDare46.html</loc>
+    <lastmod>2024-10-02T15:47:22.616Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/projects/LudumDare.html</loc>
+    <lastmod>2024-10-02T15:47:22.544Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/index.html</loc>
+    <lastmod>2024-10-02T15:47:22.539Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhmmasson.github.io/about.html</loc>
+    <lastmod>2024-10-02T15:47:22.535Z</lastmod>
   </url>
 </urlset>

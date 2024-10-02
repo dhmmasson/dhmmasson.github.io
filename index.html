@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-publication .list');
+    const listingTargetEl = window.document.querySelector('#listing-publications .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -113,7 +113,35 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-publication'] = new List('listing-publication', options);
+    window['quarto-listings']['listing-publications'] = new List('listing-publications', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-projects .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-projects'] = new List('listing-projects', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -258,6 +286,7 @@ window.Quarto = {
 <h1>Welcome !</h1>
 <p>Hey, I am Dimitri Masson. I am an Assistant Professor in Human System Integration. I explore Design for assisting Humans in Complex Systems.</p>
 <p><a href="./about.html">More about me →</a></p>
+<p>You can find on my website my latest research publications, and various projects I have been working on.</p>
 </section>
 </div></div>
 </div>
@@ -266,7 +295,54 @@ window.Quarto = {
 <h2 data-anchor-id="blog">Blog</h2>
 <div id="listing-blog" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1724623200000" data-listing-file-modified-sort="1724314063485" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="331">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1727884042643" data-listing-reading-time-sort="6" data-listing-word-count-sort="1162">
+<a href="./projects/multiCriteria/pyramid.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/multiCriteria/pyramid.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Visualizing Multi-Criteria Data: A Pyramid of Bi-Dimensional Plots
+</h5>
+<div class="card-text listing-description">
+visualization of multi-dimensional data by focusing on each pairs of dimensions. This method transforms the upper triangular matrix of bi-dimensional comparisons into a…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1725919200000" data-listing-file-modified-sort="1727884042540" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="91">
+<a href="./posts/Tamarin.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/Tamarin/tamarinCover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Tamarin
+</h5>
+<div class="card-text listing-description">
+Tamarin is an open-source interactive alternative ranking system for Multi-Criteria Decision-Making (MCDM) designed to help users select the optimal technology alternatives…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+Sep 10, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-date-sort="1724623200000" data-listing-file-modified-sort="1724314063485" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="331">
 <a href="./posts/hsi2024/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -299,7 +375,7 @@ No matching items
 </section>
 <section id="latest-publications" class="level2">
 <h2 data-anchor-id="latest-publications">Latest publications</h2>
-<div id="listing-publication" class="quarto-listing quarto-listing-container-grid">
+<div id="listing-publications" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
 <div class="g-col-1" data-index="0" data-categories="Human-System Integration,Design,Methodology,Context" data-listing-date-sort="1724623200000" data-listing-file-modified-sort="1725958554012" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="128">
 <a href="./publications/disdier2024_ContextAcquisition.html" class="quarto-grid-link">
@@ -1380,9 +1456,66 @@ Jun 19, 2010
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-<nav id="publication-pagination" class="listing-pagination" aria-label="Page Navigation">
+<nav id="publications-pagination" class="listing-pagination" aria-label="Page Navigation">
   <ul class="pagination"></ul>
 </nav>
+</div>
+</section>
+<section id="projects" class="level2">
+<h2 data-anchor-id="projects">Projects</h2>
+<div id="listing-projects" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1727884042643" data-listing-reading-time-sort="6" data-listing-word-count-sort="1162">
+<a href="./projects/multiCriteria/pyramid.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/multiCriteria/pyramid.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Visualizing Multi-Criteria Data: A Pyramid of Bi-Dimensional Plots
+</h5>
+<div class="card-text listing-description">
+visualization of multi-dimensional data by focusing on each pairs of dimensions. This method transforms the upper triangular matrix of bi-dimensional comparisons into a…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1724623200000" data-listing-file-modified-sort="1727884042544" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1087">
+<a href="./projects/LudumDare.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/LudumDare/ludumDareCover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Ludum Dare
+</h5>
+<div class="card-text listing-description">
+I enjoy participating in Ludum Dare, a game jam where participants are challenged to create a game from scratch in a single weekend. I have participated in several editions…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+Aug 26, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
 </div>
 
 
