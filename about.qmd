@@ -18,6 +18,9 @@ about:
       text: Github
       href: https://github.com/dhmmasson
 page-layout: full
+website:
+  comments: 
+    utterances: false
 ---
 # About Me
 
@@ -28,14 +31,18 @@ My research focus on designing system to assist human cognitive activities (crea
 
 I have work on Digital Twins, Control Rooms, Digital Passport Product for textile products, Creative support Tools.  
 
-
 I teach Computer Science, System Engineering, Scenario Based Design 
+
+I am a game developer, I have developped [several games for Ludum Dare](projects/LudumDare.md)
+
+I am a member of the [INCOSE Human System Integration Working Group](https://www.incose.org/communities/working-groups-initiatives/human-systems-integration) and the [INCOSE Technical Leadership Institute](https://www.incose.org/learn/tli) (cohort 8)
 
 I am a dad, I have two daughters
 
 
 ## Education
- 
+
+
 - {{< fa certificate >}} **[INCOSE Technical Leadership Institute](https://www.incose.org/learn/tli)** (cohort 8),  2024
 - {{< fa user-graduate >}} **Phd in Computer Science - Human Computer Interaction**, 2014 - University Grenoble Alpes
   [Inspirez ! Explorez ! Soutien à la créativité en conception d'interfaces homme-machine](publications/masson2014_InspirezExplorez.md)

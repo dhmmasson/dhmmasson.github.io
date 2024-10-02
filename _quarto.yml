@@ -38,6 +38,13 @@ website:
         href: https://github.com/dhmmasson/dhmmasson.github.io
   open-graph: 
     locale: en_US
+  comments: 
+    utterances:
+      repo: dhmmasson/dhmmasson.github.io
+      label: "💬 comment"
+      theme: boxy-light
+      issue-term: title
+
 format:
   html:
     theme: 

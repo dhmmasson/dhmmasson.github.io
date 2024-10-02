@@ -45,3 +45,25 @@ $link-color	: $secondary;
 $link-hover-color: $color3;
 $input-bg	: #FFF6EB ;
 $popover-bg : #FBB3BD ;
+
+.column-margin figcaption, .margin-caption, div.aside, aside, .column-margin  {
+    color: $primary!important;
+}
+
+.timeline-comment .comment  
+{
+    background-color: $body-bg;
+    color: $body-color;
+}
+
+.timeline-comment .comment-body 
+{
+    background-color: $input-bg;
+    color: $body-color;
+}
+
+.timeline-comment .comment-body textarea:disabled 
+{
+    background-color: $dark-salmon;
+    color: $body-color;
+}

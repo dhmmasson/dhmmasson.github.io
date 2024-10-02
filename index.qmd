@@ -18,13 +18,15 @@ about:
 image: assets/favicon_128_128.webp
 listing:
   - id: blog
-    contents: posts
+    contents: 
+      - projects/multiCriteria
+      - posts      
     sort: date desc
     type: grid
     categories: false
     sort-ui: false
     filter-ui: false
-  - id: publication
+  - id: publications
     contents: publications/*.md
     type: grid
     categories: false
@@ -32,7 +34,19 @@ listing:
       - date desc
       - title
     page-size: 3
+  - id: projects
+    contents: 
+      - projects/multiCriteria
+      - "projects/*.md"
+    sort: date desc
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
 page-layout: full
+website:
+  comments: 
+    utterances: false
 ---
 
 :::{#hero-heading}
@@ -43,12 +57,19 @@ Hey, I am Dimitri Masson.
 I am an Assistant Professor in Human System Integration. I explore Design for assisting Humans in Complex Systems. 
 
 [More about me →](about.qmd)
+
+You can find on my website my latest research publications, and various projects I have been working on.
 :::
 
 ## Blog 
 :::{#blog}
 :::
+
 ## Latest publications
-:::{#publication}
+:::{#publications}
+:::
+
+## Projects 
+:::{#projects}
 :::
 
