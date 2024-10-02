@@ -3,7 +3,7 @@ title: A MineSweepEars Island
 aliases:
   - Abstract
   - ld32
-  - ludumDare32
+  - LudumDare32
   - MineSweepEars
 categories:
   - software

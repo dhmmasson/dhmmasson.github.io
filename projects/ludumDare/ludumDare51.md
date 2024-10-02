@@ -32,14 +32,14 @@ links:
   - icon: bi bi-github
     name: Source Code
     class: btn-dark
-    url: https://github.com/dhmmasson/ludumDare51
+    url: https://github.com/dhmmasson/Find-Ten-Seconds
   - icon: bi bi-award
     name: Ludum Dare
     url: https://ldjam.com/events/ludum-dare/51/find-ten-seconds
   - icon: bi bi-controller
     name: Play!
     class: btn-success
-    url: https://dhmmasson.github.io/ludumDare51/
+    url: https://dhmmasson.github.io/Find-Ten-Seconds/
 aliases: ["Find Ten Seconds"]
 ---
 

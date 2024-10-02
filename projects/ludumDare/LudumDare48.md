@@ -39,7 +39,7 @@ links:
   - icon: bi bi-controller
     name: Play!
     class: btn-success
-    url: https://dhmmasson.github.io/ludumDare51/
+    url: https://dhmmasson.github.io/Find-Ten-Seconds/
 aliases: [Enter the Deeper Trance]
 ---
 
