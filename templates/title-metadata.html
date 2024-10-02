@@ -98,7 +98,9 @@ $endif$ $if(links)$
   aria-label="Links"
 >
   $for(links)$
-  <a href="$links.url$" class="btn btn-secondary text-capitalize"
+  <a
+    href="$links.url$"
+    class="btn ${if(links.class)}${links.class}${else}btn-secondary${endif} text-capitalize"
     ><i class="$links.icon$ me-1"></i> $links.name$</a
   >
   $endfor$
