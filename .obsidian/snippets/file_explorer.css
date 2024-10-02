@@ -4,3 +4,9 @@ div[data-path^="_"] {
 div[data-path="_quarto.yml"] {
   display: flex;
 }
+div[data-path$="_files"] {
+  display: none;
+}
+div[data-path$=".html"] {
+  display: none;
+}
