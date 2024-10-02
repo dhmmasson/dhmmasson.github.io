@@ -1,0 +1,134 @@
+---
+title: "Visualizing Multi-Criteria Data: A Pyramid of Bi-Dimensional Plots"
+description: >
+  visualization of multi-dimensional data by focusing on each pairs of dimensions. This method transforms the upper triangular matrix of bi-dimensional comparisons into a pyramid layout.
+page-layout: full
+format:
+  html:
+    code-fold: true
+    code-summary: "Show the code"
+toc: false
+image: pyramid.webp
+---
+
+
+```{ojs}
+//| fig-cap: "Pyramid of plots"
+// Create the pyramid-like grid of plots
+viewof gridPlots = {
+    const n = numberOfCriteria
+    const grid = [];
+
+  // Iterate to create the pyramid structure
+  for (var i = 0; i < n; i++) {
+    var plotsInRow = [];
+    for (var j = i+1; j < n; j++) {
+      plotsInRow.push(
+        Plot.plot({
+          // facet: {marginRight: 80},
+           aspectRatio: 1,
+          x :{domain: [0, 10]},
+          y :{domain: [0, 10]},
+          r: {range: [0, 6]}, // generate slightly smaller dots
+          grid: true,
+          style: {
+            backgroundColor: '#FFF6EB',
+            color: '#004055',
+          },
+          color: {scheme: "YlGnBu"},
+          marks: [
+            //Plot.frame(),          
+            Plot.rect(data,  
+                Plot.bin( {fill:"count"}, {
+                    thresholds: 9,
+                    x: d => d[i]/length*10,
+                    y: d => d[j]/length*10
+                    , symbol: "square"
+                    //r : d => 50* Math.pow((1 - Math.abs(d[i] - d[j]) / length), 6)
+                    })
+            ),
+            Plot.dot(data,  
+                    {
+                        thresholds: 9,
+                        x: d => d[i]/length*10,
+                        y: d => d[j]/length*10
+                        , symbol: "square",
+                        stroke: "white",
+                        fill: "black"
+                        //r : d => 50* Math.pow((1 - Math.abs(d[i] - d[j]) / length), 6)
+                        }
+                ),
+
+            Plot.axisX({color: color(i)}),
+            Plot.ruleY([0], {stroke: color(i)}), // Why is it inverted?
+            
+            Plot.axisY({color: color(j)}),            
+            Plot.ruleX([0], {stroke: color(j)}),
+            
+          ]
+        }));
+    }
+    grid.push(plotsInRow);
+  }
+
+  // Render the pyramid as an HTML table
+  return html`
+      <h3>Pyramid of plots</h3>
+      <style> 
+        .dm_table { display: flex;
+          flex-direction: column; 
+          justify-content: center;
+           transform: translateY(-${50 - 100/(n-1)*0.7}%) rotate(135deg) scale(0.7);
+          }
+        .dm_row {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            
+        }
+        .dm_plot {
+            width: ${ Math.floor(100/(n-1))}%;
+        }
+      </style>
+      <div class="dm_table">
+    ${grid.map(row =>
+      html`
+      <div class="dm_row">
+        ${row.map(plot => html`<div class="dm_plot">${plot}</div>`)}
+      </div>`
+    )}
+  </div>`;
+}
+```
+
+:::{.aside}
+### Parameters
+```{ojs}
+//| echo: false
+viewof numberOfCriteria = Inputs.range( [2,10], {value: 4, step: 1, label:"Number of dimensions"});
+viewof length = Inputs.range( [100,1000], {value: 500, step: 1, label:"Number of points"});
+```
+:::
+
+
+### Data
+```{ojs}
+source = Array(numberOfCriteria)
+.fill(1)
+.map( createData(length) )
+
+// Reverse the n array of length L, one array of length L in which each element is an array of length n
+data = source[0].map( (_,i) => source.map( d => d[i] ) )
+
+data
+```
+
+### Utility functions
+```{ojs}
+sequence = (_,j)=>j 
+createData= (length) => ( _, i ) => Array(length).fill(1).map( sequence ).sort( () => Math.random() - 0.5 )
+seed = s=> (s+0.61803398875)%1
+randN = n=>Array(n+1).fill(0).reduce( seed ) 
+color = i => `hsl(${randN(i)*360}, 100%, 30%)`
+```
+
