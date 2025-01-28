@@ -1,0 +1,196 @@
+---
+title: "Unknown Warming: A joy division inspired plot of Temperature Anomalies"
+description: >
+  visualization of the temperature anomalies in the form of a Joy Division plot.
+page-layout: full
+
+format:
+  html:
+    code-fold: true
+    code-summary: "Show the code"
+toc: false
+---
+:::{.aside}
+```{ojs}
+//| echo: false
+//| panel: sidebar
+viewof temperatureOffset = Inputs.range([0,2], {step : 0.01, value: 0.88, label: "Temperature Offset"})
+viewof yearOffset = Inputs.range([1,8], {step : 1, value: 2, label: "lines Offset"})
+viewof smoothFactor = Inputs.range([0,4], {step : 1, value: 3, label: "Smooth Factor"})
+```
+:::
+
+::: {.panel-tabset}
+
+## Plot
+```{ojs}
+//| echo: false
+//| fig-cap: "Joy Division Plot of Temperature Anomalies"
+//| fig-attr: "Source: ERA5"
+//| fig-attr-url: "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview"
+
+minAnomaly = d3.min(data, d => d.anomaly)
+maxAnomaly = d3.max(data, d => d.anomaly)
+maxYear = d3.max(data, d => d.year)
+length = (maxAnomaly - minAnomaly) * 100
+indexF = (x) => Math.floor((x - minAnomaly) * 100)
+indexF_1 = (x) => (x / 100) + minAnomaly + temperatureOffset
+data2 = {
+// Count the number of anomalies for each year
+let acc = data.reduce( (acc, d) => {
+  if (d.year in acc) {
+    acc[d.year][indexF( d.anomaly) ] += 1
+  } else {
+    acc[d.year] = Array(length).fill(0)
+    acc[d.year][ indexF( d.anomaly) ] = 1
+  }
+  return acc
+}, {})
+
+//  Gaussian Blur 
+let data2 = []
+for( let year in acc) {
+  const 
+    kernels = 
+    [ [1]
+    , [2,1]
+    , [6,4,1]
+    , [20,15,6,1]
+    , [70,56,28,8,1]
+    ]
+
+    const kernel = kernels[smoothFactor]
+  for( let i = 0 ; i < length; i++) {
+    let result = 0
+    let weight = 0
+    for( let j = 1 - kernel.length ; j < kernel.length; j++) {
+      if( i + j >= 0 && i + j < length ) {
+        const absJ = Math.abs(j)
+        result += acc[year][i + j] * kernel[absJ]
+        weight += kernel[absJ]
+      }      
+    }
+    data2.push( 
+        { year: year
+        , anomaly: indexF_1(i)
+        , count: result / weight  
+        , height: result / weight + (maxYear - year ) * yearOffset  })
+  }
+ 
+}
+return data2.filter( d => d.year != 2025)
+}
+
+// Plot using Plot.plot a area chart for each year
+chart = Plot.plot({
+  marks: [
+    Plot.areaY(
+        data2, 
+        { x: "anomaly"
+        , y1: 0
+        , y2: "height"
+        , z: "year"
+        , axisY: null
+        , fillOpacity: 1
+        , stroke: "white"
+        , fill: "black"  }),
+    Plot.axisY(Array(2025-1940).fill(1).map((e,i)=>(i+1)*yearOffset), {
+      label: "Year",
+      grid: true,
+      text: Array(2025-1940).fill(1).map((e,i)=>(""+(2024-i))),
+      domain: [maxYear, d3.min(data, d => d.year)]
+    }),
+  ],
+  x: {label: "Temperature Anomaly"},
+  y: {label: "year"},
+  
+  width: 800,
+  height: 1200,
+  padding: 0.1,
+  
+  title: "Joy Division Plot of Temperature Anomalies",
+})
+```
+
+:::{.aside}
+```{ojs}
+//| echo: false
+DOM.download(() => serialize(chart), undefined, "Save as SVG")
+```
+:::
+
+## table
+```{ojs}
+//| echo: false
+temp = t => Math.round(t * 100) / 100 +"°C";
+bidimensionalTable = data2.reduce( (acc, d) => {
+  
+  if (d.year in acc) {
+    acc[d.year][ temp( d.anomaly) ] =d.count
+  } else {
+    acc[d.year] = {year: d.year} 
+    acc[d.year][temp( d.anomaly) ] = d.count
+  }
+  return acc
+}, []).filter( d => d.year >= 1940)
+Inputs.table(bidimensionalTable)
+```
+
+:::
+
+```{ojs}
+//| echo: false
+// Load the CSV file
+data = FileAttachment("./era5_daily_series_2t_global.csv").text().then(processCSV);
+
+// Function to preprocess and parse the CSV
+function processCSV(content) {
+  // Remove comment lines (lines starting with #)
+  const lines = content.split("\n");
+  const filteredLines = lines.filter(line => !line.trim().startsWith("#"));
+
+  // Join the remaining lines back into a single string
+  const csvContent = filteredLines.join("\n");
+
+  // Parse the CSV content
+  return d3.csvParse(csvContent, d3.autoType).map( 
+    d => ({
+        year: d.date.getFullYear(),
+        anomaly: d["ano_91-20"],
+      })
+  )
+}
+
+// Display the parsed data
+
+```
+
+
+
+
+
+```{ojs}
+//| echo: false
+serialize = {
+  const xmlns = "http://www.w3.org/2000/xmlns/";
+  const xlinkns = "http://www.w3.org/1999/xlink";
+  const svgns = "http://www.w3.org/2000/svg";
+  return function serialize(svg) {
+    svg = svg.cloneNode(true);
+    const fragment = window.location.href + "#";
+    const walker = document.createTreeWalker(svg, NodeFilter.SHOW_ELEMENT);
+    while (walker.nextNode()) {
+      for (const attr of walker.currentNode.attributes) {
+        if (attr.value.includes(fragment)) {
+          attr.value = attr.value.replace(fragment, "#");
+        }
+      }
+    }
+    svg.setAttributeNS(xmlns, "xmlns", svgns);
+    svg.setAttributeNS(xmlns, "xmlns:xlink", xlinkns);
+    const serializer = new window.XMLSerializer;
+    const string = serializer.serializeToString(svg);
+    return new Blob([string], {type: "image/svg+xml"});
+  };
+}
+```
