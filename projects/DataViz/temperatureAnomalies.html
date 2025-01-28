@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-08-26">
-<meta name="description" content="I enjoy participating in Ludum Dare, a game jam where participants are challenged to create a game from scratch in a single weekend. I have participated in several editions, and I am always amazed by the creativity and innovation of the games developed during the event.">
+<meta name="description" content="visualization of the temperature anomalies in the form of a Joy Division plot.">
 
-<title>Ludum Dare – Dimitri Masson</title>
+<title>Unknown Warming: A joy division inspired plot of Temperature Anomalies – Dimitri Masson</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,30 +21,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../assets/favicon_128_128.ico" rel="icon">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon_128_128.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,164 +102,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
+<script type="module" src="../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-ld32 .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-ld32'] = new List('listing-ld32', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-ld46 .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-ld46'] = new List('listing-ld46', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-ld48 .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-ld48'] = new List('listing-ld48', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-ld51 .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-ld51'] = new List('listing-ld51', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
-<meta property="og:title" content="Ludum Dare – Dimitri Masson">
-<meta property="og:description" content="I enjoy participating in Ludum Dare, a game jam where participants are challenged to create a game from scratch in a single weekend. I have participated in several editions, and I am always amazed by the creativity and innovation of the games developed during the event.">
-<meta property="og:image" content="https://dhmmasson.github.io/projects/LudumDare/LudumDareCover.jpg">
+<meta property="og:title" content="Unknown Warming: A joy division inspired plot of Temperature Anomalies – Dimitri Masson">
+<meta property="og:description" content="visualization of the temperature anomalies in the form of a Joy Division plot.">
 <meta property="og:site_name" content="Dimitri Masson">
 <meta property="og:locale" content="en_US">
-<meta name="citation_title" content="Ludum Dare">
-<meta name="citation_publication_date" content="2024-08-26">
-<meta name="citation_cover_date" content="2024-08-26">
-<meta name="citation_year" content="2024">
-<meta name="citation_online_date" content="2024-08-26">
-<meta name="citation_fulltext_html_url" content="https://dhmmasson.github.io/projects/LudumDare.html">
+<meta name="citation_title" content="Unknown Warming: A joy division inspired plot of Temperature Anomalies">
+<meta name="citation_fulltext_html_url" content="https://dhmmasson.github.io/projects/DataViz/temperatureAnomalies.html">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=Encourage exchanges during a creative session by the ideas qualitative evaluation using a digital tool;,citation_abstract=In the context of the emergence of collaborative innovation projects, the animation of creative sessions permits to identify new opportunities. The number of ideas generated is a lot more important than the number of collaborative projects implemented. To improve this ratio, we assume that group discussions could be facilitated by the cleavage of opinions about the quality of the ideas discussed during the meeting. We support our approach with a digital tool to promote information feedback throughout the session.;,citation_author=Julien Ambrosino;,citation_author=Dimitri H. Masson;,citation_author=Jérémy Legardeur;,citation_author=Guillaume Tastet;,citation_publication_date=2016-07-06;,citation_cover_date=2016-07-06;,citation_year=2016;,citation_fulltext_html_url=https://dl.acm.org/doi/10.1145/3050385.3050414;,citation_doi=10.1145/3050385.3050414;,citation_isbn=978-1-4503-4785-3;,citation_language=fr-FR;,citation_conference_title=Proceedings of the 15th Ergo’IA &amp;amp;amp;quot;Ergonomie Et Informatique Avancée&amp;quot; Conference;,citation_conference=Association for Computing Machinery;,citation_series_title=Ergo’IA ’16;">
 <meta name="citation_reference" content="citation_title=Ideavaluation;,citation_author=Julien Ambrosino;,citation_author=Dimitri Masson;,citation_author=Jeremy Legardeur;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;">
@@ -288,10 +172,10 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/favicon_128_128.webp" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/favicon_128_128.webp" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Dimitri Masson</span>
     </a>
   </div>
@@ -302,11 +186,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../Bibliography.html"> 
+    <a class="nav-link" href="../../Bibliography.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item compact">
@@ -332,37 +216,22 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#my-ludum-dare-journey" id="toc-my-ludum-dare-journey" class="nav-link active" data-scroll-target="#my-ludum-dare-journey">My Ludum Dare Journey</a>
-  <ul class="collapse">
-  <li><a href="#ld32-my-first-ludum-dare" id="toc-ld32-my-first-ludum-dare" class="nav-link" data-scroll-target="#ld32-my-first-ludum-dare">LD32: My First Ludum Dare</a></li>
-  <li><a href="#ld46-the-come-back" id="toc-ld46-the-come-back" class="nav-link" data-scroll-target="#ld46-the-come-back">LD46: The Come back</a></li>
-  <li><a href="#ld48-lessons-learned" id="toc-ld48-lessons-learned" class="nav-link" data-scroll-target="#ld48-lessons-learned">LD48: Lessons Learned</a></li>
-  <li><a href="#ld51-my-best-entry-yet" id="toc-ld51-my-best-entry-yet" class="nav-link" data-scroll-target="#ld51-my-best-entry-yet">LD51: My Best Entry Yet</a></li>
-  </ul></li>
-  <li><a href="#the-joy-of-community-feedback" id="toc-the-joy-of-community-feedback" class="nav-link" data-scroll-target="#the-joy-of-community-feedback">The Joy of Community Feedback</a></li>
-  <li><a href="#my-current-tools" id="toc-my-current-tools" class="nav-link" data-scroll-target="#my-current-tools">My Current Tools</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content page-columns page-full column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ludum Dare</h1>
+<h1 class="title">Unknown Warming: A joy division inspired plot of Temperature Anomalies</h1>
 </div>
 
 <div>
   <div class="description">
-    <p>I enjoy participating in Ludum Dare, a game jam where participants are challenged to create a game from scratch in a single weekend. I have participated in several editions, and I am always amazed by the creativity and innovation of the games developed during the event.</p>
+    <p>visualization of the temperature anomalies in the form of a Joy Division plot.</p>
   </div>
 </div>
 
@@ -374,204 +243,388 @@ window.Quarto = {
         rgba(0, 64, 86, 0.9) 50%,
         rgba(0, 64, 85, 0.75) 55%
       ),
-      url(./LudumDare/LudumDareCover.jpg);
+      url();
   }
 </style>
 
 
-<div class="quarto-title-meta">
-     <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 26, 2024</p>
-    </div>
-  </div>
-     </div>
+<div class="quarto-title-meta column-page-left">
+      </div>
 
   
 </header>
 
 
-<section id="my-ludum-dare-journey" class="level1 page-columns page-full">
-<h1>My Ludum Dare Journey</h1>
-<p><strong>Ludum Dare</strong> is a gam jam competition, that run online since 2002, where you have 48h to fully create a game, from design, to final code, art, music etc. I first discovered it after watching some YouTube videos by Quill18 in 2014. The idea of creating 100% of a game within 48 hours, sharing it with the community, making it [[open source]], and testing other players’ games immediately caught my attention. I loved the challenge, but even more, I fell in love with the supportive and creative community. Each time I participated, my passion for game development grew.</p>
-<section id="ld32-my-first-ludum-dare" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="ld32-my-first-ludum-dare">LD32: My First Ludum Dare</h2>
-<p>My first Ludum Dare was <strong>LD32</strong> in 2015. The theme was “<em>An Unconventional Weapon.</em>” I created a variant of the Minesweeper game. Since I love [[hexagons]], I changed the grid to a hexagonal grid. Then instead of just clicking on tiles to reveal them one at a time, you have to explore the island to score points by sweeping across the tiles. More dangerous path earn more points. To help you can rely on an <em>An Unconventional Weapon</em> : your ears ! While you sweep you can hear contextual information about your surroundings (each mine emits a tune). The audio is spatialized, the closer you get from a mine the louder it gets, it is also panned left-right to help guide players. This one done using the recent web audio api at the time. I used various library to help me draw the island (a 3d graphical library called philoGl which was overkill for that 2d game). It was a <strong>pain</strong> to build everything by hand in JavaScript, but I’m proud of what I achieved.</p>
-
-<div class="no-row-height column-margin column-container"><div id="listing-ld32" class="margin-aside quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="software,Game,LudumDare" data-listing-date-sort="1429480800000" data-listing-file-modified-sort="1727897924375" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="889">
-<a href="../projects/LudumDare/LudumDare32.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../projects/LudumDare/LudumDare32_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-A MineSweepEars Island
-</h5>
-<div class="card-text listing-description">
-For <strong>Ludum Dare 32</strong>, I set out to create something unique with a familiar foundation. The theme was “An Unconventional Weapon,” and I combined the classic mechanics of…<strong></strong>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Dimitri Masson
-</div>
-<div class="listing-date">
-Apr 20, 2015
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></div><p>The hard work paid off as I ranked <strong>#22 in Innovation</strong>!</p>
-<p><a href="../projects/LudumDare/LudumDare32.html">Read More about the entry</a></p>
-</section>
-<section id="ld46-the-come-back" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="ld46-the-come-back">LD46: The Come back</h2>
-<p>I have tried a couple more times after LD32 to participate in Ludum Dare, but failed to produce something by the end of the time frame, mostly due to lack of practice, time, and involvement. I return to Ludum Dare with LD46 during the Covid Lockdown. I had just discovered <strong>Unity</strong> through Sebastian Lague’s videos and <strong>Blender</strong>, and I was looking for an excuse to use these tools. I returned for <strong>LD46</strong> with a new mindset: balance. I wanted to develop a game over the weekend, but I also wanted to make time for my family.</p>
-
-<div class="no-row-height column-margin column-container"><div id="listing-ld46" class="margin-aside quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="software,Game,LudumDare" data-listing-date-sort="1587333600000" data-listing-file-modified-sort="1727897924379" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2437">
-<a href="../projects/LudumDare/LudumDare46.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../projects/LudumDare/LudumDare46_cover.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Keep the bee (Jeez) Alive
-</h5>
-<div class="card-text listing-description">
-Keep the Bees Alive is my entry to Ludum Dare 46
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Dimitri Masson
-</div>
-<div class="listing-date">
-Apr 20, 2020
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></div><p>The experience was a blast! I created a beautiful 3D world (in my eyes), filled with interactive elements, a relaxing atmosphere, and ambient music. However, it wasn’t much of a game—it was more like a sandbox playground where players could stack elements, interact with bees, watch the rain, and see cactus flowers grow. It was visually appealing, but it lacked core gameplay mechanics. It was a peaceful experiment that resonated with my time in lockdown in the countryside.</p>
-<p><a href="../projects/LudumDare/LudumDare46.html">Read more about Keep the bee (Jeez) Alive</a></p>
-</section>
-<section id="ld48-lessons-learned" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="ld48-lessons-learned">LD48: Lessons Learned</h2>
-<p>For <strong>LD48</strong>, I set a clear goal: <strong>make a game first</strong>, then add the bells and whistles. I focused on creating simple gameplay with a clear start, end, and scoring system. I had been tinkering around the concept of moving autostereogram with a colleague as part of my research work, and I had previously designed a shader that transformed a 3d scene in an autostereogram using the depth information from the camera. So when LD48 came I got the idea of using that mechanism as the key feature of the game. To showcase it, I decided to use a really simple and well-known gameplay of a tunnel runner where you can rotate an object to fit through a series of procedurally generated holes. The paddle stay fix on the screen and the wall get closer and closer to you.</p>
-
-<div class="no-row-height column-margin column-container"><div id="listing-ld48" class="margin-aside quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="software,Game,LudumDare" data-listing-date-sort="1619301600000" data-listing-file-modified-sort="1727897924384" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1231">
-<a href="../projects/LudumDare/LudumDare48.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../projects/LudumDare/LudumDare48_cover.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Enter the Deeper Trance
-</h5>
-<div class="card-text listing-description">
-I am very happy with my 3rd successful entry in Ludum Dare.&nbsp;<strong>Deeper Trance</strong>&nbsp;is a very simple game with&nbsp;<strong>not one but two illusions</strong>&nbsp;:
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Dimitri Masson
-</div>
-<div class="listing-date">
-Apr 25, 2021
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></div><p>The theme was <em>“Deeper and Deeper.”</em> if you can get to see the 3d effect, you have the impression of falling deeper and deeper through hole. In addition to the visual illusion, I am very proud of the music I composed for the game: using a chromatic run I have been playing for year on the guitar, I created a shepard tone effect to create an auditory illusion of a music always getting deeper.</p>
-<p>This approach worked wonders. I finally created something that felt like a complete game, and I was proud of how it turned out!</p>
-<p><a href="../projects/LudumDare/LudumDare48.html">Read more about Enter the Deeper Trance</a></p>
-</section>
-<section id="ld51-my-best-entry-yet" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="ld51-my-best-entry-yet">LD51: My Best Entry Yet</h2>
-<p>I am so happy with my entry for <strong>LD51</strong>. I have made a working game, with a goal and an original scoring system (a first in all my participations). The overall finish of the game is quite clean. The theme for this edition was <strong>Every 10 seconds</strong>, I played on the double meaning of seconds (at least in French) of second as in a “second one” and made a matching game. But instead of searching for an exact match, your search for a “second something”, a second numbered tile, a second vowel, a second blue odd numbers… The more specific the pair of elements you find the more points you score. <em>Every ten second</em> appears multiple Time in my entry, every ten <em>time-seconds</em> a random tile disappears, and every ten <em>pair-seconds</em> the board replenishes (based on your score this round).</p>
-
-<div class="no-row-height column-margin column-container"><div id="listing-ld51" class="margin-aside quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="software,Game,LudumDare" data-listing-date-sort="1664748000000" data-listing-file-modified-sort="1727897924387" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="802">
-<a href="../projects/LudumDare/LudumDare51.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../projects/LudumDare/LudumDare51_cover.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Find Ten Seconds
-</h5>
-<div class="card-text listing-description">
-The theme for Ludum Dare was <strong>Every 10 seconds</strong>.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Dimitri Masson
-</div>
-<div class="listing-date">
-Oct 3, 2022
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></div><p>The game features customizable settings, hidden easter eggs, and a dynamic (but terrible!) soundtrack (with an option to mute). It was built from scratch using P5.js.</p>
-<p><a href="../projects/LudumDare/LudumDare51.html">Read more about Find Ten Seconds</a></p>
-</section>
-</section>
-<section id="the-joy-of-community-feedback" class="level1 page-columns page-full">
-<h1>The Joy of Community Feedback</h1>
-<p>One of the things I love most about Ludum Dare is the review phase. Testing and commenting on other participants’ games is a great way to engage with the community. I’ve had some fantastic interactions with fellow developers and discovered creative ideas that I’ve kept in mind for future Ludum Dare.</p>
 
 <div class="no-row-height column-margin column-container"><div class="margin-aside">
-<p>If you want to support me in my game development journey <a href="https://ko-fi.com/B0B3142FQ1"><img src="https://ko-fi.com/img/githubbutton_sm.svg" class="img-fluid"></a></p>
-</div></div><p>You can still interact with my older entries, play the online versions <i class="fa-solid fa-gamepad" aria-label="gamepad"></i>, <a href="https://github.com/stars/dhmmasson/lists/ludum-dare"><strong>star the repositories</strong> <i class="fa-solid fa-star" aria-label="star"></i></a>, or comments on the individual pages here on my website.</p>
-<p>All my entries are <strong>MIT licensed <i class="fa-solid fa-scale-balanced" aria-label="scale-balanced"></i></strong>, so feel free to fork, modify or do whatever with them.</p>
-<p>If you want to support me in my game development journey, you can buy me also <a href="https://ko-fi.com/B0B3142FQ1">buy a coffee on <i class="fa-solid fa-mug-hot" aria-label="mug-hot"></i></a></p>
-</section>
-<section id="my-current-tools" class="level1">
-<h1>My Current Tools</h1>
-<ul>
-<li><strong>P5.js</strong> for game development</li>
-<li><strong>Blender</strong> for 3D art</li>
-<li><strong>Krita</strong> for 2D art</li>
-<li><strong>Musecore</strong> for music composition</li>
-</ul>
-<p>Ludum Dare has been an incredible learning experience for me. Every jam brings new lessons, challenges, and joys. If you’re considering jumping in—go for it! You’ll grow as a developer and meet some amazing people along the way.</p>
+<div class="cell card bg-light p-2 g-col-24 g-col-lg-7">
+<details class="code-fold hidden">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="17" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 16;"><span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>viewof temperatureOffset <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span><span class="dv">2</span>]<span class="op">,</span> {<span class="dt">step</span> <span class="op">:</span> <span class="fl">0.01</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="fl">0.88</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Temperature Offset"</span>})</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>viewof yearOffset <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">1</span><span class="op">,</span><span class="dv">8</span>]<span class="op">,</span> {<span class="dt">step</span> <span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"lines Offset"</span>})</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>viewof smoothFactor <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span><span class="dv">4</span>]<span class="op">,</span> {<span class="dt">step</span> <span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Smooth Factor"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="tabset-margin-container page-columns page-full"><div class="no-row-height column-margin column-container"><div class="margin-aside tabset-margin-content tabset-1-1-tab-margin-content">
+<div class="cell">
+<details class="code-fold hidden">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="117" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 116;"><span id="cb3-117"><a href="#cb3-117" aria-hidden="true" tabindex="-1"></a>DOM<span class="op">.</span><span class="fu">download</span>(() <span class="kw">=&gt;</span> <span class="fu">serialize</span>(chart)<span class="op">,</span> <span class="kw">undefined</span><span class="op">,</span> <span class="st">"Save as SVG"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div></div></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Plot</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">table</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell" data-fig-attr="Source: ERA5" data-fig-attr-url="https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview">
+<details class="code-fold hidden">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="32" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 31;"><span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>minAnomaly <span class="op">=</span> d3<span class="op">.</span><span class="fu">min</span>(data<span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">anomaly</span>)</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>maxAnomaly <span class="op">=</span> d3<span class="op">.</span><span class="fu">max</span>(data<span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">anomaly</span>)</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>maxYear <span class="op">=</span> d3<span class="op">.</span><span class="fu">max</span>(data<span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">year</span>)</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>length <span class="op">=</span> (maxAnomaly <span class="op">-</span> minAnomaly) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>indexF <span class="op">=</span> (x) <span class="kw">=&gt;</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">floor</span>((x <span class="op">-</span> minAnomaly) <span class="op">*</span> <span class="dv">100</span>)</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>indexF_1 <span class="op">=</span> (x) <span class="kw">=&gt;</span> (x <span class="op">/</span> <span class="dv">100</span>) <span class="op">+</span> minAnomaly <span class="op">+</span> temperatureOffset</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>data2 <span class="op">=</span> {</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="co">// Count the number of anomalies for each year</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> acc <span class="op">=</span> data<span class="op">.</span><span class="fu">reduce</span>( (acc<span class="op">,</span> d) <span class="kw">=&gt;</span> {</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (d<span class="op">.</span><span class="at">year</span> <span class="kw">in</span> acc) {</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>    acc[d<span class="op">.</span><span class="at">year</span>][<span class="fu">indexF</span>( d<span class="op">.</span><span class="at">anomaly</span>) ] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>    acc[d<span class="op">.</span><span class="at">year</span>] <span class="op">=</span> <span class="bu">Array</span>(length)<span class="op">.</span><span class="fu">fill</span>(<span class="dv">0</span>)</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>    acc[d<span class="op">.</span><span class="at">year</span>][ <span class="fu">indexF</span>( d<span class="op">.</span><span class="at">anomaly</span>) ] <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> acc</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>}<span class="op">,</span> {})</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a><span class="co">//  Gaussian Blur </span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> data2 <span class="op">=</span> []</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>( <span class="kw">let</span> year <span class="kw">in</span> acc) {</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> </span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>    kernels <span class="op">=</span> </span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>    [ [<span class="dv">1</span>]</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>    <span class="op">,</span> [<span class="dv">2</span><span class="op">,</span><span class="dv">1</span>]</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>    <span class="op">,</span> [<span class="dv">6</span><span class="op">,</span><span class="dv">4</span><span class="op">,</span><span class="dv">1</span>]</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>    <span class="op">,</span> [<span class="dv">20</span><span class="op">,</span><span class="dv">15</span><span class="op">,</span><span class="dv">6</span><span class="op">,</span><span class="dv">1</span>]</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>    <span class="op">,</span> [<span class="dv">70</span><span class="op">,</span><span class="dv">56</span><span class="op">,</span><span class="dv">28</span><span class="op">,</span><span class="dv">8</span><span class="op">,</span><span class="dv">1</span>]</span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> kernel <span class="op">=</span> kernels[smoothFactor]</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>( <span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span> <span class="op">;</span> i <span class="op">&lt;</span> length<span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> result <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> weight <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span>( <span class="kw">let</span> j <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> kernel<span class="op">.</span><span class="at">length</span> <span class="op">;</span> j <span class="op">&lt;</span> kernel<span class="op">.</span><span class="at">length</span><span class="op">;</span> j<span class="op">++</span>) {</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span>( i <span class="op">+</span> j <span class="op">&gt;=</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> i <span class="op">+</span> j <span class="op">&lt;</span> length ) {</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> absJ <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">abs</span>(j)</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>        result <span class="op">+=</span> acc[year][i <span class="op">+</span> j] <span class="op">*</span> kernel[absJ]</span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>        weight <span class="op">+=</span> kernel[absJ]</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>      }      </span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>    data2<span class="op">.</span><span class="fu">push</span>( </span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>        { <span class="dt">year</span><span class="op">:</span> year</span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>        <span class="op">,</span> <span class="dt">anomaly</span><span class="op">:</span> <span class="fu">indexF_1</span>(i)</span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>        <span class="op">,</span> <span class="dt">count</span><span class="op">:</span> result <span class="op">/</span> weight  </span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>        <span class="op">,</span> <span class="dt">height</span><span class="op">:</span> result <span class="op">/</span> weight <span class="op">+</span> (maxYear <span class="op">-</span> year ) <span class="op">*</span> yearOffset  })</span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> data2<span class="op">.</span><span class="fu">filter</span>( d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">year</span> <span class="op">!=</span> <span class="dv">2025</span>)</span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a><span class="co">// Plot using Plot.plot a area chart for each year</span></span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a>chart <span class="op">=</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">areaY</span>(</span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>        data2<span class="op">,</span> </span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a>        { <span class="dt">x</span><span class="op">:</span> <span class="st">"anomaly"</span></span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>        <span class="op">,</span> <span class="dt">y1</span><span class="op">:</span> <span class="dv">0</span></span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a>        <span class="op">,</span> <span class="dt">y2</span><span class="op">:</span> <span class="st">"height"</span></span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a>        <span class="op">,</span> <span class="dt">z</span><span class="op">:</span> <span class="st">"year"</span></span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a>        <span class="op">,</span> <span class="dt">axisY</span><span class="op">:</span> <span class="kw">null</span></span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a>        <span class="op">,</span> <span class="dt">fillOpacity</span><span class="op">:</span> <span class="dv">1</span></span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a>        <span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span></span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a>        <span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"black"</span>  })<span class="op">,</span></span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">axisY</span>(<span class="bu">Array</span>(<span class="dv">2025</span><span class="op">-</span><span class="dv">1940</span>)<span class="op">.</span><span class="fu">fill</span>(<span class="dv">1</span>)<span class="op">.</span><span class="fu">map</span>((e<span class="op">,</span>i)<span class="kw">=&gt;</span>(i<span class="op">+</span><span class="dv">1</span>)<span class="op">*</span>yearOffset)<span class="op">,</span> {</span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a>      <span class="dt">label</span><span class="op">:</span> <span class="st">"Year"</span><span class="op">,</span></span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a>      <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a>      <span class="dt">text</span><span class="op">:</span> <span class="bu">Array</span>(<span class="dv">2025</span><span class="op">-</span><span class="dv">1940</span>)<span class="op">.</span><span class="fu">fill</span>(<span class="dv">1</span>)<span class="op">.</span><span class="fu">map</span>((e<span class="op">,</span>i)<span class="kw">=&gt;</span>(<span class="st">""</span><span class="op">+</span>(<span class="dv">2024</span><span class="op">-</span>i)))<span class="op">,</span></span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a>      <span class="dt">domain</span><span class="op">:</span> [maxYear<span class="op">,</span> d3<span class="op">.</span><span class="fu">min</span>(data<span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">year</span>)]</span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
+<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Temperature Anomaly"</span>}<span class="op">,</span></span>
+<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"year"</span>}<span class="op">,</span></span>
+<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">800</span><span class="op">,</span></span>
+<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">1200</span><span class="op">,</span></span>
+<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a>  <span class="dt">padding</span><span class="op">:</span> <span class="fl">0.1</span><span class="op">,</span></span>
+<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span><span class="op">:</span> <span class="st">"Joy Division Plot of Temperature Anomalies"</span><span class="op">,</span></span>
+<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div id="fig-ojs-cell-2" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-fig-attr-url="https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview" data-fig-attr="Source: ERA5">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ojs-cell-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display">
+<div id="fig-ojs-cell-2-1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-ojs-cell-2-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="ojs-cell-2-1" data-nodetype="declaration">
+
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-ojs-cell-2-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a)
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div id="fig-ojs-cell-2-2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-ojs-cell-2-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="ojs-cell-2-2" data-nodetype="declaration">
+
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-ojs-cell-2-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b)
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div id="fig-ojs-cell-2-3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-ojs-cell-2-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="ojs-cell-2-3" data-nodetype="declaration">
+
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-ojs-cell-2-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c)
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div id="fig-ojs-cell-2-4" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-ojs-cell-2-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="ojs-cell-2-4" data-nodetype="declaration">
+
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-ojs-cell-2-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(d)
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div id="fig-ojs-cell-2-5" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-ojs-cell-2-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="ojs-cell-2-5" data-nodetype="declaration">
+
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-ojs-cell-2-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(e)
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div id="fig-ojs-cell-2-6" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-ojs-cell-2-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="ojs-cell-2-6" data-nodetype="declaration">
+
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-ojs-cell-2-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(f)
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div id="fig-ojs-cell-2-7" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-ojs-cell-2-7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="ojs-cell-2-7" data-nodetype="declaration">
+
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-ojs-cell-2-7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(g)
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div id="fig-ojs-cell-2-8" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-ojs-cell-2-8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="ojs-cell-2-8" data-nodetype="declaration">
+
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-ojs-cell-2-8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(h)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ojs-cell-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Joy Division Plot of Temperature Anomalies
+</figcaption>
+</figure>
+</div>
+</div>
+
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell">
+<details class="code-fold hidden">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="125" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 124;"><span id="cb4-125"><a href="#cb4-125" aria-hidden="true" tabindex="-1"></a>temp <span class="op">=</span> t <span class="kw">=&gt;</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(t <span class="op">*</span> <span class="dv">100</span>) <span class="op">/</span> <span class="dv">100</span> <span class="op">+</span><span class="st">"°C"</span><span class="op">;</span></span>
+<span id="cb4-126"><a href="#cb4-126" aria-hidden="true" tabindex="-1"></a>bidimensionalTable <span class="op">=</span> data2<span class="op">.</span><span class="fu">reduce</span>( (acc<span class="op">,</span> d) <span class="kw">=&gt;</span> {</span>
+<span id="cb4-127"><a href="#cb4-127" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-128"><a href="#cb4-128" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (d<span class="op">.</span><span class="at">year</span> <span class="kw">in</span> acc) {</span>
+<span id="cb4-129"><a href="#cb4-129" aria-hidden="true" tabindex="-1"></a>    acc[d<span class="op">.</span><span class="at">year</span>][ <span class="fu">temp</span>( d<span class="op">.</span><span class="at">anomaly</span>) ] <span class="op">=</span>d<span class="op">.</span><span class="at">count</span></span>
+<span id="cb4-130"><a href="#cb4-130" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb4-131"><a href="#cb4-131" aria-hidden="true" tabindex="-1"></a>    acc[d<span class="op">.</span><span class="at">year</span>] <span class="op">=</span> {<span class="dt">year</span><span class="op">:</span> d<span class="op">.</span><span class="at">year</span>} </span>
+<span id="cb4-132"><a href="#cb4-132" aria-hidden="true" tabindex="-1"></a>    acc[d<span class="op">.</span><span class="at">year</span>][<span class="fu">temp</span>( d<span class="op">.</span><span class="at">anomaly</span>) ] <span class="op">=</span> d<span class="op">.</span><span class="at">count</span></span>
+<span id="cb4-133"><a href="#cb4-133" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb4-134"><a href="#cb4-134" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> acc</span>
+<span id="cb4-135"><a href="#cb4-135" aria-hidden="true" tabindex="-1"></a>}<span class="op">,</span> [])<span class="op">.</span><span class="fu">filter</span>( d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">year</span> <span class="op">&gt;=</span> <span class="dv">1940</span>)</span>
+<span id="cb4-136"><a href="#cb4-136" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(bidimensionalTable)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-4-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-4-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-4-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold hidden">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="144" data-source-offset="-21"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 143;"><span id="cb5-144"><a href="#cb5-144" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"./era5_daily_series_2t_global.csv"</span>)<span class="op">.</span><span class="fu">text</span>()<span class="op">.</span><span class="fu">then</span>(processCSV)<span class="op">;</span></span>
+<span id="cb5-145"><a href="#cb5-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-146"><a href="#cb5-146" aria-hidden="true" tabindex="-1"></a><span class="co">// Function to preprocess and parse the CSV</span></span>
+<span id="cb5-147"><a href="#cb5-147" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">processCSV</span>(content) {</span>
+<span id="cb5-148"><a href="#cb5-148" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Remove comment lines (lines starting with #)</span></span>
+<span id="cb5-149"><a href="#cb5-149" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> lines <span class="op">=</span> content<span class="op">.</span><span class="fu">split</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)<span class="op">;</span></span>
+<span id="cb5-150"><a href="#cb5-150" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> filteredLines <span class="op">=</span> lines<span class="op">.</span><span class="fu">filter</span>(line <span class="kw">=&gt;</span> <span class="op">!</span>line<span class="op">.</span><span class="fu">trim</span>()<span class="op">.</span><span class="fu">startsWith</span>(<span class="st">"#"</span>))<span class="op">;</span></span>
+<span id="cb5-151"><a href="#cb5-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-152"><a href="#cb5-152" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Join the remaining lines back into a single string</span></span>
+<span id="cb5-153"><a href="#cb5-153" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> csvContent <span class="op">=</span> filteredLines<span class="op">.</span><span class="fu">join</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)<span class="op">;</span></span>
+<span id="cb5-154"><a href="#cb5-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-155"><a href="#cb5-155" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Parse the CSV content</span></span>
+<span id="cb5-156"><a href="#cb5-156" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> d3<span class="op">.</span><span class="fu">csvParse</span>(csvContent<span class="op">,</span> d3<span class="op">.</span><span class="at">autoType</span>)<span class="op">.</span><span class="fu">map</span>( </span>
+<span id="cb5-157"><a href="#cb5-157" aria-hidden="true" tabindex="-1"></a>    d <span class="kw">=&gt;</span> ({</span>
+<span id="cb5-158"><a href="#cb5-158" aria-hidden="true" tabindex="-1"></a>        <span class="dt">year</span><span class="op">:</span> d<span class="op">.</span><span class="at">date</span><span class="op">.</span><span class="fu">getFullYear</span>()<span class="op">,</span></span>
+<span id="cb5-159"><a href="#cb5-159" aria-hidden="true" tabindex="-1"></a>        <span class="dt">anomaly</span><span class="op">:</span> d[<span class="st">"ano_91-20"</span>]<span class="op">,</span></span>
+<span id="cb5-160"><a href="#cb5-160" aria-hidden="true" tabindex="-1"></a>      })</span>
+<span id="cb5-161"><a href="#cb5-161" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb5-162"><a href="#cb5-162" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold hidden">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="173" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 172;"><span id="cb6-173"><a href="#cb6-173" aria-hidden="true" tabindex="-1"></a>serialize <span class="op">=</span> {</span>
+<span id="cb6-174"><a href="#cb6-174" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> xmlns <span class="op">=</span> <span class="st">"http://www.w3.org/2000/xmlns/"</span><span class="op">;</span></span>
+<span id="cb6-175"><a href="#cb6-175" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> xlinkns <span class="op">=</span> <span class="st">"http://www.w3.org/1999/xlink"</span><span class="op">;</span></span>
+<span id="cb6-176"><a href="#cb6-176" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> svgns <span class="op">=</span> <span class="st">"http://www.w3.org/2000/svg"</span><span class="op">;</span></span>
+<span id="cb6-177"><a href="#cb6-177" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="kw">function</span> <span class="fu">serialize</span>(svg) {</span>
+<span id="cb6-178"><a href="#cb6-178" aria-hidden="true" tabindex="-1"></a>    svg <span class="op">=</span> svg<span class="op">.</span><span class="fu">cloneNode</span>(<span class="kw">true</span>)<span class="op">;</span></span>
+<span id="cb6-179"><a href="#cb6-179" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> fragment <span class="op">=</span> <span class="bu">window</span><span class="op">.</span><span class="at">location</span><span class="op">.</span><span class="at">href</span> <span class="op">+</span> <span class="st">"#"</span><span class="op">;</span></span>
+<span id="cb6-180"><a href="#cb6-180" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> walker <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">createTreeWalker</span>(svg<span class="op">,</span> <span class="bu">NodeFilter</span><span class="op">.</span><span class="at">SHOW_ELEMENT</span>)<span class="op">;</span></span>
+<span id="cb6-181"><a href="#cb6-181" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (walker<span class="op">.</span><span class="fu">nextNode</span>()) {</span>
+<span id="cb6-182"><a href="#cb6-182" aria-hidden="true" tabindex="-1"></a>      <span class="cf">for</span> (<span class="kw">const</span> attr <span class="kw">of</span> walker<span class="op">.</span><span class="at">currentNode</span><span class="op">.</span><span class="at">attributes</span>) {</span>
+<span id="cb6-183"><a href="#cb6-183" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (attr<span class="op">.</span><span class="at">value</span><span class="op">.</span><span class="fu">includes</span>(fragment)) {</span>
+<span id="cb6-184"><a href="#cb6-184" aria-hidden="true" tabindex="-1"></a>          attr<span class="op">.</span><span class="at">value</span> <span class="op">=</span> attr<span class="op">.</span><span class="at">value</span><span class="op">.</span><span class="fu">replace</span>(fragment<span class="op">,</span> <span class="st">"#"</span>)<span class="op">;</span></span>
+<span id="cb6-185"><a href="#cb6-185" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb6-186"><a href="#cb6-186" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb6-187"><a href="#cb6-187" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb6-188"><a href="#cb6-188" aria-hidden="true" tabindex="-1"></a>    svg<span class="op">.</span><span class="fu">setAttributeNS</span>(xmlns<span class="op">,</span> <span class="st">"xmlns"</span><span class="op">,</span> svgns)<span class="op">;</span></span>
+<span id="cb6-189"><a href="#cb6-189" aria-hidden="true" tabindex="-1"></a>    svg<span class="op">.</span><span class="fu">setAttributeNS</span>(xmlns<span class="op">,</span> <span class="st">"xmlns:xlink"</span><span class="op">,</span> xlinkns)<span class="op">;</span></span>
+<span id="cb6-190"><a href="#cb6-190" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> serializer <span class="op">=</span> <span class="kw">new</span> <span class="bu">window</span><span class="op">.</span><span class="at">XMLSerializer</span><span class="op">;</span></span>
+<span id="cb6-191"><a href="#cb6-191" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> string <span class="op">=</span> serializer<span class="op">.</span><span class="fu">serializeToString</span>(svg)<span class="op">;</span></span>
+<span id="cb6-192"><a href="#cb6-192" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="kw">new</span> <span class="bu">Blob</span>([string]<span class="op">,</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">"image/svg+xml"</span>})<span class="op">;</span></span>
+<span id="cb6-193"><a href="#cb6-193" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb6-194"><a href="#cb6-194" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-6" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
 
 
-
-</section>
 
 </main> <!-- /main -->
 <script>
@@ -596,6 +649,17 @@ No matching items
     });
     console.log("first");
   });
+</script>
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiB0ZW1wZXJhdHVyZU9mZnNldCA9IElucHV0cy5yYW5nZShbMCwyXSwge3N0ZXAgOiAwLjAxLCB2YWx1ZTogMC44OCwgbGFiZWw6IFwiVGVtcGVyYXR1cmUgT2Zmc2V0XCJ9KVxudmlld29mIHllYXJPZmZzZXQgPSBJbnB1dHMucmFuZ2UoWzEsOF0sIHtzdGVwIDogMSwgdmFsdWU6IDIsIGxhYmVsOiBcImxpbmVzIE9mZnNldFwifSlcbnZpZXdvZiBzbW9vdGhGYWN0b3IgPSBJbnB1dHMucmFuZ2UoWzAsNF0sIHtzdGVwIDogMSwgdmFsdWU6IDMsIGxhYmVsOiBcIlNtb290aCBGYWN0b3JcIn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcbm1pbkFub21hbHkgPSBkMy5taW4oZGF0YSwgZCA9PiBkLmFub21hbHkpXG5tYXhBbm9tYWx5ID0gZDMubWF4KGRhdGEsIGQgPT4gZC5hbm9tYWx5KVxubWF4WWVhciA9IGQzLm1heChkYXRhLCBkID0+IGQueWVhcilcbmxlbmd0aCA9IChtYXhBbm9tYWx5IC0gbWluQW5vbWFseSkgKiAxMDBcbmluZGV4RiA9ICh4KSA9PiBNYXRoLmZsb29yKCh4IC0gbWluQW5vbWFseSkgKiAxMDApXG5pbmRleEZfMSA9ICh4KSA9PiAoeCAvIDEwMCkgKyBtaW5Bbm9tYWx5ICsgdGVtcGVyYXR1cmVPZmZzZXRcbmRhdGEyID0ge1xuLy8gQ291bnQgdGhlIG51bWJlciBvZiBhbm9tYWxpZXMgZm9yIGVhY2ggeWVhclxubGV0IGFjYyA9IGRhdGEucmVkdWNlKCAoYWNjLCBkKSA9PiB7XG4gIGlmIChkLnllYXIgaW4gYWNjKSB7XG4gICAgYWNjW2QueWVhcl1baW5kZXhGKCBkLmFub21hbHkpIF0gKz0gMVxuICB9IGVsc2Uge1xuICAgIGFjY1tkLnllYXJdID0gQXJyYXkobGVuZ3RoKS5maWxsKDApXG4gICAgYWNjW2QueWVhcl1bIGluZGV4RiggZC5hbm9tYWx5KSBdID0gMVxuICB9XG4gIHJldHVybiBhY2Ncbn0sIHt9KVxuXG4vLyAgR2F1c3NpYW4gQmx1ciBcbmxldCBkYXRhMiA9IFtdXG5mb3IoIGxldCB5ZWFyIGluIGFjYykge1xuICBjb25zdCBcbiAgICBrZXJuZWxzID0gXG4gICAgWyBbMV1cbiAgICAsIFsyLDFdXG4gICAgLCBbNiw0LDFdXG4gICAgLCBbMjAsMTUsNiwxXVxuICAgICwgWzcwLDU2LDI4LDgsMV1cbiAgICBdXG5cbiAgICBjb25zdCBrZXJuZWwgPSBrZXJuZWxzW3Ntb290aEZhY3Rvcl1cbiAgZm9yKCBsZXQgaSA9IDAgOyBpIDwgbGVuZ3RoOyBpKyspIHtcbiAgICBsZXQgcmVzdWx0ID0gMFxuICAgIGxldCB3ZWlnaHQgPSAwXG4gICAgZm9yKCBsZXQgaiA9IDEgLSBrZXJuZWwubGVuZ3RoIDsgaiA8IGtlcm5lbC5sZW5ndGg7IGorKykge1xuICAgICAgaWYoIGkgKyBqID49IDAgJiYgaSArIGogPCBsZW5ndGggKSB7XG4gICAgICAgIGNvbnN0IGFic0ogPSBNYXRoLmFicyhqKVxuICAgICAgICByZXN1bHQgKz0gYWNjW3llYXJdW2kgKyBqXSAqIGtlcm5lbFthYnNKXVxuICAgICAgICB3ZWlnaHQgKz0ga2VybmVsW2Fic0pdXG4gICAgICB9ICAgICAgXG4gICAgfVxuICAgIGRhdGEyLnB1c2goIFxuICAgICAgICB7IHllYXI6IHllYXJcbiAgICAgICAgLCBhbm9tYWx5OiBpbmRleEZfMShpKVxuICAgICAgICAsIGNvdW50OiByZXN1bHQgLyB3ZWlnaHQgIFxuICAgICAgICAsIGhlaWdodDogcmVzdWx0IC8gd2VpZ2h0ICsgKG1heFllYXIgLSB5ZWFyICkgKiB5ZWFyT2Zmc2V0ICB9KVxuICB9XG4gXG59XG5yZXR1cm4gZGF0YTIuZmlsdGVyKCBkID0+IGQueWVhciAhPSAyMDI1KVxufVxuXG4vLyBQbG90IHVzaW5nIFBsb3QucGxvdCBhIGFyZWEgY2hhcnQgZm9yIGVhY2ggeWVhclxuY2hhcnQgPSBQbG90LnBsb3Qoe1xuICBtYXJrczogW1xuICAgIFBsb3QuYXJlYVkoXG4gICAgICAgIGRhdGEyLCBcbiAgICAgICAgeyB4OiBcImFub21hbHlcIlxuICAgICAgICAsIHkxOiAwXG4gICAgICAgICwgeTI6IFwiaGVpZ2h0XCJcbiAgICAgICAgLCB6OiBcInllYXJcIlxuICAgICAgICAsIGF4aXNZOiBudWxsXG4gICAgICAgICwgZmlsbE9wYWNpdHk6IDFcbiAgICAgICAgLCBzdHJva2U6IFwid2hpdGVcIlxuICAgICAgICAsIGZpbGw6IFwiYmxhY2tcIiAgfSksXG4gICAgUGxvdC5heGlzWShBcnJheSgyMDI1LTE5NDApLmZpbGwoMSkubWFwKChlLGkpPT4oaSsxKSp5ZWFyT2Zmc2V0KSwge1xuICAgICAgbGFiZWw6IFwiWWVhclwiLFxuICAgICAgZ3JpZDogdHJ1ZSxcbiAgICAgIHRleHQ6IEFycmF5KDIwMjUtMTk0MCkuZmlsbCgxKS5tYXAoKGUsaSk9PihcIlwiKygyMDI0LWkpKSksXG4gICAgICBkb21haW46IFttYXhZZWFyLCBkMy5taW4oZGF0YSwgZCA9PiBkLnllYXIpXVxuICAgIH0pLFxuICBdLFxuICB4OiB7bGFiZWw6IFwiVGVtcGVyYXR1cmUgQW5vbWFseVwifSxcbiAgeToge2xhYmVsOiBcInllYXJcIn0sXG4gIFxuICB3aWR0aDogODAwLFxuICBoZWlnaHQ6IDEyMDAsXG4gIHBhZGRpbmc6IDAuMSxcbiAgXG4gIHRpdGxlOiBcIkpveSBEaXZpc2lvbiBQbG90IG9mIFRlbXBlcmF0dXJlIEFub21hbGllc1wiLFxufSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IkRPTS5kb3dubG9hZCgoKSA9PiBzZXJpYWxpemUoY2hhcnQpLCB1bmRlZmluZWQsIFwiU2F2ZSBhcyBTVkdcIilcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InRlbXAgPSB0ID0+IE1hdGgucm91bmQodCAqIDEwMCkgLyAxMDAgK1wiwrBDXCI7XG5iaWRpbWVuc2lvbmFsVGFibGUgPSBkYXRhMi5yZWR1Y2UoIChhY2MsIGQpID0+IHtcbiAgXG4gIGlmIChkLnllYXIgaW4gYWNjKSB7XG4gICAgYWNjW2QueWVhcl1bIHRlbXAoIGQuYW5vbWFseSkgXSA9ZC5jb3VudFxuICB9IGVsc2Uge1xuICAgIGFjY1tkLnllYXJdID0ge3llYXI6IGQueWVhcn0gXG4gICAgYWNjW2QueWVhcl1bdGVtcCggZC5hbm9tYWx5KSBdID0gZC5jb3VudFxuICB9XG4gIHJldHVybiBhY2Ncbn0sIFtdKS5maWx0ZXIoIGQgPT4gZC55ZWFyID49IDE5NDApXG5JbnB1dHMudGFibGUoYmlkaW1lbnNpb25hbFRhYmxlKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC01IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiLy8gTG9hZCB0aGUgQ1NWIGZpbGVcbmRhdGEgPSBGaWxlQXR0YWNobWVudChcIi4vZXJhNV9kYWlseV9zZXJpZXNfMnRfZ2xvYmFsLmNzdlwiKS50ZXh0KCkudGhlbihwcm9jZXNzQ1NWKTtcblxuLy8gRnVuY3Rpb24gdG8gcHJlcHJvY2VzcyBhbmQgcGFyc2UgdGhlIENTVlxuZnVuY3Rpb24gcHJvY2Vzc0NTVihjb250ZW50KSB7XG4gIC8vIFJlbW92ZSBjb21tZW50IGxpbmVzIChsaW5lcyBzdGFydGluZyB3aXRoICMpXG4gIGNvbnN0IGxpbmVzID0gY29udGVudC5zcGxpdChcIlxcblwiKTtcbiAgY29uc3QgZmlsdGVyZWRMaW5lcyA9IGxpbmVzLmZpbHRlcihsaW5lID0+ICFsaW5lLnRyaW0oKS5zdGFydHNXaXRoKFwiI1wiKSk7XG5cbiAgLy8gSm9pbiB0aGUgcmVtYWluaW5nIGxpbmVzIGJhY2sgaW50byBhIHNpbmdsZSBzdHJpbmdcbiAgY29uc3QgY3N2Q29udGVudCA9IGZpbHRlcmVkTGluZXMuam9pbihcIlxcblwiKTtcblxuICAvLyBQYXJzZSB0aGUgQ1NWIGNvbnRlbnRcbiAgcmV0dXJuIGQzLmNzdlBhcnNlKGNzdkNvbnRlbnQsIGQzLmF1dG9UeXBlKS5tYXAoIFxuICAgIGQgPT4gKHtcbiAgICAgICAgeWVhcjogZC5kYXRlLmdldEZ1bGxZZWFyKCksXG4gICAgICAgIGFub21hbHk6IGRbXCJhbm9fOTEtMjBcIl0sXG4gICAgICB9KVxuICApXG59XG5cbi8vIERpc3BsYXkgdGhlIHBhcnNlZCBkYXRhXG5cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InNlcmlhbGl6ZSA9IHtcbiAgY29uc3QgeG1sbnMgPSBcImh0dHA6Ly93d3cudzMub3JnLzIwMDAveG1sbnMvXCI7XG4gIGNvbnN0IHhsaW5rbnMgPSBcImh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmtcIjtcbiAgY29uc3Qgc3ZnbnMgPSBcImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnXCI7XG4gIHJldHVybiBmdW5jdGlvbiBzZXJpYWxpemUoc3ZnKSB7XG4gICAgc3ZnID0gc3ZnLmNsb25lTm9kZSh0cnVlKTtcbiAgICBjb25zdCBmcmFnbWVudCA9IHdpbmRvdy5sb2NhdGlvbi5ocmVmICsgXCIjXCI7XG4gICAgY29uc3Qgd2Fsa2VyID0gZG9jdW1lbnQuY3JlYXRlVHJlZVdhbGtlcihzdmcsIE5vZGVGaWx0ZXIuU0hPV19FTEVNRU5UKTtcbiAgICB3aGlsZSAod2Fsa2VyLm5leHROb2RlKCkpIHtcbiAgICAgIGZvciAoY29uc3QgYXR0ciBvZiB3YWxrZXIuY3VycmVudE5vZGUuYXR0cmlidXRlcykge1xuICAgICAgICBpZiAoYXR0ci52YWx1ZS5pbmNsdWRlcyhmcmFnbWVudCkpIHtcbiAgICAgICAgICBhdHRyLnZhbHVlID0gYXR0ci52YWx1ZS5yZXBsYWNlKGZyYWdtZW50LCBcIiNcIik7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gICAgc3ZnLnNldEF0dHJpYnV0ZU5TKHhtbG5zLCBcInhtbG5zXCIsIHN2Z25zKTtcbiAgICBzdmcuc2V0QXR0cmlidXRlTlMoeG1sbnMsIFwieG1sbnM6eGxpbmtcIiwgeGxpbmtucyk7XG4gICAgY29uc3Qgc2VyaWFsaXplciA9IG5ldyB3aW5kb3cuWE1MU2VyaWFsaXplcjtcbiAgICBjb25zdCBzdHJpbmcgPSBzZXJpYWxpemVyLnNlcmlhbGl6ZVRvU3RyaW5nKHN2Zyk7XG4gICAgcmV0dXJuIG5ldyBCbG9iKFtzdHJpbmddLCB7dHlwZTogXCJpbWFnZS9zdmcreG1sXCJ9KTtcbiAgfTtcbn1cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgndGVtcGVyYXR1cmVPZmZzZXQnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgneWVhck9mZnNldCcpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzbW9vdGhGYWN0b3InKSJ9XX0=
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../projects/DataViz";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "../..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

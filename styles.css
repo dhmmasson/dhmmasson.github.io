@@ -79,3 +79,10 @@ div.quarto-post div.metadata {
     ),
     url(publications/_cover_images/Book.webp);
 }
+
+input[type="number"] {
+  min-width: 5.2em;
+}
+form label {
+  --label-width: 4em;
+}
