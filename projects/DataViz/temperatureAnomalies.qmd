@@ -35,7 +35,7 @@ minAnomaly = d3.min(data, d => d.anomaly)
 maxAnomaly = d3.max(data, d => d.anomaly)
 maxYear = d3.max(data, d => d.year)
 length = (maxAnomaly - minAnomaly) * 100
-indexF = (x) => Math.floor((x - minAnomaly) * 100)
+indexF = (x) => Math.round((x - minAnomaly) * 100)
 indexF_1 = (x) => (x / 100) + minAnomaly + temperatureOffset
 data2 = {
 // Count the number of anomalies for each year
