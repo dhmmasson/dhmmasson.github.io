@@ -15,8 +15,10 @@ toc: false
 //| echo: false
 //| panel: sidebar
 viewof temperatureOffset = Inputs.range([0,2], {step : 0.01, value: 0.88, label: "Temperature Offset"})
-viewof yearOffset = Inputs.range([1,8], {step : 1, value: 2, label: "lines Offset"})
+viewof yearOffset = Inputs.range([1,8], {step : 1, value: 2, label: "Y Scale"})
 viewof smoothFactor = Inputs.range([0,4], {step : 1, value: 3, label: "Smooth Factor"})
+viewof showZero = Inputs.toggle( {label: "Show Zero Line", value: true})
+
 ```
 :::
 
@@ -100,6 +102,12 @@ chart = Plot.plot({
       text: Array(2025-1940).fill(1).map((e,i)=>(""+(2024-i))),
       domain: [maxYear, d3.min(data, d => d.year)]
     }),
+    Plot.axisX({
+      label: "Temperature Anomaly",
+      interval: 0.5,
+      domain: [-0.55, 2.5]
+    }),
+    showZero? Plot.ruleX([0], {stroke: "red", strokeOpacity: 0.5}):null,
   ],
   x: {label: "Temperature Anomaly"},
   y: {label: "year"},
@@ -115,7 +123,7 @@ chart = Plot.plot({
 :::{.aside}
 ```{ojs}
 //| echo: false
-DOM.download(() => serialize(chart), undefined, "Save as SVG")
+DOM.download(() => serialize(chart), undefined, "Download SVG")
 ```
 :::
 
@@ -162,7 +170,7 @@ function processCSV(content) {
 }
 
 // Display the parsed data
-
+data
 ```
 
 
