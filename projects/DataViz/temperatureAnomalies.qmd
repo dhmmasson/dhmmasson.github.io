@@ -6,96 +6,48 @@ page-layout: full
 
 format:
   html:
-    code-fold: true
+    # code-fold: true
     code-summary: "Show the code"
 toc: false
 ---
+
+
+My friend Yann showed me a graph he wanted to replicate, where temperature anomalies were plotted by frequency rather than chronologically, resembling a Joy Division plot (Inspired by the album cover of Unknown Pleasures by Joy Division), the graph is created by counting the number of days each anomaly occurs per year and offsetting the resulting curve for each year. To enhance its appearance, I apply a Gaussian blur to smooth the values.
+
+You can play with the parameters to see how the plot changes. The opacity, the scale of the years, the smooth factor, the color, and the option to start the plot from the bottom or to display only the anomalies.
+
+Below are some technical details on how the data is processed and the plot is generated.
 :::{.aside}
 ```{ojs}
 //| echo: false
 //| panel: sidebar
-viewof temperatureOffset = Inputs.range([0,2], {step : 0.01, value: 0.88, label: "Temperature Offset"})
+viewof opacity = Inputs.range([0,1], {step : 0.1, value: 0.9, label: "Opacity"})
 viewof yearOffset = Inputs.range([1,8], {step : 1, value: 2, label: "Y Scale"})
 viewof smoothFactor = Inputs.range([0,4], {step : 1, value: 3, label: "Smooth Factor"})
-viewof showZero = Inputs.toggle( {label: "Show Zero Line", value: true})
-
+viewof fromBottom = Inputs.toggle( {label: "anomaly only", value: true})
+viewof color = Inputs.color( {label: "Color", value: "black"})
 ```
 :::
 
-::: {.panel-tabset}
 
+::: {.panel-tabset}
 ## Plot
 ```{ojs}
 //| echo: false
-//| fig-cap: "Joy Division Plot of Temperature Anomalies"
-//| fig-attr: "Source: ERA5"
-//| fig-attr-url: "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview"
-
-minAnomaly = d3.min(data, d => d.anomaly)
-maxAnomaly = d3.max(data, d => d.anomaly)
-maxYear = d3.max(data, d => d.year)
-length = (maxAnomaly - minAnomaly) * 100
-indexF = (x) => Math.round((x - minAnomaly) * 100)
-indexF_1 = (x) => (x / 100) + minAnomaly + temperatureOffset
-data2 = {
-// Count the number of anomalies for each year
-let acc = data.reduce( (acc, d) => {
-  if (d.year in acc) {
-    acc[d.year][indexF( d.anomaly) ] += 1
-  } else {
-    acc[d.year] = Array(length).fill(0)
-    acc[d.year][ indexF( d.anomaly) ] = 1
-  }
-  return acc
-}, {})
-
-//  Gaussian Blur 
-let data2 = []
-for( let year in acc) {
-  const 
-    kernels = 
-    [ [1]
-    , [2,1]
-    , [6,4,1]
-    , [20,15,6,1]
-    , [70,56,28,8,1]
-    ]
-
-    const kernel = kernels[smoothFactor]
-  for( let i = 0 ; i < length; i++) {
-    let result = 0
-    let weight = 0
-    for( let j = 1 - kernel.length ; j < kernel.length; j++) {
-      if( i + j >= 0 && i + j < length ) {
-        const absJ = Math.abs(j)
-        result += acc[year][i + j] * kernel[absJ]
-        weight += kernel[absJ]
-      }      
-    }
-    data2.push( 
-        { year: year
-        , anomaly: indexF_1(i)
-        , count: result / weight  
-        , height: result / weight + (maxYear - year ) * yearOffset  })
-  }
- 
-}
-return data2.filter( d => d.year != 2025)
-}
-
 // Plot using Plot.plot a area chart for each year
 chart = Plot.plot({
   marks: [
     Plot.areaY(
-        data2, 
+        joyData, 
         { x: "anomaly"
-        , y1: 0
+        , y1: fromBottom ? 0 : "reference"
         , y2: "height"
         , z: "year"
         , axisY: null
-        , fillOpacity: 1
+        , fillOpacity: opacity
         , stroke: "white"
-        , fill: "black"  }),
+        , fill: color  }),
+
     Plot.axisY(Array(2025-1940).fill(1).map((e,i)=>(i+1)*yearOffset), {
       label: "Year",
       grid: true,
@@ -104,10 +56,9 @@ chart = Plot.plot({
     }),
     Plot.axisX({
       label: "Temperature Anomaly",
-      interval: 0.5,
-      domain: [-0.55, 2.5]
+      interval: 0.5
     }),
-    showZero? Plot.ruleX([0], {stroke: "red", strokeOpacity: 0.5}):null,
+    // showZero? Plot.ruleX([0], {stroke: "red", strokeOpacity: 0.5}):null,
   ],
   x: {label: "Temperature Anomaly"},
   y: {label: "year"},
@@ -115,7 +66,7 @@ chart = Plot.plot({
   width: 800,
   height: 1200,
   padding: 0.1,
-  
+  fill: "black",
   title: "Joy Division Plot of Temperature Anomalies",
 })
 ```
@@ -123,7 +74,7 @@ chart = Plot.plot({
 :::{.aside}
 ```{ojs}
 //| echo: false
-DOM.download(() => serialize(chart), undefined, "Download SVG")
+DOM.download(() => serialize(chart.children[1]), undefined, "Download SVG")
 ```
 :::
 
@@ -131,48 +82,169 @@ DOM.download(() => serialize(chart), undefined, "Download SVG")
 ```{ojs}
 //| echo: false
 temp = t => Math.round(t * 100) / 100 +"°C";
-bidimensionalTable = data2.reduce( (acc, d) => {
+bidimensionalTable = joyData.reduce( (anomalies, d) => {
   
-  if (d.year in acc) {
-    acc[d.year][ temp( d.anomaly) ] =d.count
+  if (d.year in anomalies) {
+    anomalies[d.year][ temp( d.anomaly) ] =d.count
   } else {
-    acc[d.year] = {year: d.year} 
-    acc[d.year][temp( d.anomaly) ] = d.count
+    anomalies[d.year] = {year: d.year} 
+    anomalies[d.year][temp( d.anomaly) ] = d.count
   }
-  return acc
+  return anomalies
 }, []).filter( d => d.year >= 1940)
 Inputs.table(bidimensionalTable)
 ```
 
 :::
 
+## Parsing the data
+
+We start by downloading the data from the copernicus website ( [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview) ). 
+The CSV files contains comments lines starting with # that we need to remove before parsing the data.
+
 ```{ojs}
-//| echo: false
+
 // Load the CSV file
 data = FileAttachment("./era5_daily_series_2t_global.csv").text().then(processCSV);
 
 // Function to preprocess and parse the CSV
 function processCSV(content) {
-  // Remove comment lines (lines starting with #)
+  // Remove comment lines (lines starting with #) // <1>
   const lines = content.split("\n");
-  const filteredLines = lines.filter(line => !line.trim().startsWith("#"));
-
-  // Join the remaining lines back into a single string
+  const filteredLines = lines.filter(line => !line.trim().startsWith("#")); 
   const csvContent = filteredLines.join("\n");
 
   // Parse the CSV content
   return d3.csvParse(csvContent, d3.autoType).map( 
-    d => ({
-        year: d.date.getFullYear(),
-        anomaly: d["ano_91-20"],
-      })
+    d => {
+        const year = d.date.getFullYear() // <2>
+        const janFirst = new Date(year, 0, 1)
+        const dayOfYear = Math.floor( (d.date - janFirst) / (1000 * 60 * 60 * 24) ) + 1 // <3>
+        return { year
+               , day: dayOfYear 
+               , anomaly: d["ano_91-20"]
+               , corrected : Math.floor( 100 * (d["ano_91-20"] + correction({year, day: dayOfYear})) )/100 }
+    } 
   )
 }
 
 // Display the parsed data
 data
 ```
+1. Filter out the comment lines from the CSV content
+2. Anomaly will be grouped by year
+3. For anomaly correction we need the day of the year
 
+## Data correction
+
+Applying the formula to correct the temperature anomalies from https://parisagreementtemperatureindex.com/copernicus-1850-1900-baseline-daily-gmst/
+
+```{ojs}
+
+isLeapYear = year => !(year % 4)  // <1> 
+
+correction = ({year, day}) => {
+    const days = isLeapYear(year) ? 366 : 365
+    const correction = 0.88 + 0.05 * Math.sin((2*3.14159 * (day - 0.5)) / days) // <2>
+                            + 0.07 * Math.cos((2*3.14159 * (day - 0.5)) / days) 
+    return correction
+}
+correctionData = d3.timeDay
+  .range(new Date(2024, 0, 1, 12), new Date(2025, 0, 1), 1)
+  .map( (e,i)=> (
+    { date : e
+    , year: 2024
+    , day: i + 1 
+    , correction: correction({year: 2024, day: i + 1})
+    }
+  )) 
+
+// Line plot of the correction by day of the year
+Plot.plot({
+  marks: [
+    Plot.line(correctionData, { x: "date", y: "correction", stroke: "black" }),
+    Plot.ruleY([.88], {stroke: "red", strokeOpacity: 0.5})
+  ],
+  x: {label: "Day of the year"},
+  y: {label: "Correction"},
+  width: 800,
+  height: 400,
+  padding: 0.1,
+  title: "Correction of the temperature anomalies"
+})
+```
+1. Checking if the year is a leap year, straight forward calculation between 1940 and 2024
+2. Formula 2 from the website
+
+
+### Grouping 
+```{ojs}
+//| fig-cap: "Joy Division Plot of Temperature Anomalies"
+//| fig-attr: "Source: ERA5"
+//| fig-attr-url: "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview"
+
+maxYear = d3.max(data, d => d.year)
+
+offset = 0.1 
+minAnomaly = d3.min(data, d => d.corrected) - offset
+maxAnomaly = d3.max(data, d => d.corrected) + offset
+length = (maxAnomaly - minAnomaly) * 100
+indexF = (x) => Math.round((x - minAnomaly) * 100) // <2> 
+indexF_1 = (x) => (x / 100) + minAnomaly 
+
+kernels = [ // <4>
+      [1],
+      [2, 1],
+      [6, 4, 1],
+      [20, 15, 6, 1],
+      [70, 56, 28, 8, 1],
+    ];
+joyData =  {
+
+  // Count the number of anomalies for each year // <1>
+  let anomalies = data.reduce((anomalies, d) => {
+    if (d.year in anomalies) {
+      anomalies[d.year][indexF(d.corrected)] += 1;
+    } else {
+      anomalies[d.year] = Array(length).fill(0);
+      anomalies[d.year][indexF(d.corrected)] = 1;
+    }
+    return anomalies;
+  }, {});
+
+  //  Gaussian Blur smoothing 
+  let joyData = [];
+  for (let year in anomalies) { 
+    const kernel = kernels[smoothFactor];
+    for (let i = 0; i < length; i++) {
+      let result = 0;
+      let weight = 0;
+      for (let j = 1 - kernel.length; j < kernel.length; j++) {
+        if (i + j >= 0 && i + j < length) {
+          const absJ = Math.abs(j);
+          result += anomalies[year][i + j] * kernel[absJ]; // <3>
+          weight += kernel[absJ];
+        }
+      }
+      joyData.push({ 
+        year: year,
+        anomaly: indexF_1(i), 
+        count: result / weight,
+        height: result / weight + (maxYear - year) * yearOffset, // <5>
+        reference: (maxYear - year) * yearOffset,
+      });
+    }
+  }
+  return joyData.filter((d) => d.year != 2025);
+}
+
+joyData
+```
+1. The Graph is produce by counting the number of anomalies for each year.
+2. The anomalies are discretized into 0.1 intervals 
+3. to apply a gaussian blur
+4. From one of 5 kernels for gaussian blur of size 1, 2, 3, 4 and 5.
+5. The height of the area chart is calculated from the count and offset by year to produce the Joy Division effect
 
 
 
