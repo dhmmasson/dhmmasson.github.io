@@ -4,7 +4,7 @@ date: 2024-08-26
 tags: [Game Jam, Ludum Dare, Software]
 description: >
   I enjoy participating in Ludum Dare, a game jam where participants are challenged to create a game from scratch in a single weekend. I have participated in several editions, and I am always amazed by the creativity and innovation of the games developed during the event.
-image: ./LudumDare/ludumDareCover.jpg
+image: ./LudumDare/LudumDareCover.jpg
 page-layout: article
 listing:
   - id: ld32

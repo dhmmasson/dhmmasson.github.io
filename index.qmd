@@ -37,6 +37,7 @@ listing:
   - id: projects
     contents: 
       - projects/multiCriteria
+      - projects/DataViz
       - "projects/*.md"
     sort: date desc
     type: grid

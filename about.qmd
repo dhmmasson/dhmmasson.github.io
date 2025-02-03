@@ -35,12 +35,12 @@ I teach Computer Science, System Engineering, Scenario Based Design
 
 I am a game developer, I have developped [several games for Ludum Dare](projects/LudumDare.md)
 
-I am a member of the [INCOSE Human System Integration Working Group](https://www.incose.org/communities/working-groups-initiatives/human-systems-integration) and the [INCOSE Technical Leadership Institute](https://www.incose.org/learn/tli) (cohort 8)
+I am the co-chair of the [INCOSE Human System Integration Working Group](https://www.incose.org/communities/working-groups-initiatives/human-systems-integration) and the [INCOSE Technical Leadership Institute](https://www.incose.org/learn/tli) (cohort 8)
 
 I am a dad, I have two daughters
 
 
-## Education
+# Education
 
 
 - {{< fa certificate >}} **[INCOSE Technical Leadership Institute](https://www.incose.org/learn/tli)** (cohort 8),  2024
@@ -49,10 +49,10 @@ I am a dad, I have two daughters
 - {{< fa user-graduate >}} **M.Sc in Computer Science and Apllied Mathematics**, 2010 - Grenoble INP Ensimag  
 - {{< fa user-graduate >}} **B.Sc in Engineering Science**, 2008 - Grenoble INP 
 
-## System Engineering 
+# System Engineering 
 
 - I am the webmaster of the [INCOSE Human System Integration Working Group](https://www.incose.org/communities/working-groups-initiatives/human-systems-integration) 
 - I am a member of the INCOSE Technical Leadership Institute (cohort 8)
 
-## Quote
+# Quote
 I am 50% human, 50% coffee {{< fa mug-hot >}}

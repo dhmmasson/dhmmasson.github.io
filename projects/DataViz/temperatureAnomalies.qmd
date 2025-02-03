@@ -3,7 +3,22 @@ title: "Unknown Warming: A joy division inspired plot of Temperature Anomalies"
 description: >
   visualization of the temperature anomalies in the form of a Joy Division plot.
 page-layout: full
-
+author: 
+  - name: 
+      given: "Dimitri"
+      family: "Masson"
+    orcid: "0000-0002-7072-3146" 
+    email: "d.masson@estia.fr" 
+    idhal: "dimitri-masson"
+  - name:
+      given: "Yann"
+      family: "Girard"
+citation:
+  id: masson2025_UnknownWarming
+  citation-key: masson2025_UnknownWarming
+  type: post-weblog
+  container-title: >
+    dhmmasson.github.io
 format:
   html:
     # code-fold: true
@@ -12,7 +27,7 @@ toc: false
 ---
 
 
-My friend Yann showed me a graph he wanted to replicate, where temperature anomalies were plotted by frequency rather than chronologically, resembling a Joy Division plot (Inspired by the album cover of Unknown Pleasures by Joy Division), the graph is created by counting the number of days each anomaly occurs per year and offsetting the resulting curve for each year. To enhance its appearance, I apply a Gaussian blur to smooth the values.
+My friend Yann showed me [a graph](https://www.bbc.com/news/science-environment-67861954) he wanted to replicate, where temperature anomalies were plotted by frequency rather than chronologically, resembling a Joy Division plot (Inspired by the album cover of Unknown Pleasures by Joy Division), the graph is created by counting the number of days each anomaly occurs per year and offsetting the resulting curve for each year. To enhance its appearance, I apply a Gaussian blur to smooth the values.
 
 You can play with the parameters to see how the plot changes. The opacity, the scale of the years, the smooth factor, the color, and the option to start the plot from the bottom or to display only the anomalies.
 
@@ -34,6 +49,10 @@ viewof color = Inputs.color( {label: "Color", value: "black"})
 ## Plot
 ```{ojs}
 //| echo: false
+//| fig-cap: "Joy Division Plot of Temperature Anomalies"
+//| fig-attr: "Source: ERA5"
+//| fig-attr-url: "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview"
+
 // Plot using Plot.plot a area chart for each year
 chart = Plot.plot({
   marks: [
@@ -74,7 +93,7 @@ chart = Plot.plot({
 :::{.aside}
 ```{ojs}
 //| echo: false
-DOM.download(() => serialize(chart.children[1]), undefined, "Download SVG")
+DOM.download(() => serialize(chart.children[1]), undefined, "Download the SVG")
 ```
 :::
 
@@ -100,7 +119,7 @@ Inputs.table(bidimensionalTable)
 ## Parsing the data
 
 We start by downloading the data from the copernicus website ( [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview) ). 
-The CSV files contains comments lines starting with # that we need to remove before parsing the data.
+One of the tricky thing is that the CSV files contains comments lines (starting with #). D3 doesn't handle that by default and we need to remove before parsing the data.
 
 ```{ojs}
 
@@ -179,10 +198,6 @@ Plot.plot({
 
 ### Grouping 
 ```{ojs}
-//| fig-cap: "Joy Division Plot of Temperature Anomalies"
-//| fig-attr: "Source: ERA5"
-//| fig-attr-url: "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview"
-
 maxYear = d3.max(data, d => d.year)
 
 offset = 0.1 
