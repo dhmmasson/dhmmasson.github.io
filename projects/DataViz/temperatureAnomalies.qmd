@@ -3,6 +3,8 @@ title: "Unknown Warming: A joy division inspired plot of Temperature Anomalies"
 description: >
   visualization of the temperature anomalies in the form of a Joy Division plot.
 page-layout: full
+date: 2025-02-03
+image: ./temperatureAnomalies.png
 author: 
   - name: 
       given: "Dimitri"
@@ -32,6 +34,7 @@ My friend Yann showed me [a graph](https://www.bbc.com/news/science-environment-
 You can play with the parameters to see how the plot changes. The opacity, the scale of the years, the smooth factor, the color, and the option to start the plot from the bottom or to display only the anomalies.
 
 Below are some technical details on how the data is processed and the plot is generated.
+
 :::{.aside}
 ```{ojs}
 //| echo: false
@@ -39,13 +42,14 @@ Below are some technical details on how the data is processed and the plot is ge
 viewof opacity = Inputs.range([0,1], {step : 0.1, value: 0.9, label: "Opacity"})
 viewof yearOffset = Inputs.range([1,8], {step : 1, value: 2, label: "Y Scale"})
 viewof smoothFactor = Inputs.range([0,4], {step : 1, value: 3, label: "Smooth Factor"})
-viewof fromBottom = Inputs.toggle( {label: "anomaly only", value: true})
-viewof color = Inputs.color( {label: "Color", value: "black"})
+viewof fromBottom = Inputs.toggle( {label: "wave only", value: true})
+viewof color = Inputs.color( {label: "Color", value: "#004055"})
 ```
+
 :::
 
-
 ::: {.panel-tabset}
+
 ## Plot
 ```{ojs}
 //| echo: false
@@ -59,7 +63,7 @@ chart = Plot.plot({
     Plot.areaY(
         joyData, 
         { x: "anomaly"
-        , y1: fromBottom ? 0 : "reference"
+        , y1: !fromBottom ? 0 : "reference"
         , y2: "height"
         , z: "year"
         , axisY: null
@@ -89,6 +93,7 @@ chart = Plot.plot({
   title: "Joy Division Plot of Temperature Anomalies",
 })
 ```
+
 
 :::{.aside}
 ```{ojs}

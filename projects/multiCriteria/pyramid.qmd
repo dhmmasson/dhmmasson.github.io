@@ -1,5 +1,7 @@
 ---
 title: "Visualizing Multi-Criteria Data: A Pyramid of Bi-Dimensional Plots"
+date: 2024-10-02
+author: Dimitri Masson
 description: >
   visualization of multi-dimensional data by focusing on each pairs of dimensions. This method transforms the upper triangular matrix of bi-dimensional comparisons into a pyramid layout.
 page-layout: full

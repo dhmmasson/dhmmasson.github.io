@@ -19,6 +19,7 @@ image: assets/favicon_128_128.webp
 listing:
   - id: blog
     contents: 
+      - projects/DataViz
       - projects/multiCriteria
       - posts      
     sort: date desc
