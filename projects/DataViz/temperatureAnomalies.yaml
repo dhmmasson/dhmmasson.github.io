@@ -1,0 +1,71 @@
+---
+references:
+- id: c3s2018_ERA5Hourly
+  accessed:
+    - year: 2025
+      month: 2
+      day: 4
+  author:
+    - literal: C3S
+  citation-key: c3s2018_ERA5Hourly
+  DOI: 10.24381/CDS.ADBB2D47
+  issued:
+    - year: 2018
+  publisher: Copernicus Climate Change Service (C3S) Climate Data Store (CDS)
+  source: DOI.org (Datacite)
+  title: ERA5 hourly data on single levels from 1940 to present
+  type: dataset
+  URL: https://cds.climate.copernicus.eu/doi/10.24381/cds.adbb2d47
+
+- id: poynting2024_2023Confirmed
+  abstract: >-
+    Climate records tumbled "like dominoes" in 2023, with temperatures far above
+    any recorded level.
+  accessed:
+    - year: 2025
+      month: 2
+      day: 4
+  author:
+    - family: Poynting
+      given: Mark
+    - family: Rivault
+      given: Erwan
+  citation-key: poynting2024_2023Confirmed
+  container-title: BBC News
+  issued:
+    - year: 2024
+      month: 1
+      day: 9
+  language: en-GB
+  source: www.bbc.com
+  title: 2023 confirmed as world's hottest year on record
+  type: article-newspaper
+  URL: https://www.bbc.com/news/science-environment-67861954
+
+- id: reescatophuls2024_Copernicus18501900
+  abstract: >-
+    Deep dive into the 1850-1900 Baseline, so that I can confidently produce
+    graphics which are accurate using the Copernicus ERA5 data. This work has
+    resulted in a change to my graphics in June 2024 onwards, compared to my
+    earlier work in Feb 2024. Terms Abstract I was frustrated that there
+    appeared to be minor inconsistencies
+  accessed:
+    - year: 2025
+      month: 2
+      day: 4
+  author:
+    - family: ReesCatOphuls
+      given: ''
+  citation-key: reescatophuls2024_Copernicus18501900
+  issued:
+    - year: 2024
+      month: 6
+      day: 4
+  language: en-GB
+  title: >-
+    Copernicus 1850-1900 Baseline – Daily GMST Anomaly - Paris Agreement
+    Temperature Index
+  type: post-weblog
+  URL: >-
+    https://parisagreementtemperatureindex.com/copernicus-1850-1900-baseline-daily-gmst/
+...
