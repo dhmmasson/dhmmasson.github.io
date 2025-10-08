@@ -29,7 +29,7 @@ As a researcher I work in the field of Human System Integration at the intersect
 My research focus on designing system to assist human cognitive activities (creativity, decision making). 
 
 
-I have work on Digital Twins, Control Rooms, Digital Passport Product for textile products, Creative support Tools.  
+I have worked on Digital Twins, Control Rooms, Digital Passport Product for textile products, Creative support Tools.  
 
 I teach Computer Science, System Engineering, Scenario Based Design 
 
