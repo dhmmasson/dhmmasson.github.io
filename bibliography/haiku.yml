@@ -3,35 +3,35 @@ ambrosino2016_EncourageExchanges:
     Innovation takes flight,
     With digital tools, we soar,
     New ideas bloom bright.
-  categories: [innovation, digital tools]
+  categories: [Innovation, Digital Tools]
   image: creativity.webp
 ambrosino2016_MethodologyProject:
   haiku: |
     Clusters intertwine,
     STAR guides innovation's path,
     New projects will shine.
-  categories: [innovation, Methodology]
+  categories: [Innovation, Methodology]
   image: creativity2.webp
 ambrosino2017_FosteringCollaborative:
   haiku: |
     Opinions clash bright,
     Sparks of innovation fly,
     Collaboration's light.
-  categories: [innovation, collaboration]
+  categories: [Innovation, collaboration]
   image: creativity3.webp
 ambrosino2017_IdeaBulbSmart:
   haiku: |
     IdeaBulb's soft glow,
     Tracks thoughts in creative flow,
     Insights start to grow.
-  categories: [innovation, Human-Computer, tanglible user interface]
+  categories: [Innovation, Human-Computer, Tangible User Interface]
   image: ideaBulb1.webp
 ambrosino2017_STARMethodologie:
   haiku: |
     Clusters join their might,
     STAR guides collaboration,
     Innovation's bright light.
-  categories: [innovation, collaboration, Methodology]
+  categories: [Innovation, collaboration, Methodology]
   image: creativity.webp
 boy2024_PRODECHuman:
   haiku: |
@@ -115,14 +115,14 @@ lagunasalvado2019_OutilClassement:
     Buildings reborn green,
     Technology's guiding hand,
     Sustainable scene.
-  categories: [Decision-making, digital tools, sustainability]
+  categories: [Decision-making, Digital Tools, sustainability]
   image: building.webp
 lagunasalvado2022_DecisionSupport:
   haiku: |
     Choices, clear and bright,
     Decision support system's aid,
     NZEB, shining light.
-  categories: [Decision-making, digital tools, sustainability]
+  categories: [Decision-making, Digital Tools, sustainability]
   image: building2.webp
 lasseux2022_NAASCubeProgram:
   haiku: |
@@ -276,21 +276,21 @@ salvado2019_DecisionMaking:
     Buildings, old and worn,
     NZEB, a brighter path,
     Decision's seed is born.
-  categories: [Decision-making, sustainability, digital tools]
+  categories: [Decision-making, sustainability, Digital Tools]
   image: building.webp
 villeneuve2019_DecisionDans:
   haiku: |
     Cyber world collides,
     With human touch, in the field,
     Precision farming presides.
-  categories: [Decision-making, digital tools, precision farming]
+  categories: [Decision-making, Digital Tools, precision farming]
   image: PrecisionFarming1.webp
 villeneuve2019_DecisionSupport:
   haiku: |
     Sheep graze, data flows,
     Precision guides the shepherd's hand,
     Technology bestows.
-  categories: [Decision-making, digital tools, precision farming]
+  categories: [Decision-making, Digital Tools, precision farming]
   image: PrecisionFarming2.webp
 williams2024_TinkererMindset:
   haiku: |
@@ -305,4 +305,11 @@ disdier2024_ContextAcquisition:
     Context shapes unseen design,
     Guide with foresight's light.
   categories: [Human-System Integration, Design, Methodology, Context]
+  image: HSI.webp
+boy2020_PRODECCombining:
+  haiku: |
+    PRODEC leads the way,
+    Melding human and machine,
+    Systems in new sway.
+  categories: [Human-System Integration]
   image: HSI.webp
