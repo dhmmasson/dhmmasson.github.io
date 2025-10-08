@@ -12,7 +12,7 @@ description: |
   New ideas bloom bright.
   
 haiku: Innovation takes flight,<br>With digital tools, we soar,<br>New ideas bloom bright.<br>
-categories: [innovation,digital tools]
+categories: [Innovation,Digital Tools]
 image: _cover_images/creativity.webp
 publication: |
   in Proceedings of the 15th Ergo'IA "Ergonomie Et Informatique Avancée" Conference, July 6, 2016 
@@ -47,6 +47,7 @@ citation:
   page: "1–6"
   isbn: "978-1-4503-4785-3"
 pdf: _files/ambrosino2016_EncourageExchanges.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

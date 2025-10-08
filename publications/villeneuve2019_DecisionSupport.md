@@ -12,7 +12,7 @@ description: |
   Technology bestows.
   
 haiku: Sheep graze, data flows,<br>Precision guides the shepherd's hand,<br>Technology bestows.<br>
-categories: [Decision-making,digital tools,precision farming]
+categories: [Decision-making,Digital Tools,precision farming]
 image: _cover_images/PrecisionFarming2.webp
 publication: |
   IFAC-PapersOnLine, 51(34) 
@@ -53,6 +53,7 @@ citation:
   page: "236-241"
   issn: "2405-8963"
 pdf: _files/villeneuve2019_DecisionSupport.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

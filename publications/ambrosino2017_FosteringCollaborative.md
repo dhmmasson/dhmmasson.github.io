@@ -12,7 +12,7 @@ description: |
   Collaboration's light.
   
 haiku: Opinions clash bright,<br>Sparks of innovation fly,<br>Collaboration's light.<br>
-categories: [innovation,collaboration]
+categories: [Innovation,collaboration]
 image: _cover_images/creativity3.webp
 publication: |
   international conference on engineering design (ICED 17), 2017-08-25 
@@ -48,6 +48,7 @@ citation:
   page: "489–498"
   isbn: "978-1-904670-96-4"
 pdf: _files/ambrosino2017_FosteringCollaborative.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

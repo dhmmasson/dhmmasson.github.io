@@ -65,6 +65,7 @@ citation:
   page: "838-839"
   isbn: "978-84-19184-40-5"
 pdf: _files/lasseux2022_NAASCubeProgram.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

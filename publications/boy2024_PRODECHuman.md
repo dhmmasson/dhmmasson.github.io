@@ -15,7 +15,7 @@ haiku: Man and machine dance,<br>PRODEC guides their integration,<br>Systems in 
 categories: [Human-System Integration]
 image: _cover_images/HSI.webp
 publication: |
-  Sys. Eng. 
+  Sys. Eng., 27(5) 
 authors_s: Boy, Guy André; <b>Masson, Dimitri</b>; Durnerin, Élise; Morel, Chloé
 author: 
   - name: 
@@ -42,8 +42,12 @@ citation:
   type: article-journal
   container-title: >
     Systems Engineering
+  volume: "27"
+  issue: "5"
+  page: "805-826"
   issn: "1098-1241, 1520-6858"
 pdf: _files/boy2024_PRODECHuman.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

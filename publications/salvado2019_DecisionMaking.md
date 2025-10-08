@@ -12,7 +12,7 @@ description: |
   Decision's seed is born.
   
 haiku: Buildings, old and worn,<br>NZEB, a brighter path,<br>Decision's seed is born.<br>
-categories: [Decision-making,sustainability,digital tools]
+categories: [Decision-making,sustainability,Digital Tools]
 image: _cover_images/building.webp
 publication: |
   IFAC-PapersOnLine, 52(13) 
@@ -44,6 +44,7 @@ citation:
   page: "313-318"
   issn: "2405-8963"
 pdf: _files/salvado2019_DecisionMaking.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

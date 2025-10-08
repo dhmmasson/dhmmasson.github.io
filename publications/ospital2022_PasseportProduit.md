@@ -41,6 +41,7 @@ citation:
   citation-key: ospital2022_PasseportProduit
   type: speech
 pdf: _files/ospital2022_PasseportProduit.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

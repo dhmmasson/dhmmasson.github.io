@@ -12,7 +12,7 @@ description: |
   Innovation's bright light.
   
 haiku: Clusters join their might,<br>STAR guides collaboration,<br>Innovation's bright light.<br>
-categories: [innovation,collaboration,Methodology]
+categories: [Innovation,collaboration,Methodology]
 image: _cover_images/creativity.webp
 publication: |
   AIP Primeca: Concevoir et produire dans les industries du futur, 2017-04 
@@ -40,6 +40,7 @@ citation:
   publisher: |
     AIP Primeca: Concevoir et produire dans les industries du futur
 pdf: _files/ambrosino2017_STARMethodologie.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

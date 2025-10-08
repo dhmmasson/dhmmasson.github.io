@@ -50,6 +50,7 @@ citation:
   page: "287–288"
   isbn: "978-1-4503-3643-7"
 pdf: _files/pena-arrazola2015_InteractiveGalleries.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

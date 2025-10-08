@@ -12,7 +12,7 @@ description: |
   NZEB, shining light.
   
 haiku: Choices, clear and bright,<br>Decision support system's aid,<br>NZEB, shining light.<br>
-categories: [Decision-making,digital tools,sustainability]
+categories: [Decision-making,Digital Tools,sustainability]
 image: _cover_images/building2.webp
 publication: |
   Building and Environment, 212 
@@ -49,6 +49,7 @@ citation:
   page: "108786"
   issn: "0360-1323"
 pdf: _files/lagunasalvado2022_DecisionSupport.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

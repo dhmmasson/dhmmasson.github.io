@@ -54,8 +54,9 @@ citation:
   publisher: |
     IEEE Computer Society
   page: "1-8"
-  isbn: "9798350327434"
+  isbn: "979-8-3503-2743-4"
 pdf: _files/houzangbe2023_ExplorationPhysiological.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

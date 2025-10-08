@@ -56,6 +56,7 @@ citation:
   page: "59-66"
   issn: "2156-4868"
 pdf: _files/williams2024_TinkererMindset.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

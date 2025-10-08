@@ -47,6 +47,7 @@ citation:
   page: "1-7"
   issn: "2334-5837"
 pdf: _files/ospital2022_TotalTraceability.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

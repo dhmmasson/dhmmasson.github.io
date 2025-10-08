@@ -50,6 +50,7 @@ citation:
   page: "357-360"
   isbn: "978-1-4503-2542-4"
 pdf: _files/masson2014_WebDesign.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

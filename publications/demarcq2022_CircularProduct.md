@@ -47,6 +47,7 @@ citation:
   page: "246-251"
   issn: "1846-6168, 1848-5588"
 pdf: _files/demarcq2022_CircularProduct.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

@@ -40,6 +40,7 @@ citation:
   publisher: |
     INCOSE International Conference on Human Systems Integration
 pdf: _files/rolos2019_OperationsRoom.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

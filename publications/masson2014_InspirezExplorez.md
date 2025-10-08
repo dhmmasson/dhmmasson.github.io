@@ -34,6 +34,7 @@ citation:
   publisher: |
     Université de Grenoble
 pdf: _files/masson2014_InspirezExplorez.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

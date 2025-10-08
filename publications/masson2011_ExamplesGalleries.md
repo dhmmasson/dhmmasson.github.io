@@ -44,6 +44,7 @@ citation:
   page: "61–71"
   isbn: "978-1-4503-0754-3"
 pdf: _files/masson2011_ExamplesGalleries.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

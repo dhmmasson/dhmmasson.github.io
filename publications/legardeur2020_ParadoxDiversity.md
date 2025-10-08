@@ -47,6 +47,7 @@ citation:
     ISPIM Connects Bangkok
   isbn: "978-952-335-566-8"
 pdf: _files/legardeur2020_ParadoxDiversity.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

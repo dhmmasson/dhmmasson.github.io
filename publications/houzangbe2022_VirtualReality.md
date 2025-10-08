@@ -54,6 +54,7 @@ citation:
   volume: "3"
   issn: "2673-4192"
 pdf: _files/houzangbe2022_VirtualReality.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

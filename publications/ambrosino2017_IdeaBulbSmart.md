@@ -12,7 +12,7 @@ description: |
   Insights start to grow.
   
 haiku: IdeaBulb's soft glow,<br>Tracks thoughts in creative flow,<br>Insights start to grow.<br>
-categories: [innovation,Human-Computer,tanglible user interface]
+categories: [Innovation,Human-Computer,Tangible User Interface]
 image: _cover_images/ideaBulb1.webp
 publication: |
   SMART INTERFACES 2017, The Symposium for Empowering and Smart Interfaces in Engineering, 2017-06-25 
@@ -47,6 +47,7 @@ citation:
   page: "70–74"
   isbn: "978-1-5108-4308-0"
 pdf: _files/ambrosino2017_IdeaBulbSmart.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

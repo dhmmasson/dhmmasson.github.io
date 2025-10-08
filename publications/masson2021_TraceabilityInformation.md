@@ -44,6 +44,7 @@ citation:
     Global Fashion Conference 2021
   page: "1–7"
 pdf: _files/masson2021_TraceabilityInformation.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

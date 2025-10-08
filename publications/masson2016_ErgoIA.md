@@ -40,6 +40,7 @@ citation:
     ACM
   isbn: "978-1-4503-4785-3"
 pdf: 
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

@@ -43,6 +43,7 @@ citation:
   container-title: >
     S.Mart
 pdf: _files/millet2019_DefinitionEspace.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

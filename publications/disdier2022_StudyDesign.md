@@ -44,6 +44,7 @@ citation:
   citation-key: disdier2022_StudyDesign
   type: speech
 pdf: _files/disdier2022_StudyDesign.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

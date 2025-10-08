@@ -46,6 +46,7 @@ citation:
     University for the creative arts
   page: "8 p."
 pdf: _files/ospital2023_DevelopingData.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

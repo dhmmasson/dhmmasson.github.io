@@ -47,6 +47,7 @@ citation:
   page: "186-197"
   issn: "1754-3266"
 pdf: _files/ospital2023_ProductTransparency.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

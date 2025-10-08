@@ -44,6 +44,7 @@ citation:
     Systems Engineering
   issn: "1520-6858"
 pdf: _files/disdier2024_DefiningCharacterizing.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

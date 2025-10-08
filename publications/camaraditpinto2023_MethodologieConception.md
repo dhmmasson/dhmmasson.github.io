@@ -48,6 +48,7 @@ citation:
   publisher: |
     CIGI QUALITA MOSIM 2023
 pdf: _files/camaraditpinto2023_MethodologieConception.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

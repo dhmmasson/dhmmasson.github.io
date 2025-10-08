@@ -49,6 +49,7 @@ citation:
   page: "1617-1626"
   issn: "2732-527X"
 pdf: _files/pinto2021_RequirementsPrototyping.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

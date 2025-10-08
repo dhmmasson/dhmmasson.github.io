@@ -12,7 +12,7 @@ description: |
   New projects will shine.
   
 haiku: Clusters intertwine,<br>STAR guides innovation's path,<br>New projects will shine.<br>
-categories: [innovation,Methodology]
+categories: [Innovation,Methodology]
 image: _cover_images/creativity2.webp
 publication: |
    
@@ -41,6 +41,7 @@ citation:
   citation-key: ambrosino2016_MethodologyProject
   type: report
 pdf: _files/ambrosino2016_MethodologyProject.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

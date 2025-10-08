@@ -12,7 +12,7 @@ description: |
   Sustainable scene.
   
 haiku: Buildings reborn green,<br>Technology's guiding hand,<br>Sustainable scene.<br>
-categories: [Decision-making,digital tools,sustainability]
+categories: [Decision-making,Digital Tools,sustainability]
 image: _cover_images/building.webp
 publication: |
   in CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA, 2019-06 
@@ -40,6 +40,7 @@ citation:
   container-title: >
     CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA
 pdf: _files/lagunasalvado2019_OutilClassement.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

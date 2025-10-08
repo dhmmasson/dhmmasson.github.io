@@ -53,6 +53,7 @@ citation:
   page: "869-873"
   issn: "2405-8963"
 pdf: _files/camaraditpinto2021_DigitalTwin.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

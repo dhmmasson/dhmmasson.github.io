@@ -44,6 +44,7 @@ citation:
   page: "87–92"
   isbn: "978-1-4503-0083-4"
 pdf: _files/masson2010_MagellanEvolutionary.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

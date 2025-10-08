@@ -47,6 +47,7 @@ citation:
   page: "3841-3850"
   issn: "2220-4342"
 pdf: _files/millet2019_DefinitionSportHealth.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

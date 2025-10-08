@@ -50,6 +50,7 @@ citation:
   page: "775–799"
   issn: "0954-4828"
 pdf: _files/camaraditpinto2024_RealityAnchor.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

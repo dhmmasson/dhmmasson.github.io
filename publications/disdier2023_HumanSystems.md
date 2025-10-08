@@ -49,6 +49,7 @@ citation:
   page: "3561-3570"
   issn: "2732-527X"
 pdf: _files/disdier2023_HumanSystems.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

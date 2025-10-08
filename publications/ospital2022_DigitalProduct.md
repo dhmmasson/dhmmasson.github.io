@@ -43,8 +43,9 @@ citation:
   publisher: |
     Global Fashion Conference 2022
   page: "11"
-  isbn: "978-989-54-2633-1"
+  isbn: "978-989-54263-3-1"
 pdf: _files/ospital2022_DigitalProduct.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

@@ -43,6 +43,7 @@ citation:
     2nd international workshop on semantic models for adaptive interactive systems
   page: "5p"
 pdf: _files/demeure2011_GraphsModels.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

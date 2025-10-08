@@ -12,7 +12,7 @@ description: |
   Precision farming presides.
   
 haiku: Cyber world collides,<br>With human touch, in the field,<br>Precision farming presides.<br>
-categories: [Decision-making,digital tools,precision farming]
+categories: [Decision-making,Digital Tools,precision farming]
 image: _cover_images/PrecisionFarming1.webp
 publication: |
   in CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA, 2019-06 
@@ -49,6 +49,7 @@ citation:
   container-title: >
     CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA
 pdf: _files/villeneuve2019_DecisionDans.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF

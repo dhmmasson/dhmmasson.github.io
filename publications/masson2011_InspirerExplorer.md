@@ -44,6 +44,7 @@ citation:
   page: "1-7"
   isbn: "978-1-4503-0822-9"
 pdf: _files/masson2011_InspirerExplorer.pdf
+google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
