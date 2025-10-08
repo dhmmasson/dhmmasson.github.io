@@ -7,7 +7,6 @@
       "asciiBibLaTeX": false,
       "asciiBibTeX": true,
       "autoAbbrev": true,
-      "autoAbbrevStyle": "",
       "autoExport": "immediate",
       "autoExportDelay": 5,
       "autoExportIdleWait": 10,
@@ -21,15 +20,20 @@
       "biblatexExtendedDateFormat": true,
       "biblatexExtendedNameFormat": true,
       "biblatexExtractEprint": true,
+      "biblatexUsePrefix": true,
       "bibtexEditionOrdinal": false,
       "bibtexParticleNoOp": false,
       "bibtexURL": "off",
       "cache": true,
+      "cacheDelete": false,
+      "cacheRetain": false,
       "charmap": "",
+      "chinese": false,
+      "chineseSplitName": true,
       "citeCommand": "cite",
       "citekeyCaseInsensitive": true,
       "citekeyFold": true,
-      "citekeyFormat": "auth.lower + year + \"_\" + veryshorttitle(2,2)",
+      "citekeyFormat": "auth.lower + year + \"_\" + veryshorttitle(2, 2)",
       "citekeySearch": true,
       "citekeyUnsafeChars": "\\\"#%'(),={}~",
       "csquotes": "",
@@ -51,15 +55,15 @@
       "importJabRefAbbreviations": true,
       "importJabRefStrings": true,
       "importNoteToExtra": "",
+      "importPlaceEvent": "inproceedings,conference,presentation,talk",
       "importSentenceCase": "on+guess",
       "importSentenceCaseQuoted": true,
       "importUnknownTexCommand": "ignore",
       "itemObserverDelay": 5,
       "jabrefFormat": 0,
-      "jieba": false,
+      "japanese": false,
       "keyConflictPolicy": "change",
       "keyScope": "library",
-      "kuroshiro": false,
       "language": "langid",
       "mapMath": "",
       "mapText": "",
@@ -78,7 +82,6 @@
       "rawImports": false,
       "rawLaTag": "#LaTeX",
       "relativeFilePaths": false,
-      "retainCache": false,
       "separatorList": "and",
       "separatorNames": "and",
       "skipFields": "",
@@ -94,18 +97,17 @@
       "Items": true,
       "Normalize": false,
       "Preferences": true,
-      "biblatexAPA": false,
-      "biblatexChicago": false,
-      "exportDir": "/Users/dimitri/Documents/workspace/projets/dhmmasson/dhmmasson.github.io/bibliography",
       "exportFileData": false,
-      "exportNotes": 1,
-      "exportPath": "/Users/dimitri/Documents/workspace/projets/dhmmasson/dhmmasson.github.io/bibliography/bibliography.json",
+      "exportNotes": true,
       "keepUpdated": false,
-      "worker": true
+      "worker": true,
+      "exportDir": "/Users/dimitri/Documents/workspace/projets/dhmmasson/dhmmasson.github.io/bibliography",
+      "exportPath": "/Users/dimitri/Documents/workspace/projets/dhmmasson/dhmmasson.github.io/bibliography/bibliography.json"
     }
   },
   "version": {
-    "bbt": "6.7.227"
+    "zotero": "7.0.26",
+    "bbt": "7.0.50"
   },
   "collections": {},
   "items": [
@@ -205,6 +207,7 @@
         {
           "itemType": "attachment",
           "title": "Ambrosino et al. - 2016 - Encourage exchanges during a creative session by t.pdf",
+          "url": "https://hal.science/hal-01346087v1/file/ErgoIA2016%20IdeaValuation.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-03T22:25:20Z",
@@ -257,6 +260,7 @@
       "attachments": [],
       "notes": [],
       "citationKey": "ambrosino2016_Ideavaluation",
+      "autoJournalAbbreviation": "",
       "itemKey": "XDGAZYM7",
       "libraryID": 1,
       "select": "zotero://select/library/items/XDGAZYM7"
@@ -335,6 +339,7 @@
         {
           "itemType": "attachment",
           "title": "Ambrosino et al. - 2016 - D. 1.1 Methodology of project emergence in intercl.pdf",
+          "url": "https://hal.science/hal-01440894v1/file/NEPTUNE_Deliverable%2Breport%2BD1.1_Final.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T21:39:24Z",
@@ -346,6 +351,7 @@
       ],
       "notes": [],
       "citationKey": "ambrosino2016_MethodologyProject",
+      "autoJournalAbbreviation": "",
       "itemKey": "JLUBG3XS",
       "libraryID": 1,
       "select": "zotero://select/library/items/JLUBG3XS"
@@ -423,6 +429,7 @@
         {
           "itemType": "attachment",
           "title": "Ambrosino et al. - 2017 - Fostering collaborative project emergence through .pdf",
+          "url": "https://www.designsociety.org/download-publication/39867/Fostering+collaborative+project+emergence+through+divergence+of+opinion",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-03T21:20:23Z",
@@ -507,6 +514,7 @@
         {
           "itemType": "attachment",
           "title": "Ambrosino et al. - 2017 - IdeaBulb A Smart and Tangible User Interface for .pdf",
+          "url": "https://www.researchgate.net/profile/Julien-Ambrosino/publication/318038879_IdeaBulb_A_Smart_and_Tangible_User_Interface_for_Monitoring_Ideation_During_Creative_Sessions/links/59c8e6b50f7e9bd2c01a3e74/IdeaBulb-A-Smart-and-Tangible-User-Interface-for-Monitoring-Ideation-During-Creative-Sessions.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-03T22:15:16Z",
@@ -606,6 +614,7 @@
         {
           "itemType": "attachment",
           "title": "Ambrosino et al. - 2017 - STAR une méthodologie d'animation pour faciliter .pdf",
+          "url": "https://hal.science/hal-01513588v1/file/M%C3%A9thodologie%20STAR%20-%20Cr%C3%A9ativit%C3%A9%20%26%20Innovation.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-03T22:27:49Z",
@@ -617,6 +626,7 @@
       ],
       "notes": [],
       "citationKey": "ambrosino2017_STARMethodologie",
+      "autoJournalAbbreviation": "",
       "itemKey": "7TGXITMR",
       "libraryID": 1,
       "select": "zotero://select/library/items/7TGXITMR"
@@ -682,6 +692,7 @@
       "attachments": [],
       "notes": [],
       "citationKey": "boy2020_PRODECCombining",
+      "autoJournalAbbreviation": "",
       "itemKey": "63TGZLHN",
       "libraryID": 1,
       "select": "zotero://select/library/items/63TGZLHN"
@@ -832,6 +843,7 @@
         {
           "itemType": "attachment",
           "title": "Snapshot",
+          "url": "https://incose.onlinelibrary.wiley.com/doi/full/10.1002/sys.21751",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-03-12T09:43:19Z",
@@ -843,6 +855,7 @@
       ],
       "notes": [],
       "citationKey": "boy2024_PRODECHuman",
+      "autoJournalAbbreviation": "Syst. Eng.",
       "itemKey": "KZ6QXESW",
       "libraryID": 1,
       "select": "zotero://select/library/items/KZ6QXESW"
@@ -956,6 +969,7 @@
         {
           "itemType": "attachment",
           "title": "ScienceDirect Snapshot",
+          "url": "https://www.sciencedirect.com/science/article/pii/S240589632100851X",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-07T00:22:52Z",
@@ -967,6 +981,7 @@
       ],
       "notes": [],
       "citationKey": "camaraditpinto2021_DigitalTwin",
+      "autoJournalAbbreviation": "IFAC-Pap.",
       "itemKey": "NNEJBYLT",
       "libraryID": 1,
       "select": "zotero://select/library/items/NNEJBYLT"
@@ -1073,6 +1088,7 @@
         {
           "itemType": "attachment",
           "title": "Camara Dit Pinto et al. - 2023 - Méthodologie de conception de jumeau numérique pou.pdf",
+          "url": "https://hal.science/hal-04206938v1/file/CIGI_QUALITA_MOSIM_2023_paper_4212.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T07:59:53Z",
@@ -1169,6 +1185,7 @@
         {
           "itemType": "attachment",
           "title": "Snapshot",
+          "url": "https://www.tandfonline.com/eprint/QAVK6TAQU7G8QVQ2HFX8/full?target=10.1080/09544828.2024.2336838",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-04-10T20:48:10Z",
@@ -1180,6 +1197,7 @@
       ],
       "notes": [],
       "citationKey": "camaraditpinto2024_RealityAnchor",
+      "autoJournalAbbreviation": "J. Eng. Des.",
       "itemKey": "UVQBM3U9",
       "libraryID": 1,
       "select": "zotero://select/library/items/UVQBM3U9"
@@ -1245,6 +1263,7 @@
         {
           "itemType": "attachment",
           "title": "Demarcq et al. - 2022 - Towards a Circular Product (Re)Design Methodology.pdf",
+          "url": "https://hrcak.srce.hr/file/400304",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-03T21:37:11Z",
@@ -1256,6 +1275,7 @@
       ],
       "notes": [],
       "citationKey": "demarcq2022_CircularProduct",
+      "autoJournalAbbreviation": "Teh. Glas.",
       "itemKey": "FE6QX6TW",
       "libraryID": 1,
       "select": "zotero://select/library/items/FE6QX6TW"
@@ -1388,6 +1408,7 @@
         {
           "itemType": "attachment",
           "title": "Disdier - 2022 - Study and design of a remote and virtual air traff.pdf",
+          "url": "https://hal.science/hal-03971460v1/file/poster_ed.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T13:17:08Z",
@@ -1412,6 +1433,7 @@
         }
       ],
       "citationKey": "disdier2022_StudyDesign",
+      "autoJournalAbbreviation": "",
       "itemKey": "IDZN6E2X",
       "libraryID": 1,
       "select": "zotero://select/library/items/IDZN6E2X"
@@ -1499,6 +1521,7 @@
       ],
       "notes": [],
       "citationKey": "disdier2023_HumanSystems",
+      "autoJournalAbbreviation": "Proc. Des. Soc.",
       "itemKey": "4RPCNNDD",
       "libraryID": 1,
       "select": "zotero://select/library/items/4RPCNNDD"
@@ -1557,6 +1580,7 @@
       ],
       "notes": [],
       "citationKey": "disdier2024_ContextAcquisition",
+      "autoJournalAbbreviation": "",
       "itemKey": "A6SAANDE",
       "libraryID": 1,
       "select": "zotero://select/library/items/A6SAANDE"
@@ -1632,6 +1656,7 @@
         {
           "itemType": "attachment",
           "title": "Disdier et al. - 2024 - Defining and characterizing the operational contex.pdf",
+          "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/sys.21775",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-03T21:34:37Z",
@@ -1643,6 +1668,7 @@
         {
           "itemType": "attachment",
           "title": "Snapshot",
+          "url": "https://incose.onlinelibrary.wiley.com/doi/10.1002/sys.21775",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-03T21:34:56Z",
@@ -1654,6 +1680,7 @@
       ],
       "notes": [],
       "citationKey": "disdier2024_DefiningCharacterizing",
+      "autoJournalAbbreviation": "Syst. Eng.",
       "itemKey": "R295NUT6",
       "libraryID": 1,
       "select": "zotero://select/library/items/R295NUT6"
@@ -1753,6 +1780,7 @@
         {
           "itemType": "attachment",
           "title": "Houzangbe et al. - 2022 - Is virtual reality the solution A comparison betw.pdf",
+          "url": "https://www.frontiersin.org/articles/10.3389/frvir.2022.958223/pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-03T21:39:18Z",
@@ -1764,6 +1792,7 @@
       ],
       "notes": [],
       "citationKey": "houzangbe2022_VirtualReality",
+      "autoJournalAbbreviation": "Front. Virtual Real.",
       "itemKey": "6RJ4FB6A",
       "libraryID": 1,
       "select": "zotero://select/library/items/6RJ4FB6A"
@@ -1784,7 +1813,7 @@
       "rights": "All rights reserved",
       "place": "Cambridge, United States",
       "publisher": "IEEE Computer Society",
-      "ISBN": "9798350327434",
+      "ISBN": "979-8-3503-2743-4",
       "pages": "1-8",
       "proceedingsTitle": "2023 11th International Conference on Affective Computing and Intelligent Interaction (ACII)",
       "conferenceName": "2023 11th International Conference on Affective Computing and Intelligent Interaction (ACII)",
@@ -1843,6 +1872,7 @@
         {
           "itemType": "attachment",
           "title": "Houzangbe et al. - 2023 - Exploration of Physiological Arousal in Divergent .pdf",
+          "url": "https://hal.science/hal-04416687v1/file/LAMPA_ACII_2023_HOUZANGBE.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-03T22:41:45Z",
@@ -1931,6 +1961,7 @@
         {
           "itemType": "attachment",
           "title": "Laguna Salvado et al. - 2019 - Outil de classement de technologies pour l'aide à .pdf",
+          "url": "https://hal.science/hal-02268562v1/file/paper_53.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T08:03:48Z",
@@ -2033,6 +2064,7 @@
         {
           "itemType": "attachment",
           "title": "Laguna Salvadó et al. - 2022 - Decision Support System for technology selection b.pdf",
+          "url": "https://hal.archives-ouvertes.fr/hal-03552184/file/Laguna2022.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-03T21:53:28Z",
@@ -2044,6 +2076,7 @@
         {
           "itemType": "attachment",
           "title": "ScienceDirect Snapshot",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0360132322000348",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-03T21:53:24Z",
@@ -2076,6 +2109,7 @@
         }
       ],
       "citationKey": "lagunasalvado2022_DecisionSupport",
+      "autoJournalAbbreviation": "Build. Environ.",
       "itemKey": "S7XB6ZU7",
       "libraryID": 1,
       "select": "zotero://select/library/items/S7XB6ZU7"
@@ -2180,6 +2214,7 @@
         {
           "itemType": "attachment",
           "title": "Lasseux et al. - 2022 - NAASCube program, an innovative aerospace program .pdf",
+          "url": "https://hal.science/hal-04300180v1/file/SSEA-2022-Abstract_NAASC-4thSSEA-rev3.1-20Mars21.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T04:59:26Z",
@@ -2290,6 +2325,7 @@
         {
           "itemType": "attachment",
           "title": "Legardeur et al. - 2020 - The paradox of diversity's influence on the creati.pdf",
+          "url": "https://hal.science/hal-02881482v1/file/Paper_JL-DM-MG-KP.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T05:09:17Z",
@@ -2360,6 +2396,7 @@
         {
           "itemType": "attachment",
           "title": "Masson et al. - 2010 - Magellan, an evolutionary system to foster user in.pdf",
+          "url": "https://hal.inria.fr/inria-00498580/file/eicslbr145-masson.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T05:20:57Z",
@@ -2453,6 +2490,7 @@
         {
           "itemType": "attachment",
           "title": "Masson et al. - 2011 - Examples Galleries Generated by Interactive Geneti.pdf",
+          "url": "https://hal.inria.fr/docs/00/75/83/39/PDF/Masson-Demeure-Calvary_Desire2011.pdf",
           "tags": [],
           "relations": {
             "dc:replaces": [
@@ -2577,6 +2615,7 @@
         {
           "itemType": "attachment",
           "title": "HAL Snapshot",
+          "url": "https://hal.science/hal-00760160v1",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T21:46:49Z",
@@ -2588,6 +2627,7 @@
         {
           "itemType": "attachment",
           "title": "Masson et al. - 2011 - Inspirer, explorer Magellan, un environnement int.pdf",
+          "url": "https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=6b29337e5bece2a45b6ba0fbd75bae7e464b07f0",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T05:44:52Z",
@@ -2712,6 +2752,7 @@
       ],
       "notes": [],
       "citationKey": "masson2014_InspirezExplorez",
+      "autoJournalAbbreviation": "",
       "itemKey": "MTGKKIDG",
       "libraryID": 1,
       "select": "zotero://select/library/items/MTGKKIDG"
@@ -2776,6 +2817,7 @@
         {
           "itemType": "attachment",
           "title": "Masson et al. - 2014 - Web design galleries please give me similar style.pdf",
+          "url": "https://www.rfai.li.univ-tours.fr/PagesPerso/zabuaisheh/documents/p357-masson.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T05:19:36Z",
@@ -2840,6 +2882,7 @@
       "attachments": [],
       "notes": [],
       "citationKey": "masson2016_DialoJ",
+      "autoJournalAbbreviation": "",
       "itemKey": "S33URU5S",
       "libraryID": 1,
       "select": "zotero://select/library/items/S33URU5S"
@@ -2887,6 +2930,7 @@
       "attachments": [],
       "notes": [],
       "citationKey": "masson2016_ErgoIA",
+      "autoJournalAbbreviation": "",
       "itemKey": "6FJ4W4G3",
       "libraryID": 1,
       "select": "zotero://select/library/items/6FJ4W4G3"
@@ -2934,6 +2978,7 @@
       "attachments": [],
       "notes": [],
       "citationKey": "masson2018_ErgoIA",
+      "autoJournalAbbreviation": "",
       "itemKey": "2RP7H3XZ",
       "libraryID": 1,
       "select": "zotero://select/library/items/2RP7H3XZ"
@@ -2984,6 +3029,7 @@
       "attachments": [],
       "notes": [],
       "citationKey": "masson2020_Tamarin",
+      "autoJournalAbbreviation": "",
       "itemKey": "NBVHBV2C",
       "libraryID": 1,
       "select": "zotero://select/library/items/NBVHBV2C"
@@ -3064,6 +3110,7 @@
         {
           "itemType": "attachment",
           "title": "Masson et al. - 2021 - Traceability information to communicate to consume.pdf",
+          "url": "https://hal.science/hal-03462333v1/file/GFC2021_PAPER_August_Draft.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T05:47:49Z",
@@ -3075,9 +3122,78 @@
       ],
       "notes": [],
       "citationKey": "masson2021_TraceabilityInformation",
+      "autoJournalAbbreviation": "",
       "itemKey": "MVUZ9P35",
       "libraryID": 1,
       "select": "zotero://select/library/items/MVUZ9P35"
+    },
+    {
+      "key": "6ZH3IWJH",
+      "version": 1186,
+      "itemType": "journalArticle",
+      "title": "FIRE: a human-centered framework for digital twin design",
+      "abstractNote": "ABSTRACT The integration of human perspectives into digital twin (DT) design for sociotechnical systems (STS) is essential for addressing the complex relationship between social and technical elements. Despite advances in DT technology, its application to STS demands a human-centered approach that considers usability, user experience, and contextual factors. This work introduces FIRE (Framework for representing Intrinsic, Reflexive, and Extrinsic dimensions of a digital twin), a framework designed to guide the development of human-centered DTs. FIRE assesses DTs across three dimensions: Intrinsic (system autonomy), Extrinsic (contextual integration), and Reflexive (self-awareness and adaptability). As a design guide, FIRE ensures that human and social perspectives are integrated during the design. As a descriptive tool, FIRE provides valuable insights into existing DTs from the literature.",
+      "date": "2025-10-08",
+      "url": "https://incose.onlinelibrary.wiley.com/doi/abs/10.1002/sys.70014",
+      "extra": "tex.eprint: https://incose.onlinelibrary.wiley.com/doi/pdf/10.1002/sys.70014",
+      "volume": "n/a",
+      "pages": "e70014",
+      "publicationTitle": "Systems Engineering",
+      "DOI": "https://doi.org/10.1002/sys.70014",
+      "issue": "n/a",
+      "creators": [
+        {
+          "firstName": "Dimitri",
+          "lastName": "Masson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Eric",
+          "lastName": "Villeneuve",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "complex systems"
+        },
+        {
+          "tag": "design tool"
+        },
+        {
+          "tag": "digital twin"
+        },
+        {
+          "tag": "human-system integration"
+        },
+        {
+          "tag": "sociotechnical system"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2025-10-08T18:44:33Z",
+      "dateModified": "2025-10-08T18:45:32Z",
+      "uri": "http://zotero.org/users/2761519/items/6ZH3IWJH",
+      "itemID": 1052,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-10-08T18:46:06Z",
+          "dateModified": "2025-10-08T18:46:06Z",
+          "uri": "http://zotero.org/users/2761519/items/FYDGRBI3",
+          "path": "/Users/dimitri/Zotero/storage/FYDGRBI3/Masson and Villeneuve - 2025 - FIRE a human-centered framework for digital twin design.pdf",
+          "select": "zotero://select/library/items/FYDGRBI3"
+        }
+      ],
+      "notes": [],
+      "citationKey": "masson2025_FIREHumancentered",
+      "autoJournalAbbreviation": "Syst. Eng.",
+      "itemKey": "6ZH3IWJH",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/6ZH3IWJH"
     },
     {
       "key": "AJBQY2TF",
@@ -3133,6 +3249,7 @@
         {
           "itemType": "attachment",
           "title": "Millet et al. - 2019 - Définition d'un espace sémantique Sport-Santé.pdf",
+          "url": "https://hal.science/hal-02151626v1/file/d%C3%A9finition%20d%27un%20espace%20s%C3%A9mantique%20sport-sant%C3%A9%20.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T05:49:16Z",
@@ -3222,6 +3339,7 @@
         {
           "itemType": "attachment",
           "title": "Millet et al. - 2019 - Definition of a “Sport-Health” Semantic Space.pdf",
+          "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2ECC4383FE7A47AE1374CACC235A0E99/S2220434219003913a.pdf/div-class-title-definition-of-a-sport-health-semantic-space-div.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T06:39:30Z",
@@ -3233,6 +3351,7 @@
       ],
       "notes": [],
       "citationKey": "millet2019_DefinitionSportHealth",
+      "autoJournalAbbreviation": "Proc. Des. Soc. Int. Conf. Eng. Des.",
       "itemKey": "SRFZBWC6",
       "libraryID": 1,
       "select": "zotero://select/library/items/SRFZBWC6"
@@ -3253,7 +3372,7 @@
       "rights": "All rights reserved",
       "extra": "award: Best innovation paper",
       "place": "Berlin, Germany",
-      "ISBN": "978-989-54-2633-1",
+      "ISBN": "978-989-54263-3-1",
       "pages": "11",
       "conferenceName": "Global Fashion Conference 2022",
       "DOI": "10.57649/GFC.978-989-54263",
@@ -3324,6 +3443,7 @@
         {
           "itemType": "attachment",
           "title": "Ospital et al. - 2022 - A digital product passport to support product tran.pdf",
+          "url": "https://hal.science/hal-04082837v1/file/GFC2022_PAPER_Ospital%20071022.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T06:46:50Z",
@@ -3335,6 +3455,7 @@
       ],
       "notes": [],
       "citationKey": "ospital2022_DigitalProduct",
+      "autoJournalAbbreviation": "",
       "itemKey": "97KLMF6Q",
       "libraryID": 1,
       "select": "zotero://select/library/items/97KLMF6Q"
@@ -3408,6 +3529,7 @@
         {
           "itemType": "attachment",
           "title": "Ospital et al. - 2022 - Passeport produit numérique pour permettre traçabi.pdf",
+          "url": "https://hal.science/hal-03720549v1/file/SAGIP%20PANTXIKA.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T07:06:01Z",
@@ -3419,6 +3541,7 @@
       ],
       "notes": [],
       "citationKey": "ospital2022_PasseportProduit",
+      "autoJournalAbbreviation": "",
       "itemKey": "57J2C8TZ",
       "libraryID": 1,
       "select": "zotero://select/library/items/57J2C8TZ"
@@ -3504,6 +3627,7 @@
         {
           "itemType": "attachment",
           "title": "Ospital et al. - 2022 - Toward total traceability and full transparency co.pdf",
+          "url": "https://hal.archives-ouvertes.fr/hal-03462235/file/HSI%20Pantxika%20Ospital%20Overleaf.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T06:55:59Z",
@@ -3515,6 +3639,7 @@
         {
           "itemType": "attachment",
           "title": "Snapshot",
+          "url": "https://incose.onlinelibrary.wiley.com/doi/abs/10.1002/iis2.12866",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T06:55:59Z",
@@ -3526,6 +3651,7 @@
       ],
       "notes": [],
       "citationKey": "ospital2022_TotalTraceability",
+      "autoJournalAbbreviation": "INCOSE Int. Symp. INCOSE Hum. Syst. Integr. Conf.",
       "itemKey": "MTU3GRH3",
       "libraryID": 1,
       "select": "zotero://select/library/items/MTU3GRH3"
@@ -3608,6 +3734,7 @@
         {
           "itemType": "attachment",
           "title": "Ospital et al. - 2023 - Toward Developing a Data Model for a Digital Produ.pdf",
+          "url": "https://hal.science/hal-04082862v1/file/Ospital_SI-Paper%20final.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T13:46:59Z",
@@ -3717,6 +3844,7 @@
       ],
       "notes": [],
       "citationKey": "ospital2023_ProductTransparency",
+      "autoJournalAbbreviation": "Int. J. Fash. Des. Technol. Educ.",
       "itemKey": "9XHEZS3A",
       "libraryID": 1,
       "select": "zotero://select/library/items/9XHEZS3A"
@@ -3901,6 +4029,7 @@
         {
           "itemType": "attachment",
           "title": "Pinto et al. - 2021 - From requirements to prototyping Application of h.pdf",
+          "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/8D8885AD4F02B5B97877C557CF2D8D79/S2732527X21004235a.pdf/div-class-title-from-requirements-to-prototyping-application-of-human-system-integration-methodology-to-digital-twin-design-div.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T07:33:55Z",
@@ -3912,6 +4041,7 @@
       ],
       "notes": [],
       "citationKey": "pinto2021_RequirementsPrototyping",
+      "autoJournalAbbreviation": "Proc. Des. Soc.",
       "itemKey": "FEAVYCUB",
       "libraryID": 1,
       "select": "zotero://select/library/items/FEAVYCUB"
@@ -3965,6 +4095,7 @@
         {
           "itemType": "attachment",
           "title": "Rolos et al. - 2019 - Operations room design for the control of a fleet .pdf",
+          "url": "https://hal.science/hal-02340856v1/file/Operations%20room%20design%20for%20the%20control%20of%20a%20fleet%20of%20robots.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T08:00:52Z",
@@ -3989,6 +4120,7 @@
         }
       ],
       "citationKey": "rolos2019_OperationsRoom",
+      "autoJournalAbbreviation": "",
       "itemKey": "EDY49QJD",
       "libraryID": 1,
       "select": "zotero://select/library/items/EDY49QJD"
@@ -4074,6 +4206,7 @@
         {
           "itemType": "attachment",
           "title": "Salvadό et al. - 2019 - Decision Making in Near Zero Energy Building Refur.pdf",
+          "url": "https://hal.archives-ouvertes.fr/hal-02362849/file/1-s2.0-S2405896319311462-main.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-03T21:51:31Z",
@@ -4085,6 +4218,7 @@
         {
           "itemType": "attachment",
           "title": "ScienceDirect Snapshot",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2405896319311462",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-03T21:51:26Z",
@@ -4096,6 +4230,7 @@
       ],
       "notes": [],
       "citationKey": "salvado2019_DecisionMaking",
+      "autoJournalAbbreviation": "IFAC-Pap.",
       "itemKey": "K6YVD4AN",
       "libraryID": 1,
       "select": "zotero://select/library/items/K6YVD4AN"
@@ -4216,6 +4351,7 @@
         {
           "itemType": "attachment",
           "title": "Villeneuve et al. - 2019 - Décision dans les systèmes cyber-physiques et huma.pdf",
+          "url": "https://hal.science/hal-02268577v1/file/paper_7.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-04T08:28:53Z",
@@ -4324,6 +4460,7 @@
         {
           "itemType": "attachment",
           "title": "ScienceDirect Snapshot",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2405896319300503",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-03T21:55:25Z",
@@ -4335,6 +4472,7 @@
         {
           "itemType": "attachment",
           "title": "Villeneuve et al. - 2019 - Decision support in precision sheep farming.pdf",
+          "url": "https://hal.archives-ouvertes.fr/hal-01973339/file/1-s2.0-S2405896319300503-main.pdf",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-03T21:55:32Z",
@@ -4346,6 +4484,7 @@
       ],
       "notes": [],
       "citationKey": "villeneuve2019_DecisionSupport",
+      "autoJournalAbbreviation": "IFAC-Pap.",
       "itemKey": "J3EFPY8C",
       "libraryID": 1,
       "select": "zotero://select/library/items/J3EFPY8C"
@@ -4423,6 +4562,7 @@
         {
           "itemType": "attachment",
           "title": "Snapshot",
+          "url": "https://incose.onlinelibrary.wiley.com/doi/abs/10.1002/inst.12494",
           "tags": [],
           "relations": {},
           "dateAdded": "2024-08-03T21:57:12Z",
@@ -4445,6 +4585,7 @@
       ],
       "notes": [],
       "citationKey": "williams2024_TinkererMindset",
+      "autoJournalAbbreviation": "",
       "itemKey": "PZ8NKH34",
       "libraryID": 1,
       "select": "zotero://select/library/items/PZ8NKH34"
