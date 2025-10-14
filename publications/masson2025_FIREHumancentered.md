@@ -13,7 +13,7 @@ description: |
   
 haiku: Through FIRE’s bright design,<br>Intrinsic meets Extrinsic,<br>Reflexive blooms bright.<br>
 categories: [Human-System Integration,Digital Twin,Design,Framework]
-image: _cover_images/D.webp
+image: _cover_images/fire.webp
 publication: |
   undefined 
 authors_s: <b>Masson, Dimitri</b>; Villeneuve, Eric
@@ -39,12 +39,12 @@ citation:
   volume: "n/a"
   issue: "n/a"
   page: "e70014"
-pdf: _files/masson2025_FIREHumancentered.pdf
+pdf: ./_files/masson2025_FIREHumancentered.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/masson2025_FIREHumancentered.pdf
+    url: ./_files/masson2025_FIREHumancentered.pdf
   - icon: ai ai-hal
     name: HAL
     url: 
@@ -55,7 +55,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/masson2025_FIREHumancentered.pdf width=100% height=800 >}} 
+{{< pdf ./_files/masson2025_FIREHumancentered.pdf width=100% height=800 >}} 
 :::
 
 

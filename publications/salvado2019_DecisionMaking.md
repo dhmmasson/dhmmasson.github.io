@@ -43,12 +43,12 @@ citation:
   issue: "13"
   page: "313-318"
   issn: "2405-8963"
-pdf: _files/salvado2019_DecisionMaking.pdf
+pdf: ./_files/salvado2019_DecisionMaking.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/salvado2019_DecisionMaking.pdf
+    url: ./_files/salvado2019_DecisionMaking.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-02362849v2
@@ -59,7 +59,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/salvado2019_DecisionMaking.pdf width=100% height=800 >}} 
+{{< pdf ./_files/salvado2019_DecisionMaking.pdf width=100% height=800 >}} 
 :::
 
 

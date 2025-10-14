@@ -46,12 +46,12 @@ citation:
   issue: "2"
   page: "246-251"
   issn: "1846-6168, 1848-5588"
-pdf: _files/demarcq2022_CircularProduct.pdf
+pdf: ./_files/demarcq2022_CircularProduct.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/demarcq2022_CircularProduct.pdf
+    url: ./_files/demarcq2022_CircularProduct.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-03669358v1
@@ -62,7 +62,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/demarcq2022_CircularProduct.pdf width=100% height=800 >}} 
+{{< pdf ./_files/demarcq2022_CircularProduct.pdf width=100% height=800 >}} 
 :::
 
 

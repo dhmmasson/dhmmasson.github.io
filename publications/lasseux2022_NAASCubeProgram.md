@@ -64,12 +64,12 @@ citation:
     4th Symposium on Space Educational Activities
   page: "838-839"
   isbn: "978-84-19184-40-5"
-pdf: _files/lasseux2022_NAASCubeProgram.pdf
+pdf: ./_files/lasseux2022_NAASCubeProgram.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/lasseux2022_NAASCubeProgram.pdf
+    url: ./_files/lasseux2022_NAASCubeProgram.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-04300180v1
@@ -80,7 +80,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/lasseux2022_NAASCubeProgram.pdf width=100% height=800 >}} 
+{{< pdf ./_files/lasseux2022_NAASCubeProgram.pdf width=100% height=800 >}} 
 :::
 
 

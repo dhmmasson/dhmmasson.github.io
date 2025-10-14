@@ -46,12 +46,12 @@ citation:
   issue: "1"
   page: "3841-3850"
   issn: "2220-4342"
-pdf: _files/millet2019_DefinitionSportHealth.pdf
+pdf: ./_files/millet2019_DefinitionSportHealth.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/millet2019_DefinitionSportHealth.pdf
+    url: ./_files/millet2019_DefinitionSportHealth.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-02432825v1
@@ -62,7 +62,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/millet2019_DefinitionSportHealth.pdf width=100% height=800 >}} 
+{{< pdf ./_files/millet2019_DefinitionSportHealth.pdf width=100% height=800 >}} 
 :::
 
 

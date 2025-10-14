@@ -48,12 +48,12 @@ citation:
   volume: "212"
   page: "108786"
   issn: "0360-1323"
-pdf: _files/lagunasalvado2022_DecisionSupport.pdf
+pdf: ./_files/lagunasalvado2022_DecisionSupport.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/lagunasalvado2022_DecisionSupport.pdf
+    url: ./_files/lagunasalvado2022_DecisionSupport.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-03552184v1
@@ -64,7 +64,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/lagunasalvado2022_DecisionSupport.pdf width=100% height=800 >}} 
+{{< pdf ./_files/lagunasalvado2022_DecisionSupport.pdf width=100% height=800 >}} 
 :::
 
 

@@ -46,12 +46,12 @@ citation:
     Association for Computing Machinery
   page: "1–6"
   isbn: "978-1-4503-4785-3"
-pdf: _files/ambrosino2016_EncourageExchanges.pdf
+pdf: ./_files/ambrosino2016_EncourageExchanges.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/ambrosino2016_EncourageExchanges.pdf
+    url: ./_files/ambrosino2016_EncourageExchanges.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-01346087v1
@@ -62,7 +62,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/ambrosino2016_EncourageExchanges.pdf width=100% height=800 >}} 
+{{< pdf ./_files/ambrosino2016_EncourageExchanges.pdf width=100% height=800 >}} 
 :::
 
 

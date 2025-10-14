@@ -43,12 +43,12 @@ citation:
     ACM
   page: "1-7"
   isbn: "978-1-4503-0822-9"
-pdf: _files/masson2011_InspirerExplorer.pdf
+pdf: ./_files/masson2011_InspirerExplorer.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/masson2011_InspirerExplorer.pdf
+    url: ./_files/masson2011_InspirerExplorer.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-00760160v1
@@ -59,7 +59,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/masson2011_InspirerExplorer.pdf width=100% height=800 >}} 
+{{< pdf ./_files/masson2011_InspirerExplorer.pdf width=100% height=800 >}} 
 :::
 
 

@@ -40,12 +40,12 @@ citation:
   id: ambrosino2016_MethodologyProject
   citation-key: ambrosino2016_MethodologyProject
   type: report
-pdf: _files/ambrosino2016_MethodologyProject.pdf
+pdf: ./_files/ambrosino2016_MethodologyProject.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/ambrosino2016_MethodologyProject.pdf
+    url: ./_files/ambrosino2016_MethodologyProject.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-01440894v1
@@ -56,7 +56,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/ambrosino2016_MethodologyProject.pdf width=100% height=800 >}} 
+{{< pdf ./_files/ambrosino2016_MethodologyProject.pdf width=100% height=800 >}} 
 :::
 
 

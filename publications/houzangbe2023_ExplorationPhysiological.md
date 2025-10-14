@@ -55,12 +55,12 @@ citation:
     IEEE Computer Society
   page: "1-8"
   isbn: "979-8-3503-2743-4"
-pdf: _files/houzangbe2023_ExplorationPhysiological.pdf
+pdf: ./_files/houzangbe2023_ExplorationPhysiological.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/houzangbe2023_ExplorationPhysiological.pdf
+    url: ./_files/houzangbe2023_ExplorationPhysiological.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-04416687v1
@@ -71,7 +71,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/houzangbe2023_ExplorationPhysiological.pdf width=100% height=800 >}} 
+{{< pdf ./_files/houzangbe2023_ExplorationPhysiological.pdf width=100% height=800 >}} 
 :::
 
 

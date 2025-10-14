@@ -48,12 +48,12 @@ citation:
   type: paper-conference
   container-title: >
     CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA
-pdf: _files/villeneuve2019_DecisionDans.pdf
+pdf: ./_files/villeneuve2019_DecisionDans.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/villeneuve2019_DecisionDans.pdf
+    url: ./_files/villeneuve2019_DecisionDans.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-02268577v1
@@ -64,7 +64,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/villeneuve2019_DecisionDans.pdf width=100% height=800 >}} 
+{{< pdf ./_files/villeneuve2019_DecisionDans.pdf width=100% height=800 >}} 
 :::
 
 

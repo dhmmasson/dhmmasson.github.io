@@ -49,12 +49,12 @@ citation:
   issue: "6"
   page: "775–799"
   issn: "0954-4828"
-pdf: _files/camaraditpinto2024_RealityAnchor.pdf
+pdf: ./_files/camaraditpinto2024_RealityAnchor.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/camaraditpinto2024_RealityAnchor.pdf
+    url: ./_files/camaraditpinto2024_RealityAnchor.pdf
   - icon: ai ai-hal
     name: HAL
     url: 
@@ -65,7 +65,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/camaraditpinto2024_RealityAnchor.pdf width=100% height=800 >}} 
+{{< pdf ./_files/camaraditpinto2024_RealityAnchor.pdf width=100% height=800 >}} 
 :::
 
 

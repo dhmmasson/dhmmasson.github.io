@@ -47,12 +47,12 @@ citation:
     CIGI Qualita MOSIM 2023. Propulser la performance
   publisher: |
     CIGI QUALITA MOSIM 2023
-pdf: _files/camaraditpinto2023_MethodologieConception.pdf
+pdf: ./_files/camaraditpinto2023_MethodologieConception.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/camaraditpinto2023_MethodologieConception.pdf
+    url: ./_files/camaraditpinto2023_MethodologieConception.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-04206938v1
@@ -63,7 +63,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/camaraditpinto2023_MethodologieConception.pdf width=100% height=800 >}} 
+{{< pdf ./_files/camaraditpinto2023_MethodologieConception.pdf width=100% height=800 >}} 
 :::
 
 

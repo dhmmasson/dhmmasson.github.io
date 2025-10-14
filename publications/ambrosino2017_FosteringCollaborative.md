@@ -47,12 +47,12 @@ citation:
   volume: "8"
   page: "489–498"
   isbn: "978-1-904670-96-4"
-pdf: _files/ambrosino2017_FosteringCollaborative.pdf
+pdf: ./_files/ambrosino2017_FosteringCollaborative.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/ambrosino2017_FosteringCollaborative.pdf
+    url: ./_files/ambrosino2017_FosteringCollaborative.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-01577761v1
@@ -63,7 +63,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/ambrosino2017_FosteringCollaborative.pdf width=100% height=800 >}} 
+{{< pdf ./_files/ambrosino2017_FosteringCollaborative.pdf width=100% height=800 >}} 
 :::
 
 

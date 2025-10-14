@@ -39,12 +39,12 @@ citation:
   type: paper-conference
   publisher: |
     INCOSE International Conference on Human Systems Integration
-pdf: _files/rolos2019_OperationsRoom.pdf
+pdf: ./_files/rolos2019_OperationsRoom.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/rolos2019_OperationsRoom.pdf
+    url: ./_files/rolos2019_OperationsRoom.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-02340856v1
@@ -55,7 +55,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/rolos2019_OperationsRoom.pdf width=100% height=800 >}} 
+{{< pdf ./_files/rolos2019_OperationsRoom.pdf width=100% height=800 >}} 
 :::
 
 

@@ -46,12 +46,12 @@ citation:
   container-title: >
     ISPIM Connects Bangkok
   isbn: "978-952-335-566-8"
-pdf: _files/legardeur2020_ParadoxDiversity.pdf
+pdf: ./_files/legardeur2020_ParadoxDiversity.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/legardeur2020_ParadoxDiversity.pdf
+    url: ./_files/legardeur2020_ParadoxDiversity.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-02881482
@@ -62,7 +62,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/legardeur2020_ParadoxDiversity.pdf width=100% height=800 >}} 
+{{< pdf ./_files/legardeur2020_ParadoxDiversity.pdf width=100% height=800 >}} 
 :::
 
 

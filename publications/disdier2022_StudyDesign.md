@@ -43,12 +43,12 @@ citation:
   id: disdier2022_StudyDesign
   citation-key: disdier2022_StudyDesign
   type: speech
-pdf: _files/disdier2022_StudyDesign.pdf
+pdf: ./_files/disdier2022_StudyDesign.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/disdier2022_StudyDesign.pdf
+    url: ./_files/disdier2022_StudyDesign.pdf
   - icon: ai ai-hal
     name: HAL
     url: 
@@ -59,7 +59,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/disdier2022_StudyDesign.pdf width=100% height=800 >}} 
+{{< pdf ./_files/disdier2022_StudyDesign.pdf width=100% height=800 >}} 
 :::
 
 

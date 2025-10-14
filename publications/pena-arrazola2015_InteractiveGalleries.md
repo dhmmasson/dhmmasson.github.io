@@ -49,12 +49,12 @@ citation:
     Association for Computing Machinery
   page: "287–288"
   isbn: "978-1-4503-3643-7"
-pdf: _files/pena-arrazola2015_InteractiveGalleries.pdf
+pdf: ./_files/pena-arrazola2015_InteractiveGalleries.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/pena-arrazola2015_InteractiveGalleries.pdf
+    url: ./_files/pena-arrazola2015_InteractiveGalleries.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-01492576v1
@@ -65,7 +65,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/pena-arrazola2015_InteractiveGalleries.pdf width=100% height=800 >}} 
+{{< pdf ./_files/pena-arrazola2015_InteractiveGalleries.pdf width=100% height=800 >}} 
 :::
 
 

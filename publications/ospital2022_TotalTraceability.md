@@ -46,12 +46,12 @@ citation:
   issue: "S1"
   page: "1-7"
   issn: "2334-5837"
-pdf: _files/ospital2022_TotalTraceability.pdf
+pdf: ./_files/ospital2022_TotalTraceability.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/ospital2022_TotalTraceability.pdf
+    url: ./_files/ospital2022_TotalTraceability.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-03462235v1
@@ -62,7 +62,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/ospital2022_TotalTraceability.pdf width=100% height=800 >}} 
+{{< pdf ./_files/ospital2022_TotalTraceability.pdf width=100% height=800 >}} 
 :::
 
 

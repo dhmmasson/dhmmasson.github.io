@@ -39,12 +39,12 @@ citation:
   type: paper-conference
   publisher: |
     AIP Primeca: Concevoir et produire dans les industries du futur
-pdf: _files/ambrosino2017_STARMethodologie.pdf
+pdf: ./_files/ambrosino2017_STARMethodologie.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/ambrosino2017_STARMethodologie.pdf
+    url: ./_files/ambrosino2017_STARMethodologie.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-01513588
@@ -55,7 +55,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/ambrosino2017_STARMethodologie.pdf width=100% height=800 >}} 
+{{< pdf ./_files/ambrosino2017_STARMethodologie.pdf width=100% height=800 >}} 
 :::
 
 

@@ -55,12 +55,12 @@ citation:
   issue: "3"
   page: "59-66"
   issn: "2156-4868"
-pdf: _files/williams2024_TinkererMindset.pdf
+pdf: ./_files/williams2024_TinkererMindset.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/williams2024_TinkererMindset.pdf
+    url: ./_files/williams2024_TinkererMindset.pdf
   - icon: ai ai-hal
     name: HAL
     url: 
@@ -71,7 +71,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/williams2024_TinkererMindset.pdf width=100% height=800 >}} 
+{{< pdf ./_files/williams2024_TinkererMindset.pdf width=100% height=800 >}} 
 :::
 
 

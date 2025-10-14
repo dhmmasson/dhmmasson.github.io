@@ -46,12 +46,12 @@ citation:
     Berntzen, L. et al.
   page: "70–74"
   isbn: "978-1-5108-4308-0"
-pdf: _files/ambrosino2017_IdeaBulbSmart.pdf
+pdf: ./_files/ambrosino2017_IdeaBulbSmart.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/ambrosino2017_IdeaBulbSmart.pdf
+    url: ./_files/ambrosino2017_IdeaBulbSmart.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-01534697v2
@@ -62,7 +62,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/ambrosino2017_IdeaBulbSmart.pdf width=100% height=800 >}} 
+{{< pdf ./_files/ambrosino2017_IdeaBulbSmart.pdf width=100% height=800 >}} 
 :::
 
 

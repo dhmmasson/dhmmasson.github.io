@@ -42,12 +42,12 @@ citation:
   type: paper-conference
   container-title: >
     S.Mart
-pdf: _files/millet2019_DefinitionEspace.pdf
+pdf: ./_files/millet2019_DefinitionEspace.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/millet2019_DefinitionEspace.pdf
+    url: ./_files/millet2019_DefinitionEspace.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-02151626
@@ -58,7 +58,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/millet2019_DefinitionEspace.pdf width=100% height=800 >}} 
+{{< pdf ./_files/millet2019_DefinitionEspace.pdf width=100% height=800 >}} 
 :::
 
 

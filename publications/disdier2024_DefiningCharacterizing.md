@@ -43,12 +43,12 @@ citation:
   container-title: >
     Systems Engineering
   issn: "1520-6858"
-pdf: _files/disdier2024_DefiningCharacterizing.pdf
+pdf: ./_files/disdier2024_DefiningCharacterizing.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/disdier2024_DefiningCharacterizing.pdf
+    url: ./_files/disdier2024_DefiningCharacterizing.pdf
   - icon: ai ai-hal
     name: HAL
     url: 
@@ -59,7 +59,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/disdier2024_DefiningCharacterizing.pdf width=100% height=800 >}} 
+{{< pdf ./_files/disdier2024_DefiningCharacterizing.pdf width=100% height=800 >}} 
 :::
 
 

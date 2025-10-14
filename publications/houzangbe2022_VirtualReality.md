@@ -53,12 +53,12 @@ citation:
     Frontiers in Virtual Reality
   volume: "3"
   issn: "2673-4192"
-pdf: _files/houzangbe2022_VirtualReality.pdf
+pdf: ./_files/houzangbe2022_VirtualReality.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/houzangbe2022_VirtualReality.pdf
+    url: ./_files/houzangbe2022_VirtualReality.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-03836214v1
@@ -69,7 +69,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/houzangbe2022_VirtualReality.pdf width=100% height=800 >}} 
+{{< pdf ./_files/houzangbe2022_VirtualReality.pdf width=100% height=800 >}} 
 :::
 
 

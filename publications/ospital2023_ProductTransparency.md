@@ -46,12 +46,12 @@ citation:
   issue: "2"
   page: "186-197"
   issn: "1754-3266"
-pdf: _files/ospital2023_ProductTransparency.pdf
+pdf: ./_files/ospital2023_ProductTransparency.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/ospital2023_ProductTransparency.pdf
+    url: ./_files/ospital2023_ProductTransparency.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-03879884v1
@@ -62,7 +62,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/ospital2023_ProductTransparency.pdf width=100% height=800 >}} 
+{{< pdf ./_files/ospital2023_ProductTransparency.pdf width=100% height=800 >}} 
 :::
 
 

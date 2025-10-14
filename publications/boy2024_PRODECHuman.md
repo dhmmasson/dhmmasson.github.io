@@ -46,12 +46,12 @@ citation:
   issue: "5"
   page: "805-826"
   issn: "1098-1241, 1520-6858"
-pdf: _files/boy2024_PRODECHuman.pdf
+pdf: ./_files/boy2024_PRODECHuman.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/boy2024_PRODECHuman.pdf
+    url: ./_files/boy2024_PRODECHuman.pdf
   - icon: ai ai-hal
     name: HAL
     url: 
@@ -62,7 +62,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/boy2024_PRODECHuman.pdf width=100% height=800 >}} 
+{{< pdf ./_files/boy2024_PRODECHuman.pdf width=100% height=800 >}} 
 :::
 
 

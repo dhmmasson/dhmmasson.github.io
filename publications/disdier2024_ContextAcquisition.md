@@ -15,7 +15,7 @@ haiku: Emergent paths rise,<br>Context shapes unseen design,<br>Guide with fores
 categories: [Human-System Integration,Design,Methodology,Context]
 image: _cover_images/HSI.webp
 publication: |
-   
+  HSI2024, 2024-08-26 
 authors_s: Disdier, Alexandre; <b>Masson, Dimitri</b>; Jankovic, Marija; BOY, GUY ANDRE
 author: 
   - name: 
@@ -33,19 +33,21 @@ author:
   - name: 
       given: "GUY ANDRE"
       family: "BOY" 
-doi: ""
+doi: "10.5281/zenodo.17078949"
 hal: ""
 halid: ""
 citation:
   id: disdier2024_ContextAcquisition
   citation-key: disdier2024_ContextAcquisition
-  type: speech
-pdf: _files/disdier2024_ContextAcquisition.pdf
+  type: paper-conference
+  publisher: |
+    INCOSE
+pdf: ./_files/disdier2024_ContextAcquisition.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/disdier2024_ContextAcquisition.pdf
+    url: ./_files/disdier2024_ContextAcquisition.pdf
   - icon: ai ai-hal
     name: HAL
     url: 
@@ -56,7 +58,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/disdier2024_ContextAcquisition.pdf width=100% height=800 >}} 
+{{< pdf ./_files/disdier2024_ContextAcquisition.pdf width=100% height=800 >}} 
 :::
 
 

@@ -39,12 +39,12 @@ citation:
   type: paper-conference
   container-title: >
     CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA
-pdf: _files/lagunasalvado2019_OutilClassement.pdf
+pdf: ./_files/lagunasalvado2019_OutilClassement.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/lagunasalvado2019_OutilClassement.pdf
+    url: ./_files/lagunasalvado2019_OutilClassement.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-02268562
@@ -55,7 +55,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/lagunasalvado2019_OutilClassement.pdf width=100% height=800 >}} 
+{{< pdf ./_files/lagunasalvado2019_OutilClassement.pdf width=100% height=800 >}} 
 :::
 
 

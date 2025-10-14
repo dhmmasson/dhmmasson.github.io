@@ -45,12 +45,12 @@ citation:
   publisher: |
     University for the creative arts
   page: "8 p."
-pdf: _files/ospital2023_DevelopingData.pdf
+pdf: ./_files/ospital2023_DevelopingData.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/ospital2023_DevelopingData.pdf
+    url: ./_files/ospital2023_DevelopingData.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-04082862v1
@@ -61,7 +61,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/ospital2023_DevelopingData.pdf width=100% height=800 >}} 
+{{< pdf ./_files/ospital2023_DevelopingData.pdf width=100% height=800 >}} 
 :::
 
 

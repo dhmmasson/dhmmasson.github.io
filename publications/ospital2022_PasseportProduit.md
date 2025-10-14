@@ -40,12 +40,12 @@ citation:
   id: ospital2022_PasseportProduit
   citation-key: ospital2022_PasseportProduit
   type: speech
-pdf: _files/ospital2022_PasseportProduit.pdf
+pdf: ./_files/ospital2022_PasseportProduit.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/ospital2022_PasseportProduit.pdf
+    url: ./_files/ospital2022_PasseportProduit.pdf
   - icon: ai ai-hal
     name: HAL
     url: 
@@ -56,7 +56,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/ospital2022_PasseportProduit.pdf width=100% height=800 >}} 
+{{< pdf ./_files/ospital2022_PasseportProduit.pdf width=100% height=800 >}} 
 :::
 
 

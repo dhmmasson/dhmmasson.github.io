@@ -43,12 +43,12 @@ citation:
     Association for Computing Machinery
   page: "87–92"
   isbn: "978-1-4503-0083-4"
-pdf: _files/masson2010_MagellanEvolutionary.pdf
+pdf: ./_files/masson2010_MagellanEvolutionary.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/masson2010_MagellanEvolutionary.pdf
+    url: ./_files/masson2010_MagellanEvolutionary.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/inria-00498580v1
@@ -59,7 +59,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/masson2010_MagellanEvolutionary.pdf width=100% height=800 >}} 
+{{< pdf ./_files/masson2010_MagellanEvolutionary.pdf width=100% height=800 >}} 
 :::
 
 

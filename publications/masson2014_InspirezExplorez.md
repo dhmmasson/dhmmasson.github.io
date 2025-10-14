@@ -33,12 +33,12 @@ citation:
   type: thesis
   publisher: |
     Université de Grenoble
-pdf: _files/masson2014_InspirezExplorez.pdf
+pdf: ./_files/masson2014_InspirezExplorez.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/masson2014_InspirezExplorez.pdf
+    url: ./_files/masson2014_InspirezExplorez.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/tel-01549303v1
@@ -49,7 +49,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/masson2014_InspirezExplorez.pdf width=100% height=800 >}} 
+{{< pdf ./_files/masson2014_InspirezExplorez.pdf width=100% height=800 >}} 
 :::
 
 

@@ -48,12 +48,12 @@ citation:
   volume: "3"
   page: "3561-3570"
   issn: "2732-527X"
-pdf: _files/disdier2023_HumanSystems.pdf
+pdf: ./_files/disdier2023_HumanSystems.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/disdier2023_HumanSystems.pdf
+    url: ./_files/disdier2023_HumanSystems.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-04064881v1
@@ -64,7 +64,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/disdier2023_HumanSystems.pdf width=100% height=800 >}} 
+{{< pdf ./_files/disdier2023_HumanSystems.pdf width=100% height=800 >}} 
 :::
 
 

@@ -42,12 +42,12 @@ citation:
   publisher: |
     2nd international workshop on semantic models for adaptive interactive systems
   page: "5p"
-pdf: _files/demeure2011_GraphsModels.pdf
+pdf: ./_files/demeure2011_GraphsModels.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/demeure2011_GraphsModels.pdf
+    url: ./_files/demeure2011_GraphsModels.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-00760416v1
@@ -58,7 +58,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/demeure2011_GraphsModels.pdf width=100% height=800 >}} 
+{{< pdf ./_files/demeure2011_GraphsModels.pdf width=100% height=800 >}} 
 :::
 
 

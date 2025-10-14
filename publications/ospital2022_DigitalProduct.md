@@ -44,12 +44,12 @@ citation:
     Global Fashion Conference 2022
   page: "11"
   isbn: "978-989-54263-3-1"
-pdf: _files/ospital2022_DigitalProduct.pdf
+pdf: ./_files/ospital2022_DigitalProduct.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/ospital2022_DigitalProduct.pdf
+    url: ./_files/ospital2022_DigitalProduct.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-04082837
@@ -60,7 +60,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/ospital2022_DigitalProduct.pdf width=100% height=800 >}} 
+{{< pdf ./_files/ospital2022_DigitalProduct.pdf width=100% height=800 >}} 
 :::
 
 

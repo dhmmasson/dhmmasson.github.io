@@ -52,12 +52,12 @@ citation:
   issue: "1"
   page: "869-873"
   issn: "2405-8963"
-pdf: _files/camaraditpinto2021_DigitalTwin.pdf
+pdf: ./_files/camaraditpinto2021_DigitalTwin.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/camaraditpinto2021_DigitalTwin.pdf
+    url: ./_files/camaraditpinto2021_DigitalTwin.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-03262607v1
@@ -68,7 +68,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/camaraditpinto2021_DigitalTwin.pdf width=100% height=800 >}} 
+{{< pdf ./_files/camaraditpinto2021_DigitalTwin.pdf width=100% height=800 >}} 
 :::
 
 

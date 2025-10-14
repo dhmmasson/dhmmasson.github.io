@@ -52,12 +52,12 @@ citation:
   issue: "34"
   page: "236-241"
   issn: "2405-8963"
-pdf: _files/villeneuve2019_DecisionSupport.pdf
+pdf: ./_files/villeneuve2019_DecisionSupport.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/villeneuve2019_DecisionSupport.pdf
+    url: ./_files/villeneuve2019_DecisionSupport.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-01973339v1
@@ -68,7 +68,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/villeneuve2019_DecisionSupport.pdf width=100% height=800 >}} 
+{{< pdf ./_files/villeneuve2019_DecisionSupport.pdf width=100% height=800 >}} 
 :::
 
 

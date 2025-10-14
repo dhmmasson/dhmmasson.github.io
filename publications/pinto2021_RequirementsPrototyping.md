@@ -48,12 +48,12 @@ citation:
   volume: "1"
   page: "1617-1626"
   issn: "2732-527X"
-pdf: _files/pinto2021_RequirementsPrototyping.pdf
+pdf: ./_files/pinto2021_RequirementsPrototyping.pdf
 google-scholar: true
 links:
   - icon: bi bi-file-earmark-pdf
     name: PDF
-    url: _files/pinto2021_RequirementsPrototyping.pdf
+    url: ./_files/pinto2021_RequirementsPrototyping.pdf
   - icon: ai ai-hal
     name: HAL
     url: https://hal.science/hal-03356551v1
@@ -64,7 +64,7 @@ links:
 
 ## See the paper
 
-{{< pdf _files/pinto2021_RequirementsPrototyping.pdf width=100% height=800 >}} 
+{{< pdf ./_files/pinto2021_RequirementsPrototyping.pdf width=100% height=800 >}} 
 :::
 
 
