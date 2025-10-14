@@ -97,6 +97,8 @@
       "Items": true,
       "Normalize": false,
       "Preferences": true,
+      "biblatexAPA": false,
+      "biblatexChicago": false,
       "exportFileData": false,
       "exportNotes": true,
       "keepUpdated": false,
@@ -699,7 +701,7 @@
     },
     {
       "key": "KZ6QXESW",
-      "version": 1104,
+      "version": 1198,
       "itemType": "journalArticle",
       "title": "PRODEC for human systems integration of increasingly autonomous systems",
       "abstractNote": "The purpose of the PRODEC scenario-based design method is the incremental crossfertilization and refinement of procedural scenarios and declarative configurations. It uses virtual prototypes of the developed systems (mainly life-critical systems) to conduct human-in-the-loop simulations (HITLSs). Based on human systems integration (HSI) principles and criteria, as well as expertise and experience in the domain at stake, this HSI approach grounded in virtual environments requires a clear definition of physical and cognitive tangibility metrics to assess the distance between virtual and tangible (grasp) dimensions of the system being developed when it is put to work. PRODEC considers human and machine systems described in terms of structures and functions incrementally designed using procedural scenarios (i.e., stories) in task and activity networks, which provide life to declarative configurations (i.e., system’s functions and structures). This active modeling and simulation process enables the discovery of emergent structures and functions of the system being developed when it is virtually operated. PRODEC’s use is illustrated in an example. We discuss the use of PRODEC and its results as to how they can be used with digital twins.",
@@ -709,7 +711,7 @@
       "url": "https://incose.onlinelibrary.wiley.com/doi/10.1002/sys.21751",
       "accessDate": "2024-03-11T14:50:22Z",
       "rights": "© 2024 The Authors. Systems Engineering published by Wiley Periodicals LLC.",
-      "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/sys.21751",
+      "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/sys.21751\nAWARD:Editor-choice",
       "volume": "27",
       "pages": "805-826",
       "publicationTitle": "Systems Engineering",
@@ -817,7 +819,7 @@
       },
       "inPublications": true,
       "dateAdded": "2024-03-12T09:43:11Z",
-      "dateModified": "2024-09-04T08:50:50Z",
+      "dateModified": "2025-10-14T11:20:22Z",
       "uri": "http://zotero.org/users/2761519/items/KZ6QXESW",
       "itemID": 356,
       "attachments": [
@@ -1528,41 +1530,43 @@
     },
     {
       "key": "A6SAANDE",
-      "version": 1102,
-      "itemType": "presentation",
+      "version": 1196,
+      "itemType": "conferencePaper",
       "title": "A Context Acquisition Methodology for the Design of Complex Sociotechnical Systems",
       "abstractNote": "Complex sociotechnical systems are likely to display emergent properties that are difficult to anticipate at design time. One of the causes for emergence is the system's sensitivity to its own operational context. Since context heavily drives the behavior of such systems, a proper HSI endeavor should define the relevant contextual elements during the early stages of the lifecycle, even before the system has been integrated and project resources have been committed. This paper presents an early-stage context elicitation methodology along with a companion software tool in development combining the HSI literature, the context literature and scenario-based design principles. The use of our tool is illustrated through the case study of the design of a remote air traffic control center.",
       "date": "2024-08-26",
       "language": "en",
+      "extra": "HAL-id:hal-04825131\nBest-paper",
       "place": "Jeju-Do, Korea",
-      "presentationType": "Research Paper",
-      "meetingName": "HSI2024",
+      "publisher": "INCOSE",
+      "conferenceName": "HSI2024",
+      "DOI": "10.5281/zenodo.17078949",
       "creators": [
         {
           "firstName": "Alexandre",
           "lastName": "Disdier",
-          "creatorType": "presenter"
+          "creatorType": "author"
         },
         {
           "firstName": "Dimitri",
           "lastName": "Masson",
-          "creatorType": "presenter"
+          "creatorType": "author"
         },
         {
           "firstName": "Marija",
           "lastName": "Jankovic",
-          "creatorType": "presenter"
+          "creatorType": "author"
         },
         {
           "firstName": "GUY ANDRE",
           "lastName": "BOY",
-          "creatorType": "presenter"
+          "creatorType": "author"
         }
       ],
       "tags": [],
       "relations": {},
       "dateAdded": "2024-08-21T16:18:40Z",
-      "dateModified": "2024-08-21T20:16:55Z",
+      "dateModified": "2025-10-14T11:19:45Z",
       "uri": "http://zotero.org/users/2761519/items/A6SAANDE",
       "itemID": 1034,
       "attachments": [
@@ -1587,7 +1591,7 @@
     },
     {
       "key": "R295NUT6",
-      "version": 1084,
+      "version": 1197,
       "itemType": "journalArticle",
       "title": "Defining and characterizing the operational context for human systems integration",
       "abstractNote": "Many efforts from multiple academic and industrial disciplines have studied the notion of context. The systems engineering and human systems integration fields, however, lack a generalized definition and characterization of context, in particular the operational context of complex sociotechnical systems. This paper reviews context definitions and builds a generalized definition of the operational context of complex sociotechnical systems. The objective is then to identify and extract context properties which are often implicit in the literature and do not necessarily appear in the definitions. However, eliciting them is helpful for understanding what context is made of, how it relates to complex sociotechnical systems comprising human and non-human agents, and how an early understanding of the operational context can prove valuable to designing efficient and robust systems. Our analysis is followed by an example of how our definition and derived properties apply to the case study of the design of a remote and virtual air traffic control center.",
@@ -1597,7 +1601,7 @@
       "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/sys.21775",
       "accessDate": "2024-08-03T21:34:32Z",
       "rights": "© 2024 The Author(s). Systems Engineering published by Wiley Periodicals LLC.",
-      "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/sys.21775",
+      "extra": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/sys.21775\nAWARD:Editor-choice",
       "publicationTitle": "Systems Engineering",
       "DOI": "10.1002/sys.21775",
       "journalAbbreviation": "Sys. Eng.",
@@ -1626,11 +1630,11 @@
       ],
       "tags": [
         {
-          "tag": "human systems integration",
+          "tag": "complex sociotechnical systems",
           "type": 1
         },
         {
-          "tag": "complex sociotechnical systems",
+          "tag": "human systems integration",
           "type": 1
         },
         {
@@ -1649,7 +1653,7 @@
       },
       "inPublications": true,
       "dateAdded": "2024-08-03T20:30:50Z",
-      "dateModified": "2024-08-19T11:52:21Z",
+      "dateModified": "2025-10-14T11:20:02Z",
       "uri": "http://zotero.org/users/2761519/items/R295NUT6",
       "itemID": 934,
       "attachments": [
