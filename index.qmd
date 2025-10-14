@@ -1,5 +1,6 @@
 ---
 title: Dimitri Masson
+description-meta: This is Dimitri Masson's website, learn about my research, publications, teaching and projects
 about:
   id: hero-heading
   template: trestles
