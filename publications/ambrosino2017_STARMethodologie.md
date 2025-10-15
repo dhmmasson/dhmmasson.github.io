@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   STAR: une méthodologie d'animation pour faciliter l'émergence de projets en interclustering Application au projet européen NEPTUNE sur la croissance bleue
 alias:
   - "STAR: une méthodologie d'animation pour faciliter l'émergence de projets en interclustering Application au projet européen NEPTUNE sur la croissance bleue"
@@ -30,7 +30,7 @@ author:
   - name: 
       given: "Jérémy"
       family: "Legardeur" 
-doi: ""
+doi: "https://doi.org/"
 hal: "https://hal.science/hal-01513588"
 halid: "hal-01513588"
 citation:

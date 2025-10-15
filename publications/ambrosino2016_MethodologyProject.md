@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   D. 1.1 Methodology of project emergence in interclustering and intersectoral context (1)
 alias:
   - "D. 1.1 Methodology of project emergence in interclustering and intersectoral context (1)"
@@ -33,7 +33,7 @@ author:
   - name: 
       given: "Pauline"
       family: "Théophane" 
-doi: ""
+doi: "https://doi.org/"
 hal: "https://hal.science/hal-01440894v1"
 halid: "hal-01440894v1"
 citation:

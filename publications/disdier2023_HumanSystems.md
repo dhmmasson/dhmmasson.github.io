@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Toward a Human Systems Integration approach to the design and operation of a remote and virtual air traffic control center
 alias:
   - "Toward a Human Systems Integration approach to the design and operation of a remote and virtual air traffic control center"
@@ -36,7 +36,7 @@ author:
   - name: 
       given: "Guy-André"
       family: "Boy" 
-doi: "10.1017/pds.2023.357"
+doi: "https://doi.org/10.1017/pds.2023.357"
 hal: "https://hal.science/hal-04064881v1"
 halid: "hal-04064881v1"
 citation:

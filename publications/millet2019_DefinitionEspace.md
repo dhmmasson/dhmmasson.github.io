@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Définition d'un espace sémantique Sport-Santé
 alias:
   - "Définition d'un espace sémantique Sport-Santé"
@@ -33,7 +33,7 @@ author:
   - name: 
       given: "Jérémy"
       family: "Legardeur" 
-doi: ""
+doi: "https://doi.org/"
 hal: "https://hal.science/hal-02151626"
 halid: "hal-02151626"
 citation:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Outil de classement de technologies pour l'aide à la décision en rénovation de bâtiments
 alias:
   - "Outil de classement de technologies pour l'aide à la décision en rénovation de bâtiments"
@@ -30,7 +30,7 @@ author:
     orcid: "0000-0002-7072-3146" 
     email: "d.masson@estia.fr" 
     idhal: "dimitri-masson" 
-doi: ""
+doi: "https://doi.org/"
 hal: "https://hal.science/hal-02268562"
 halid: "hal-02268562"
 citation:

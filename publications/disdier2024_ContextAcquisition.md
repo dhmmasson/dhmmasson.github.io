@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   A Context Acquisition Methodology for the Design of Complex Sociotechnical Systems
 alias:
   - "A Context Acquisition Methodology for the Design of Complex Sociotechnical Systems"
@@ -33,7 +33,7 @@ author:
   - name: 
       given: "GUY ANDRE"
       family: "BOY" 
-doi: "10.5281/zenodo.17078949"
+doi: "https://doi.org/10.5281/zenodo.17078949"
 hal: ""
 halid: ""
 citation:

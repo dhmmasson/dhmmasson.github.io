@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Toward total traceability and full transparency communication in textile industry supply chain
 alias:
   - "Toward total traceability and full transparency communication in textile industry supply chain"
@@ -33,7 +33,7 @@ author:
   - name: 
       given: "Jérémy"
       family: "Legardeur" 
-doi: "10.1002/iis2.12866"
+doi: "https://doi.org/10.1002/iis2.12866"
 hal: "https://hal.science/hal-03462235v1"
 halid: "hal-03462235v1"
 citation:

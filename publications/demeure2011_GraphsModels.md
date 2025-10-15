@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Graphs of models for exploring design spaces in the engineering of Human Computer Interaction
 alias:
   - "Graphs of models for exploring design spaces in the engineering of Human Computer Interaction"
@@ -30,7 +30,7 @@ author:
   - name: 
       given: "Gaelle"
       family: "Calvary" 
-doi: ""
+doi: "https://doi.org/"
 hal: "https://hal.science/hal-00760416v1"
 halid: "hal-00760416v1"
 citation:

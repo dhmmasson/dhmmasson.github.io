@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   The paradox of diversity's influence on the creative teams Lessons learned from the analysis of 14 editions of" The 24h of innovation" hackathon
 alias:
   - "The paradox of diversity's influence on the creative teams Lessons learned from the analysis of 14 editions of\" The 24h of innovation\" hackathon"
@@ -36,7 +36,7 @@ author:
   - name: 
       given: "International Society for Professional Innovation"
       family: "Management" 
-doi: ""
+doi: "https://doi.org/"
 hal: "https://hal.science/hal-02881482"
 halid: "hal-02881482"
 citation:

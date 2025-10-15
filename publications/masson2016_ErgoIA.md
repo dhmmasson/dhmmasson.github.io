@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Ergo'IA '16: Proceedings of the 15th Ergo'IA "Ergonomie Et Informatique Avancée" Conference
 alias:
   - "Ergo'IA '16: Proceedings of the 15th Ergo'IA \"Ergonomie Et Informatique Avancée\" Conference"
@@ -27,7 +27,7 @@ author:
   - name: 
       given: "Jérémy"
       family: "Legardeur" 
-doi: ""
+doi: "https://doi.org/"
 hal: "https://hal.science/hal-02398001v1"
 halid: "hal-02398001v1"
 citation:

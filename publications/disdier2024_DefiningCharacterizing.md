@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Defining and characterizing the operational context for human systems integration
 alias:
   - "Defining and characterizing the operational context for human systems integration"
@@ -33,7 +33,7 @@ author:
   - name: 
       given: "Guy-André"
       family: "Boy" 
-doi: "10.1002/sys.21775"
+doi: "https://doi.org/10.1002/sys.21775"
 hal: ""
 halid: ""
 citation:

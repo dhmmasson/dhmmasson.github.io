@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Fostering collaborative project emergence through divergence of opinion
 alias:
   - "Fostering collaborative project emergence through divergence of opinion"
@@ -33,7 +33,7 @@ author:
   - name: 
       given: "Jérémy"
       family: "Legardeur" 
-doi: ""
+doi: "https://doi.org/"
 hal: "https://hal.science/hal-01577761v1"
 halid: "hal-01577761v1"
 citation:

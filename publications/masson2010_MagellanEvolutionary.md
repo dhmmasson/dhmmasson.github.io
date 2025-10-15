@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Magellan, an evolutionary system to foster user interface design creativity
 alias:
   - "Magellan, an evolutionary system to foster user interface design creativity"
@@ -30,7 +30,7 @@ author:
   - name: 
       given: "Gaelle"
       family: "Calvary" 
-doi: "10.1145/1822018.1822032"
+doi: "https://doi.org/10.1145/1822018.1822032"
 hal: "https://hal.science/inria-00498580v1"
 halid: ""
 citation:

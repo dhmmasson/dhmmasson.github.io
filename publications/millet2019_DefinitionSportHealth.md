@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Definition of a “Sport-Health” Semantic Space
 alias:
   - "Definition of a “Sport-Health” Semantic Space"
@@ -33,7 +33,7 @@ author:
   - name: 
       given: "Jérémy"
       family: "Legardeur" 
-doi: "10.1017/dsi.2019.391"
+doi: "https://doi.org/10.1017/dsi.2019.391"
 hal: "https://hal.science/hal-02432825v1"
 halid: "hal-02432825v1"
 citation:

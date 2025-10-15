@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   I++: interactive galleries for promoting interactive curiosities in web designs
 alias:
   - "I++: interactive galleries for promoting interactive curiosities in web designs"
@@ -36,7 +36,7 @@ author:
   - name: 
       given: "Yann"
       family: "Laurillau" 
-doi: "10.1145/2783446.2783614"
+doi: "https://doi.org/10.1145/2783446.2783614"
 hal: "https://hal.science/hal-01492576v1"
 halid: "hal-01492576v1"
 citation:

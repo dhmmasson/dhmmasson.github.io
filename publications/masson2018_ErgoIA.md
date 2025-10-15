@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Ergo'IA '18: Proceedings of the 16th Ergo'IA “Ergonomie Et Informatique Avancée” Conference
 alias:
   - "Ergo'IA '18: Proceedings of the 16th Ergo'IA “Ergonomie Et Informatique Avancée” Conference"
@@ -27,7 +27,7 @@ author:
   - name: 
       given: "Alexis"
       family: "Clay" 
-doi: ""
+doi: "https://doi.org/"
 hal: "https://hal.science/hal-02446096v1"
 halid: "hal-02446096v1"
 citation:

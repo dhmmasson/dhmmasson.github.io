@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Towards a Circular Product (Re)Design Methodology: Proposition of the Unlinear Method to Foster Circularity
 alias:
   - "Towards a Circular Product (Re)Design Methodology: Proposition of the Unlinear Method to Foster Circularity"
@@ -33,7 +33,7 @@ author:
   - name: 
       given: "Antoine"
       family: "Millet" 
-doi: "10.31803/tg-20220410142313"
+doi: "https://doi.org/10.31803/tg-20220410142313"
 hal: "https://hal.science/hal-03669358v1"
 halid: "hal-03669358v1"
 citation:

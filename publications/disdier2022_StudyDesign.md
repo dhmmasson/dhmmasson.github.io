@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Study and design of a remote and virtual air traffic control center using a Human Systems Integration approach
 alias:
   - "Study and design of a remote and virtual air traffic control center using a Human Systems Integration approach"
@@ -36,7 +36,7 @@ author:
   - name: 
       given: "Guy Andre"
       family: "Boy" 
-doi: ""
+doi: "https://doi.org/"
 hal: ""
 halid: ""
 citation:

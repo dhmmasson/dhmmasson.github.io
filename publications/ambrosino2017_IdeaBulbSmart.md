@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   IdeaBulb: A Smart and Tangible User Interface for Monitoring Ideation During Creative Sessions
 alias:
   - "IdeaBulb: A Smart and Tangible User Interface for Monitoring Ideation During Creative Sessions"
@@ -33,7 +33,7 @@ author:
   - name: 
       given: "Jérémy"
       family: "Legardeur" 
-doi: ""
+doi: "https://doi.org/"
 hal: "https://hal.science/hal-01534697v2"
 halid: "hal-01534697v2"
 citation:

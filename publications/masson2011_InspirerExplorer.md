@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Inspirer, explorer: Magellan, un environnement interactif evolutionnaire pour la génération d'exemples
 alias:
   - "Inspirer, explorer: Magellan, un environnement interactif evolutionnaire pour la génération d'exemples"
@@ -30,7 +30,7 @@ author:
   - name: 
       given: "Gaëlle"
       family: "Calvary" 
-doi: "10.1145/2044354.2044382"
+doi: "https://doi.org/10.1145/2044354.2044382"
 hal: "https://hal.science/hal-00760160v1"
 halid: "hal-00760160v1"
 citation:

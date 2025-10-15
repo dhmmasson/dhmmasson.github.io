@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   PRODEC for human systems integration of increasingly autonomous systems
 alias:
   - "PRODEC for human systems integration of increasingly autonomous systems"
@@ -33,7 +33,7 @@ author:
   - name: 
       given: "Chloé"
       family: "Morel" 
-doi: "10.1002/sys.21751"
+doi: "https://doi.org/10.1002/sys.21751"
 hal: ""
 halid: ""
 citation:

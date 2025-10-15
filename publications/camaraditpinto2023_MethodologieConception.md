@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Méthodologie de conception de jumeau numérique pour supporter la conscience de la situation
 alias:
   - "Méthodologie de conception de jumeau numérique pour supporter la conscience de la situation"
@@ -36,7 +36,7 @@ author:
   - name: 
       given: "Laetitia"
       family: "Urfels" 
-doi: "10.60662/6sm3-5f44"
+doi: "https://doi.org/10.60662/6sm3-5f44"
 hal: "https://hal.science/hal-04206938v1"
 halid: "hal-04206938v1"
 citation:

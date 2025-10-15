@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Traceability information to communicate to consumer in total transparency
 alias:
   - "Traceability information to communicate to consumer in total transparency"
@@ -33,7 +33,7 @@ author:
   - name: 
       given: "Pantxika"
       family: "Ospital" 
-doi: ""
+doi: "https://doi.org/"
 hal: "https://hal.science/hal-03462333v1"
 halid: "hal-03462333v1"
 citation:

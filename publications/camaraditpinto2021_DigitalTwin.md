@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Digital twin design requirements in downgraded situations management
 alias:
   - "Digital twin design requirements in downgraded situations management"
@@ -39,7 +39,7 @@ author:
   - name: 
       given: "L."
       family: "Urfels" 
-doi: "10.1016/j.ifacol.2021.08.102"
+doi: "https://doi.org/10.1016/j.ifacol.2021.08.102"
 hal: "https://hal.science/hal-03262607v1"
 halid: "hal-03262607v1"
 citation:

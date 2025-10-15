@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   From requirements to prototyping: Application of human-system integration methodology to digital twin design
 alias:
   - "From requirements to prototyping: Application of human-system integration methodology to digital twin design"
@@ -36,7 +36,7 @@ author:
   - name: 
       given: "Laetitia"
       family: "Urfels" 
-doi: "10.1017/pds.2021.423"
+doi: "https://doi.org/10.1017/pds.2021.423"
 hal: "https://hal.science/hal-03356551v1"
 halid: "hal-03356551v1"
 citation:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Décision dans les systèmes cyber-physiques et humains : application à l'élevage de précision
 alias:
   - "Décision dans les systèmes cyber-physiques et humains : application à l'élevage de précision"
@@ -39,7 +39,7 @@ author:
   - name: 
       given: "Alvaro"
       family: "Llaria" 
-doi: ""
+doi: "https://doi.org/"
 hal: "https://hal.science/hal-02268577v1"
 halid: "hal-02268577v1"
 citation:

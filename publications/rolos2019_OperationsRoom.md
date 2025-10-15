@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Operations room design for the control of a fleet of robots
 alias:
   - "Operations room design for the control of a fleet of robots"
@@ -30,7 +30,7 @@ author:
     orcid: "0000-0002-7072-3146" 
     email: "d.masson@estia.fr" 
     idhal: "dimitri-masson" 
-doi: ""
+doi: "https://doi.org/"
 hal: "https://hal.science/hal-02340856v1"
 halid: "hal-02340856v1"
 citation:

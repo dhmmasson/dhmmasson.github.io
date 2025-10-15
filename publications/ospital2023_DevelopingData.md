@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Toward Developing a Data Model for a Digital Product Passport To Enhance Circularity in Fashion
 alias:
   - "Toward Developing a Data Model for a Digital Product Passport To Enhance Circularity in Fashion"
@@ -33,7 +33,7 @@ author:
   - name: 
       given: "Jérémy"
       family: "Legardeur" 
-doi: ""
+doi: "https://doi.org/"
 hal: "https://hal.science/hal-04082862v1"
 halid: "hal-04082862v1"
 citation:

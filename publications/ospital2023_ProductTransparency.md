@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Toward product transparency: communicating traceability information to consumers
 alias:
   - "Toward product transparency: communicating traceability information to consumers"
@@ -33,7 +33,7 @@ author:
   - name: 
       given: "Jérémy"
       family: "Legardeur" 
-doi: "10.1080/17543266.2022.2142677"
+doi: "https://doi.org/10.1080/17543266.2022.2142677"
 hal: "https://hal.science/hal-03879884v1"
 halid: "hal-03879884v1"
 citation:

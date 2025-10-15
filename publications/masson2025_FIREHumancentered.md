@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   FIRE: a human-centered framework for digital twin design
 alias:
   - "FIRE: a human-centered framework for digital twin design"
@@ -27,7 +27,7 @@ author:
   - name: 
       given: "Eric"
       family: "Villeneuve" 
-doi: "https://doi.org/10.1002/sys.70014"
+doi: "https://doi.org/https://doi.org/10.1002/sys.70014"
 hal: ""
 halid: ""
 citation:

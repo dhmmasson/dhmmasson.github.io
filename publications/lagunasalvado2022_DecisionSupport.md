@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Decision Support System for technology selection based on multi-criteria ranking: Application to NZEB refurbishment
 alias:
   - "Decision Support System for technology selection based on multi-criteria ranking: Application to NZEB refurbishment"
@@ -36,7 +36,7 @@ author:
   - name: 
       given: "Nicolas"
       family: "Bur" 
-doi: "10.1016/j.buildenv.2022.108786"
+doi: "https://doi.org/10.1016/j.buildenv.2022.108786"
 hal: "https://hal.science/hal-03552184v1"
 halid: "hal-03552184v1"
 citation:

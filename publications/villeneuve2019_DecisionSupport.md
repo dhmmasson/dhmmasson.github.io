@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Decision support in precision sheep farming
 alias:
   - "Decision support in precision sheep farming"
@@ -39,7 +39,7 @@ author:
   - name: 
       given: "Alvaro"
       family: "Llaria" 
-doi: "10.1016/j.ifacol.2019.01.048"
+doi: "https://doi.org/10.1016/j.ifacol.2019.01.048"
 hal: "https://hal.science/hal-01973339v1"
 halid: "hal-01973339v1"
 citation:

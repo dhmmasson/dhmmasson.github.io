@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Web design galleries: please give me similar styles!: a claim for ground truth datasets
 alias:
   - "Web design galleries: please give me similar styles!: a claim for ground truth datasets"
@@ -36,7 +36,7 @@ author:
   - name: 
       given: "Gilles"
       family: "Bisson" 
-doi: "10.1145/2639189.2641200"
+doi: "https://doi.org/10.1145/2639189.2641200"
 hal: "https://hal.science/hal-04667515"
 halid: "hal-04667515"
 citation:

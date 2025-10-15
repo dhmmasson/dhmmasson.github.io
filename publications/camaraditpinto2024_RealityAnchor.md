@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Reality anchor methodology: how to design a digital twin to support situation awareness
 alias:
   - "Reality anchor methodology: how to design a digital twin to support situation awareness"
@@ -36,7 +36,7 @@ author:
   - name: 
       given: "Laetitia"
       family: "Urfels" 
-doi: "10.1080/09544828.2024.2336838"
+doi: "https://doi.org/10.1080/09544828.2024.2336838"
 hal: ""
 halid: ""
 citation:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Passeport produit numérique pour permettre traçabilité et transparence dans la supply chain textile et tout au long du cycle de vie d'un produit
 alias:
   - "Passeport produit numérique pour permettre traçabilité et transparence dans la supply chain textile et tout au long du cycle de vie d'un produit"
@@ -33,7 +33,7 @@ author:
   - name: 
       given: "Cédrick"
       family: "Béler" 
-doi: ""
+doi: "https://doi.org/"
 hal: ""
 halid: ""
 citation:

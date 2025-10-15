@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Exploration of Physiological Arousal in Divergent and Convergent Thinking using 2D screen and VR Sketching Tools.
 alias:
   - "Exploration of Physiological Arousal in Divergent and Convergent Thinking using 2D screen and VR Sketching Tools."
@@ -42,7 +42,7 @@ author:
   - name: 
       given: "Simon"
       family: "Richir" 
-doi: "10.1109/ACII59096.2023.10388141"
+doi: "https://doi.org/10.1109/ACII59096.2023.10388141"
 hal: "https://hal.science/hal-04416687v1"
 halid: "hal-04416687v1"
 citation:

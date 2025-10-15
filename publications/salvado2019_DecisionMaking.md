@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Decision Making in Near Zero Energy Building Refurbishment: A Technology Alternatives Ranking Tool
 alias:
   - "Decision Making in Near Zero Energy Building Refurbishment: A Technology Alternatives Ranking Tool"
@@ -30,7 +30,7 @@ author:
     orcid: "0000-0002-7072-3146" 
     email: "d.masson@estia.fr" 
     idhal: "dimitri-masson" 
-doi: "10.1016/j.ifacol.2019.11.196"
+doi: "https://doi.org/10.1016/j.ifacol.2019.11.196"
 hal: "https://hal.science/hal-02362849v2"
 halid: "hal-02362849v2"
 citation:

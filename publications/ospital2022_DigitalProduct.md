@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   A digital product passport to support product transparency and circularity
 alias:
   - "A digital product passport to support product transparency and circularity"
@@ -33,7 +33,7 @@ author:
   - name: 
       given: "Jérémy"
       family: "Legardeur" 
-doi: "10.57649/GFC.978-989-54263"
+doi: "https://doi.org/10.57649/GFC.978-989-54263"
 hal: "https://hal.science/hal-04082837"
 halid: "hal-04082837"
 citation:

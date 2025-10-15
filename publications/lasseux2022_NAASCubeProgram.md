@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   NAASCube program, an innovative aerospace program for students,driven by the Nouvelle Aquitaine Academic Space Center
 alias:
   - "NAASCube program, an innovative aerospace program for students,driven by the Nouvelle Aquitaine Academic Space Center"
@@ -51,7 +51,7 @@ author:
   - name: 
       given: "Marc"
       family: "Bellenoue" 
-doi: ""
+doi: "https://doi.org/"
 hal: "https://hal.science/hal-04300180v1"
 halid: "hal-04300180v1"
 citation:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Is virtual reality the solution? A comparison between 3D and 2D creative sketching tools in the early design process
 alias:
   - "Is virtual reality the solution? A comparison between 3D and 2D creative sketching tools in the early design process"
@@ -42,7 +42,7 @@ author:
   - name: 
       given: "Nadine"
       family: "Couture" 
-doi: "10.3389/frvir.2022.958223"
+doi: "https://doi.org/10.3389/frvir.2022.958223"
 hal: "https://hal.science/hal-03836214v1"
 halid: "hal-03836214v1"
 citation:

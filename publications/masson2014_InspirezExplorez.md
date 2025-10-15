@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Inspirez ! Explorez ! Soutien à la créativité en conception d'interfaces homme-machine
 alias:
   - "Inspirez ! Explorez ! Soutien à la créativité en conception d'interfaces homme-machine"
@@ -24,7 +24,7 @@ author:
     orcid: "0000-0002-7072-3146" 
     email: "d.masson@estia.fr" 
     idhal: "dimitri-masson" 
-doi: ""
+doi: "https://doi.org/"
 hal: "https://hal.science/tel-01549303v1"
 halid: ""
 citation:

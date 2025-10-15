@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   A Tinkerer's Mindset: Lessons from the Technical Leadership Institute's Cohort 8 on Safe-to-Fail Probing as a Tool for Informing Judgement
 alias:
   - "A Tinkerer's Mindset: Lessons from the Technical Leadership Institute's Cohort 8 on Safe-to-Fail Probing as a Tool for Informing Judgement"
@@ -42,7 +42,7 @@ author:
   - name: 
       given: "Adrian"
       family: "Unger" 
-doi: "10.1002/inst.12494"
+doi: "https://doi.org/10.1002/inst.12494"
 hal: ""
 halid: ""
 citation:

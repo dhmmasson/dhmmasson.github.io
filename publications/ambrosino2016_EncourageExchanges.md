@@ -1,5 +1,5 @@
 ---
-title: |
+title: >
   Encourage exchanges during a creative session by the ideas qualitative evaluation using a digital tool
 alias:
   - "Encourage exchanges during a creative session by the ideas qualitative evaluation using a digital tool"
@@ -33,7 +33,7 @@ author:
   - name: 
       given: "Guillaume"
       family: "Tastet" 
-doi: "10.1145/3050385.3050414"
+doi: "https://doi.org/10.1145/3050385.3050414"
 hal: "https://hal.science/hal-01346087v1"
 halid: "hal-01346087v1"
 citation:
