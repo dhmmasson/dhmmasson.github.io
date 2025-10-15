@@ -41,13 +41,14 @@ links:
     class: btn-success
     url: https://dhmmasson.github.io/Find-Ten-Seconds/
 aliases: [Enter the Deeper Trance]
+google-scholar: true
 ---
 
 # Abstract
 
 _Enter the deeper trance_ is a tunnel runner brought in 3d with autostereograms (magic images). Try to go deeper and deeper through the levels hypnotised by the musical illusion that descend infinitely until you reach the **deeper trance**!
 
-# Enter the Deeper Trance
+# LD48: Enter the Deeper Trance
 
 I am very happy with my 3rd successful entry in Ludum Dare. **Deeper Trance** is a very simple game with **not one but two illusions** :
 

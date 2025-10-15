@@ -41,6 +41,7 @@ links:
     class: btn-success
     url: https://dhmmasson.github.io/Find-Ten-Seconds/
 aliases: ["Find Ten Seconds"]
+google-scholar: true
 ---
 
 # Abstract

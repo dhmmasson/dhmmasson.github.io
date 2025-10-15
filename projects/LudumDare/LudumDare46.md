@@ -41,6 +41,7 @@ links:
     url: https://dhmmasson.github.io/KeepTheBeesAlive/keepTheBeeAlive-PostMortem
 toc: true
 toc-depth: 3
+google-scholar: true
 ---
 
 # Abstract
