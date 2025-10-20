@@ -23,6 +23,14 @@ listing:
     contents: "./LudumDare/LudumDare51.md"
     type: grid
     grid-columns: 1
+  - id: ld57
+    contents: "./LudumDare/LudumDare57.md"
+    type: grid
+    grid-columns: 1
+  - id: ld58
+    contents: "./LudumDare/LudumDare58.md"
+    type: grid
+    grid-columns: 1
 toc: true
 toc-depth: 3
 ---
@@ -77,6 +85,61 @@ I am so happy with my entry for **LD51**. I have made a working game, with a goa
 The game features customizable settings, hidden easter eggs, and a dynamic (but terrible!) soundtrack (with an option to mute). It was built from scratch using P5.js.
 
 [Read more about Find Ten Seconds](./LudumDare/LudumDare51.md)
+
+## LD57: Depths
+
+For **LD57**, the theme was **Depths**, I had no real idea for a complex game mechanic that would fit the theme, so I decided to make a game for my oldest daughter rather than for the ludum dare audience. She loves search-and-find games, so I decided to create one just for her. She even helped me shape it: she suggested making it about Easter (since it was just around the corner), and together we picked the color palette. But this still inspired me to find my twist! You have to adjust your focal length to uncover the element hidden in the depths of field of the scene.
+
+The result was **Focus Hunt** — a cozy, camera-based find game where you explore a colorful diorama and try to capture just the right details in focus.
+
+:::{#ld57 .aside}
+:::
+
+In the scene, my daughter had to find:
+📸 the letters of her name,  
+🐇 a chocolate rabbit with only one ear,  
+🔔 two blue bells,  
+🐞 and five ladybugs.
+
+The results were beyond my expectations, especially in **Innovation** and **Theme**, showing that small, personal ideas can resonate widely.
+
+**Final Results: **  
+Overall: 197th (3.305 average from 66 ratings)
+Fun: 251st (2.841 average from 65 ratings)
+Innovation: 83rd (3.625 average from 66 ratings)
+Theme: 90th (3.813 average from 66 ratings)
+Graphics: 139th (3.477 average from 66 ratings)
+Audio: 190th (2.919 average from 64 ratings)
+Mood: 212th (3.113 average from 64 ratings)
+
+[Read more about Focus Hunt](./LudumDare/LudumDare57.md)
+
+---
+
+## LD58: Collector
+
+For **LD58**, I finally brought to life an idea that had been sitting in my notebook for **over eight years** — a game about color patterns, adjacency, and mathematical beauty. The theme this time clicked perfectly, and I used it to build something I've wanted to explore for a long time: **Tiles Collector**.
+
+:::{#ld58 .aside}
+:::
+
+**Tiles Collector** is a minimalist puzzle game where you collect **unique color pairs** by carefully arranging colored tiles into 1D friezes and 2D grids. The goal is to fill each row and column to maximize distinct adjacent pairs — a little bit like dominoes, a little bit like sudoku, but all about color harmony.
+
+The game starts simple, with just two colors, and gradually grows deeper as you unlock more colors and dimensions — from 2, to 3, and finally 4 colors. Each step reveals new layers of combinatorial beauty and challenge.
+
+For once, I managed to pack in a lot of features within the 48-hour jam:
+
+- **Tutorial Mode** – to gently teach the core mechanic
+- **3 Daily Challenges** – new puzzles every day with an online leaderboard
+- **Sandbox Mode** – to freely experiment and create your own perfect grids
+
+I went for a **clean aesthetic**, inspired by _The New York Times_ games, and intentionally kept it **silent**, encouraging a calm, reflective play session — or your own background soundtrack. (music would really not have fit the mood of the game, and i didn’t have time to compose something fitting anyway)
+
+The whole project was developed and hosted live using **Quarto**, **p5.js**, and **GitHub Pages**, with regular commits and releases throughout the weekend.
+
+Behind all this lies a deeper mathematical curiosity: the search for a tiling that contains all possible adjacent color pairs and 2x2 color squares simultaneously. For 2 and 3 colors, it’s proven impossible — but the 4-color case remains an open question. Maybe one day, the players of Tiles Collector will help me find out.
+
+[Read more about Tiles Collector](./LudumDare/LudumDare58.md)
 
 # The Joy of Community Feedback
 
