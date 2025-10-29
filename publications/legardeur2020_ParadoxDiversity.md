@@ -1,6 +1,5 @@
 ---
-title: >
-  The paradox of diversity's influence on the creative teams Lessons learned from the analysis of 14 editions of" The 24h of innovation" hackathon
+title: "The paradox of diversity's influence on the creative teams Lessons learned from the analysis of 14 editions of\" The 24h of innovation\" hackathon"
 alias:
   - "The paradox of diversity's influence on the creative teams Lessons learned from the analysis of 14 editions of\" The 24h of innovation\" hackathon"
   - "@legardeur2020_ParadoxDiversity"

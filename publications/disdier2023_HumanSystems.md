@@ -1,6 +1,5 @@
 ---
-title: >
-  Toward a Human Systems Integration approach to the design and operation of a remote and virtual air traffic control center
+title: "Toward a Human Systems Integration approach to the design and operation of a remote and virtual air traffic control center"
 alias:
   - "Toward a Human Systems Integration approach to the design and operation of a remote and virtual air traffic control center"
   - "@disdier2023_HumanSystems"

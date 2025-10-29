@@ -1,6 +1,5 @@
 ---
-title: >
-  PRODEC for human systems integration of increasingly autonomous systems
+title: "PRODEC for human systems integration of increasingly autonomous systems"
 alias:
   - "PRODEC for human systems integration of increasingly autonomous systems"
   - "@boy2024_PRODECHuman"

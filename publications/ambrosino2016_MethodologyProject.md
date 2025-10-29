@@ -1,6 +1,5 @@
 ---
-title: >
-  D. 1.1 Methodology of project emergence in interclustering and intersectoral context (1)
+title: "D. 1.1 Methodology of project emergence in interclustering and intersectoral context (1)"
 alias:
   - "D. 1.1 Methodology of project emergence in interclustering and intersectoral context (1)"
   - "@ambrosino2016_MethodologyProject"

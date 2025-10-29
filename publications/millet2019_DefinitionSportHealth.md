@@ -1,6 +1,5 @@
 ---
-title: >
-  Definition of a “Sport-Health” Semantic Space
+title: "Definition of a “Sport-Health” Semantic Space"
 alias:
   - "Definition of a “Sport-Health” Semantic Space"
   - "@millet2019_DefinitionSportHealth"

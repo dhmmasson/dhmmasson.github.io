@@ -1,6 +1,5 @@
 ---
-title: >
-  I++: interactive galleries for promoting interactive curiosities in web designs
+title: "I++: interactive galleries for promoting interactive curiosities in web designs"
 alias:
   - "I++: interactive galleries for promoting interactive curiosities in web designs"
   - "@pena-arrazola2015_InteractiveGalleries"

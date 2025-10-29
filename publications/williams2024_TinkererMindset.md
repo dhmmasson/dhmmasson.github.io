@@ -1,6 +1,5 @@
 ---
-title: >
-  A Tinkerer's Mindset: Lessons from the Technical Leadership Institute's Cohort 8 on Safe-to-Fail Probing as a Tool for Informing Judgement
+title: "A Tinkerer's Mindset: Lessons from the Technical Leadership Institute's Cohort 8 on Safe-to-Fail Probing as a Tool for Informing Judgement"
 alias:
   - "A Tinkerer's Mindset: Lessons from the Technical Leadership Institute's Cohort 8 on Safe-to-Fail Probing as a Tool for Informing Judgement"
   - "@williams2024_TinkererMindset"

@@ -1,6 +1,5 @@
 ---
-title: >
-  Toward total traceability and full transparency communication in textile industry supply chain
+title: "Toward total traceability and full transparency communication in textile industry supply chain"
 alias:
   - "Toward total traceability and full transparency communication in textile industry supply chain"
   - "@ospital2022_TotalTraceability"

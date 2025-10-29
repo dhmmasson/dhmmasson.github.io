@@ -1,6 +1,5 @@
 ---
-title: >
-  Decision Making in Near Zero Energy Building Refurbishment: A Technology Alternatives Ranking Tool
+title: "Decision Making in Near Zero Energy Building Refurbishment: A Technology Alternatives Ranking Tool"
 alias:
   - "Decision Making in Near Zero Energy Building Refurbishment: A Technology Alternatives Ranking Tool"
   - "@salvado2019_DecisionMaking"

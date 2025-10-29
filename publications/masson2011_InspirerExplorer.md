@@ -1,6 +1,5 @@
 ---
-title: >
-  Inspirer, explorer: Magellan, un environnement interactif evolutionnaire pour la génération d'exemples
+title: "Inspirer, explorer: Magellan, un environnement interactif evolutionnaire pour la génération d'exemples"
 alias:
   - "Inspirer, explorer: Magellan, un environnement interactif evolutionnaire pour la génération d'exemples"
   - "@masson2011_InspirerExplorer"

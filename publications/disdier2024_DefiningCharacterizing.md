@@ -1,6 +1,5 @@
 ---
-title: >
-  Defining and characterizing the operational context for human systems integration
+title: "Defining and characterizing the operational context for human systems integration"
 alias:
   - "Defining and characterizing the operational context for human systems integration"
   - "@disdier2024_DefiningCharacterizing"

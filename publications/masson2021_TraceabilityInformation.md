@@ -1,6 +1,5 @@
 ---
-title: >
-  Traceability information to communicate to consumer in total transparency
+title: "Traceability information to communicate to consumer in total transparency"
 alias:
   - "Traceability information to communicate to consumer in total transparency"
   - "@masson2021_TraceabilityInformation"

@@ -1,6 +1,5 @@
 ---
-title: >
-  A Context Acquisition Methodology for the Design of Complex Sociotechnical Systems
+title: "A Context Acquisition Methodology for the Design of Complex Sociotechnical Systems"
 alias:
   - "A Context Acquisition Methodology for the Design of Complex Sociotechnical Systems"
   - "@disdier2024_ContextAcquisition"

@@ -1,6 +1,5 @@
 ---
-title: >
-  Towards a Circular Product (Re)Design Methodology: Proposition of the Unlinear Method to Foster Circularity
+title: "Towards a Circular Product (Re)Design Methodology: Proposition of the Unlinear Method to Foster Circularity"
 alias:
   - "Towards a Circular Product (Re)Design Methodology: Proposition of the Unlinear Method to Foster Circularity"
   - "@demarcq2022_CircularProduct"

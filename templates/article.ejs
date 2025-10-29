@@ -6,7 +6,7 @@
   %>
   <h2><%= year %></h2>
   <% for (const item of itemsPerYear) { %>
-  <div class="quarto-post" <%=metadataAttrs(item) %>
+  <div class="quarto-post" <%="metadataAttrs(item)" %>
     >
     <div class="body">
       <h3 class="no-anchor listing-title lead">
@@ -24,7 +24,7 @@
         </a>
         <% if (item.doi) { %>
         <a
-          href="<%- item.doi %>"
+          href="https://doi.org/<%- item.doi.replace(/^.*doi.org\//, '') %>"
           class="btn btn-sm btn-dark"
           target="_blank"
           rel="noopener noreferrer"
@@ -44,7 +44,7 @@
         </a>
         <% } %> <% if (item.pdf) { %>
         <a
-          href="<%- item.pdf %>"
+          href="/publications/<%- item.pdf %>"
           class="btn btn-sm btn-info"
           target="_blank"
           rel="noopener noreferrer"

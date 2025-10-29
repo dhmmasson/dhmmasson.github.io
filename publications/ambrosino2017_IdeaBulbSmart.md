@@ -1,6 +1,5 @@
 ---
-title: >
-  IdeaBulb: A Smart and Tangible User Interface for Monitoring Ideation During Creative Sessions
+title: "IdeaBulb: A Smart and Tangible User Interface for Monitoring Ideation During Creative Sessions"
 alias:
   - "IdeaBulb: A Smart and Tangible User Interface for Monitoring Ideation During Creative Sessions"
   - "@ambrosino2017_IdeaBulbSmart"

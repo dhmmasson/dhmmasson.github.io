@@ -1,6 +1,5 @@
 ---
-title: >
-  From requirements to prototyping: Application of human-system integration methodology to digital twin design
+title: "From requirements to prototyping: Application of human-system integration methodology to digital twin design"
 alias:
   - "From requirements to prototyping: Application of human-system integration methodology to digital twin design"
   - "@pinto2021_RequirementsPrototyping"

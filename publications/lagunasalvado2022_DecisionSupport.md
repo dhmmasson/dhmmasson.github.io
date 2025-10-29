@@ -1,6 +1,5 @@
 ---
-title: >
-  Decision Support System for technology selection based on multi-criteria ranking: Application to NZEB refurbishment
+title: "Decision Support System for technology selection based on multi-criteria ranking: Application to NZEB refurbishment"
 alias:
   - "Decision Support System for technology selection based on multi-criteria ranking: Application to NZEB refurbishment"
   - "@lagunasalvado2022_DecisionSupport"

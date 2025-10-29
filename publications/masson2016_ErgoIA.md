@@ -1,6 +1,5 @@
 ---
-title: >
-  Ergo'IA '16: Proceedings of the 15th Ergo'IA "Ergonomie Et Informatique Avancée" Conference
+title: "Ergo'IA '16: Proceedings of the 15th Ergo'IA \"Ergonomie Et Informatique Avancée\" Conference"
 alias:
   - "Ergo'IA '16: Proceedings of the 15th Ergo'IA \"Ergonomie Et Informatique Avancée\" Conference"
   - "@masson2016_ErgoIA"

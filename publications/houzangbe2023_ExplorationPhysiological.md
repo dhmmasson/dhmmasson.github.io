@@ -1,6 +1,5 @@
 ---
-title: >
-  Exploration of Physiological Arousal in Divergent and Convergent Thinking using 2D screen and VR Sketching Tools.
+title: "Exploration of Physiological Arousal in Divergent and Convergent Thinking using 2D screen and VR Sketching Tools."
 alias:
   - "Exploration of Physiological Arousal in Divergent and Convergent Thinking using 2D screen and VR Sketching Tools."
   - "@houzangbe2023_ExplorationPhysiological"

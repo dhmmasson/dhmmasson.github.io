@@ -1,6 +1,5 @@
 ---
-title: >
-  Fostering collaborative project emergence through divergence of opinion
+title: "Fostering collaborative project emergence through divergence of opinion"
 alias:
   - "Fostering collaborative project emergence through divergence of opinion"
   - "@ambrosino2017_FosteringCollaborative"

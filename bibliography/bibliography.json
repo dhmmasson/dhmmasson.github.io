@@ -108,8 +108,8 @@
     }
   },
   "version": {
-    "zotero": "7.0.26",
-    "bbt": "7.0.50"
+    "zotero": "7.0.27",
+    "bbt": "7.0.60"
   },
   "collections": {},
   "items": [
@@ -447,6 +447,78 @@
       "itemKey": "C6X4ZILZ",
       "libraryID": 1,
       "select": "zotero://select/library/items/C6X4ZILZ"
+    },
+    {
+      "key": "JTYSGVG7",
+      "version": 1213,
+      "itemType": "journalArticle",
+      "title": "Fostering collaborative project emergence through divergence of opinion",
+      "abstractNote": "In the context of the emergence of collaborative innovation projects between competitiveness clusters, the animation of creative sessions permits to identify new opportunities. The number of ideas generated is a lot more important than the number of collaborative innovation projects implemented subsequently. To improve this ratio, we verify that group discussions could be facilitated by improving the ideation and evaluation phases of ideas during innovation process. Especially, in this article, we test many hypotheses in order to show that divergence of opinions can foster collaborative project emergence.",
+      "date": "2017-08-25",
+      "language": "en",
+      "archive": "HAL",
+      "archiveLocation": "https://hal.science/hal-01577761v1",
+      "libraryCatalog": "www.designsociety.org",
+      "url": "https://www.designsociety.org/publication/39867/Fostering+collaborative+project+emergence+through+divergence+of+opinion",
+      "rights": "All rights reserved",
+      "seriesTitle": "21st International Conference on Engineering Design (ICED 17)",
+      "volume": "8",
+      "pages": "489–498",
+      "publicationTitle": "DS 87-8 proceedings of the 21st international conference on engineering design (ICED 17) vol 8: Human behaviour in design, vancouver, canada, 21-25.08. 2017",
+      "series": "ICED",
+      "journalAbbreviation": "Proc. Des. Soc.",
+      "ISSN": "2220-4342",
+      "creators": [
+        {
+          "firstName": "Julien",
+          "lastName": "Ambrosino",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Dimitri",
+          "lastName": "Masson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Audrey",
+          "lastName": "Abi Akle",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jérémy",
+          "lastName": "Legardeur",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "Cluster"
+        },
+        {
+          "tag": "Collaborative design"
+        },
+        {
+          "tag": "Creativity"
+        },
+        {
+          "tag": "Evaluation"
+        },
+        {
+          "tag": "Innovation"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2025-10-27T13:45:08Z",
+      "dateModified": "2025-10-27T13:51:57Z",
+      "uri": "http://zotero.org/users/2761519/items/JTYSGVG7",
+      "itemID": 1056,
+      "attachments": [],
+      "notes": [],
+      "citationKey": "ambrosino2017_FosteringCollaborativea",
+      "autoJournalAbbreviation": "87-8 Proc. 21st Int. Conf. Eng. Des. ICED 17 Vol 8 Hum. Behav. Des. Vanc. Can. 21-2508 2017",
+      "itemKey": "JTYSGVG7",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/JTYSGVG7"
     },
     {
       "key": "3LK45ALT",
@@ -1630,11 +1702,11 @@
       ],
       "tags": [
         {
-          "tag": "complex sociotechnical systems",
+          "tag": "human systems integration",
           "type": 1
         },
         {
-          "tag": "human systems integration",
+          "tag": "complex sociotechnical systems",
           "type": 1
         },
         {
@@ -3272,7 +3344,7 @@
     },
     {
       "key": "SRFZBWC6",
-      "version": 1019,
+      "version": 1211,
       "itemType": "journalArticle",
       "title": "Definition of a “Sport-Health” Semantic Space",
       "abstractNote": "Product success depends on its capacity to meet users’ expectations. Human Centred Design approach helps to reach this success by focussing on users’ needs in the design process. These needs are as well functional as hedonic. Designing products requires then to design hedonic properties affecting users’ perception. For sport products, people wants to improve their performances while maintaining their health. Sport products are then considered not only “sporty” but also “healthy”. Thus, integrating both health and sport expectations into the design process are necessary.Last decades, Affective Engineering was developed to integrate perception into the design process. Applying this approach for sport products may allow defining and mixing sport and health perceptual characteristics all along the design process. However, defining these characterisitics into requirements implies to translate them into semantic terms. If we observe semantic descriptors for sport products and for health products, they seem opposite. In this paper, we aim defining a semantic space representative and respectful of both domains, sport and health, while they oppose.",
@@ -3285,9 +3357,11 @@
       "accessDate": "2024-08-04T06:39:28Z",
       "rights": "All rights reserved",
       "extra": "Conference Paper",
+      "seriesTitle": "22nd International Conference on Engineering Design (ICED22)",
       "volume": "1",
       "pages": "3841-3850",
       "publicationTitle": "Proceedings of the Design Society: International Conference on Engineering Design",
+      "series": "ICED",
       "DOI": "10.1017/dsi.2019.391",
       "issue": "1",
       "journalAbbreviation": "Proc. Des. Soc.",
@@ -3336,7 +3410,7 @@
       },
       "inPublications": true,
       "dateAdded": "2024-02-02T21:02:57Z",
-      "dateModified": "2024-08-04T22:13:30Z",
+      "dateModified": "2025-10-27T13:49:49Z",
       "uri": "http://zotero.org/users/2761519/items/SRFZBWC6",
       "itemID": 989,
       "attachments": [
@@ -3947,7 +4021,7 @@
     },
     {
       "key": "FEAVYCUB",
-      "version": 1019,
+      "version": 1212,
       "itemType": "journalArticle",
       "title": "From requirements to prototyping: Application of human-system integration methodology to digital twin design",
       "abstractNote": "Industrial digital transformation is bringing a need for new tools and concepts. However, designing such complex tools and concept requires methods to be correctly implemented. These methods are studied as part of system engineering to satisfy various identified goals, and more specifically human-system integration, which is the topic of this paper. This article introduces the method used to define key elements of human perception of reality called reality anchors to design scenarios to be tested in a digital twin prototype. This method goes from regulation study to user cognitive function analysis on the specific case of digital twin designing in oil-and-gas industry. This method highlighted the differences between theoretical process and the followed process as well as tools and competencies used to identify reality anchors. This knowledge will then be used to implement a new process to be implemented with a digital twin and scenarios to test the prototype using realistic simulation.",
@@ -3965,6 +4039,7 @@
       "volume": "1",
       "pages": "1617-1626",
       "publicationTitle": "Proceedings of the Design Society",
+      "series": "ICED",
       "DOI": "10.1017/pds.2021.423",
       "journalAbbreviation": "Proc. Des. Soc.",
       "ISSN": "2732-527X",
@@ -3997,10 +4072,6 @@
       ],
       "tags": [
         {
-          "tag": "User centred design",
-          "type": 1
-        },
-        {
           "tag": "Design methodology",
           "type": 1
         },
@@ -4015,6 +4086,10 @@
         {
           "tag": "Process modelling",
           "type": 1
+        },
+        {
+          "tag": "User centred design",
+          "type": 1
         }
       ],
       "relations": {
@@ -4026,7 +4101,7 @@
       },
       "inPublications": true,
       "dateAdded": "2024-02-02T21:02:57Z",
-      "dateModified": "2024-08-04T22:13:49Z",
+      "dateModified": "2025-10-27T13:49:53Z",
       "uri": "http://zotero.org/users/2761519/items/FEAVYCUB",
       "itemID": 1002,
       "attachments": [

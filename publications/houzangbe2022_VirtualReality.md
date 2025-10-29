@@ -1,6 +1,5 @@
 ---
-title: >
-  Is virtual reality the solution? A comparison between 3D and 2D creative sketching tools in the early design process
+title: "Is virtual reality the solution? A comparison between 3D and 2D creative sketching tools in the early design process"
 alias:
   - "Is virtual reality the solution? A comparison between 3D and 2D creative sketching tools in the early design process"
   - "@houzangbe2022_VirtualReality"

@@ -1,6 +1,5 @@
 ---
-title: >
-  Passeport produit numérique pour permettre traçabilité et transparence dans la supply chain textile et tout au long du cycle de vie d'un produit
+title: "Passeport produit numérique pour permettre traçabilité et transparence dans la supply chain textile et tout au long du cycle de vie d'un produit"
 alias:
   - "Passeport produit numérique pour permettre traçabilité et transparence dans la supply chain textile et tout au long du cycle de vie d'un produit"
   - "@ospital2022_PasseportProduit"

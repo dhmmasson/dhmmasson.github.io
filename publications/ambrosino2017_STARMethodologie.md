@@ -1,6 +1,5 @@
 ---
-title: >
-  STAR: une méthodologie d'animation pour faciliter l'émergence de projets en interclustering Application au projet européen NEPTUNE sur la croissance bleue
+title: "STAR: une méthodologie d'animation pour faciliter l'émergence de projets en interclustering Application au projet européen NEPTUNE sur la croissance bleue"
 alias:
   - "STAR: une méthodologie d'animation pour faciliter l'émergence de projets en interclustering Application au projet européen NEPTUNE sur la croissance bleue"
   - "@ambrosino2017_STARMethodologie"

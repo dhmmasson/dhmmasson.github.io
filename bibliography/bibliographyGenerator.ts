@@ -242,7 +242,7 @@ for (const item of items) {
           : null,
       pdf:
         item.attachments && item.attachments.length > 0
-          ? `_files/${item.citationKey}.pdf`
+          ? `./_files/${item.citationKey}.pdf`
           : null,
 
       DOI: item.DOI,
@@ -270,7 +270,7 @@ await Deno.writeTextFile(
   JSON.stringify(cleanItems, null, 2)
 );
 
-const file_destination = join(config.outputFolder, "_files");
+const file_destination = join(config.outputFolder, "./_files");
 await Deno.mkdir(file_destination, {
   recursive: true,
 });

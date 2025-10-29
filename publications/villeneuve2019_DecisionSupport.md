@@ -1,6 +1,5 @@
 ---
-title: >
-  Decision support in precision sheep farming
+title: "Decision support in precision sheep farming"
 alias:
   - "Decision support in precision sheep farming"
   - "@villeneuve2019_DecisionSupport"

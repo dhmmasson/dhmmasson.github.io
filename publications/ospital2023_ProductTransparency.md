@@ -1,6 +1,5 @@
 ---
-title: >
-  Toward product transparency: communicating traceability information to consumers
+title: "Toward product transparency: communicating traceability information to consumers"
 alias:
   - "Toward product transparency: communicating traceability information to consumers"
   - "@ospital2023_ProductTransparency"

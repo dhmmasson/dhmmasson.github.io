@@ -1,6 +1,5 @@
 ---
-title: |
-  {{title}}
+title: "{{title |> replaceAll("\"", "\\\"")}}"
 alias:
   - "{{title |> replaceAll("\"", "\\\"")}}"
   - "@{{citationKey}}"
@@ -16,7 +15,7 @@ publication: |
 authors_s: {{it.authors_s_bold_html}}
 author: {{for author of it.authors}}
   {{include "./author.vto" {author:author} }} {{/for}}
-doi: "{{it.DOI}}"
+doi: "https://doi.org/{{it.DOI}}"
 hal: "{{it.halURL}}"
 halid: "{{it.halId}}"
 citation:

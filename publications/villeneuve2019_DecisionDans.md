@@ -1,6 +1,5 @@
 ---
-title: >
-  Décision dans les systèmes cyber-physiques et humains : application à l'élevage de précision
+title: "Décision dans les systèmes cyber-physiques et humains : application à l'élevage de précision"
 alias:
   - "Décision dans les systèmes cyber-physiques et humains : application à l'élevage de précision"
   - "@villeneuve2019_DecisionDans"

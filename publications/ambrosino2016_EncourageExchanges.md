@@ -1,6 +1,5 @@
 ---
-title: >
-  Encourage exchanges during a creative session by the ideas qualitative evaluation using a digital tool
+title: "Encourage exchanges during a creative session by the ideas qualitative evaluation using a digital tool"
 alias:
   - "Encourage exchanges during a creative session by the ideas qualitative evaluation using a digital tool"
   - "@ambrosino2016_EncourageExchanges"

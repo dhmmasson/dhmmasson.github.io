@@ -1,6 +1,5 @@
 ---
-title: >
-  A digital product passport to support product transparency and circularity
+title: "A digital product passport to support product transparency and circularity"
 alias:
   - "A digital product passport to support product transparency and circularity"
   - "@ospital2022_DigitalProduct"

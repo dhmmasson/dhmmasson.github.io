@@ -1,6 +1,5 @@
 ---
-title: >
-  NAASCube program, an innovative aerospace program for students,driven by the Nouvelle Aquitaine Academic Space Center
+title: "NAASCube program, an innovative aerospace program for students,driven by the Nouvelle Aquitaine Academic Space Center"
 alias:
   - "NAASCube program, an innovative aerospace program for students,driven by the Nouvelle Aquitaine Academic Space Center"
   - "@lasseux2022_NAASCubeProgram"

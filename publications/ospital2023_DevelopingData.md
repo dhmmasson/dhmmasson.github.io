@@ -1,6 +1,5 @@
 ---
-title: >
-  Toward Developing a Data Model for a Digital Product Passport To Enhance Circularity in Fashion
+title: "Toward Developing a Data Model for a Digital Product Passport To Enhance Circularity in Fashion"
 alias:
   - "Toward Developing a Data Model for a Digital Product Passport To Enhance Circularity in Fashion"
   - "@ospital2023_DevelopingData"

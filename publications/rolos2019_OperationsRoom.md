@@ -1,6 +1,5 @@
 ---
-title: >
-  Operations room design for the control of a fleet of robots
+title: "Operations room design for the control of a fleet of robots"
 alias:
   - "Operations room design for the control of a fleet of robots"
   - "@rolos2019_OperationsRoom"

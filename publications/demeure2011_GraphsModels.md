@@ -1,6 +1,5 @@
 ---
-title: >
-  Graphs of models for exploring design spaces in the engineering of Human Computer Interaction
+title: "Graphs of models for exploring design spaces in the engineering of Human Computer Interaction"
 alias:
   - "Graphs of models for exploring design spaces in the engineering of Human Computer Interaction"
   - "@demeure2011_GraphsModels"

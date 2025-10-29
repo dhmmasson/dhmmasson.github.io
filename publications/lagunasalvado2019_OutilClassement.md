@@ -1,6 +1,5 @@
 ---
-title: >
-  Outil de classement de technologies pour l'aide à la décision en rénovation de bâtiments
+title: "Outil de classement de technologies pour l'aide à la décision en rénovation de bâtiments"
 alias:
   - "Outil de classement de technologies pour l'aide à la décision en rénovation de bâtiments"
   - "@lagunasalvado2019_OutilClassement"

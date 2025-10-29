@@ -1,6 +1,5 @@
 ---
-title: >
-  Méthodologie de conception de jumeau numérique pour supporter la conscience de la situation
+title: "Méthodologie de conception de jumeau numérique pour supporter la conscience de la situation"
 alias:
   - "Méthodologie de conception de jumeau numérique pour supporter la conscience de la situation"
   - "@camaraditpinto2023_MethodologieConception"

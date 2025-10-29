@@ -1,6 +1,5 @@
 ---
-title: >
-  Digital twin design requirements in downgraded situations management
+title: "Digital twin design requirements in downgraded situations management"
 alias:
   - "Digital twin design requirements in downgraded situations management"
   - "@camaraditpinto2021_DigitalTwin"

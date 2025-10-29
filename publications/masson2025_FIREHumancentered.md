@@ -1,6 +1,5 @@
 ---
-title: >
-  FIRE: a human-centered framework for digital twin design
+title: "FIRE: a human-centered framework for digital twin design"
 alias:
   - "FIRE: a human-centered framework for digital twin design"
   - "@masson2025_FIREHumancentered"

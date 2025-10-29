@@ -1,6 +1,5 @@
 ---
-title: >
-  Reality anchor methodology: how to design a digital twin to support situation awareness
+title: "Reality anchor methodology: how to design a digital twin to support situation awareness"
 alias:
   - "Reality anchor methodology: how to design a digital twin to support situation awareness"
   - "@camaraditpinto2024_RealityAnchor"

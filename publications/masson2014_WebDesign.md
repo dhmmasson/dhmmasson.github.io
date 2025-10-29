@@ -1,6 +1,5 @@
 ---
-title: >
-  Web design galleries: please give me similar styles!: a claim for ground truth datasets
+title: "Web design galleries: please give me similar styles!: a claim for ground truth datasets"
 alias:
   - "Web design galleries: please give me similar styles!: a claim for ground truth datasets"
   - "@masson2014_WebDesign"

@@ -1,6 +1,5 @@
 ---
-title: >
-  Magellan, an evolutionary system to foster user interface design creativity
+title: "Magellan, an evolutionary system to foster user interface design creativity"
 alias:
   - "Magellan, an evolutionary system to foster user interface design creativity"
   - "@masson2010_MagellanEvolutionary"

@@ -1,6 +1,5 @@
 ---
-title: >
-  Study and design of a remote and virtual air traffic control center using a Human Systems Integration approach
+title: "Study and design of a remote and virtual air traffic control center using a Human Systems Integration approach"
 alias:
   - "Study and design of a remote and virtual air traffic control center using a Human Systems Integration approach"
   - "@disdier2022_StudyDesign"

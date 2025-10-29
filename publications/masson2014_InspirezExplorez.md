@@ -1,6 +1,5 @@
 ---
-title: >
-  Inspirez ! Explorez ! Soutien à la créativité en conception d'interfaces homme-machine
+title: "Inspirez ! Explorez ! Soutien à la créativité en conception d'interfaces homme-machine"
 alias:
   - "Inspirez ! Explorez ! Soutien à la créativité en conception d'interfaces homme-machine"
   - "@masson2014_InspirezExplorez"

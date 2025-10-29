@@ -1,6 +1,5 @@
 ---
-title: >
-  Définition d'un espace sémantique Sport-Santé
+title: "Définition d'un espace sémantique Sport-Santé"
 alias:
   - "Définition d'un espace sémantique Sport-Santé"
   - "@millet2019_DefinitionEspace"
