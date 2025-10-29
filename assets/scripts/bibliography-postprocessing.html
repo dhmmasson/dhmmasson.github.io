@@ -1,0 +1,56 @@
+<script>
+    // ====== CONFIG ======
+const yourNamePatterns = [
+  /\bMasson,\s*D\.?\s*H?.?\b/gi, // Matches "Masson, D." or "Masson, D. H."
+];
+const yourNameReplacement = '<strong>Masson, D.</strong>';
+
+// ====== GROUPING LOGIC ======
+
+// Select all bibliography entries
+const entries = Array.from(document.querySelectorAll('#refs .csl-entry'));
+const grouped = {};
+
+// Step 1: Extract and group entries
+entries.forEach(entry => {
+  const headerEl = entry.querySelector('.csl-block strong');
+  const groupName = headerEl ? headerEl.textContent.trim() : 'Rapports';
+
+  // Remove redundant header from each entry
+  if (headerEl) headerEl.closest('.csl-block').remove();
+
+  // Replace author name with bolded version
+  let html = entry.innerHTML;
+  yourNamePatterns.forEach(regex => {
+    html = html.replace(regex, yourNameReplacement);
+  });
+  entry.innerHTML = html;
+
+  // Add entry to the corresponding group
+  if (!grouped[groupName]) grouped[groupName] = [];
+  grouped[groupName].push(entry);
+});
+
+// Step 2: Rebuild the bibliography container
+const refsContainer = document.querySelector('#refs');
+refsContainer.innerHTML = ''; // clear old content
+
+// Optional: sort group names alphabetically (you can remove this if you want original order)
+const sortedGroups = Object.keys(grouped).sort();
+
+sortedGroups.forEach(groupName => {
+  const items = grouped[groupName];
+
+  // Create a new group header
+  const groupHeader = document.createElement('h3');
+  groupHeader.textContent = groupName;
+  groupHeader.classList.add('quarto-appendix-heading');
+  groupHeader.style.textIndent = '0';
+  groupHeader.style.marginTop = '1em';
+groupHeader.style.marginBottom = '0.5em';
+
+  // Append header and entries
+  refsContainer.appendChild(groupHeader);
+  items.forEach(item => refsContainer.appendChild(item));
+});
+</script>
