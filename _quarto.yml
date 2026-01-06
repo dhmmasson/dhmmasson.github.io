@@ -6,6 +6,7 @@ project:
     port: 4200
   resources: 
     - rezbuild-emperor-tamarin/static/index.html
+    - 48ed485d89df4467a07d9d0caa1ec0d0.txt 
   render:
     - "*.md"  
     - "*.qmd"
@@ -67,4 +68,7 @@ format:
       - https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css
     email-obfuscation: javascript
     include-after-body: assets/scripts/obsidian-citation.html
-
+    canonical-url: true 
+    include-in-header:
+      text: |
+        <meta name="google-site-verification" content="vp6AQz54wI5Ae1U5aDpXwPAuEmCqFg__D8G0vBTiaFg" />
