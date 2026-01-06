@@ -1,0 +1,218 @@
+---
+csl: ../bibliography/apa-cv.csl
+include-after-body: ../assets/scripts/bibliography-postprocessing.html
+draft: true
+---
+# Recherche
+
+## Domaine et orientation
+
+Je mène mes recherches dans le domaine de **l’intégration humain–système (Human Systems Integration, HSI)**, en particulier sur la **conception centrée utilisateur de systèmes complexes**.  
+Je m’intéresse aux **activités humaines** — telles que la conception, la prise de décision et la créativité — et à la manière dont elles s’intègrent dans des systèmes sociotechniques plus larges.  
+Mon objectif est de comprendre **comment le design de ces systèmes peut soutenir, amplifier et améliorer l’activité humaine**.
+
+Mes contributions se déclinent selon deux axes principaux :
+
+1. **Le développement d’outils informatiques supports à l’activité humaine**, destinés à l’aide à la décision, à la créativité et à l’exploration de solutions ;
+2. **La formalisation d’une méthode de “Scenario Driven Engineering”** pour la conception centrée utilisateur de systèmes sociotechniques complexes.
+
+## Approche méthodologique
+
+Les recherches que je mène — et celles que je dirige — s’inscrivent dans le cadre de la **Design Research Methodology (DRM)**, une approche de recherche spécifiquement conçue pour les domaines du design et de l’ingénierie.  
+Cette méthodologie articule plusieurs étapes complémentaires :
+
+- **Analyse de la littérature** et définition d’un espace de conception ;  
+- **Études descriptives de terrain** pour observer les pratiques réelles et les besoins des utilisateurs ;  
+- **Développement et expérimentation de prototypes**, testés avec les utilisateurs finaux pour valider les hypothèses conceptuelles et fonctionnelles.
+
+
+Ma **démarche de travail** est collaborative : j’intègre des projets transdisciplinaires (comme le projet sur la prise de décision pour l’élevage de précision [@villeneuve2019_DecisionDans; @villeneuve2019_DecisionSupport]) et les enrichis par la dimension informatique.  
+J’accorde une importance particulière à l’accompagnement et à la transmission, notamment à travers l’encadrement de stages, de thèses et de post-doctorats détaillés ci-dessous.
+
+Mes objets d’étude actuels sont :
+- les **jumeaux numériques**,  
+- les **outils d’aide à la décision**,  
+- et le **passeport numérique de produit**.
+
+## Trajectoire scientifique
+
+Mes travaux de master recherche [@masson2010_MagellanEvolutionary] et de thèse [@masson2014_InspirezExplorez] relevaient de l’Interaction Homme-Machine (IHM), centrés sur la créativité et la génération d’exemples poursoutenir la créativité des concepteurs d’IHM dans les premières phases de la conception. je me suis interressé à cette activité pour proposer des outils supports à l'exploration et à l'inspiration afin de positionner l’ordinateur comme partenaire créatif du concepteur (par des approches d'IA et d'algorithmes génétiques) avec des outils de recherche d’inspiration par la génération automatique d’exemples guidés par les tâches et capitalisation de connaissances [@masson2011_InspirerExplorer; @masson2011_ExamplesGalleries],  l’exploration d’exemples existants [@pena-arrazola2015_InteractiveGalleries; @masson2014_WebDesign], ou la structuration des modèles produits par les concepteurs [@demeure2011_GraphsModels]. Dès ses premiers travaux je m'interesse au role de l'homme et de la machine dans l'activité humaine, j'emprunte des méthodes d'analyse des tâches et de l'activité de l'ergonomie et des science cognitives. 
+
+J’ai ensuite élargi cette focale à la créativité collective [@legardeur2020_ParadoxDiversity] et à l’émergence de projets en contextes multi-acteurs [@ambrosino2017_FosteringCollaborative], en contribuant au developpement des méthodologies pour l’animation, l’évaluation qualitative d’idées et la convergence en équipe et en proposant des outils informatique permettant leur support (STAR [@ambrosino2016_EncourageExchanges; @ambrosino2017_STARMethodologie], IdeaValuation [@ambrosino2016_Ideavaluation], DialoJ [@masson2016_DialoJ])  . Cette phase m’a conduit à considérer de manière plus systémique les dimensions sociales et organisationnelles de la conception. Je continue à m'enrichir de la communauté facteur-humain en m'impliquant dans la communauté Ergo-IA [@masson2016_ErgoIA; @masson2018_ErgoIA]; Parallèlement, j’ai étudié l’influence des outils immersifs sur la créativité et l’état physiologique des concepteurs, précisant les liens entre modalités (2D/VR), expérience utilisateur et performance créative [@houzangbe2022_VirtualReality; @houzangbe2023_ExplorationPhysiological]. 
+
+À partir de 2019, j’ai orienté mes travaux vers la décision multicritère et les systèmes cyber-physiques-humains, en développant des systèmes d’aide à la décision et des interfaces interactives (dont Tamarin [@masson2020_Tamarin]), validés sur des cas réels (élevage de précision [@villeneuve2019_DecisionDans; @villeneuve2019_DecisionSupport], rénovation NZEB [@salvado2019_DecisionMaking; @lagunasalvado2019_OutilClassement; @lagunasalvado2022_DecisionSupport]). J’y ai formalisé des processus de décision intégrant incertitudes, préférences hétérogènes et exploration sensible des paramètres, renforçant l’idée d’une décision située et dépendante du contexte  .
+
+Depuis mon intégration dans la chaire **Flextech** en 2019 et sous le mentorat du professeur Guy André Boy, **mon domaine de recherche** a évolué vers l’**intégration humains-systèmes**, à la croisée de l’ingénierie système et des facteurs humains.   Ce domaine répond à la nécessité d’intégrer les humains dès la conception de systèmes complexes, au-delà de la simple interaction homme-machine.  Au sein de la chaire dont je suis maintenante le titulaire depuis 2025, Je m’intéresse au développement de méthodes de conception en ingénierie système basées sur des approches de *scenario-driven engineering* [@boy2020_PRODECCombining; @boy2024_PRODECHuman; @masson2025_FIREHumancentered].
+
+Un premiere axe applicatif, j'ai exploré les jumeaux numériques (DT) pour systèmes critiques. Avec PRODEC, j’ai articulé scénarios procéduraux et configurations déclaratives pour boucler conception, prototypage virtuel et simulation human-in-the-loop, révélant l’émergence par l’activité réelle et la nécessité de métriques de tangibilité physique et cognitive [@boy2024_PRODECHuman]. En parallèle, avec Stélian Camara Dit Pinto, j'ai developpé la Reality Anchor Methodology (RAM), qui formalise les ancres de réalité nécessaires à la conscience de la situation dans les DT, de l’élicitation dans l’activité opérateur jusqu’à la validation expérimentale [@pinto2021_RequirementsPrototyping; @camaraditpinto2021_DigitalTwin; @camaraditpinto2023_MethodologieConception; @camaraditpinto2024_RealityAnchor]. Ces approches se sont déployées sur des tours de contrôle à distance, où nous avons défini les propriétés du contexte opérationnel, proposé une méthodologie d’acquisition de contexte, et démontré l’intérêt de simulations itératives pour engager les parties prenantes et détecter précocement les propriétés émergentes [@disdier2023_HumanSystems; @disdier2024_DefiningCharacterizing; @disdier2024_ContextAcquisition]. Plus récemment, j’ai proposé FIRE, un cadre humain-centré pour concevoir et caractériser des jumeaux numériques de systèmes sociotechniques selon trois dimensions : intrinsèque (autonomie, structures/fonctions), extrinsèque (intégration contextuelle) et réflexive (capacité d’auto-appréciation et d’adaptation). FIRE sert à la fois de guide de conception et d’outil descriptif pour analyser des DT existants, en alignant explicitement modèles, contexte et perspectives humaines [@masson2025_FIREHumancentered]. 
+
+Dans un second axe applicatif, j’ai exploré l’information produit et la transparence dans la chaîne textile, du passeport produit numérique à la traçabilité fine, en élaborant des modèles de données et des dispositifs d’information au service de la décision d’achat durable [@masson2021_TraceabilityInformation; @ospital2022_TotalTraceability; @ospital2022_PasseportProduit; @ospital2023_DevelopingData; @ospital2023_ProductTransparency; @ospital2022_DigitalProduct]. La chaine circulaire textile est en soi un système socio-technique complexe dans laquelle j'ai essayé d'insufler une approche centré utilisateur basée sur la compréhension du terrain, des acteurs de la supply-chain pour proposer un méta-modèle des passeports produits numériques permettant le devellopement de ces outils. Ces travaux ont permis à Pantixka Ospital de proposer son méta-modèle à la commission européeenes. Je continue de diriger des travaux dans ce second axe 
+
+Ainsi, ma trajectoire de recherche reflète mon évolution par ce changement de paradigme : de la modélisation de l’interaction entre l’humain et la machine vers la compréhension et la conception de **systèmes intégrant l’humain comme composante essentielle**. Elle témoigne d’une ambition constante :  l’intégration de l’humain — dans ses dimensions cognitive, organisationnelle et sociale — au cœur de la conception et de l’évolution des systèmes sociotechniques.
+
+
+## Encadrements et accompagnements
+
+### Thèses en cours
+
+- **Kenza DOULKIFL**  
+  *Direction* : Christophe Merlo (*Directeur*, CNU 61), Laura Laguna (*Co-encadrante*, CNU 61), **Dimitri Masson** (*Co-encadrant*, CNU 27)  
+  *Titre* : Vers une chaîne logistique textile circulaire  
+
+  Kenza travaille sur le développement du passeport numérique de produit pour soutenir la transition vers une industrie textile circulaire.  
+  Sa recherche vise à modéliser la chaîne logistique post-consumer, en intégrant ses dimensions techniques, organisationnelles et informationnelles, afin d’en comprendre les complexités.  
+  L’objectif est d’identifier les points de décision et les données critiques nécessaires à la mise en place de systèmes circulaires efficaces.
+
+### Thèses encadrées
+
+- **Alexandre Disdier**  
+  *Direction* : Marija Jankovic (*Directrice*, CNU 27), Guy André Boy (*Co-directeur*, CNU 27), **Dimitri Masson** (*Co-encadrant*)  
+  *Titre* : Proposition d’un système de tour de contrôle aérien virtuelle reposant sur un concept collaboratif Humains-Systèmes  
+
+  Alexandre mène une thèse en **intégration humains-systèmes** dans le contexte du contrôle aérien, avec une contribution centrée sur la modélisation du contexte opérationnel.  
+
+  *Publications* : [@disdier2022_StudyDesign; @disdier2023_HumanSystems; @disdier2024_ContextAcquisition; @disdier2024_DefiningCharacterizing]
+
+- **Pantxika Ospital**  
+  *Direction* : Jeremy Legardeur (*Directeur*, CNU 60), Dimitri Masson, Cédrik Beler (CNU 61)  
+  *Titre* : Vers une traçabilité totale de la Supply Chain [...]  
+
+  La thèse s’inscrit dans le projet de la Chaire Bali de l’ESTIA, en partenariat CIFRE avec Belharra Numérique.  
+  J’y apporte ma vision d’**intégration humains-systèmes** via la conception centrée utilisateurs.  
+
+  *Mention spéciale* : Prix d’innovation GFC2022 [@ospital2022_DigitalProduct].  
+  *Publications* : [@ospital2022_DigitalProduct; @ospital2022_PasseportProduit; @ospital2022_TotalTraceability; @ospital2023_DevelopingData; @ospital2023_ProductTransparency]
+
+- **Stélian Camara dit Pinto**  
+  *Direction* : Guy André Boy (*Directeur*), **Dimitri Masson** (*Co-encadrant*), Eric Villeneuve (*Co-encadrant*, CNU 61)  
+  *Titre* : Digital twin for situation awareness support: the Reality Anchor Elicitation Methodology  
+
+  Thèse en **intégration humains-systèmes** appliquée au contexte pétrolier.  
+  Contribution : conception centrée utilisateur d’un jumeau numérique pour l’aide à la décision.  
+
+  *Publications* : [@camaraditpinto2021_DigitalTwin; @camaraditpinto2023_MethodologieConception; @camaraditpinto2024_RealityAnchor]
+
+- **Julien Ambrosino**  
+  *Titre* : Apports de l’hybridation de méthodes de créativité [...]  
+  *Direction* : Jeremy Legardeur (*Directeur*, CNU 60), **Dimitri Masson** (*Co-encadrant*)  
+  *Date de soutenance* : 22/06/2018  
+  *URL* : [http://theses.fr/2018BORD0094](http://theses.fr/2018BORD0094)
+
+  Ma collaboration a porté sur la conception et le développement d’**Ideavaluation**, un prototype d’outil de brainstorming électronique.  
+  *Publications* : [@ambrosino2016_EncourageExchanges; @ambrosino2016_Ideavaluation; @ambrosino2016_MethodologyProject; @ambrosino2017_FosteringCollaborative; @ambrosino2017_IdeaBulbSmart; @ambrosino2017_STARMethodologie]
+
+### Accompagnements de thèses
+
+- **Jérémie Faham** : conception de **DialoJ** [@masson2016_DialoJ], outil de mise en relation basé sur la caractérisation des profils d’entrepreneurs régionaux.  
+  [Voir l’outil (non crédité)](https://hal.archives-ouvertes.fr/hal-01961030) – [Contribution créditée ici](https://hal.archives-ouvertes.fr/hal-01969832)
+
+- **Antoine Millet** : développement d’un outil de définition d’un espace sémantique *Sport-Santé* et accompagnement méthodologique.  
+  *Publications* : [@millet2019_DefinitionEspace; @millet2019_DefinitionSportHealth]
+
+### Encadrement de post-doctorant
+- 2025, encadrement du Dr. Alexandre Disdier sur le projet DIGITS sur le developpement de la méthodologie d'acquisition du contexte appliqué à la reconception d'une chaine de peinture de pièces élémentaires dans l'industrie aeronautique.
+- 2021, accompagnement du Dr. **Samory Houzangbe** sur le projet CAP’MOOD (Institut Carnot Arts) portant sur l’influence de la réalité virtuelle sur la créativité.  
+*Publications* : [@houzangbe2022_VirtualReality; @houzangbe2023_ExplorationPhysiological]
+
+### Encadrement d’étudiants en Master
+
+J’encadre chaque année plusieurs étudiants de L3 à M2.  
+
+#### NAASC (le centre spatiale académique de Nouvelle Aquitaine)
+
+Dans le cadre du NAASC (le centre spatiale académique de Nouvelle Aquitaine), je suis en charge du développement d'une charge utile d'un nanosatelitte et de sa salle de controle. J'ai encadré 15 stagiaires, souvent par équipes de deux. 
+
+- **2025** 
+    - **Master 1 - Flavien Serret**, **Laura Forest** : Centre de controle Commande - Phase B + PDR
+    - **Master 1 - Mathias Phillipponneau**, **Scott Claessens**  : Charge Utile Alto - Phase C + Critical Design Review
+    - **Master 1 - Clara Hastoy** : Qualification de Battery
+    - **Master 1 (6 mois mobilité International) - Frank Salas**   :  - Développement Logiciel pour la charge Utile Alto  
+    - **Bachelor (8 mois mobilité International) - Exodus Guangul** : Immersion d'un an en échange depuis l'université de Salford.
+- **2024 - Master 1 - Lucie Coutet**, **Clement Meilleray**  : Centre de controle Commande - Phase A 
+- **2024 - Master 1 - Titouan Bernard**, **Oscar Bernard**, et **Mathias Dieu** - : Charge Utile Alto - Phase C
+- **2023 - Master 1 - Nicolas Petit** et **Nicolas Barrière**  : Charge Utilte Alto - Phase B 
+- **2022 - Master 1 - Julian Penner**  : Charge Utilte Alto - - Phase B
+- **2020 - Master 1 - Arthur Leblond** : Spécification d’une charge utile scientifique pour un nanosatellite ALTO - Phase A
+
+#### Circularité et Textile
+- **2019 - Master 2 - Bixente Demarq, Alex Marquoin** :  Les étudiants se sont intéressés au **démantèlement automatisé de chaussures**, dans un projet complexe impliquant de nombreux partenaires industriels.  Je les ai accompagnés sur la **méthodologie d’analyse du besoin** et la **modélisation de processus complexes**.  
+  À l’issue du stage, tous deux ont été **recrutés comme ingénieurs d’études** au sein de la chaire BALI pour poursuivre le développement de projets d’automatisation liés à la recyclabilité dans le textile, la mode et l’habillement.  
+  *Publication :* [@demarcq2022_CircularProduct]
+- **2018 - Master 1 – Camille HUBERT**  
+  *Conception d’un outil informatique pour l’accélération du prototypage textile chez Décathlon.*  
+  [Rapport d’activité 2019 – Chaire BALI](https://www.chaire-bali.fr/images/RA/rapport-activite-2019-1.pdf)
+
+#### Jumeau Numérique 
+- **2010 - Master 1 - Augustin Aubert** :   *Conception et développement d’un jumeau numérique de la plateforme de recherche Addimadour (ESTIA).*  
+  Cet outil, présenté à l’Institut Carnot Arts, a servi de **base pour la conception de futurs jumeaux numériques**.
+
+#### Aide à la décision
+
+- **2010 - Master 1 Charlotte Joguet** : Évaluation d’un algorithme d’aide à la décision dans le cadre du projet Rezbuild [@masson2020_Tamarin].
+
+#### En IHM sur les outils d'aide à la créativité
+- **2018 - Master 1 (mobilité internationale) – Anastasiya ZAKREUSKAYA**  
+  *Suite du développement d’un réseau de neurones de type GAN (Generative Adversarial Network) pour le support aux activités de brainstorming.*
+- **2017 - Master 1 – Maëva LE CLÉCH**  *Développement d’un réseau de neurones de type GAN (Generative Adversarial Network) pour le support aux activités de brainstorming.*
+- **2015 - Master 2 – Sergio PENA-ARRAZOLA**  
+  *Conception, développement et test d’un outil d’aide à la recherche d’inspiration en conception de sites web.*  
+  L’outil **I++** est une galerie interactive de sites web mettant en avant les dimensions d’interaction et d’esthétique.  
+  Ce travail a donné lieu à une **publication internationale**.  
+  *Publication :* [@pena-arrazola2015_InteractiveGalleries]
+- **2013 - Master 2 – Luiza CICONNE**  
+  *Conception et développement d’un prototype d’outil de capitalisation des processus et méthodes de créativité.*  
+  L’outil permettait de capturer les activités de créativité (par ex. brainstorming, sélection d’idées) et de recommander les **méthodes ou outils** à utiliser dans les étapes suivantes.
+- **2012 - Master 2 – Zeina ABU-AISHEH**  
+  *Conception et développement d’un outil d’analyse automatique de sites web et de la perception humaine du style.*  
+  Ce travail a conduit à une **publication dans une conférence internationale**.  
+  *Publication :* [@masson2014_WebDesign]
+
+
+## Rayonnement scientifique en ingénierie système
+
+### INCOSE 
+
+#### Human System Integration Working Group
+
+Je suis membre depuis 2020 du working group, depuis 2021 je suis le webmaster du groupe et je suis le **co-chair** depuis 2024. Au sein du working group, j'ai participé à la rédaction du primer de l'INCOSE sur le HSI [@kennedy2023_HumanSystems] et au comité scientifique de HSI2019, technical chair HSI2020, early-paper chair de HSI2021, puis co-chair de HSI2022, HSI2024 et HSI2025
+
+#### Technical Leadership Institute
+
+Membre intronisé (8ᵉ cohorte). Réseau mondial visant à développer les compétences en leadership technique. [@williams2024_TinkererMindset]
+
+### AFIS 
+
+#### Administrateur 
+
+Je suis administrateur de l'AFIS au compte de l'Estia depuis 2023.
+
+#### Chargé de mission relation internationale AFIS
+
+Depuis octobre 2025 : chargé de mission relations internationales–INCOSE au sein de l’AFIS.
+
+### Comité Technique Facteur Humain (AFIS)
+
+2022 : co-animateur du CT Facteur Humain de l’AFIS, visant à aligner les processus de l’ingénierie humaine et système.
+
+---
+
+## Participation à des projets de recherche
+
+J’ai participé à de nombreux projets collaboratifs régionaux, nationaux et européens, dont :
+- **Digits** (CORAC, 2025-...) : Encadrement de deux Post-doctorants : Développement d'un Passeport numérique de produit (PNP) pour l'industrie aeronautique et conception d'un outil d'aide à la décision pour les chaine de peinture des pièces élémentaires. 
+
+- **RUD** *(EUROSTARS, 2021–2022)* : accompagnement d’un post-doctorant en conception centrée utilisateur d’IA (Samory Houzangbe).
+
+- **FtAlliance** *(Erasmus+, 2020–2022)* : [https://www.fashiontechalliance.eu/en/](https://www.fashiontechalliance.eu/en/)  
+  Montage du projet, rédaction d’un rapport sur les métiers futurs de la fashion-tech [@caulfield-sriklad2023_IntegratedIndustry], organisation d’un workshop Décathlon.
+
+- **Rezbuild** *(H2020, 2017–2021)* : [https://rezbuildproject.eu/](https://rezbuildproject.eu/)  
+  Développement de l’outil **Emperor Tamarin** [@masson2020_Tamarin].  
+  *Publications* : [@salvado2019_DecisionMaking; @lagunasalvado2019_OutilClassement; @lagunasalvado2022_DecisionSupport]
+
+- **Cap’Mood** *(Carnot ARTS, 2021)* : accompagnement post-doc sur VR et créativité.  
+  *Publications* : [@houzangbe2022_VirtualReality; @houzangbe2023_ExplorationPhysiological]
+
+- **Neptune** *(H2020, 2016–2018)* : [https://www.neptune-project.eu/About-Neptune/At-a-glance](https://www.neptune-project.eu/About-Neptune/At-a-glance)  
+  Encadrement de la thèse de Julien Ambrosino, développement d’**Ideavaluation** [@ambrosino2016_Ideavaluation].
+

@@ -1,0 +1,250 @@
+---
+csl: ../bibliography/apa-cv.csl
+include-after-body: ../assets/scripts/bibliography-postprocessing.html
+---
+# Research
+
+## Field and Focus
+
+My research focuses on **Human Systems Integration (HSI),** specifically on **user-centered design of complex systems.**
+
+I am interested in **human activities**—such as design, decision-making, and creativity—and how they are integrated into broader sociotechnical systems.
+
+My goal is to understand **how the design of these systems can support, amplify, and enhance human activity**.
+
+My contributions fall into two main categories:
+
+1. **The development of computer tools to support human activity**, aimed at aiding decision-making, creativity, and exploring solutions;
+
+2. **Formalization of a Scenario-Driven Engineering (SDEG) Methodology** for the user-centered design of complex sociotechnical systems.
+
+## Methodological Approach
+
+The research I conduct—and that I direct—falls within the framework of **Design Research Methodology (DRM)**, a research approach specifically designed for the fields of design and engineering.
+
+This methodology comprises several complementary steps:
+
+- **Literature review** and definition of a design space;
+
+- **Descriptive field studies** to observe actual practices and user needs;
+
+- **Development and experimentation of prototypes**, tested with end users to validate conceptual and functional hypotheses.
+
+My **work approach** is collaborative: I integrate transdisciplinary projects (such as the project on decision-making for precision livestock farming [@villeneuve2019_DecisionDans; @villeneuve2019_DecisionSupport]) and enrich them with a computer science dimension.
+
+I place particular importance on mentoring and knowledge transfer, notably through the supervision of internships, doctoral theses, and postdoctoral fellowships detailed below.
+
+My current research areas are:
+
+- **digital twins**,
+- **decision support tools**,
+- and the **digital product passport**.
+
+## Scientific Trajectory
+
+My Master's research [@masson2010_MagellanEvolutionary] and doctoral thesis [@masson2014_InspirezExplorez] focused on Human-Computer Interaction (HCI), centered on creativity and example generation to support the creativity of HCI designers in the early stages of design. I became interested in this activity to propose tools to support exploration and inspiration, positioning the computer as a creative partner for the designer (through AI and genetic algorithm approaches) with inspiration search tools through the automatic generation of task-guided examples and knowledge capitalization [@masson2011_InspirerExplorer; @masson2011_ExamplesGalleries], and the exploration of existing examples [@pena-arrazola2015_InteractiveGalleries; [@masson2014_WebDesign], or the structuring of models produced by designers [@demeure2011_GraphsModels]. From my earliest work, I have been interested in the role of humans and machines in human activity, borrowing task and activity analysis methods from ergonomics and cognitive science.
+
+I then broadened this focus to include collective creativity [@legardeur2020_ParadoxDiversity] and the emergence of projects in multi-stakeholder contexts [@ambrosino2017_FosteringCollaborative], contributing to the development of methodologies for facilitation, qualitative evaluation of ideas, and team convergence, and proposing IT tools to support them (STAR ​​[@ambrosino2016_EncourageExchanges; @ambrosino2017_STARMethodologie], IdeaValuation [@ambrosino2016_Ideavaluation], DialoJ [@masson2016_DialoJ]). This phase led me to consider the social and organizational dimensions of design in a more systemic way. I continue to learn from the human factors community by getting involved in the Ergo-IA community [@masson2016_ErgoIA; @masson2018_ErgoIA]; In parallel, I studied the influence of immersive tools on the creativity and physiological state of designers, specifying the links between modalities (2D/VR), user experience, and creative performance [@houzangbe2022_VirtualReality; @houzangbe2023_ExplorationPhysiological].
+
+From 2019 onwards, I focused my work on multi-criteria decision-making and cyber-physical-human systems, developing decision support systems and interactive interfaces (including Tamarin [@masson2020_Tamarin]), validated on real-world cases (precision livestock farming [@villeneuve2019_DecisionDans; @villeneuve2019_DecisionSupport], NZEB renovation [@salvado2019_DecisionMaking; @lagunasalvado2019_OutilClassement; @lagunasalvado2022_DecisionSupport]). There, I formalized decision-making processes integrating uncertainties, heterogeneous preferences, and sensitive parameter exploration, reinforcing the idea of ​​situated and context-dependent decision-making.
+
+Since joining the **Flextech** Chair in 2019 and under the mentorship of Professor Guy André Boy, **my research area** has evolved towards **human-systems integration**, at the intersection of systems engineering and human factors. This field addresses the need to integrate humans from the design stage of complex systems, going beyond simple human-machine interaction. Within the Chair, which I have held since 2025, I am interested in developing systems engineering design methods based on scenario-driven engineering approaches [@boy2020_PRODECCombining; @boy2024_PRODECHuman; @masson2025_FIREHumancentered].
+
+As a first application focus, I explored digital twins (DTs) for critical systems. With PRODEC, I articulated procedural scenarios and declarative configurations to loop design, virtual prototyping, and human-in-the-loop simulation, revealing the emergence through real-world activity and the need for physical and cognitive tangibility metrics [@boy2024_PRODECHuman]. In parallel, with Stélian Camara Dit Pinto, I developed the Reality Anchor Methodology (RAM), which formalizes the reality anchors necessary for situational awareness in DTs, from elicitation in operator activity to experimental validation [@pinto2021_RequirementsPrototyping; @camaraditpinto2021_DigitalTwin; @camaraditpinto2023_MethodologieConception; @camaraditpinto2024_RealityAnchor]. These approaches have been deployed in remote control towers, where we defined the properties of the operational context, proposed a context acquisition methodology, and demonstrated the value of iterative simulations for engaging stakeholders and detecting emerging properties early [@disdier2023_HumanSystems; @disdier2024_DefiningCharacterizing; @disdier2024_ContextAcquisition]. More recently, I proposed FIRE, a human-centered framework for designing and characterizing digital twins of sociotechnical systems along three dimensions: intrinsic (autonomy, structures/functions), extrinsic (contextual integration), and reflexive (self-assessment and adaptive capacity). FIRE serves both as a design guide and a descriptive tool for analyzing existing digital twins, explicitly aligning models, context, and human perspectives [@masson2025_FIREHumancentered].
+
+In a second area of ​​application, I explored product information and transparency in the textile supply chain, from digital product passports to detailed traceability, developing data models and information tools to support sustainable purchasing decisions [@masson2021_TraceabilityInformation; @ospital2022_TotalTraceability; @ospital2022_PasseportProduit; @ospital2023_DevelopingData; @ospital2023_ProductTransparency; @ospital2022_DigitalProduct]. The circular textile supply chain is itself a complex socio-technical system into which I tried to inject a user-centered approach based on understanding the field and the supply chain actors, in order to propose a meta-model of digital product passports enabling the development of these tools. This work allowed Pantixka Ospital to submit its meta-model to the European Commission. I continue to lead research in this second area.
+
+Thus, my research trajectory reflects my evolution through this paradigm shift: from modeling human-machine interaction to understanding and designing **systems that integrate humans as an essential component**. It demonstrates a consistent ambition: the integration of humans—in their cognitive, organizational, and social dimensions—at the heart of the design and evolution of sociotechnical systems.
+
+## Supervision and Mentoring
+
+### Current PhD Projects
+
+- **Kenza DOULKIFL**
+
+*Supervisors*: Christophe Merlo (*Director*, CNU 61), Laura Laguna (*Co-supervisor*, CNU 61), **Dimitri Masson** (*Co-supervisor*, CNU 27)
+*Title*: Towards a Circular Textile Supply Chain
+
+Kenza is working on developing a digital product passport to support the transition to a circular textile industry.
+
+Her research aims to model the post-consumer supply chain, integrating its technical, organizational, and informational dimensions, in order to understand its complexities.
+
+The objective is to identify the decision points and critical data necessary for implementing effective circular systems.
+
+### Supervised Theses
+
+- **Alexandre Disdier**
+
+*Supervisors*: Marija Jankovic (*Director*, CNU 27), Guy André Boy (*Co-director*, CNU 27), **Dimitri Masson** (*Co-supervisor*)
+*Title*: Proposal for a virtual air traffic control tower system based on a collaborative Human-Systems concept
+
+Alexandre is conducting a PhD in **human-systems integration** in the context of air traffic control, with a contribution focused on modeling the operational context.
+
+*Publications*: [@disdier2022_StudyDesign; @disdier2023_HumanSystems; @disdier2024_ContextAcquisition; [@disdier2024_DefiningCharacterizing]
+
+- **Pantxika Ospital**
+
+*Supervisors*: Jeremy Legardeur (*Director*, CNU 60), Dimitri Masson, Cédrik Beler (CNU 61)
+
+*Title*: Towards Total Supply Chain Traceability [...]
+
+This thesis is part of the ESTIA Bali Chair project, in CIFRE partnership with Belharra Numérique.
+
+I contribute my vision of **human-system integration** through user-centered design.
+
+*Special Mention*: GFC2022 Innovation Award [@ospital2022_DigitalProduct].
+
+*Publications*: [@ospital2022_DigitalProduct; @ospital2022_PasseportProduit; @ospital2022_TotalTraceability; @ospital2023_DevelopingData; @ospital2023_ProductTransparency
+
+- **Stélian Camara dit Pinto**
+
+*Supervisors*: Guy André Boy (*Director*), **Dimitri Masson** (*Co-supervisor*), Eric Villeneuve (*Co-supervisor*, CNU 61)
+
+*Title*: Digital twin for situation awareness support: the Reality Anchor Elicitation Methodology
+
+PhD thesis in **human-systems integration** applied to the oil industry.
+
+Contribution: user-centered design of a digital twin for decision support.
+
+*Publications*: [@camaraditpinto2021_DigitalTwin; @camaraditpinto2023_MethodologieConception; [@camaraditpinto2024_RealityAnchor]
+
+- **Julien Ambrosino**
+
+*Title*: Contributions of hybridizing creativity methods [...]
+*Supervisors*: Jeremy Legardeur (*Director*, CNU 60), **Dimitri Masson** (*Co-supervisor*)
+*Defense date*: June 22, 2018
+*URL*: [http://theses.fr/2018BORD0094](http://theses.fr/2018BORD0094)
+
+My collaboration focused on the design and development of **Ideavaluation**, a prototype electronic brainstorming tool.
+
+*Publications*: [@ambrosino2016_EncourageExchanges; @ambrosino2016_Ideavaluation; @ambrosino2016_MethodologyProject; @ambrosino2017_FosteringCollaborative; @ambrosino2017_IdeaBulbSmart; @ambrosino2017_STARMethodology]
+
+### Thesis Supervision
+
+- **Jérémie Faham**: design of **DialoJ** [@masson2016_DialoJ], a networking tool based on the characterization of regional entrepreneur profiles.
+
+[See the tool (uncredited)](https://hal.archives-ouvertes.fr/hal-01961030) – [Credited contribution here](https://hal.archives-ouvertes.fr/hal-01969832)
+
+- **Antoine Millet**: development of a tool for defining a *Sport-Health* semantic space and methodological support.
+
+*Publications*: [@millet2019_DefinitionEspace; [@millet2019_DefinitionSportHealth]
+
+### Postdoctoral Research Supervision
+- 2025, supervision of Dr. Alexandre Disdier on the DIGITS project, focusing on developing a context acquisition methodology applied to the redesign of a paint line for elementary parts in the aerospace industry.
+
+- 2021, mentoring of Dr. Samory Houzangbe on the CAP’MOOD project (Carnot Arts Institute) investigating the influence of virtual reality on creativity.
+
+*Publications*: [@houzangbe2022_VirtualReality; @houzangbe2023_ExplorationPhysiological]
+
+### Master's Student Supervision
+
+I supervise several students each year, from the third year of undergraduate studies (L3) to the second year of master's studies (M2).
+
+#### NAASC (New Aquitaine Academic Space Center)
+
+Within the framework of NAASC (New Aquitaine Academic Space Center), I am in charge of developing a nanosatellite payload and its control room. I have supervised 15 interns, often in teams of two.
+
+- **2025**
+
+- **Master 1 - Flavien Serret**, **Laura Forest**: Command and Control Center - Phase B + PDR
+- **Master 1 - Mathias Phillipponneau**, **Scott Claessens**: Alto Payload - Phase C + Critical Design Review
+- **Master 1 - Clara Hastoy**: Battery Qualification
+- **Master 1 (6-month International Mobility) - Frank Salas**: - Software Development for the Alto Payload
+- **Bachelor (8-month International Mobility) - Exodus Guangul**: One-year exchange program from the University of Salford.
+- **2024 - Master 1 - Lucie Coutet**, **Clement Meilleray**: Control Center - Phase A
+- **2024 - Master 1 - Titouan Bernard**, **Oscar Bernard**, and **Mathias Dieu**: Alto Payload - Phase C
+- **2023 - Master 1 - Nicolas Petit** and **Nicolas Barrière**: Alto Payload - Phase B
+- **2022 - Master 1 - Julian Penner**: Alto Payload - Phase B
+- **2020 - Master 1 - Arthur Leblond**: Specification of a scientific payload for an ALTO nanosatellite - Phase A
+
+#### Circularity and Textiles
+- **2019 - Master 2 - Bixente Demarq, Alex Marquoin**: The students focused on the **automated dismantling of shoes**, in a complex project involving numerous industrial partners. I guided them on **needs analysis methodology** and **complex process modeling**.
+
+At the end of the internship, both were **recruited as research engineers** within the BALI chair to continue developing automation projects related to recyclability in the textile, fashion, and apparel industries. *Publication:* [@demarcq2022_CircularProduct]
+- **2018 - Master 1 – Camille HUBERT**
+
+*Design of a software tool to accelerate textile prototyping at Decathlon.*
+
+[2019 Activity Report – BALI Chair](https://www.chaire-bali.fr/images/RA/rapport-activite-2019-1.pdf)
+
+#### Digital Twin
+- **2010 - Master 1 - Augustin Aubert**: *Design and development of a digital twin of the Addimadour research platform (ESTIA).*
+This tool, presented at the Carnot Arts Institute, served as a **basis for the design of future digital twins**.
+
+#### Decision Support
+
+- **2010 - Master 1 Charlotte Joguet**: Evaluation of a decision support algorithm within the framework of the Rezbuild project [@masson2020_Tamarin].
+
+#### In Human-Computer Interaction (HCI) on Creativity Support Tools
+- **2018 - Master 1 (International Exchange) – Anastasiya ZAKREUSKAYA**
+
+*Continuation of the development of a Generative Adversarial Network (GAN) to support brainstorming activities.*
+- **2017 - Master 1 – Maëva LE CLÉCH** *Development of a Generative Adversarial Network (GAN) to support brainstorming activities.*
+- **2015 - Master 2 – Sergio PENA-ARRAZOLA**
+
+*Design, development, and testing of a tool to aid in finding inspiration for website design.*
+The **I++** tool is an interactive gallery of websites highlighting interaction and aesthetics.
+
+This work resulted in an **international publication**.
+
+*Publication:* [@pena-arrazola2015_InteractiveGalleries]
+- **2013 - Master's Degree – Luiza CICONNE**
+
+*Design and development of a prototype tool for documenting creativity processes and methods.*
+The tool allowed for capturing creative activities (e.g., brainstorming, idea selection) and recommending **methods or tools** to use in subsequent stages.
+
+- **2012 - Master's Degree – Zeina ABU-AISHEH**
+
+*Design and development of a tool for the automatic analysis of websites and human perception of style.*
+This work led to a **publication at an international conference**.
+
+*Publication:* [@masson2014_WebDesign]
+
+## Scientific Outreach in Systems Engineering
+
+### INCOSE
+
+#### Human System Integration Working Group
+
+I have been a member of the working group since 2020, the group's webmaster since 2021, and the co-chair since 2024. Within the working group, I contributed to the writing of the INCOSE primer on HSI [@kennedy2023_HumanSystems] and served on the scientific committee for HSI2019, technical chair for HSI2020, early-paper chair for HSI2021, and then co-chair for HSI2022, HSI2024, and HSI2025.
+
+#### Technical Leadership Institute
+
+Inducted member (8th cohort). A global network dedicated to developing technical leadership skills. [@williams2024_TinkererMindset]
+
+### AFIS
+
+#### Administrator
+
+I have been an AFIS administrator representing ESTIA since 2023.
+
+#### AFIS International Relations Officer
+
+Since October 2025: International Relations Officer – INCOSE within AFIS.
+
+### Human Factors Technical Committee (AFIS)
+
+2022: Co-facilitator of the AFIS Human Factors Technical Committee, aiming to align human and systems engineering processes.
+
+---
+
+## Participation in Research Projects
+
+I have participated in numerous regional, national, and European collaborative projects, including:
+
+- **Digits** (CORAC, 2025-...): Supervision of two postdoctoral researchers: Development of a Digital Product Passport (PNP) for the aerospace industry and design of a decision support tool for the painting lines of elementary parts.
+
+- **RUD** *(EUROSTARS, 2021–2022)*: Mentoring of a postdoctoral researcher in user-centered AI design (Samory Houzangbe).
+
+- **FtAlliance** *(Erasmus+, 2020–2022)*: [https://www.fashiontechalliance.eu/en/](https://www.fashiontechalliance.eu/en/) Project development, writing a report on future fashion-tech jobs [@caulfield-sriklad2023_IntegratedIndustry], organizing a Decathlon workshop.
+
+- **Rezbuild** *(H2020, 2017–2021)*: [https://rezbuildproject.eu/](https://rezbuildproject.eu/) Development of the **Emperor Tamarin** tool [@masson2020_Tamarin].
+
+*Publications*: [@salvado2019_DecisionMaking; @lagunasalvado2019_OutilClassement; [@lagunasalvado2022_DecisionSupport]
+
+- **Cap’Mood** *(Carnot ARTS, 2021)*: Postdoctoral support on VR and creativity.
+
+*Publications*: [@houzangbe2022_VirtualReality; @houzangbe2023_ExplorationPhysiological]
+
+- **Neptune** *(H2020, 2016–2018)*: [https://www.neptune-project.eu/About-Neptune/At-a-glance](https://www.neptune-project.eu/About-Neptune/At-a-glance)
+Supervision of Julien Ambrosino's PhD thesis, development of **Ideavaluation** [@ambrosino2016_Ideavaluation]. 
