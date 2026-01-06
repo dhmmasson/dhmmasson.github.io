@@ -3,8 +3,15 @@ project:
   output-dir: _site/
   preview:
     watch-inputs: true
+    port: 4200
   resources: 
     - rezbuild-emperor-tamarin/static/index.html
+  render:
+    - "*.md"  
+    - "*.qmd"
+    - "!Readme.md"
+    - "!TODO.md"
+  
 
 
 bibliography: ./bibliography/bibliography.bib
