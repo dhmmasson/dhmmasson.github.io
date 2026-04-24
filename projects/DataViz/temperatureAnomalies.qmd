@@ -28,6 +28,7 @@ format:
 toc: true
 code-annotations: hover
 bibliography: ./temperatureAnomalies.yaml
+google-scholar: true
 ---
 
 # Abstract
@@ -52,6 +53,8 @@ Below are some technical details on how the data is processed and the plot is ge
 //| fig-attr: "Source: ERA5 @c3s2018_ERA5Hourly"
 //| fig-attr-url: "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview"
 
+
+
 // Plot using Plot.plot a area chart for each year
 chart = Plot.plot({
   marks: [
@@ -66,10 +69,10 @@ chart = Plot.plot({
         , stroke: "white"
         , fill: color  }),
 
-    Plot.axisY(Array(2025-1940).fill(1).map((e,i)=>(i+1)*yearOffset), {
+    Plot.axisY(Array(2026-1940).fill(1).map((e,i)=>(i+1)*yearOffset), {
       label: "Year",
       grid: true,
-      text: Array(2025-1940).fill(1).map((e,i)=>(""+(2024-i))),
+      text: Array(2026-1940).fill(1).map((e,i)=>(""+(2025-i))),
       domain: [maxYear, minYear]
     }),
     Plot.axisX({
@@ -137,6 +140,7 @@ One of the tricky thing is that the CSV files contains comments lines (starting 
 ```{ojs}
 //| fig-cap: "Raw Data"
 // Load the CSV file
+////https://sites.ecmwf.int/data/climatepulse/data/series/era5_daily_series_2t_global.csv
 rawData = FileAttachment("./era5_daily_series_2t_global.csv").text().then(processCSV);
 
 // Function to preprocess and parse the CSV
