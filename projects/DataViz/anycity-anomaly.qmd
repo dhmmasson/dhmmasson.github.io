@@ -1,0 +1,170 @@
+---
+title: "Unknown Warming, any city: daily temperature anomalies since 1940"
+description: >
+  A Joy Division inspired plot of the daily temperature anomalies of any place on Earth, from the ERA5 reanalysis.
+page-layout: full
+date: 2026-10-18
+author:
+  - name:
+      given: "Dimitri"
+      family: "Masson"
+format:
+  html:
+    # code-fold: true
+    code-summary: "Show the code"
+toc: true
+code-annotations: hover
+---
+
+# Abstract
+
+Pick a city, type coordinates, or let your browser locate you, and the page draws the Joy Division plot of the daily temperature anomalies of that place since 1940. Each line is one year; its height shows how many days had a given anomaly relative to the normal temperature of the same calendar day (1991–2020 by default). If the climate were stable, all the lines would pile up on the same hump; the drift to the right is the local warming.
+
+The data is the ERA5 reanalysis of the Copernicus Climate Change Service, served by [Open-Meteo](https://open-meteo.com/) (CC BY 4.0, non-commercial use) and downloaded **in your browser** when you pick a place. ERA5 is a coarse grid (about 30 km): coastal and mountain places are smoothed compared with a single thermometer. For a ground-measured version of Bayonne, see [the station edition](./bayonne-anomaly.html).
+
+# Choose a place
+
+Search for a city and pick one of the matches, enter coordinates and press *Load coordinates*, or use your location (the browser will ask for permission). The page address is updated with the coordinates so that you can bookmark or share a view (`?lat=…&lon=…&name=…`).
+
+```{ojs}
+//| echo: false
+//| panel: input
+viewof query = Inputs.text({label: "Search a city", placeholder: "Bayonne, Perth, Moscow…", submit: "Search"})
+viewof pick = Inputs.select(candidates, {label: "Matches", format: labelOf})
+viewof lat = Inputs.number([-90, 90], {label: "Latitude", step: 0.0001, value: 43.4932})
+viewof lon = Inputs.number([-180, 180], {label: "Longitude", step: 0.0001, value: -1.473})
+viewof loadCoords = Inputs.button("Load coordinates", {reduce: () => ({lat, lon})})
+viewof gps = Inputs.button("Use my location")
+```
+
+```{ojs}
+//| echo: false
+md`**${placeName}** · ${sourceNote} · ${years.length} complete years (${minYear}–${maxYear}) · mean anomaly ${yearStats[0].mean.toFixed(2)} °C in ${minYear} → ${yearStats[yearStats.length - 1].mean.toFixed(2)} °C in ${maxYear}`
+```
+
+# Unknown Warming: your place
+
+{{< include _joy-plot.qmd >}}
+
+# Technical details
+
+The processing is roughly divided into six steps:
+
+1. choosing a place and downloading its ERA5 daily series
+2. computing the normal temperature of each calendar day over the reference period
+3. subtracting it from every day to get the anomalies
+4. counting the anomalies per year
+5. applying a Gaussian blur to smooth out the graph
+6. offsetting the curve of each year to produce the Joy Division effect
+
+## Choosing the place
+
+The place is kept in a *mutable* value. Three independent cells update it: picking a match in the geocoding results, clicking *Load coordinates*, or clicking *Use my location*. Whichever happened last wins. The geocoding comes from the [Open-Meteo geocoding API](https://open-meteo.com/en/docs/geocoding-api) (GeoNames data).
+
+```{ojs}
+DEFAULT_PLACE = ({name: "Bayonne, France", lat: 43.4932, lon: -1.473})
+
+initialPlace = {
+  const p = new URLSearchParams(location.search);
+  const lat = parseFloat(p.get("lat")), lon = parseFloat(p.get("lon"));
+  return (Number.isFinite(lat) && Number.isFinite(lon) && Math.abs(lat) <= 90 && Math.abs(lon) <= 180)
+    ? {name: p.get("name") ?? `${lat.toFixed(2)}°, ${lon.toFixed(2)}°`, lat, lon}
+    : DEFAULT_PLACE;
+}
+
+mutable place = initialPlace
+
+labelOf = m => [m.name, m.admin1, m.country].filter(Boolean).join(", ")
+
+candidates = query.trim()
+  ? d3.json(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(query.trim())}&count=8&language=en&format=json`)
+      .then(j => j.results ?? [])
+  : []
+```
+
+```{ojs}
+// 1. a match was picked in the list
+{
+  if (pick) mutable place = {name: labelOf(pick), lat: pick.latitude, lon: pick.longitude};
+}
+```
+
+```{ojs}
+// 2. the coordinates were loaded
+{
+  if (loadCoords) mutable place = {name: `${loadCoords.lat.toFixed(2)}°, ${loadCoords.lon.toFixed(2)}°`, lat: loadCoords.lat, lon: loadCoords.lon};
+}
+```
+
+```{ojs}
+// 3. the browser location was requested
+{
+  if (gps > 0) {
+    try {
+      const pos = await new Promise((resolve, reject) =>
+        navigator.geolocation.getCurrentPosition(resolve, reject, {timeout: 15000}));
+      const {latitude, longitude} = pos.coords;
+      mutable place = {name: `My location (${latitude.toFixed(2)}°, ${longitude.toFixed(2)}°)`, lat: latitude, lon: longitude};
+    } catch (e) {
+      return html`<p style="color:#b00020">Could not get your location: ${e.message}</p>`;
+    }
+  }
+}
+```
+
+```{ojs}
+// keep the address in sync, so that a view can be bookmarked or shared
+{
+  const u = new URL(location.href);
+  u.searchParams.set("lat", place.lat.toFixed(4));
+  u.searchParams.set("lon", place.lon.toFixed(4));
+  u.searchParams.set("name", place.name);
+  try { history.replaceState(null, "", u); } catch (e) {}
+}
+```
+
+## Downloading the data
+
+For the chosen place, the daily mean 2 m temperature from 1940 to the last complete year is requested from the Open-Meteo archive API, in three 30-year chunks fetched in parallel (the daily boundaries follow the local time zone of the place). The result is cached in the browser so that going back to a place is instant.
+
+```{ojs}
+era5 = {
+  const p = place;                                   // the cell runs again whenever the place changes
+  const last = new Date().getFullYear() - 1;         // <1>
+  const key = `anycity-era5-v1-${p.lat.toFixed(3)},${p.lon.toFixed(3)}-${last}`;
+  try { const c = localStorage.getItem(key); if (c) return JSON.parse(c); } catch (e) {}
+
+  const ranges = [["1940-01-01", "1969-12-31"], ["1970-01-01", "1999-12-31"], ["2000-01-01", `${last}-12-31`]];
+  const url = ([a, b]) =>
+    `https://archive-api.open-meteo.com/v1/archive?latitude=${p.lat}&longitude=${p.lon}` +
+    `&start_date=${a}&end_date=${b}&daily=temperature_2m_mean&timezone=auto`;
+  const parts = await Promise.all(ranges.map(r => d3.json(url(r))));
+
+  const out = {
+    meta: {lat: parts[0].latitude, lon: parts[0].longitude, elev: parts[0].elevation}, // <2>
+    time: parts.flatMap(j => j.daily.time),
+    temp: parts.flatMap(j => j.daily.temperature_2m_mean)
+  };
+  const save = () => localStorage.setItem(key, JSON.stringify(out));
+  try { save(); } catch (e) {                         // quota full: forget the older places and retry once
+    try {
+      Object.keys(localStorage).filter(k => k.startsWith("anycity-era5-")).forEach(k => localStorage.removeItem(k));
+      save();
+    } catch (e2) {}
+  }
+  return out;
+}
+
+rawData = era5.time
+  .map((d, i) => ({year: +d.slice(0, 4), slot: slotOf(d), t: era5.temp[i]}))
+  .filter(d => d.t != null && Number.isFinite(d.t))
+
+placeName = place.name
+sourceNote = `ERA5 grid cell ${era5.meta.lat.toFixed(2)}°, ${era5.meta.lon.toFixed(2)}°, ${Math.round(era5.meta.elev)} m`
+
+Inputs.table(rawData)
+```
+1. The current year is not complete, so the series stops at the end of last year.
+2. The API returns the centre and the elevation of the grid cell actually used, which can be a few km away from the requested point.
+
+{{< include _joy-processing.qmd >}}

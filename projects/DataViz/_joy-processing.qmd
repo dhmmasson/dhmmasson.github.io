@@ -1,0 +1,200 @@
+## Computing the daily normal
+
+Unlike the global series, a single place has a strong seasonal cycle, so an "anomaly" must be measured against the normal temperature **of that calendar day**. For every day of the year we average the temperature over the reference period (1991–2020 by default). The window is a few days wide (±3 by default, adjustable in the sidebar) so that the normal is not a noisy single-day average, but narrow enough not to flatten the seasonal peaks.
+
+Dates are mapped to a "slot" in a leap-year calendar, so that 29 February has a slot of its own and every later date keeps the same slot in all years.
+
+```{ojs}
+CUM = [0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335] // <1>
+slotOf = iso => CUM[+iso.slice(5, 7) - 1] + +iso.slice(8, 10) - 1
+
+climatology = {
+  const [b0, b1] = baseline.split("-").map(Number);
+  const sum = new Float64Array(366), n = new Float64Array(366);
+  for (const d of rawData) {
+    if (d.year >= b0 && d.year <= b1) { sum[d.slot] += d.t; n[d.slot]++; }
+  }
+  const raw = Array.from(sum, (s, i) => n[i] ? s / n[i] : NaN);
+  return raw.map((_, i) => {                       // circular moving average, ±normalWindow days
+    let a = 0, c = 0;
+    for (let k = -normalWindow; k <= normalWindow; k++) {
+      const v = raw[(i + k + 366) % 366];
+      if (!Number.isNaN(v)) { a += v; c++; }
+    }
+    return c ? a / c : NaN;
+  });
+}
+```
+1. Offsets of the first day of each month in a leap year.
+
+## Anomalies
+
+The anomaly of a day is its temperature minus the normal of its slot. Only complete years (at least 330 days with data) are kept, which also drops the current, unfinished year.
+
+```{ojs}
+anomalies = rawData
+  .map(d => ({year: d.year, slot: d.slot, anomaly: d.t - climatology[d.slot]}))
+  .filter(d => Number.isFinite(d.anomaly))
+
+byYear = d3.group(anomalies, d => d.year)
+years = [...byYear].filter(([y, v]) => v.length >= 330).map(([y]) => y).sort(d3.ascending)
+minYear = years[0]
+maxYear = years[years.length - 1] // <1>
+
+yearStats = years.map(y => ({
+  year: y,
+  n: byYear.get(y).length,
+  mean: d3.mean(byYear.get(y), d => d.anomaly),
+  reference: maxYear - y // <2>
+}))
+yearStatsMap = new Map(yearStats.map(d => [d.year, d]))
+labelledYears = yearStats.filter(d => d.year % 5 === 0 || d.year === maxYear)
+```
+1. The most recent complete year is drawn at the bottom.
+2. Vertical position (in rows) of the baseline of each year.
+
+## Grouping the anomalies by year
+
+For each year we count the days falling in each bin of the anomaly. The bins are 0.5 °C wide, and the horizontal range adapts to the climate of the place: a continental winter swings much more than the Basque coast, so the range is set from the 99.9th percentile of the absolute anomalies, rounded up to a multiple of 4 °C (between ±8 and ±32 °C).
+
+```{ojs}
+binWidth = 0.5
+limit = {
+  const keep = new Set(years);
+  const a = anomalies.filter(d => keep.has(d.year)).map(d => Math.abs(d.anomaly)).sort(d3.ascending);
+  return Math.min(32, Math.max(8, Math.ceil(d3.quantileSorted(a, 0.999) / 4) * 4));
+}
+length = Math.round(2 * limit / binWidth)
+indexF = x => Math.max(0, Math.min(length - 1, Math.floor((x + limit) / binWidth)))   // <1>
+indexF_1 = i => -limit + (i + 0.5) * binWidth                                           // <2>
+
+counts = new Map(years.map(y => {
+  const a = new Float64Array(length);
+  for (const d of byYear.get(y)) a[indexF(d.anomaly)]++;
+  return [y, a];
+}))
+
+xStep = limit <= 12 ? 2 : limit <= 20 ? 4 : 8
+xTicks = d3.range(-Math.floor(limit / xStep) * xStep, limit + 1, xStep)
+```
+1. Anomaly to bin index (values beyond the range land in the outermost bins).
+2. Bin index to the anomaly at the centre of the bin.
+
+## Smoothing the data with a Gaussian blur
+
+As in the original plot, the counts are smoothed with small binomial kernels (a discrete approximation of a Gaussian), keeping only the positive side of each kernel. With 0.5 °C bins, the default factor 2 corresponds to a standard deviation of about 0.5 °C.
+
+```{ojs}
+kernels = [
+      [1],
+      [2, 1],
+      [6, 4, 1],
+      [20, 15, 6, 1],
+      [70, 56, 28, 8, 1],
+    ];
+```
+
+```{ojs}
+//| label: fig-kernel-visualization
+//| fig-cap: "Kernel Visualization"
+//| echo: false
+kernelVisu = kernels.flatMap( (kernel, i) =>
+      kernel.flatMap( (e, j) => (j == 0)? Array(e).fill( {i, j } ) : Array(e).fill( [{i, j }, {i, j: -j} ]) ) )
+      .flat()
+
+Plot.plot({
+  marks: [
+    Plot.barY(kernelVisu,
+      Plot.binX({y: "proportion-facet"},
+        { x: "j", fx: "i", stroke: "black", fill: "black"})),
+    Plot.axisY({label: "Weight", tickFormat: "%"})
+  ],
+  grid: true,
+  x: { tickFormat: (d) => d == 0 ? "0" : Math.floor(+d), label: "Kernel Offset" },
+  fx: { label: "Kernel Size", anchor: "bottom" },
+  y: { inset: 5, label: "Weight", tickFormat: "%" }
+})
+```
+
+The smoothed counts are turned into a share of the days of the year, then scaled so that the **tallest ridge of the whole chart is `ridgeHeight` rows high**. This keeps the plot readable whatever the climate (a narrow distribution gives a high, thin hump, a broad one a low, wide hump), and each ridge is finally offset by its year.
+
+```{ojs}
+joyData = {
+  const kernel = kernels[smoothFactor];
+  const smooth = y => {
+    const c = counts.get(y), n = byYear.get(y).length;
+    return Float64Array.from(c, (_, i) => {
+      let result = 0, weight = 0;
+      for (let j = 1 - kernel.length; j < kernel.length; j++) {
+        const m = i + j;
+        if (m >= 0 && m < length) {
+          const k = kernel[Math.abs(j)];
+          result += c[m] * k;
+          weight += k;
+        }
+      }
+      return result / weight / n;   // share of the days of the year
+    });
+  };
+  const dens = years.map(y => ({y, s: smooth(y)}));
+  const peak = d3.max(dens, d => d3.max(d.s));
+  return dens.flatMap(({y, s}) => {
+    const st = yearStatsMap.get(y);
+    return Array.from(s, (v, i) => ({
+      year: y,
+      anomaly: indexF_1(i),
+      count: v,
+      height: st.reference + v / peak * ridgeHeight, // <1>
+      reference: st.reference,
+      yearMean: st.mean
+    }));
+  });
+}
+```
+1. Offset by the year (reversed so that the latest year is at the bottom) to obtain the Joy Division effect.
+
+## Colouring the years
+
+Colouring each year by its mean anomaly shows the warming at a glance. A standard diverging scale such as RdYlBu is pale yellow in the middle, which is nearly invisible on a white page (its contrast ratio against white is about 1.1:1). The interpolator below therefore **caps the lightness** of every colour in the perceptual Lab space, keeping hue and chroma: the ends of the scale are untouched, the middle turns into a darker khaki that stays visible (about 2.7:1 at the default maximum lightness of 65). Lower the "Max lightness" slider for more contrast, raise it to 100 to get the plain RdYlBu back.
+
+```{ojs}
+divergingInterpolator = t => {
+  const c = d3.lab(d3.interpolateRdYlBu(1 - t));   // reversed: warm = red
+  c.l = Math.min(c.l, maxLightness);
+  return c.formatHex();
+}
+colorLimit = Math.max(0.5, Math.ceil(d3.max(yearStats, d => Math.abs(d.mean)) * 2) / 2)
+colorScale = ({
+  type: "diverging",
+  pivot: 0,
+  domain: [-colorLimit, colorLimit],
+  interpolate: divergingInterpolator,
+  label: "Yearly mean anomaly (°C)"
+})
+```
+
+```{ojs}
+//| echo: false
+serialize = {
+  const xmlns = "http://www.w3.org/2000/xmlns/";
+  const xlinkns = "http://www.w3.org/1999/xlink";
+  const svgns = "http://www.w3.org/2000/svg";
+  return function serialize(svg) {
+    svg = svg.cloneNode(true);
+    const fragment = window.location.href + "#";
+    const walker = document.createTreeWalker(svg, NodeFilter.SHOW_ELEMENT);
+    while (walker.nextNode()) {
+      for (const attr of walker.currentNode.attributes) {
+        if (attr.value.includes(fragment)) {
+          attr.value = attr.value.replace(fragment, "#");
+        }
+      }
+    }
+    svg.setAttributeNS(xmlns, "xmlns", svgns);
+    svg.setAttributeNS(xmlns, "xmlns:xlink", xlinkns);
+    const serializer = new window.XMLSerializer;
+    const string = serializer.serializeToString(svg);
+    return new Blob([string], {type: "image/svg+xml"});
+  };
+}
+```

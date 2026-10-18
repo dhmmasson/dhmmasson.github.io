@@ -1,0 +1,99 @@
+---
+title: "Unknown Warming, Bayonne edition: daily temperature anomalies from a ground station"
+description: >
+  A Joy Division inspired plot of the daily temperature anomalies measured at Biarritz-Anglet (Bayonne), from Météo-France station data.
+page-layout: full
+date: 2026-10-18
+author:
+  - name:
+      given: "Dimitri"
+      family: "Masson"
+format:
+  html:
+    # code-fold: true
+    code-summary: "Show the code"
+toc: true
+code-annotations: hover
+---
+
+# Abstract
+
+This is the local, ground-measured companion of [Unknown Warming](./temperatureAnomalies.html). Instead of the global ERA5 series, it uses the daily temperatures recorded at the **Biarritz-Anglet** weather station, the Météo-France station closest to Bayonne (the airport, about 5 km from the city centre).
+
+Each line is one year. Its height shows how many days had a given temperature anomaly, that is the difference between the temperature of the day and the normal temperature of the same calendar day over a reference period. If the climate were stable, all the lines would pile up on the same hump; the drift of the whole distribution to the right is the local warming.
+
+Two differences with the global plot: the anomalies are local (so each day is compared to the normal of its own calendar day, and the spread is much larger than for a global mean), and they are measured against 1991–2020 or 1961–1990, **not** against the 1850–1900 pre-industrial baseline, which cannot be derived from a single station.
+
+# Unknown Warming: Bayonne
+
+```{ojs}
+//| echo: false
+md`**${placeName}** · ${sourceNote} · ${years.length} complete years (${minYear}–${maxYear}) · mean anomaly ${yearStats[0].mean.toFixed(2)} °C in ${minYear} → ${yearStats[yearStats.length - 1].mean.toFixed(2)} °C in ${maxYear}`
+```
+
+{{< include _joy-plot.qmd >}}
+
+# Technical details
+
+The processing is roughly divided into six steps:
+
+1. extracting the station series from the Météo-France open data (a Deno script)
+2. computing the normal temperature of each calendar day over the reference period
+3. subtracting it from every day to get the anomalies
+4. counting the anomalies per year
+5. applying a Gaussian blur to smooth out the graph
+6. offsetting the curve of each year to produce the Joy Division effect
+
+## Getting the data
+
+Météo-France publishes its climatological data under the Etalab Open Licence 2.0 on [data.gouv.fr](https://www.data.gouv.fr/datasets/donnees-climatologiques-de-base-quotidiennes). The daily files are distributed by département and by period, as compressed CSV files with all the stations of the département and many parameters (precipitation, temperature, wind). The file names change every year, and each is a few hundred MB once unzipped, so the extraction is done once, offline, by [`fetch-bayonne.ts`](./fetch-bayonne.ts):
+
+```bash
+deno run --allow-net --allow-write fetch-bayonne.ts          # writes bayonne_daily_temperature.csv
+deno run --allow-net fetch-bayonne.ts --list                 # check the candidate stations first
+```
+
+The script asks the data.gouv.fr API for the département 64 files, streams them, keeps the stations whose name matches Biarritz, Bayonne or Anglet, prints a summary of each (first and last day, number of complete years) and writes the chosen one to a small CSV. Use `--station <NUM_POSTE>` to force another station, and `--variable tm` to use the mean of the hourly temperatures instead of the default `(TN+TX)/2`.
+
+::: {.callout-note}
+## Daily mean definition
+By default the daily mean is `(TN+TX)/2`, which exists whenever both extremes were recorded, and is therefore the most consistent definition across the whole record. The mean of the hourly temperatures (`TM`) is available for a shorter period, and the two differ slightly. Mixing them in the same series would create artificial steps in the anomalies.
+:::
+
+The CSV starts with comment lines (starting with `#`) describing the source and the station, which are removed before parsing, as in the original plot.
+
+```{ojs}
+//| fig-cap: "Raw data"
+rawText = FileAttachment("./bayonne_daily_temperature.csv").text()
+
+stationMeta = {
+  const meta = {};
+  for (const line of rawText.split("\n")) {
+    const m = /^#\s*(\w+):\s*(.*)$/.exec(line);
+    if (m) meta[m[1]] = m[2];
+  }
+  return meta;
+}
+
+rawData = d3.csvParse(
+  rawText.split("\n").filter(l => l.trim() && !l.startsWith("#")).join("\n"),   // <1>
+  d => ({
+    year: +d.date.slice(0, 4),                                                  // <2>
+    slot: slotOf(d.date),
+    t: d.tmean === "" ? NaN : +d.tmean
+  })
+).filter(d => Number.isFinite(d.t))
+
+placeName = "Bayonne"
+sourceNote = `Météo-France, station ${stationMeta.station ?? "Biarritz-Anglet"}`
+
+Inputs.table(rawData)
+```
+1. Filter out the comment lines from the CSV content.
+2. The year is read from the ISO date string, to avoid time zone shifts when converting to a `Date`.
+
+{{< include _joy-processing.qmd >}}
+
+## Limits of a station series
+
+A station is a real measurement, but not a perfect one: the instruments, the shelter and the surroundings of the airport changed over the decades, and the definition of the daily extremes was modified over time, so part of the long-term drift can come from these changes rather than from the climate. Météo-France applies a climatological quality control, but the series is not homogenised in this visualisation. Years with fewer than 330 days of data are left out, which leaves visible gaps in the vertical axis.

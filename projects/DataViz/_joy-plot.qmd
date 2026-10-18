@@ -1,0 +1,75 @@
+::: {.panel-tabset}
+## Plot
+
+```{ojs}
+//| echo: false
+//| fig-cap: "Joy Division plot of daily temperature anomalies"
+// One area per year; the height of each area is the share of days at a given anomaly,
+// and every year is shifted up by one row so that the most recent year ends up at the bottom.
+chart = Plot.plot({
+  marks: [
+    Plot.ruleX([0], {stroke: "currentColor", strokeOpacity: 0.35, strokeDasharray: "3,4"}),
+    Plot.areaY(joyData,
+      { x: "anomaly"
+      , y1: fromBottom ? "reference" : 0
+      , y2: "height"
+      , z: "year"
+      , fillOpacity: opacity
+      , stroke: "white"
+      , fill: colorMode === "Single color" ? color : "yearMean" }),
+    showTrend
+      ? Plot.line(yearStats, {x: "mean", y: "reference", stroke: "#d62728", strokeWidth: 1.6})
+      : null,
+    Plot.axisY(labelledYears.map(d => d.reference), {
+      label: "Year",
+      text: labelledYears.map(d => String(d.year)),
+      grid: true
+    }),
+    Plot.axisX({
+      label: "Daily temperature anomaly (°C)",
+      ticks: xTicks,
+      tickFormat: d => (d > 0 ? "+" : "") + d
+    })
+  ],
+  x: {label: "Daily temperature anomaly (°C)", domain: [-limit, limit]},
+  y: {label: "Year"},
+  color: colorScale,
+  width: 800,
+  height: Math.round((years.length - 1 + ridgeHeight) * 12) + 70, // 12 px per year
+  title: `${placeName}: daily temperature anomalies, ${minYear}–${maxYear}`,
+  subtitle: `Anomaly relative to the ${baseline} daily normal · ${sourceNote}`
+})
+```
+
+```{ojs}
+//| echo: false
+// Colour key, only needed when lines are coloured by the yearly mean
+legend = colorMode === "Single color"
+  ? html``
+  : Plot.legend({color: colorScale, width: 320, marginLeft: 10})
+```
+
+```{ojs}
+//| echo: false
+//| panel: sidebar
+viewof opacity = Inputs.range([0, 1], {step: 0.1, value: 0.9, label: "Opacity"})
+viewof ridgeHeight = Inputs.range([1, 8], {step: 0.5, value: 4, label: "Ridge height"})
+viewof smoothFactor = Inputs.range([0, 4], {step: 1, value: 2, label: "Smooth factor"})
+viewof fromBottom = Inputs.toggle({label: "wave only", value: false})
+viewof showTrend = Inputs.toggle({label: "yearly mean", value: true})
+viewof colorMode = Inputs.select(["Single color", "RdYlBu by yearly mean"], {label: "Colour"})
+viewof color = Inputs.color({label: "Single color", value: "#004055"})
+viewof maxLightness = Inputs.range([40, 100], {step: 1, value: 65, label: "Max lightness"})
+viewof baseline = Inputs.select(["1991-2020", "1961-1990"], {label: "Reference period"})
+viewof normalWindow = Inputs.range([0, 15], {step: 1, value: 3, label: "Normal window (± days)"})
+
+DOM.download(() => serialize(chart.querySelector("svg")), undefined, "Download the SVG")
+```
+
+## table
+
+```{ojs}
+//| echo: false
+Inputs.table(yearStats.map(d => ({year: d.year, days: d.n, "mean anomaly (°C)": Math.round(d.mean * 100) / 100})))
+```
+:::
