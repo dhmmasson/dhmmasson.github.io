@@ -4,3 +4,6 @@
 .venv
 _freeze
 .obsidian/workspace.json
+**/*.quarto_ipynb
+_claude/
+*.kra
