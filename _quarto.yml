@@ -6,7 +6,7 @@ project:
     port: 4200
   resources: 
     - rezbuild-emperor-tamarin/static/index.html
-    - 48ed485d89df4467a07d9d0caa1ec0d0.txt 
+    - 48ed485d89df4467a07d9d0caa1ec0d0.txt
   render:
     - "*.md"  
     - "*.qmd"
