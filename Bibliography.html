@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="All publications by Dimitri Masson on Human Systems Integration, digital twins, decision support, creativity and digital product passports, with PDFs and DOIs.">
 
-<title>bibliography – Dimitri Masson</title>
+<title>Publications – Dimitri Masson</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-bibliography','listing-citeproc','listing-csl','listing-website','listing-format','listing-language','listing-comments','listing-title-block-banner','listing-google-scholar','listing-filters','listing-title','listing-alias','listing-date','listing-year','listing-description','listing-haiku','listing-categories','listing-image','listing-publication','listing-authors_s','listing-author','listing-doi','listing-hal','listing-halid','listing-citation','listing-pdf','listing-links','listing-path','listing-outputHref','listing-date-modified','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-citeproc','listing-csl','listing-website','listing-format','listing-language','listing-comments','listing-title-block-banner','listing-google-scholar','listing-filters','listing-title','listing-alias','listing-date','listing-lang','listing-year','listing-description','listing-haiku','listing-categories','listing-image','listing-publication','listing-authors_s','listing-author','listing-doi','listing-hal','listing-halid','listing-citation','listing-pdf','listing-include-in-header','listing-links','listing-path','listing-outputHref','listing-date-modified','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-aliases',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-bibliography","listing-citeproc","listing-csl","listing-website","listing-format","listing-language","listing-comments","listing-title-block-banner","listing-google-scholar","listing-filters","listing-title","listing-alias","listing-date","listing-year","listing-description","listing-haiku","listing-categories","listing-image","listing-publication","listing-authors_s","listing-author","listing-doi","listing-hal","listing-halid","listing-citation","listing-pdf","listing-links","listing-path","listing-outputHref","listing-date-modified","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-citeproc","listing-csl","listing-website","listing-format","listing-language","listing-comments","listing-title-block-banner","listing-google-scholar","listing-filters","listing-title","listing-alias","listing-date","listing-lang","listing-year","listing-description","listing-haiku","listing-categories","listing-image","listing-publication","listing-authors_s","listing-author","listing-doi","listing-hal","listing-halid","listing-citation","listing-pdf","listing-include-in-header","listing-links","listing-path","listing-outputHref","listing-date-modified","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-aliases"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -133,12 +134,17 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
-<meta property="og:title" content="Dimitri Masson">
+<meta property="og:title" content="Publications – Dimitri Masson">
 <meta property="og:description" content="">
+<meta property="og:image" content="https://dhmmasson.github.io/assets/social-card.jpg">
 <meta property="og:site_name" content="Dimitri Masson">
 <meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="Publications – Dimitri Masson">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://dhmmasson.github.io/assets/social-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://dhmmasson.github.io/Bibliography.html">
 </head>
 
@@ -162,15 +168,33 @@ window.Quarto = {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./Bibliography.html" aria-current="page"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./Bibliography.html" aria-current="page"> 
-<span class="menu-text">Research</span></a>
+    <a class="nav-link" href="./cv/cv.html"> 
+<span class="menu-text">CV</span></a>
   </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/dhmmasson"> <i class="bi bi-github" role="img">
 </i> 
@@ -199,19 +223,204 @@ window.Quarto = {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Publications</h1>
+</div>
 
 
 
+<div class="quarto-title-meta column-page">
 
-<section id="research" class="level1">
-<h1>Research</h1>
-<p>I have a strong interest in creativity, design, and innovation. I am particularly interested in the design of <strong>tools</strong> and methods to support <strong>human activities</strong> (creative, design, decision-making). Over the year my field has shifted from <em>Human-Computer interaction</em>, where I studied how computer tools could assist human activities to the broader <strong>Human-System Integration</strong> perspective, where I think of the role of human in complex systems.</p>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>I have a strong interest in creativity, design, and innovation. I am particularly interested in the design of <strong>tools</strong> and methods to support <strong>human activities</strong> (creative, design, decision-making). Over the years my field has shifted from <em>Human-Computer interaction</em>, where I studied how computer tools could assist human activities to the broader <strong>Human-System Integration</strong> perspective, where I think of the role of human in complex systems.</p>
 <section id="bibliography" class="level2">
 <h2 class="anchored" data-anchor-id="bibliography">Bibliography</h2>
 <div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
 <div class="pub-list list">
   
+  <h2 class="anchored">2026</h2>
+  
+  <div class="quarto-post" metadataattrs(item)="">
+    <div class="body">
+      <h3 class="no-anchor listing-title lead">
+        <a href="./publications/doulkifl2026_MulticriteriaDecisionMaking.html" class="no-external"> Multi-criteria Decision-Making Methods for Sustainability and Circularity in the Textile Industry: A Review </a>
+      </h3>
+      <div class="listing-author">Doulkifl, Kenza; El Ouadi, Ihssan; Medarhri, Ibtissam; <b>Masson, Dimitri</b>; Laguna Salvado, Laura; Merlo, Christophe; Saidi, Rabiae; Medarhri, Ibtissam; Couturier, Raphael; Jraifi, Abdelillah; Hosni, Mohamed</div>
+      <div class="listing-publication fst-italic">Mathematics and Intelligent Systems in Industry
+</div>
+    </div>
+    <div class="metadata">
+      <div class="listing-date">Jan 1, 2026</div>
+      <div>
+        <a href="./publications/doulkifl2026_MulticriteriaDecisionMaking.html" class="btn btn-sm btn-primary">
+          <i class="bi bi-journal-richtext"></i>
+          Details
+        </a>
+        
+        <a href="https://doi.org/10.1007/978-3-032-17079-8_8" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
+          <i class="ai ai-doi"></i>
+          DOI
+        </a>
+           
+        <div class="listing-categories">
+          
+          <span class="listing-category">Decision-making</span>
+          
+          <span class="listing-category">Circularity</span>
+          
+          <span class="listing-category">Fashion</span>
+          
+        </div>
+          
+        <div class="listing-haiku">
+          <span>h<span class="bold">AI</span>ku</span>: Methods weigh each thread,<br>TOPSIS ranks the woven paths,<br>circles close at last.<br>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="quarto-post" metadataattrs(item)="">
+    <div class="body">
+      <h3 class="no-anchor listing-title lead">
+        <a href="./publications/disdier2026_OSCAROperational.html" class="no-external"> OSCAR: Operational System Context Acquisition and Representation </a>
+      </h3>
+      <div class="listing-author">Disdier, Alexandre; <b>Masson, Dimitri</b></div>
+      <div class="listing-publication fst-italic">2026 International Workshop on Systems Engineering Research
+</div>
+    </div>
+    <div class="metadata">
+      <div class="listing-date">Jan 14, 2026</div>
+      <div>
+        <a href="./publications/disdier2026_OSCAROperational.html" class="btn btn-sm btn-primary">
+          <i class="bi bi-journal-richtext"></i>
+          Details
+        </a>
+        
+        <a href="https://doi.org/10.1109/IEEECONF67861.2026.11440811" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
+          <i class="ai ai-doi"></i>
+          DOI
+        </a>
+         
+        <a href="https://hal.science/hal-05574472" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
+          <i class="ai ai-hal"></i>
+          hal-05574472
+        </a>
+          
+        <div class="listing-categories">
+          
+          <span class="listing-category">Human-System Integration</span>
+          
+          <span class="listing-category">Context</span>
+          
+          <span class="listing-category">Framework</span>
+          
+        </div>
+          
+        <div class="listing-haiku">
+          <span>h<span class="bold">AI</span>ku</span>: Functions, structures, place,<br>time weaves the four spaces in,<br>context comes to light.<br>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="quarto-post" metadataattrs(item)="">
+    <div class="body">
+      <h3 class="no-anchor listing-title lead">
+        <a href="./publications/disdier2026_PropositionOntology.html" class="no-external"> Proposition of an Ontology Supporting Context Modeling in Operational Scenario Development </a>
+      </h3>
+      <div class="listing-author">Disdier, Alexandre; <b>Masson, Dimitri</b>; Jankovic, Marija; Boy, Guy André</div>
+      <div class="listing-publication fst-italic">Journal of Air Transportation
+</div>
+    </div>
+    <div class="metadata">
+      <div class="listing-date">Feb 1, 2026</div>
+      <div>
+        <a href="./publications/disdier2026_PropositionOntology.html" class="btn btn-sm btn-primary">
+          <i class="bi bi-journal-richtext"></i>
+          Details
+        </a>
+        
+        <a href="https://doi.org/10.2514/1.D0538" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
+          <i class="ai ai-doi"></i>
+          DOI
+        </a>
+         
+        <a href="https://hal.science/hal-05494451v1" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
+          <i class="ai ai-hal"></i>
+          hal-05494451v1
+        </a>
+          
+        <div class="listing-categories">
+          
+          <span class="listing-category">Human-System Integration</span>
+          
+          <span class="listing-category">Context</span>
+          
+          <span class="listing-category">Aerospace</span>
+          
+        </div>
+          
+        <div class="listing-haiku">
+          <span>h<span class="bold">AI</span>ku</span>: Towers watch the sky,<br>words for every context thread,<br>control finds its frame.<br>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="quarto-post" metadataattrs(item)="">
+    <div class="body">
+      <h3 class="no-anchor listing-title lead">
+        <a href="./publications/masson2026_ScenarioBasedSystems.html" class="no-external"> Scenario-Based Systems Integration </a>
+      </h3>
+      <div class="listing-author"><b>Masson, Dimitri</b>; Boy, Guy André</div>
+      <div class="listing-publication fst-italic">In Handbook of Sociotechnical Systems A Human Systems Integration Approach, CRC Press
+</div>
+    </div>
+    <div class="metadata">
+      <div class="listing-date">Jan 1, 2026</div>
+      <div>
+        <a href="./publications/masson2026_ScenarioBasedSystems.html" class="btn btn-sm btn-primary">
+          <i class="bi bi-journal-richtext"></i>
+          Details
+        </a>
+           
+        <div class="listing-categories">
+          
+          <span class="listing-category">Human-System Integration</span>
+          
+          <span class="listing-category">System Engineering</span>
+          
+          <span class="listing-category">Methodology</span>
+          
+        </div>
+          
+        <div class="listing-haiku">
+          <span>h<span class="bold">AI</span>ku</span>: Stories set the stage,<br>tales become formal models,<br>humans test it first.<br>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+   
   <h2 class="anchored">2025</h2>
   
   <div class="quarto-post" metadataattrs(item)="">
@@ -220,7 +429,7 @@ window.Quarto = {
         <a href="./publications/masson2025_FIREHumancentered.html" class="no-external"> FIRE: a human-centered framework for digital twin design </a>
       </h3>
       <div class="listing-author"><b>Masson, Dimitri</b>; Villeneuve, Eric</div>
-      <div class="listing-publication fst-italic">undefined
+      <div class="listing-publication fst-italic">Systems Engineering
 </div>
     </div>
     <div class="metadata">
@@ -235,8 +444,13 @@ window.Quarto = {
           <i class="ai ai-doi"></i>
           DOI
         </a>
-          
-        <a href="./publications/./_files/masson2025_FIREHumancentered.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+         
+        <a href="https://hal.science/hal-05395720v1" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
+          <i class="ai ai-hal"></i>
+          hal-05395720v1
+        </a>
+         
+        <a href="./publications/_files/masson2025_FIREHumancentered.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -269,7 +483,7 @@ window.Quarto = {
         <a href="./publications/disdier2024_ContextAcquisition.html" class="no-external"> A Context Acquisition Methodology for the Design of Complex Sociotechnical Systems </a>
       </h3>
       <div class="listing-author">Disdier, Alexandre; <b>Masson, Dimitri</b>; Jankovic, Marija; BOY, GUY ANDRE</div>
-      <div class="listing-publication fst-italic">HSI2024, 2024-08-26
+      <div class="listing-publication fst-italic">HSI2024
 </div>
     </div>
     <div class="metadata">
@@ -284,8 +498,13 @@ window.Quarto = {
           <i class="ai ai-doi"></i>
           DOI
         </a>
-          
-        <a href="./publications/./_files/disdier2024_ContextAcquisition.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+         
+        <a href="https://hal.science/hal-04825131" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
+          <i class="ai ai-hal"></i>
+          hal-04825131
+        </a>
+         
+        <a href="./publications/_files/disdier2024_ContextAcquisition.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -313,7 +532,7 @@ window.Quarto = {
   <div class="quarto-post" metadataattrs(item)="">
     <div class="body">
       <h3 class="no-anchor listing-title lead">
-        <a href="./publications/williams2024_TinkererMindset.html" class="no-external"> A Tinkerer's Mindset: Lessons from the Technical Leadership Institute's Cohort 8 on Safe-to-Fail Probing as a Tool for Informing Judgement </a>
+        <a href="./publications/williams2024_TinkererMindset.html" class="no-external"> A Tinkerer’s Mindset: Lessons from the Technical Leadership Institute’s Cohort 8 on Safe-to-Fail Probing as a Tool for Informing Judgement </a>
       </h3>
       <div class="listing-author">Williams, Adam D.; Aveiro, Leandro V.; McGrath, Rachel A.; Leandri, Carlo; Terpant, Guilluame; <b>Masson, Dimitri</b>; Unger, Adrian</div>
       <div class="listing-publication fst-italic">INSIGHT, 27(3)
@@ -332,7 +551,7 @@ window.Quarto = {
           DOI
         </a>
           
-        <a href="./publications/./_files/williams2024_TinkererMindset.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/williams2024_TinkererMindset.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -361,7 +580,7 @@ window.Quarto = {
         <a href="./publications/disdier2024_DefiningCharacterizing.html" class="no-external"> Defining and characterizing the operational context for human systems integration </a>
       </h3>
       <div class="listing-author">Disdier, Alexandre; <b>Masson, Dimitri</b>; Jankovic, Marija; Boy, Guy-André</div>
-      <div class="listing-publication fst-italic">Sys. Eng.
+      <div class="listing-publication fst-italic">Systems Engineering
 </div>
     </div>
     <div class="metadata">
@@ -377,7 +596,7 @@ window.Quarto = {
           DOI
         </a>
           
-        <a href="./publications/./_files/disdier2024_DefiningCharacterizing.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/disdier2024_DefiningCharacterizing.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -408,7 +627,7 @@ window.Quarto = {
         <a href="./publications/boy2024_PRODECHuman.html" class="no-external"> PRODEC for human systems integration of increasingly autonomous systems </a>
       </h3>
       <div class="listing-author">Boy, Guy André; <b>Masson, Dimitri</b>; Durnerin, Élise; Morel, Chloé</div>
-      <div class="listing-publication fst-italic">Sys. Eng., 27(5)
+      <div class="listing-publication fst-italic">Systems Engineering, 27(5)
 </div>
     </div>
     <div class="metadata">
@@ -424,7 +643,7 @@ window.Quarto = {
           DOI
         </a>
           
-        <a href="./publications/./_files/boy2024_PRODECHuman.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/boy2024_PRODECHuman.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -449,7 +668,7 @@ window.Quarto = {
         <a href="./publications/camaraditpinto2024_RealityAnchor.html" class="no-external"> Reality anchor methodology: how to design a digital twin to support situation awareness </a>
       </h3>
       <div class="listing-author">Camara Dit Pinto, Stélian; Villeneuve, Éric; <b>Masson, Dimitri</b>; Boy, Guy André; Urfels, Laetitia</div>
-      <div class="listing-publication fst-italic">J. Eng. Des., 35(6)
+      <div class="listing-publication fst-italic">Journal of Engineering Design, 35(6)
 </div>
     </div>
     <div class="metadata">
@@ -465,7 +684,7 @@ window.Quarto = {
           DOI
         </a>
           
-        <a href="./publications/./_files/camaraditpinto2024_RealityAnchor.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/camaraditpinto2024_RealityAnchor.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -498,7 +717,7 @@ window.Quarto = {
         <a href="./publications/houzangbe2023_ExplorationPhysiological.html" class="no-external"> Exploration of Physiological Arousal in Divergent and Convergent Thinking using 2D screen and VR Sketching Tools. </a>
       </h3>
       <div class="listing-author">Houzangbe, Samory; Fleury, Sylvain; <b>Masson, Dimitri</b>; Jáuregui, David Antonio Gómez; Legardeur, Jérémy; Couture, Nadine; Richir, Simon</div>
-      <div class="listing-publication fst-italic">2023 11th International Conference on Affective Computing and Intelligent Interaction (ACII), 2023/09/01
+      <div class="listing-publication fst-italic">2023 11th International Conference on Affective Computing and Intelligent Interaction (ACII)
 </div>
     </div>
     <div class="metadata">
@@ -519,7 +738,7 @@ window.Quarto = {
           hal-04416687v1
         </a>
          
-        <a href="./publications/./_files/houzangbe2023_ExplorationPhysiological.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/houzangbe2023_ExplorationPhysiological.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -547,10 +766,78 @@ window.Quarto = {
   <div class="quarto-post" metadataattrs(item)="">
     <div class="body">
       <h3 class="no-anchor listing-title lead">
+        <a href="./publications/kennedy2023_HumanSystems.html" class="no-external"> Human systems integration primer </a>
+      </h3>
+      <div class="listing-author">Boy, Guy André; Kennedy, Grace; Bhalla, Jawahar (JB); Boardman, Michael; Camara Dit Pinto, Stélian; Harel, Ami; Harel, Avi; <b>Masson, Dimitri</b>; Moertl, Peter; Null, Cynthia H.; Quillerou, Edwige; Rudolph, Alexander; Sahar, Yotam; Silva-Martinez, Jackelynne; Speyer, Jean-Jacques; Molina-Tillmann, Harald; Wright, Andrew; Zonnenshain, Avigdor; Kennedy, Grace; Boy, Guy André</div>
+      <div class="listing-publication fst-italic">INCOSE
+</div>
+    </div>
+    <div class="metadata">
+      <div class="listing-date">Sep 1, 2023</div>
+      <div>
+        <a href="./publications/kennedy2023_HumanSystems.html" class="btn btn-sm btn-primary">
+          <i class="bi bi-journal-richtext"></i>
+          Details
+        </a>
+           
+        <div class="listing-categories">
+          
+          <span class="listing-category">Human-System Integration</span>
+          
+          <span class="listing-category">System Engineering</span>
+          
+        </div>
+          
+        <div class="listing-haiku">
+          <span>h<span class="bold">AI</span>ku</span>: People in the loop,<br>a primer opens the door,<br>systems learn to see.<br>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="quarto-post" metadataattrs(item)="">
+    <div class="body">
+      <h3 class="no-anchor listing-title lead">
+        <a href="./publications/caulfield-sriklad2023_IntegratedIndustry.html" class="no-external"> Integrated Industry Fashion-Tech Curriculum Model </a>
+      </h3>
+      <div class="listing-author">Caulfield-Sriklad, Daniel; Miller, Gabrielle; Danjoux, Michele; Teunissen, Jose; Chkanikova, Olga; Pal, Rudrajeet; <b>Masson, Dimitri</b>; Casciani, Daria; Testa, Susanna</div>
+      <div class="listing-publication fst-italic">Report D.1.1
+</div>
+    </div>
+    <div class="metadata">
+      <div class="listing-date">Nov 1, 2023</div>
+      <div>
+        <a href="./publications/caulfield-sriklad2023_IntegratedIndustry.html" class="btn btn-sm btn-primary">
+          <i class="bi bi-journal-richtext"></i>
+          Details
+        </a>
+           
+        <div class="listing-categories">
+          
+          <span class="listing-category">Fashion</span>
+          
+          <span class="listing-category">Education</span>
+          
+        </div>
+          
+        <div class="listing-haiku">
+          <span>h<span class="bold">AI</span>ku</span>: Classrooms meet the loom,<br>industry threads through the course,<br>Fashion-Tech skills grow.<br>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="quarto-post" metadataattrs(item)="">
+    <div class="body">
+      <h3 class="no-anchor listing-title lead">
         <a href="./publications/camaraditpinto2023_MethodologieConception.html" class="no-external"> Méthodologie de conception de jumeau numérique pour supporter la conscience de la situation </a>
       </h3>
       <div class="listing-author">Camara Dit Pinto, Stélian; Villeneuve, Eric; <b>Masson, Dimitri</b>; Boy, Guy Andre; Urfels, Laetitia</div>
-      <div class="listing-publication fst-italic">in CIGI Qualita MOSIM 2023. Propulser la performance, 2023-06
+      <div class="listing-publication fst-italic">CIGI Qualita MOSIM 2023. Propulser la performance
 </div>
     </div>
     <div class="metadata">
@@ -571,7 +858,7 @@ window.Quarto = {
           hal-04206938v1
         </a>
          
-        <a href="./publications/./_files/camaraditpinto2023_MethodologieConception.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/camaraditpinto2023_MethodologieConception.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -602,7 +889,7 @@ window.Quarto = {
         <a href="./publications/ospital2023_DevelopingData.html" class="no-external"> Toward Developing a Data Model for a Digital Product Passport To Enhance Circularity in Fashion </a>
       </h3>
       <div class="listing-author">Ospital, Pantxika; <b>Masson, Dimitri</b>; Beler, Cédrick; Legardeur, Jérémy</div>
-      <div class="listing-publication fst-italic">Sustainable innovation 2023, 2023-03
+      <div class="listing-publication fst-italic">Sustainable innovation 2023
 </div>
     </div>
     <div class="metadata">
@@ -612,18 +899,13 @@ window.Quarto = {
           <i class="bi bi-journal-richtext"></i>
           Details
         </a>
-        
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
-          <i class="ai ai-doi"></i>
-          DOI
-        </a>
          
         <a href="https://hal.science/hal-04082862v1" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-hal"></i>
           hal-04082862v1
         </a>
          
-        <a href="./publications/./_files/ospital2023_DevelopingData.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/ospital2023_DevelopingData.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -654,7 +936,7 @@ window.Quarto = {
         <a href="./publications/disdier2023_HumanSystems.html" class="no-external"> Toward a Human Systems Integration approach to the design and operation of a remote and virtual air traffic control center </a>
       </h3>
       <div class="listing-author">Disdier, Alexandre; <b>Masson, Dimitri</b>; Brethomé, Thomas; Jankovic, Marija; Boy, Guy-André</div>
-      <div class="listing-publication fst-italic">Proc. Des. Soc., 3
+      <div class="listing-publication fst-italic">Proceedings of the Design Society, 3
 </div>
     </div>
     <div class="metadata">
@@ -675,7 +957,7 @@ window.Quarto = {
           hal-04064881v1
         </a>
          
-        <a href="./publications/./_files/disdier2023_HumanSystems.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/disdier2023_HumanSystems.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -704,7 +986,7 @@ window.Quarto = {
         <a href="./publications/ospital2023_ProductTransparency.html" class="no-external"> Toward product transparency: communicating traceability information to consumers </a>
       </h3>
       <div class="listing-author">Ospital, Pantxika; <b>Masson, Dimitri</b>; Beler, Cédrick; Legardeur, Jérémy</div>
-      <div class="listing-publication fst-italic">Int J Fash Des Technol Educ, 16(2)
+      <div class="listing-publication fst-italic">International Journal of Fashion Design, Technology and Education, 16(2)
 </div>
     </div>
     <div class="metadata">
@@ -725,7 +1007,7 @@ window.Quarto = {
           hal-03879884v1
         </a>
          
-        <a href="./publications/./_files/ospital2023_ProductTransparency.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/ospital2023_ProductTransparency.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -760,7 +1042,7 @@ window.Quarto = {
         <a href="./publications/ospital2022_DigitalProduct.html" class="no-external"> A digital product passport to support product transparency and circularity </a>
       </h3>
       <div class="listing-author">Ospital, Pantxika; <b>Masson, Dimitri</b>; Beler, Cédrick; Legardeur, Jérémy</div>
-      <div class="listing-publication fst-italic">Global Fashion Conference 2022, 2022-11
+      <div class="listing-publication fst-italic">Global Fashion Conference 2022
 </div>
     </div>
     <div class="metadata">
@@ -781,7 +1063,7 @@ window.Quarto = {
           hal-04082837
         </a>
          
-        <a href="./publications/./_files/ospital2022_DigitalProduct.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/ospital2022_DigitalProduct.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -833,7 +1115,7 @@ window.Quarto = {
           hal-03552184v1
         </a>
          
-        <a href="./publications/./_files/lagunasalvado2022_DecisionSupport.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/lagunasalvado2022_DecisionSupport.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -862,7 +1144,7 @@ window.Quarto = {
         <a href="./publications/houzangbe2022_VirtualReality.html" class="no-external"> Is virtual reality the solution? A comparison between 3D and 2D creative sketching tools in the early design process </a>
       </h3>
       <div class="listing-author">Houzangbe, Samory; <b>Masson, Dimitri</b>; Fleury, Sylvain; Gómez Jáuregui, David Antonio; Legardeur, Jeremy; Richir, Simon; Couture, Nadine</div>
-      <div class="listing-publication fst-italic">Front. Virtual Real., 3
+      <div class="listing-publication fst-italic">Frontiers in Virtual Reality, 3
 </div>
     </div>
     <div class="metadata">
@@ -883,7 +1165,7 @@ window.Quarto = {
           hal-03836214v1
         </a>
          
-        <a href="./publications/./_files/houzangbe2022_VirtualReality.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/houzangbe2022_VirtualReality.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -914,7 +1196,7 @@ window.Quarto = {
         <a href="./publications/lasseux2022_NAASCubeProgram.html" class="no-external"> NAASCube program, an innovative aerospace program for students,driven by the Nouvelle Aquitaine Academic Space Center </a>
       </h3>
       <div class="listing-author">Lasseux, Didier; Cais, Philippe; Ferré, Guillaume; Ghiotto, Anthony; Lalizel, Gildas; Curea, Octavian; Goetz, Catherine; <b>Masson, Dimitri</b>; Nadot, Yves; Bellenoue, Marc</div>
-      <div class="listing-publication fst-italic">4th Symposium on Space Educational Activities, 2022-04
+      <div class="listing-publication fst-italic">4th Symposium on Space Educational Activities
 </div>
     </div>
     <div class="metadata">
@@ -924,18 +1206,13 @@ window.Quarto = {
           <i class="bi bi-journal-richtext"></i>
           Details
         </a>
-        
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
-          <i class="ai ai-doi"></i>
-          DOI
-        </a>
          
         <a href="https://hal.science/hal-04300180v1" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-hal"></i>
           hal-04300180v1
         </a>
          
-        <a href="./publications/./_files/lasseux2022_NAASCubeProgram.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/lasseux2022_NAASCubeProgram.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -959,10 +1236,11 @@ window.Quarto = {
   <div class="quarto-post" metadataattrs(item)="">
     <div class="body">
       <h3 class="no-anchor listing-title lead">
-        <a href="./publications/ospital2022_PasseportProduit.html" class="no-external"> Passeport produit numérique pour permettre traçabilité et transparence dans la supply chain textile et tout au long du cycle de vie d'un produit </a>
+        <a href="./publications/ospital2022_PasseportProduit.html" class="no-external"> Passeport produit numérique pour permettre traçabilité et transparence dans la supply chain textile et tout au long du cycle de vie d’un produit </a>
       </h3>
       <div class="listing-author">Ospital, Pantxika; <b>Masson, Dimitri</b>; Legardeur, Jérémy; Béler, Cédrick</div>
-      <div class="listing-publication fst-italic"></div>
+      <div class="listing-publication fst-italic">Presentation, Journées SAGIP de printemps 2022
+</div>
     </div>
     <div class="metadata">
       <div class="listing-date">May 1, 2022</div>
@@ -971,13 +1249,13 @@ window.Quarto = {
           <i class="bi bi-journal-richtext"></i>
           Details
         </a>
-        
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
-          <i class="ai ai-doi"></i>
-          DOI
+         
+        <a href="https://hal.science/hal-03720549" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
+          <i class="ai ai-hal"></i>
+          hal-03720549
         </a>
-          
-        <a href="./publications/./_files/ospital2022_PasseportProduit.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+         
+        <a href="./publications/_files/ospital2022_PasseportProduit.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1008,7 +1286,8 @@ window.Quarto = {
         <a href="./publications/disdier2022_StudyDesign.html" class="no-external"> Study and design of a remote and virtual air traffic control center using a Human Systems Integration approach </a>
       </h3>
       <div class="listing-author">Disdier, Alexandre; <b>Masson, Dimitri</b>; Brethomé, Thomas; Jankovic, Marija; Boy, Guy Andre</div>
-      <div class="listing-publication fst-italic"></div>
+      <div class="listing-publication fst-italic">Poster, AFIS Rencontres Académie-Industrie
+</div>
     </div>
     <div class="metadata">
       <div class="listing-date">Dec 1, 2022</div>
@@ -1017,13 +1296,13 @@ window.Quarto = {
           <i class="bi bi-journal-richtext"></i>
           Details
         </a>
-        
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
-          <i class="ai ai-doi"></i>
-          DOI
+         
+        <a href="https://hal.science/hal-03971460v1" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
+          <i class="ai ai-hal"></i>
+          hal-03971460v1
         </a>
-          
-        <a href="./publications/./_files/disdier2022_StudyDesign.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+         
+        <a href="./publications/_files/disdier2022_StudyDesign.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1052,7 +1331,7 @@ window.Quarto = {
         <a href="./publications/ospital2022_TotalTraceability.html" class="no-external"> Toward total traceability and full transparency communication in textile industry supply chain </a>
       </h3>
       <div class="listing-author">Ospital, Pantxika; <b>Masson, Dimitri</b>; Beler, Cédrick; Legardeur, Jérémy</div>
-      <div class="listing-publication fst-italic">HSI2021, 32(S1)
+      <div class="listing-publication fst-italic">INCOSE International Symposium, INCOSE Human Systems Integration Conference, 32(S1)
 </div>
     </div>
     <div class="metadata">
@@ -1073,7 +1352,7 @@ window.Quarto = {
           hal-03462235v1
         </a>
          
-        <a href="./publications/./_files/ospital2022_TotalTraceability.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/ospital2022_TotalTraceability.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1125,7 +1404,7 @@ window.Quarto = {
           hal-03669358v1
         </a>
          
-        <a href="./publications/./_files/demarcq2022_CircularProduct.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/demarcq2022_CircularProduct.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1177,7 +1456,7 @@ window.Quarto = {
           hal-03262607v1
         </a>
          
-        <a href="./publications/./_files/camaraditpinto2021_DigitalTwin.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/camaraditpinto2021_DigitalTwin.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1204,7 +1483,7 @@ window.Quarto = {
         <a href="./publications/pinto2021_RequirementsPrototyping.html" class="no-external"> From requirements to prototyping: Application of human-system integration methodology to digital twin design </a>
       </h3>
       <div class="listing-author">Pinto, Stélian Camara Dit; <b>Masson, Dimitri</b>; Villeneuve, Eric; Boy, Guy; Urfels, Laetitia</div>
-      <div class="listing-publication fst-italic">Proc. Des. Soc., 1
+      <div class="listing-publication fst-italic">Proceedings of the Design Society, 1
 </div>
     </div>
     <div class="metadata">
@@ -1225,7 +1504,7 @@ window.Quarto = {
           hal-03356551v1
         </a>
          
-        <a href="./publications/./_files/pinto2021_RequirementsPrototyping.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/pinto2021_RequirementsPrototyping.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1254,7 +1533,7 @@ window.Quarto = {
         <a href="./publications/masson2021_TraceabilityInformation.html" class="no-external"> Traceability information to communicate to consumer in total transparency </a>
       </h3>
       <div class="listing-author"><b>Masson, Dimitri</b>; Beler, Cédrick; Legardeur, Jérémy; Ospital, Pantxika</div>
-      <div class="listing-publication fst-italic">Global Fashion Conference 2021, 2021
+      <div class="listing-publication fst-italic">Global Fashion Conference 2021
 </div>
     </div>
     <div class="metadata">
@@ -1264,18 +1543,13 @@ window.Quarto = {
           <i class="bi bi-journal-richtext"></i>
           Details
         </a>
-        
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
-          <i class="ai ai-doi"></i>
-          DOI
-        </a>
          
         <a href="https://hal.science/hal-03462333v1" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-hal"></i>
           hal-03462333v1
         </a>
          
-        <a href="./publications/./_files/masson2021_TraceabilityInformation.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/masson2021_TraceabilityInformation.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1303,10 +1577,10 @@ window.Quarto = {
   <div class="quarto-post" metadataattrs(item)="">
     <div class="body">
       <h3 class="no-anchor listing-title lead">
-        <a href="./publications/legardeur2020_ParadoxDiversity.html" class="no-external"> The paradox of diversity's influence on the creative teams Lessons learned from the analysis of 14 editions of" The 24h of innovation" hackathon </a>
+        <a href="./publications/legardeur2020_ParadoxDiversity.html" class="no-external"> The paradox of diversity’s influence on the creative teams Lessons learned from the analysis of 14 editions of“ The 24h of innovation” hackathon </a>
       </h3>
       <div class="listing-author">Legardeur, Jérémy; <b>Masson, Dimitri</b>; Gardoni, Mickaël; Pimapunsri, Kusol; Management, International Society for Professional Innovation</div>
-      <div class="listing-publication fst-italic">in ISPIM Connects Bangkok, 2020-03
+      <div class="listing-publication fst-italic">ISPIM Connects Bangkok
 </div>
     </div>
     <div class="metadata">
@@ -1316,18 +1590,13 @@ window.Quarto = {
           <i class="bi bi-journal-richtext"></i>
           Details
         </a>
-        
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
-          <i class="ai ai-doi"></i>
-          DOI
-        </a>
          
         <a href="https://hal.science/hal-02881482" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-hal"></i>
           hal-02881482
         </a>
          
-        <a href="./publications/./_files/legardeur2020_ParadoxDiversity.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/legardeur2020_ParadoxDiversity.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1377,7 +1646,7 @@ window.Quarto = {
           hal-02362849v2
         </a>
          
-        <a href="./publications/./_files/salvado2019_DecisionMaking.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/salvado2019_DecisionMaking.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1427,7 +1696,7 @@ window.Quarto = {
           hal-01973339v1
         </a>
          
-        <a href="./publications/./_files/villeneuve2019_DecisionSupport.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/villeneuve2019_DecisionSupport.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1456,7 +1725,7 @@ window.Quarto = {
         <a href="./publications/millet2019_DefinitionSportHealth.html" class="no-external"> Definition of a “Sport-Health” Semantic Space </a>
       </h3>
       <div class="listing-author">Millet, Antoine; Akle, Audrey Abi; <b>Masson, Dimitri</b>; Legardeur, Jérémy</div>
-      <div class="listing-publication fst-italic">Proc. Des. Soc., 1(1)
+      <div class="listing-publication fst-italic">Proceedings of the Design Society: International Conference on Engineering Design, 1(1)
 </div>
     </div>
     <div class="metadata">
@@ -1477,7 +1746,7 @@ window.Quarto = {
           hal-02432825v1
         </a>
          
-        <a href="./publications/./_files/millet2019_DefinitionSportHealth.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/millet2019_DefinitionSportHealth.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1505,10 +1774,10 @@ window.Quarto = {
   <div class="quarto-post" metadataattrs(item)="">
     <div class="body">
       <h3 class="no-anchor listing-title lead">
-        <a href="./publications/villeneuve2019_DecisionDans.html" class="no-external"> Décision dans les systèmes cyber-physiques et humains : application à l'élevage de précision </a>
+        <a href="./publications/villeneuve2019_DecisionDans.html" class="no-external"> Décision dans les systèmes cyber-physiques et humains : application à l’élevage de précision </a>
       </h3>
       <div class="listing-author">Villeneuve, Eric; Merlo, Christophe; Terrasson, Guillaume; Abi Akle, Audrey; <b>Masson, Dimitri</b>; Llaria, Alvaro</div>
-      <div class="listing-publication fst-italic">in CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA, 2019-06
+      <div class="listing-publication fst-italic">CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA
 </div>
     </div>
     <div class="metadata">
@@ -1518,18 +1787,13 @@ window.Quarto = {
           <i class="bi bi-journal-richtext"></i>
           Details
         </a>
-        
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
-          <i class="ai ai-doi"></i>
-          DOI
-        </a>
          
         <a href="https://hal.science/hal-02268577v1" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-hal"></i>
           hal-02268577v1
         </a>
          
-        <a href="./publications/./_files/villeneuve2019_DecisionDans.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/villeneuve2019_DecisionDans.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1555,10 +1819,10 @@ window.Quarto = {
   <div class="quarto-post" metadataattrs(item)="">
     <div class="body">
       <h3 class="no-anchor listing-title lead">
-        <a href="./publications/millet2019_DefinitionEspace.html" class="no-external"> Définition d'un espace sémantique Sport-Santé </a>
+        <a href="./publications/millet2019_DefinitionEspace.html" class="no-external"> Définition d’un espace sémantique Sport-Santé </a>
       </h3>
       <div class="listing-author">Millet, Antoine; Abi Akle, Audrey; <b>Masson, Dimitri</b>; Legardeur, Jérémy</div>
-      <div class="listing-publication fst-italic">in S.Mart, 2019-04
+      <div class="listing-publication fst-italic">S.Mart
 </div>
     </div>
     <div class="metadata">
@@ -1568,18 +1832,13 @@ window.Quarto = {
           <i class="bi bi-journal-richtext"></i>
           Details
         </a>
-        
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
-          <i class="ai ai-doi"></i>
-          DOI
-        </a>
          
         <a href="https://hal.science/hal-02151626" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-hal"></i>
           hal-02151626
         </a>
          
-        <a href="./publications/./_files/millet2019_DefinitionEspace.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/millet2019_DefinitionEspace.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1610,7 +1869,7 @@ window.Quarto = {
         <a href="./publications/rolos2019_OperationsRoom.html" class="no-external"> Operations room design for the control of a fleet of robots </a>
       </h3>
       <div class="listing-author">Rolos, Chloé; Boy, Guy; <b>Masson, Dimitri</b></div>
-      <div class="listing-publication fst-italic">INCOSE International Conference on Human Systems Integration, 2019
+      <div class="listing-publication fst-italic">INCOSE International Conference on Human Systems Integration
 </div>
     </div>
     <div class="metadata">
@@ -1620,18 +1879,13 @@ window.Quarto = {
           <i class="bi bi-journal-richtext"></i>
           Details
         </a>
-        
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
-          <i class="ai ai-doi"></i>
-          DOI
-        </a>
          
         <a href="https://hal.science/hal-02340856v1" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-hal"></i>
           hal-02340856v1
         </a>
          
-        <a href="./publications/./_files/rolos2019_OperationsRoom.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/rolos2019_OperationsRoom.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1657,10 +1911,10 @@ window.Quarto = {
   <div class="quarto-post" metadataattrs(item)="">
     <div class="body">
       <h3 class="no-anchor listing-title lead">
-        <a href="./publications/lagunasalvado2019_OutilClassement.html" class="no-external"> Outil de classement de technologies pour l'aide à la décision en rénovation de bâtiments </a>
+        <a href="./publications/lagunasalvado2019_OutilClassement.html" class="no-external"> Outil de classement de technologies pour l’aide à la décision en rénovation de bâtiments </a>
       </h3>
       <div class="listing-author">Laguna Salvado, Laura; Villeneuve, Eric; <b>Masson, Dimitri</b></div>
-      <div class="listing-publication fst-italic">in CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA, 2019-06
+      <div class="listing-publication fst-italic">CIGI QUALITA 2019 - 13th International Conference CIGI QUALITA
 </div>
     </div>
     <div class="metadata">
@@ -1670,18 +1924,13 @@ window.Quarto = {
           <i class="bi bi-journal-richtext"></i>
           Details
         </a>
-        
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
-          <i class="ai ai-doi"></i>
-          DOI
-        </a>
          
         <a href="https://hal.science/hal-02268562" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-hal"></i>
           hal-02268562
         </a>
          
-        <a href="./publications/./_files/lagunasalvado2019_OutilClassement.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/lagunasalvado2019_OutilClassement.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1709,10 +1958,11 @@ window.Quarto = {
   <div class="quarto-post" metadataattrs(item)="">
     <div class="body">
       <h3 class="no-anchor listing-title lead">
-        <a href="./publications/masson2018_ErgoIA.html" class="no-external"> Ergo'IA '18: Proceedings of the 16th Ergo'IA “Ergonomie Et Informatique Avancée” Conference </a>
+        <a href="./publications/masson2018_ErgoIA.html" class="no-external"> Ergo’IA ’18: Proceedings of the 16th Ergo’IA “Ergonomie Et Informatique Avancée” Conference </a>
       </h3>
       <div class="listing-author"><b>Masson, Dimitri</b>; Clay, Alexis</div>
-      <div class="listing-publication fst-italic"></div>
+      <div class="listing-publication fst-italic">ACM
+</div>
     </div>
     <div class="metadata">
       <div class="listing-date">Oct 3, 2018</div>
@@ -1720,11 +1970,6 @@ window.Quarto = {
         <a href="./publications/masson2018_ErgoIA.html" class="btn btn-sm btn-primary">
           <i class="bi bi-journal-richtext"></i>
           Details
-        </a>
-        
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
-          <i class="ai ai-doi"></i>
-          DOI
         </a>
          
         <a href="https://hal.science/hal-02446096v1" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
@@ -1759,7 +2004,7 @@ window.Quarto = {
         <a href="./publications/ambrosino2017_FosteringCollaborative.html" class="no-external"> Fostering collaborative project emergence through divergence of opinion </a>
       </h3>
       <div class="listing-author">Ambrosino, Julien; <b>Masson, Dimitri</b>; Abi Akle, Audrey; Legardeur, Jérémy</div>
-      <div class="listing-publication fst-italic">international conference on engineering design (ICED 17), 2017-08-25
+      <div class="listing-publication fst-italic">International conference on engineering design (ICED 17)
 </div>
     </div>
     <div class="metadata">
@@ -1769,18 +2014,13 @@ window.Quarto = {
           <i class="bi bi-journal-richtext"></i>
           Details
         </a>
-        
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
-          <i class="ai ai-doi"></i>
-          DOI
-        </a>
          
         <a href="https://hal.science/hal-01577761v1" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-hal"></i>
           hal-01577761v1
         </a>
          
-        <a href="./publications/./_files/ambrosino2017_FosteringCollaborative.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/ambrosino2017_FosteringCollaborative.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1807,7 +2047,7 @@ window.Quarto = {
         <a href="./publications/ambrosino2017_IdeaBulbSmart.html" class="no-external"> IdeaBulb: A Smart and Tangible User Interface for Monitoring Ideation During Creative Sessions </a>
       </h3>
       <div class="listing-author">Ambrosino, Julien; Daniel, Maxime; <b>Masson, Dimitri</b>; Legardeur, Jérémy</div>
-      <div class="listing-publication fst-italic">SMART INTERFACES 2017, The Symposium for Empowering and Smart Interfaces in Engineering, 2017-06-25
+      <div class="listing-publication fst-italic">SMART INTERFACES 2017, The Symposium for Empowering and Smart Interfaces in Engineering
 </div>
     </div>
     <div class="metadata">
@@ -1817,18 +2057,13 @@ window.Quarto = {
           <i class="bi bi-journal-richtext"></i>
           Details
         </a>
-        
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
-          <i class="ai ai-doi"></i>
-          DOI
-        </a>
          
         <a href="https://hal.science/hal-01534697v2" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-hal"></i>
           hal-01534697v2
         </a>
          
-        <a href="./publications/./_files/ambrosino2017_IdeaBulbSmart.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/ambrosino2017_IdeaBulbSmart.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1854,10 +2089,10 @@ window.Quarto = {
   <div class="quarto-post" metadataattrs(item)="">
     <div class="body">
       <h3 class="no-anchor listing-title lead">
-        <a href="./publications/ambrosino2017_STARMethodologie.html" class="no-external"> STAR: une méthodologie d'animation pour faciliter l'émergence de projets en interclustering Application au projet européen NEPTUNE sur la croissance bleue </a>
+        <a href="./publications/ambrosino2017_STARMethodologie.html" class="no-external"> STAR: une méthodologie d’animation pour faciliter l’émergence de projets en interclustering Application au projet européen NEPTUNE sur la croissance bleue </a>
       </h3>
       <div class="listing-author">Ambrosino, Julien; <b>Masson, Dimitri</b>; Legardeur, Jérémy</div>
-      <div class="listing-publication fst-italic">AIP Primeca: Concevoir et produire dans les industries du futur, 2017-04
+      <div class="listing-publication fst-italic">AIP Primeca: Concevoir et produire dans les industries du futur
 </div>
     </div>
     <div class="metadata">
@@ -1867,18 +2102,13 @@ window.Quarto = {
           <i class="bi bi-journal-richtext"></i>
           Details
         </a>
-        
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
-          <i class="ai ai-doi"></i>
-          DOI
-        </a>
          
         <a href="https://hal.science/hal-01513588" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-hal"></i>
           hal-01513588
         </a>
          
-        <a href="./publications/./_files/ambrosino2017_STARMethodologie.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/ambrosino2017_STARMethodologie.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1909,7 +2139,8 @@ window.Quarto = {
         <a href="./publications/ambrosino2016_MethodologyProject.html" class="no-external"> D. 1.1 Methodology of project emergence in interclustering and intersectoral context (1) </a>
       </h3>
       <div class="listing-author">Ambrosino, Julien; Legardeur, Jérémy; <b>Masson, Dimitri</b>; Théophane, Pauline</div>
-      <div class="listing-publication fst-italic"></div>
+      <div class="listing-publication fst-italic">Report, ESTIA
+</div>
     </div>
     <div class="metadata">
       <div class="listing-date">Sep 1, 2016</div>
@@ -1918,18 +2149,13 @@ window.Quarto = {
           <i class="bi bi-journal-richtext"></i>
           Details
         </a>
-        
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
-          <i class="ai ai-doi"></i>
-          DOI
-        </a>
          
         <a href="https://hal.science/hal-01440894v1" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-hal"></i>
           hal-01440894v1
         </a>
          
-        <a href="./publications/./_files/ambrosino2016_MethodologyProject.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/ambrosino2016_MethodologyProject.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -1956,7 +2182,7 @@ window.Quarto = {
         <a href="./publications/ambrosino2016_EncourageExchanges.html" class="no-external"> Encourage exchanges during a creative session by the ideas qualitative evaluation using a digital tool </a>
       </h3>
       <div class="listing-author">Ambrosino, Julien; <b>Masson, Dimitri</b>; Legardeur, Jérémy; Tastet, Guillaume</div>
-      <div class="listing-publication fst-italic">in Proceedings of the 15th Ergo'IA "Ergonomie Et Informatique Avancée" Conference, July 6, 2016
+      <div class="listing-publication fst-italic">Proceedings of the 15th Ergo'IA "Ergonomie Et Informatique Avancée" Conference
 </div>
     </div>
     <div class="metadata">
@@ -1977,7 +2203,7 @@ window.Quarto = {
           hal-01346087v1
         </a>
          
-        <a href="./publications/./_files/ambrosino2016_EncourageExchanges.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/ambrosino2016_EncourageExchanges.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -2001,20 +2227,21 @@ window.Quarto = {
   <div class="quarto-post" metadataattrs(item)="">
     <div class="body">
       <h3 class="no-anchor listing-title lead">
-        <a href="./publications/masson2016_ErgoIA.html" class="no-external"> Ergo'IA '16: Proceedings of the 15th Ergo'IA "Ergonomie Et Informatique Avancée" Conference </a>
+        <a href="./publications/masson2016_ErgoIA16.html" class="no-external"> Ergo’IA ’16: Proceedings of the 15th Ergo’IA “Ergonomie Et Informatique Avancée” Conference </a>
       </h3>
       <div class="listing-author"><b>Masson, Dimitri</b>; Legardeur, Jérémy</div>
-      <div class="listing-publication fst-italic"></div>
+      <div class="listing-publication fst-italic">ACM
+</div>
     </div>
     <div class="metadata">
       <div class="listing-date">Jul 6, 2016</div>
       <div>
-        <a href="./publications/masson2016_ErgoIA.html" class="btn btn-sm btn-primary">
+        <a href="./publications/masson2016_ErgoIA16.html" class="btn btn-sm btn-primary">
           <i class="bi bi-journal-richtext"></i>
           Details
         </a>
         
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
+        <a href="https://doi.org/10.1145/3050385" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-doi"></i>
           DOI
         </a>
@@ -2051,7 +2278,7 @@ window.Quarto = {
         <a href="./publications/pena-arrazola2015_InteractiveGalleries.html" class="no-external"> I++: interactive galleries for promoting interactive curiosities in web designs </a>
       </h3>
       <div class="listing-author">Peña-Arrázola, Sergio; <b>Masson, Dimitri</b>; Demeure, Alexandre; Calvary, Gaëlle; Laurillau, Yann</div>
-      <div class="listing-publication fst-italic">in Proceedings of the 2015 British HCI Conference, July 13, 2015
+      <div class="listing-publication fst-italic">Proceedings of the 2015 British HCI Conference
 </div>
     </div>
     <div class="metadata">
@@ -2072,7 +2299,7 @@ window.Quarto = {
           hal-01492576v1
         </a>
          
-        <a href="./publications/./_files/pena-arrazola2015_InteractiveGalleries.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/pena-arrazola2015_InteractiveGalleries.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -2102,10 +2329,10 @@ window.Quarto = {
   <div class="quarto-post" metadataattrs(item)="">
     <div class="body">
       <h3 class="no-anchor listing-title lead">
-        <a href="./publications/masson2014_InspirezExplorez.html" class="no-external"> Inspirez ! Explorez ! Soutien à la créativité en conception d'interfaces homme-machine </a>
+        <a href="./publications/masson2014_InspirezExplorez.html" class="no-external"> Inspirez ! Explorez ! Soutien à la créativité en conception d’interfaces homme-machine </a>
       </h3>
       <div class="listing-author"><b>Masson, Dimitri</b></div>
-      <div class="listing-publication fst-italic">Université de Grenoble, 2014-09-25
+      <div class="listing-publication fst-italic">PhD Thesis, Université de Grenoble
 </div>
     </div>
     <div class="metadata">
@@ -2116,17 +2343,17 @@ window.Quarto = {
           Details
         </a>
         
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
+        <a href="https://doi.org/10.70675/e964eb7bz385ez4f41z979dz10eef728c1d1" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-doi"></i>
           DOI
         </a>
          
         <a href="https://hal.science/tel-01549303v1" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-hal"></i>
-          
+          tel-01549303v1
         </a>
          
-        <a href="./publications/./_files/masson2014_InspirezExplorez.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/masson2014_InspirezExplorez.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -2159,7 +2386,7 @@ window.Quarto = {
         <a href="./publications/masson2014_WebDesign.html" class="no-external"> Web design galleries: please give me similar styles!: a claim for ground truth datasets </a>
       </h3>
       <div class="listing-author"><b>Masson, Dimitri</b>; Demeure, Alexandre; Abu-Aisheh, Zeina; Calvary, Gaëlle; Bisson, Gilles</div>
-      <div class="listing-publication fst-italic">NordiCHI '14: The 8th Nordic Conference on Human-Computer Interaction, 2014-10-26
+      <div class="listing-publication fst-italic">NordiCHI '14: The 8th Nordic Conference on Human-Computer Interaction
 </div>
     </div>
     <div class="metadata">
@@ -2180,7 +2407,7 @@ window.Quarto = {
           hal-04667515
         </a>
          
-        <a href="./publications/./_files/masson2014_WebDesign.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/masson2014_WebDesign.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -2215,7 +2442,7 @@ window.Quarto = {
         <a href="./publications/masson2011_ExamplesGalleries.html" class="no-external"> Examples Galleries Generated by Interactive Genetic Algorithms </a>
       </h3>
       <div class="listing-author"><b>Masson, Dimitri</b>; Demeure, Alexandre; Calvary, Gaëlle</div>
-      <div class="listing-publication fst-italic">DESIRE'11 - Conference on Creativity and Innovation in Design, October 19, 2011
+      <div class="listing-publication fst-italic">DESIRE'11 - Conference on Creativity and Innovation in Design
 </div>
     </div>
     <div class="metadata">
@@ -2236,7 +2463,7 @@ window.Quarto = {
           hal-00758339v1
         </a>
          
-        <a href="./publications/./_files/masson2011_ExamplesGalleries.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/masson2011_ExamplesGalleries.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -2267,7 +2494,7 @@ window.Quarto = {
         <a href="./publications/demeure2011_GraphsModels.html" class="no-external"> Graphs of models for exploring design spaces in the engineering of Human Computer Interaction </a>
       </h3>
       <div class="listing-author">Demeure, Alexandre; <b>Masson, Dimitri</b>; Calvary, Gaelle</div>
-      <div class="listing-publication fst-italic">2nd international workshop on semantic models for adaptive interactive systems, 2011-02-13
+      <div class="listing-publication fst-italic">2nd international workshop on semantic models for adaptive interactive systems
 </div>
     </div>
     <div class="metadata">
@@ -2277,18 +2504,13 @@ window.Quarto = {
           <i class="bi bi-journal-richtext"></i>
           Details
         </a>
-        
-        <a href="https://doi.org/" class="btn btn-sm btn-dark" target="_blank" rel="noopener noreferrer">
-          <i class="ai ai-doi"></i>
-          DOI
-        </a>
          
         <a href="https://hal.science/hal-00760416v1" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-hal"></i>
           hal-00760416v1
         </a>
          
-        <a href="./publications/./_files/demeure2011_GraphsModels.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/demeure2011_GraphsModels.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -2312,10 +2534,10 @@ window.Quarto = {
   <div class="quarto-post" metadataattrs(item)="">
     <div class="body">
       <h3 class="no-anchor listing-title lead">
-        <a href="./publications/masson2011_InspirerExplorer.html" class="no-external"> Inspirer, explorer: Magellan, un environnement interactif evolutionnaire pour la génération d'exemples </a>
+        <a href="./publications/masson2011_InspirerExplorer.html" class="no-external"> Inspirer, explorer: Magellan, un environnement interactif evolutionnaire pour la génération d’exemples </a>
       </h3>
       <div class="listing-author"><b>Masson, Dimitri</b>; Demeure, Alexandre; Calvary, Gaëlle</div>
-      <div class="listing-publication fst-italic">IHM'11: 23th French speaking Conference on Human-Computer Interaction, 2011-10-24
+      <div class="listing-publication fst-italic">IHM'11: 23th French speaking Conference on Human-Computer Interaction
 </div>
     </div>
     <div class="metadata">
@@ -2336,7 +2558,7 @@ window.Quarto = {
           hal-00760160v1
         </a>
          
-        <a href="./publications/./_files/masson2011_InspirerExplorer.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/masson2011_InspirerExplorer.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -2371,7 +2593,7 @@ window.Quarto = {
         <a href="./publications/masson2010_MagellanEvolutionary.html" class="no-external"> Magellan, an evolutionary system to foster user interface design creativity </a>
       </h3>
       <div class="listing-author"><b>Masson, Dimitri</b>; Demeure, Alexandre; Calvary, Gaelle</div>
-      <div class="listing-publication fst-italic">in Proceedings of the 2nd ACM SIGCHI symposium on Engineering interactive computing systems, June 19, 2010
+      <div class="listing-publication fst-italic">Proceedings of the 2nd ACM SIGCHI symposium on Engineering interactive computing systems
 </div>
     </div>
     <div class="metadata">
@@ -2389,10 +2611,10 @@ window.Quarto = {
          
         <a href="https://hal.science/inria-00498580v1" class="btn btn-sm btn-dark hal" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-hal"></i>
-          
+          inria-00498580v1
         </a>
          
-        <a href="./publications/./_files/masson2010_MagellanEvolutionary.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
+        <a href="./publications/_files/masson2010_MagellanEvolutionary.pdf" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-file-earmark-pdf"></i> file
         </a>
          
@@ -2423,7 +2645,6 @@ window.Quarto = {
 
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -2858,7 +3079,7 @@ window.Quarto = {
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- © 2024 Dimitri Masson
+ © 2022–2026 Dimitri Masson
   </li>  
 </ul>
     </div>   
